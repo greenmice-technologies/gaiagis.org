@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="{{ site.Language.Lang }}">
+  <head>
+    {{ if .IsHome }}
+      <title>{{ .Site.Title }}</title>
+    {{ else if (eq .Title .Site.Title ) }}
+      <title>{{ .Site.Title }}</title>
+    {{ else }}
+      <title>{{ .Title }} | {{ .Site.Title }}</title>
+    {{ end }}
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no" />
+
+    {{ $description := site.Params.description }}
+    {{ if .IsHome }}
+      {{ $description = site.Params.description }}
+    {{ else if .Description }}
+      {{ $description = .Description }}
+    {{ end }}
+    <meta name="description" content="{{ $description }}" />
+
+    {{ partial "google_analytics.html" . }}
+    {{ partial "opengraph.html" . }}
+    {{ partial "schema.html" . }}
+    {{ partial "twitter_cards.html" . }}
+
+    {{ with resources.Get "favicon.png" }}
+      <link rel="icon" type="image/x-icon" href="{{ .Permalink }}">
+    {{ end }}
+
+    {{ with resources.Get "apple-touch-icon.png" }}
+      <link rel="apple-touch-icon" sizes="180x180" href="{{ .Permalink }}" />
+    {{ end }}
+
+    {{ with resources.Get "favicon-32x32.png" }}
+      <link rel="icon" type="image/png" sizes="32x32" href="{{ .Permalink }}" />
+    {{ end }}
+
+    {{ with resources.Get "favicon-16x16.png" }}
+      <link rel="icon" type="image/png" sizes="16x16" href="{{ .Permalink }}" />
+    {{ end }}
+
+    {{ with resources.Get "site.webmanifest" }}
+      <link rel="manifest" href="{{ .Permalink }}" />
+    {{ end }}
+
+    {{ with resources.Get "safari-pinned-tab.svg" }}
+      <link rel="mask-icon" href="{{ .Permalink }}" color="{{ site.Params.colors.primary }}" />
+    {{ end }}
+
+    <meta name="msapplication-TileColor" content="{{ site.Params.colors.background }}" />
+    <meta name="theme-color" content="{{ site.Params.colors.background }}" />
+
+    {{ range .AlternativeOutputFormats -}}
+      {{ printf ` <link rel="%s" type="%s" href="%s" title="%s" /> ` .Rel .MediaType.Type .Permalink $.Site.Title | safeHTML }}
+    {{ end -}}
+
+    {{ with (templates.Defer (dict "key" "global")) }}
+      {{ with resources.Get "css/styles.css" }}
+        {{ with resources.ExecuteAsTemplate "css/styles.css" $ . }}
+          {{ $opts := dict "inlineImports" true "optimize" true "minify" true }}
+          {{ with . | css.TailwindCSS $opts | fingerprint }}
+            <link
+              rel="stylesheet"
+              href="{{ .RelPermalink }}"
+              integrity="{{ .Data.Integrity }}"
+              crossorigin="anonymous"
+            />
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{ with resources.Get "css/fonts.css" }}
+      {{ with resources.ExecuteAsTemplate "css/fonts.css" $ . }}
+        {{ $opts := dict "inlineImports" true "optimize" true "minify" true }}
+        {{ with . | css.TailwindCSS $opts | fingerprint }}
+          <link
+            rel="stylesheet"
+            href="{{ .RelPermalink }}"
+            integrity="{{ .Data.Integrity }}"
+            crossorigin="anonymous"
+          />
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{ with resources.Get "css/brand.css" }}
+      {{ with resources.ExecuteAsTemplate "css/brand.css" $ . }}
+        {{ with . | minify | fingerprint }}
+          <link rel="stylesheet" href="{{ .RelPermalink }}" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" />
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    {{ with resources.Get "vendor/fontawesome-free/css/all.min.css" }}
+      {{ with . | fingerprint }}
+        <link
+          rel="stylesheet"
+          href="{{ .RelPermalink }}"
+          integrity="{{ .Data.Integrity }}"
+          crossorigin="anonymous"
+        />
+      {{ end }}
+    {{ end }}
+
+    {{ with resources.Match "vendor/fontawesome-free/webfonts/*" }}
+      {{ range . }}
+        {{ .Publish }}
+      {{ end }}
+    {{ end }}
+
+    {{- $main := resources.Get "js/main.js" -}}
+    {{ with $main }}
+      {{- $main = $main | js.Build (dict "minify" "true") | fingerprint -}}
+      {{ if hugo.IsProduction }}
+        {{ $main = $main | minify }}
+      {{ end }}
+      <script src="{{ $main.RelPermalink }}" defer></script>
+    {{ end }}
+  </head>
+  <body class="antialiased">
+    <div class="flex min-h-screen flex-col">
+      {{ partial "shared/header" . }}
+      <div class="grow">{{ block "main" . }}{{ end }}</div>
+      {{ partial "shared/footer" . }}
+    </div>
+  </body>
+</html>

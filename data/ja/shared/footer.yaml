@@ -1,0 +1,12 @@
+enable: true
+contact:
+  title: 接触
+  items:
+  - label: info@greenmice.it
+    link: mailto:info@greenmice.it
+social:
+- title: リンクトイン
+  icon: fa-brands fa-linkedin
+  link: https://www.linkedin.com/company/greenmice
+  label: ''
+copyright: © Greenmice Technologies S.r.l.無断転載を禁じます。

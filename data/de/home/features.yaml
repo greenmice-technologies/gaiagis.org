@@ -1,0 +1,29 @@
+enable: true
+title: Wo wir tätig sind
+text: 'Umgebungen mit hohem Vertrauen: regulierte Branchen, große Unternehmen und
+  Produktteams, die technische Tiefe benötigen – keine Präsentationen.'
+items:
+- pretitle: KI und Plattformen
+  pretext: Agenten, Automatisierung, Daten
+  color: '#1FA463'
+  icon: fas fa-brain
+  title: Agentische KI, MCP und Unternehmensintegration
+  text: 'Wir bauen KI-Systeme, die sich sicher mit Ihren Tools verbinden: Orchestrierung,
+    Abruf, Auswertung und Governance – damit die Automatisierung skaliert, ohne anfällig
+    zu werden.'
+- pretitle: Modernisierung
+  pretext: Vermächtnis ohne Lähmung
+  color: '#1FA463'
+  icon: fas fa-gears
+  title: Legacy-Modernisierung mit messbarer Risikominderung
+  text: 'Wir entwirren Monolithen und brüchige Integrationen mit inkrementellen Migrationspfaden:
+    Würgermuster, Contract-First-APIs, Testumgebungen und betriebliche Umstellungen,
+    die wie technische Projekte geplant sind.'
+- pretitle: Produktentwicklung
+  pretext: Mobil und Cloud
+  color: '#1FA463'
+  icon: fas fa-mobile-screen
+  title: Mobile und Cloud-native Bereitstellung
+  text: Von Ionic, React Native und Flutter bis hin zu Backend-Diensten und Analyse-Pipelines
+    – wir liefern zusammenhängende Produkterlebnisse mit denselben Standards, die
+    wir auf Kernsysteme anwenden.

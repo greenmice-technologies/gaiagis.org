@@ -1,0 +1,20 @@
+enable: true
+title: Ausgewählte Arbeit
+subtitle: Konkrete Ergebnisse in den Bereichen Automatisierung, Unternehmenssysteme
+  und datenintensive Produkte.
+cta:
+  label: Alle Fallstudien
+  link: case-studies/
+items:
+- tag: Luxuseinzelhandel
+  title: 'Brioni: KI-Automatisierung für E-Commerce-Abläufe'
+  summary: Automatisierung, die den manuellen Arbeitsaufwand reduziert und gleichzeitig
+    markengerechte Qualitätskontrollen in allen Katalog- und Fulfillment-Workflows
+    aufrechterhält.
+  link: case-studies/brioni-ai-automation/
+- tag: Unternehmen
+  title: Unternehmenssysteme auf nationaler Ebene
+  summary: Integrations- und Modernisierungsprogramme, die auf Betriebszeit, Compliance
+    und langfristige Wartbarkeit für große Betreiber und Institutionen ausgerichtet
+    sind.
+  link: case-studies/enterprise-systems/

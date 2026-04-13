@@ -1,8 +1,62 @@
-baseURL: "/"
+baseURL: "https://greenmice.it/"
 title: "Greenmice Technologies"
-summaryLength: 20
+summaryLength: 35
 
-# services:
-#   googleAnalytics:
-#     id: G-MEASUREMENT_ID
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
 
+defaultContentLanguage: en
+defaultContentLanguageInSubdir: true
+
+languages:
+  en:
+    languageName: English
+    languageCode: en
+    weight: 1
+    contentDir: content/en
+    params:
+      description: "Engineering partner for complex systems, AI platforms, and legacy modernization. CTO as a Service."
+  it:
+    languageName: Italiano
+    languageCode: it
+    weight: 2
+    contentDir: content/it
+    params:
+      description: "Partner ingegneristico per sistemi complessi, piattaforme AI e modernizzazione legacy. CTO as a Service."
+  es:
+    languageName: Español
+    languageCode: es
+    weight: 3
+    contentDir: content/es
+    params:
+      description: "Socio de ingeniería para sistemas complejos, plataformas de IA y modernización de legados. CTO as a Service."
+  fr:
+    languageName: Français
+    languageCode: fr
+    weight: 4
+    contentDir: content/fr
+    params:
+      description: "Partenaire d’ingénierie pour systèmes complexes, plateformes IA et modernisation du legacy. CTO as a Service."
+  de:
+    languageName: Deutsch
+    languageCode: de
+    weight: 5
+    contentDir: content/de
+    params:
+      description: "Engineering-Partner für komplexe Systeme, KI-Plattformen und Legacy-Modernisierung. CTO as a Service."
+  zh-cn:
+    languageName: 简体中文
+    languageCode: zh-cn
+    weight: 6
+    contentDir: content/zh-cn
+    params:
+      description: "面向复杂系统、AI 平台与遗留系统现代化的高端工程合作伙伴。CTO as a Service。"
+  ja:
+    languageName: 日本語
+    languageCode: ja
+    weight: 7
+    contentDir: content/ja
+    params:
+      description: "複雑なシステム、AIプラットフォーム、レガシー近代化のエンジニアリングパートナー。CTO as a Service。"

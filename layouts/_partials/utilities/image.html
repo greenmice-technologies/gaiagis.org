@@ -1,0 +1,29 @@
+{{ if not .src }}
+  {{ errorf "Image Optimization: the partial 'utilities/image' is missing the 'src' argument." }}
+{{ end }}
+
+{{ $resource := dict }}
+{{ with resources.Get .src }}{{ $resource = . }}{{ end }}
+{{ with page.Resources.Get .src }}{{ $resource = . }}{{ end }}
+
+{{ if $resource }}
+  {{ if strings.HasSuffix .src ".svg" }}
+    <img
+      src="{{ $resource.RelPermalink }}"
+      {{ with .class }}class="{{ . }}"{{ end }}
+      {{ with .alt }}alt="{{ . }}"{{ else }}alt=""{{ end }}
+      loading="lazy"
+      decoding="async"
+    />
+  {{ else }}
+    <img
+      src="{{ $resource.RelPermalink }}"
+      {{ with .class }}class="{{ . }}"{{ end }}
+      {{ with .alt }}alt="{{ . }}"{{ else }}alt=""{{ end }}
+      loading="lazy"
+      decoding="async"
+    />
+  {{ end }}
+{{ else }}
+  {{ warnf "Image Optimization: the image '%s' has not been found. (%s)" .src page }}
+{{ end }}

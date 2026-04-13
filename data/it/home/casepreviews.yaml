@@ -1,0 +1,20 @@
+enable: true
+
+title: "Lavori selezionati"
+
+subtitle: "Risultati concreti in automazione, sistemi enterprise e prodotti data-intensive."
+
+cta:
+  label: "Tutti i case study"
+  link: "case-studies/"
+
+items:
+  - tag: "Retail luxury"
+    title: "Brioni: automazione AI per l’e-commerce"
+    summary: "Automazione che riduce il carico manuale mantenendo controlli di qualità da brand luxury su catalogo e fulfillment."
+    link: "case-studies/brioni-ai-automation/"
+
+  - tag: "Enterprise"
+    title: "Sistemi enterprise su scala nazionale"
+    summary: "Programmi di integrazione e modernizzazione orientati a uptime, compliance e manutenibilità per grandi operatori e istituzioni."
+    link: "case-studies/enterprise-systems/"

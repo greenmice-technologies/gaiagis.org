@@ -1,0 +1,10 @@
+@layer base {
+  :root {
+    --brand-bg: {{ site.Params.colors.background }};
+    --brand-ink: {{ site.Params.colors.secondary }};
+  }
+  body {
+    background-color: var(--brand-bg);
+    color: var(--brand-ink);
+  }
+}

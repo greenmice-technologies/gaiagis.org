@@ -27,6 +27,6 @@ module:
     - source: 'assets'
       target: 'assets'
 
-taxonomies:
-  series: "series"
-  tags: "tags"
+disableKinds:
+  - taxonomy
+  - term

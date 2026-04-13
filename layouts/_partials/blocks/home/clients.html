@@ -1,0 +1,16 @@
+<section id="clients" class="clients relative py-20 xl:py-28 overflow-hidden">
+  <div class="container mx-auto px-4">
+    <h2 class="text-sm font-semibold uppercase tracking-widest text-[#6a6a6a] text-center mb-12">{{ .title }}</h2>
+    <div class="flex flex-col xl:flex-row items-center justify-center xl:justify-between flex-wrap gap-x-12 gap-y-10">
+      {{ range .items}}
+        <div class="flex items-center justify-center min-h-[2.5rem]">
+          {{ if .image }}
+            {{ partial "utilities/image" (dict "src" .image "alt" .name "class" "h-10 xl:h-12 w-auto max-w-[140px] object-contain opacity-80 hover:opacity-100 transition-opacity")}}
+          {{ else if .name }}
+            <span class="text-base xl:text-lg font-semibold tracking-tight text-[#263238]">{{ .name }}</span>
+          {{ end }}
+        </div>
+      {{ end }}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,27 @@
+enable: true
+
+title: "Where we operate"
+
+text: "High-trust environments: regulated industries, large enterprises, and product teams that need engineering depth—not slide decks."
+
+items:
+  - pretitle: "AI & platforms"
+    pretext: "Agents, automation, data"
+    color: "#1FA463"
+    icon: "fas fa-brain"
+    title: "Agentic AI, MCP, and enterprise integration"
+    text: "We build AI systems that connect to your tools safely: orchestration, retrieval, evaluation, and governance—so automation scales without becoming fragile."
+
+  - pretitle: "Modernization"
+    pretext: "Legacy without paralysis"
+    color: "#1FA463"
+    icon: "fas fa-gears"
+    title: "Legacy modernization with measurable risk reduction"
+    text: "We untangle monoliths and brittle integrations with incremental migration paths: strangler patterns, contract-first APIs, test harnesses, and operational cutovers planned like engineering projects."
+
+  - pretitle: "Product engineering"
+    pretext: "Mobile & cloud"
+    color: "#1FA463"
+    icon: "fas fa-mobile-screen"
+    title: "Mobile and cloud-native delivery"
+    text: "From Ionic, React Native, and Flutter to backend services and analytics pipelines—we ship cohesive product experiences with the same standards we apply to core systems."

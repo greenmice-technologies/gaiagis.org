@@ -1,0 +1,29 @@
+enable: true
+title: donde operamos
+text: 'Entornos de alta confianza: industrias reguladas, grandes empresas y equipos
+  de productos que necesitan profundidad en ingeniería, no diapositivas.'
+items:
+- pretitle: IA y plataformas
+  pretext: Agentes, automatización, datos.
+  color: '#1FA463'
+  icon: fas fa-brain
+  title: IA agente, MCP e integración empresarial
+  text: 'Construimos sistemas de IA que se conectan a sus herramientas de forma segura:
+    orquestación, recuperación, evaluación y gobernanza, para que la automatización
+    se amplíe sin volverse frágil.'
+- pretitle: Modernización
+  pretext: Legado sin parálisis
+  color: '#1FA463'
+  icon: fas fa-gears
+  title: Modernización heredada con reducción de riesgos mensurable
+  text: 'Desenredamos monolitos e integraciones frágiles con rutas de migración incrementales:
+    patrones estranguladores, API de primer contrato, arneses de prueba y recortes
+    operativos planificados como proyectos de ingeniería.'
+- pretitle: Ingeniería de producto
+  pretext: Móvil y nube
+  color: '#1FA463'
+  icon: fas fa-mobile-screen
+  title: Entrega móvil y nativa de la nube
+  text: Desde Ionic, React Native y Flutter hasta servicios backend y canales de análisis,
+    ofrecemos experiencias de productos coherentes con los mismos estándares que aplicamos
+    a los sistemas centrales.

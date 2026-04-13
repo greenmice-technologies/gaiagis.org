@@ -1,23 +1,22 @@
 title: "Greenmice Technologies"
-description: "Greenmice Technologies - Building modern mobile and web applications."
-images: 
-  - "images/home/hero/bill-sitting.png"
+description: "Engineering partner for complex systems, AI platforms, and legacy modernization."
 
-# logo: "images/shared/logo.png"
+logo: "images/brands/greenmice-technologies.svg"
+
+colors:
+  primary: "#1FA463"
+  secondary: "#263238"
+  background: "#F5F7F6"
 
 favicons:
-  themeColor: "#FFFFFF"
-  backgroundColor: "#FFFFFF"
-  faviconColor: "#5FC300"
+  themeColor: "#F5F7F6"
+  backgroundColor: "#F5F7F6"
+  faviconColor: "#1FA463"
 
 contact:
   - "info@greenmice.it"
 
 social:
-  dribbble: "#"
-  instagram: "#"
-  facebook: "#"
-  twitter: "#"
+  linkedin: "https://www.linkedin.com/company/greenmice"
 
-copyright: "© 2024 Greenmice Technologies All Rights Reserved"
-
+copyright: "© Greenmice Technologies S.r.l."

@@ -1,0 +1,14 @@
+enable: true
+
+items:
+  - title: "CTO as a Service: leadership senza overhead di hiring"
+    text: "Un incarico strutturato per architettura, governance di delivery, allineamento vendor e gestione del rischio tecnico—quando serve una leadership senior dentro al team."
+    button:
+      label: "Scopri l’offerta"
+      link: "capabilities/cto-as-a-service/"
+
+  - title: "Greenmice Geosolutions"
+    text: "La nostra spin-off è focalizzata su ingegneria GIS, piattaforme spaziali e sistemi aeronautici—con collaborazioni profonde su infrastrutture, energia e aviazione."
+    button:
+      label: "Vai a Geosolutions"
+      link: "geosolutions/"

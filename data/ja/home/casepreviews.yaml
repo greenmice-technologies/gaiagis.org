@@ -1,0 +1,15 @@
+enable: true
+title: 入選作品
+subtitle: 自動化、エンタープライズ システム、データ集約型製品における具体的な成果。
+cta:
+  label: すべてのケーススタディ
+  link: case-studies/
+items:
+- tag: 高級品小売店
+  title: 'Brioni: 電子商取引業務の AI 自動化'
+  summary: カタログおよびフルフィルメントのワークフロー全体でブランドグレードの品質管理を維持しながら、手動の作業負荷を軽減する自動化。
+  link: case-studies/brioni-ai-automation/
+- tag: 企業
+  title: 全国規模のエンタープライズ システム
+  summary: 大規模な通信事業者や組織の稼働時間、コンプライアンス、長期保守性に合わせた統合および最新化プログラム。
+  link: case-studies/enterprise-systems/

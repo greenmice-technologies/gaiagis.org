@@ -1,0 +1,11 @@
+{{ if and .Paginator (gt .Paginator.TotalPages 1) }}
+  <nav class="flex items-center gap-4 text-sm text-[#515151]" aria-label="Pagination">
+    {{ if .Paginator.HasPrev }}
+      <a class="hover:text-primary" href="{{ .Paginator.Prev.URL }}">{{ i18n "pagination_prev" }}</a>
+    {{ end }}
+    <span>{{ .Paginator.PageNumber }} / {{ .Paginator.TotalPages }}</span>
+    {{ if .Paginator.HasNext }}
+      <a class="hover:text-primary" href="{{ .Paginator.Next.URL }}">{{ i18n "pagination_next" }}</a>
+    {{ end }}
+  </nav>
+{{ end }}

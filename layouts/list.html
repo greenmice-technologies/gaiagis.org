@@ -1,0 +1,39 @@
+{{ define "main" }}
+  <section class="py-14 xl:py-20">
+    <header class="container mx-auto px-4 mb-12">
+      <div class="max-w-3xl mx-auto text-center xl:text-start">
+        {{ with .Title }}
+          <h1 class="text-4xl xl:text-5xl font-semibold tracking-tight text-[#1a1a1a] mb-4">{{ . | markdownify }}</h1>
+        {{ end }}
+        {{ with .Description }}
+          <p class="text-lg text-[#5a5a5a] leading-relaxed">{{ . }}</p>
+        {{ end }}
+      </div>
+    </header>
+
+    {{ if .Content }}
+      <div class="container mx-auto px-4 mb-14">
+        <div class="prose prose-lg prose-neutral max-w-3xl mx-auto xl:mx-0 prose-a:text-primary">
+          {{ .Content }}
+        </div>
+      </div>
+    {{ end }}
+
+    <div class="container mx-auto px-4">
+      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8 max-w-6xl mx-auto">
+        {{ range .RegularPages }}
+          <a href="{{ .Permalink }}" class="group block rounded-2xl border border-black/5 bg-white p-8 hover:border-primary/30 hover:shadow-md transition-all duration-300">
+            <h2 class="text-xl font-semibold text-[#1a1a1a] group-hover:text-primary transition-colors mb-3">{{ .Title }}</h2>
+            {{ with .Description }}
+              <p class="text-sm text-[#5a5a5a] leading-relaxed">{{ . }}</p>
+            {{ end }}
+          </a>
+        {{ end }}
+      </div>
+    </div>
+
+    <div class="flex items-center justify-center mt-16">
+      {{ partial "pagination" . }}
+    </div>
+  </section>
+{{ end }}

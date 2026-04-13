@@ -1,0 +1,20 @@
+enable: true
+title: Œuvre sélectionnée
+subtitle: Des résultats concrets en matière d'automatisation, de systèmes d'entreprise
+  et de produits gourmands en données.
+cta:
+  label: Toutes les études de cas
+  link: case-studies/
+items:
+- tag: Commerce de détail de luxe
+  title: 'Brioni : automatisation de l''IA pour les opérations de commerce électronique'
+  summary: Une automatisation qui a réduit la charge de travail manuelle tout en préservant
+    les contrôles de qualité de la marque dans les flux de travail de catalogue et
+    d'exécution.
+  link: case-studies/brioni-ai-automation/
+- tag: Entreprise
+  title: Systèmes d'entreprise à l'échelle nationale
+  summary: Programmes d'intégration et de modernisation alignés sur la disponibilité,
+    la conformité et la maintenabilité à long terme pour les grands opérateurs et
+    institutions.
+  link: case-studies/enterprise-systems/

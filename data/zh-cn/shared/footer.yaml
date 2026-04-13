@@ -1,0 +1,12 @@
+enable: true
+contact:
+  title: 接触
+  items:
+  - label: info@greenmice.it
+    link: mailto:info@greenmice.it
+social:
+- title: 领英
+  icon: fa-brands fa-linkedin
+  link: https://www.linkedin.com/company/greenmice
+  label: ''
+copyright: © Greenmice Technologies S.r.l.版权所有。

@@ -1,0 +1,13 @@
+enable: true
+
+title: "Organizations we work with"
+
+items:
+  - name: "ENEL"
+  - name: "ANAS"
+  - name: "Wind Tre"
+  - name: "ENAV"
+  - name: "E-Geos"
+  - name: "Teoresi"
+  - name: "Reply"
+  - name: "Brioni"

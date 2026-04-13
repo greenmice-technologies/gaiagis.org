@@ -1,0 +1,12 @@
+enable: true
+contact:
+  title: Contacto
+  items:
+  - label: info@greenmice.it
+    link: mailto:info@greenmice.it
+social:
+- title: LinkedIn
+  icon: fa-brands fa-linkedin
+  link: https://www.linkedin.com/company/greenmice
+  label: ''
+copyright: © Greenmice Technologies S.r.l. Reservados todos los derechos.

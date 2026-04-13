@@ -1,0 +1,51 @@
+<section id="hero" class="hero relative py-8 xl:py-20 overflow-hidden bg-[var(--brand-bg)]">
+  <div class="text-primary/30 absolute right-0 translate-x-[90%] top-1/2 -translate-y-1/2 -z-10 hidden xl:block">
+    {{ partial "utilities/svg" (dict "src" "images/hero/bg-blob-1.svg")}}
+  </div>
+  <div class="text-primary/20 absolute left-0 -translate-x-[90%] bottom-0 -z-10 hidden xl:block">
+    {{ partial "utilities/svg" (dict "src" "images/hero/bg-blob-2.svg")}}
+  </div>
+  <div class="container mx-auto px-4">
+    <div class="grid xl:grid-cols-2 gap-12 mb-16">
+      <div class="flex flex-col justify-center gap-6">
+        {{ with .title }}
+          <h1 class="markdown-title text-center xl:text-start text-4xl xl:text-6xl font-semibold xl:leading-tight tracking-tight text-[#1a1a1a]">{{ . | markdownify }}</h1>
+        {{ end }}
+        {{ with .text }}
+        <p class="xl:leading-relaxed text-center xl:text-start text-lg text-[#4a4a4a] max-w-xl">{{ . }}</p>
+        {{ end }}
+        {{ if .buttons }}
+          <div class="flex items-center flex-col xl:flex-row gap-4 mt-4">
+            {{ range $i, $e := .buttons }}
+              {{ if (eq $i 0) }}
+                {{ partial "components/button/primary" (dict "label" .label "href" (.link | relLangURL))}}
+              {{ else }}
+                {{ partial "components/button/outline" (dict "label" .label "href" (.link | relLangURL))}}
+              {{ end }}
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+      <div class="flex flex-col justify-center items-center">
+        {{ with .image }}
+          {{ partial "utilities/image" (dict "src" . "class" "object-cover object-center max-h-[420px] w-auto rounded-2xl shadow-sm")}}
+        {{ end }}
+      </div>
+    </div>
+    {{ if .items }}
+      <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-8 pt-8 border-t border-black/5">
+        {{ range .items }}
+          <div class="flex items-start gap-4">
+            <div class="flex items-center justify-center text-xl text-primary bg-primary/10 size-14 rounded-xl shrink-0">
+              <i class="{{ .icon }}"></i>
+            </div>
+            <div class="inline-flex flex-col gap-1">
+              <h2 class="text-base font-semibold text-[#1a1a1a]">{{ .title }}</h2>
+              <p class="text-sm text-[#6a6a6a] leading-snug">{{ .text }}</p>
+            </div>
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+  </div>
+</section>

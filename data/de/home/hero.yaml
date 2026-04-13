@@ -1,0 +1,29 @@
+enable: true
+title: Entwicklung komplexer Systeme.<br/>Entworfen mit Präzision.
+text: Greenmice Technologies ist ein Senior-Engineering-Partner – keine Webagentur.
+  Seit etwa einem Jahrzehnt liefern wir KI-Systeme, Unternehmenssoftware, Datenplattformen
+  und mobile Produkte, bei denen es auf Zuverlässigkeit, Architektur und Ausführung
+  ankommt.
+buttons:
+- label: Fähigkeiten
+  link: capabilities/
+- label: Kontakt
+  link: contact/
+image: images/home/hero/hero-engineering.svg
+items:
+- icon: fas fa-diagram-project
+  color: '#1FA463'
+  title: Systemdenken
+  text: Durchgängiges Design von den Einschränkungen bis zur Produktion.
+- icon: fas fa-shield-halved
+  color: '#1FA463'
+  title: Operative Genauigkeit
+  text: Sicherheit, Beobachtbarkeit und Wartbarkeit standardmäßig.
+- icon: fas fa-layer-group
+  color: '#1FA463'
+  title: Komplexität unter Kontrolle
+  text: Klare Grenzen, explizite Schnittstellen, messbare Ergebnisse.
+- icon: fas fa-compass-drafting
+  color: '#1FA463'
+  title: Italienische Klarheit
+  text: Präzision in Kommunikation und Handwerk – ohne Lärm.
