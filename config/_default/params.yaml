@@ -1,0 +1,23 @@
+title: "Greenmice Technologies"
+description: "Greenmice Technologies - Building modern mobile and web applications."
+images: 
+  - "images/home/hero/bill-sitting.png"
+
+# logo: "images/shared/logo.png"
+
+favicons:
+  themeColor: "#FFFFFF"
+  backgroundColor: "#FFFFFF"
+  faviconColor: "#5FC300"
+
+contact:
+  - "info@greenmice.it"
+
+social:
+  dribbble: "#"
+  instagram: "#"
+  facebook: "#"
+  twitter: "#"
+
+copyright: "© 2024 Greenmice Technologies All Rights Reserved"
+

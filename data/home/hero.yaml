@@ -1,0 +1,35 @@
+enable: true
+
+title: "Experienced **mobile and web** applications and website builders."
+text: "Greenmice Technologies is a team of experienced mobile and web application developers. We build and develop mobile applications for several top platforms, including Android & iOS."
+
+buttons:
+  - label: "Contact Us"
+    link: "#"
+
+  - label: "View More"
+    link: ""
+
+image: "images/home/hero/bill-sitting.png"
+
+items:
+  - icon: "fas fa-globe"
+    color: "#4628A4"
+    title: "Web Application"
+    text: "Modern, fast, and scalable web applications"
+
+  - icon: "fas fa-search"
+    color: "#5FC300"
+    title: "SEO"
+    text: "Grow your online visibility"
+
+  - icon: "fas fa-vr-cardboard"
+    color: "#00329B"
+    title: "AR/VR Solutions"
+    text: "Cutting-edge immersive experiences"
+
+  - icon: "fas fa-mobile-alt"
+    color: "#BB3800"
+    title: "Mobile Applications"
+    text: "Native and cross-platform mobile apps"
+
