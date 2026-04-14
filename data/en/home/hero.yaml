@@ -10,7 +10,7 @@ buttons:
   - label: "Contact"
     link: "contact/"
 
-image: "images/home/hero/hero-engineering.svg"
+image: "images/home/hero/hero.svg"
 
 items:
   - icon: "fas fa-diagram-project"

@@ -1,10 +1,9 @@
 <nav class="z-50 border-b border-black/5 bg-white/90 backdrop-blur-sm">
   <div class="container mx-auto flex items-center justify-between gap-4 px-4 py-5">
-    <a class="flex items-center gap-3 min-w-0" href="{{ site.Home.RelPermalink }}">
+    <a class="flex items-center min-w-0" href="{{ site.Home.RelPermalink }}">
       {{ with site.Params.logo }}
         {{ partial "utilities/image.html" (dict "src" . "class" "h-8 w-auto shrink-0") }}
       {{ end }}
-      <span class="text-primary text-lg font-semibold tracking-tight truncate">{{ .Site.Title }}</span>
     </a>
     <button
       class="cursor-pointer xl:hidden shrink-0"
@@ -16,15 +15,14 @@
       {{ partial "heroicons/bars-4" }}
     </button>
     <div
-      class="fixed inset-0 flex -translate-y-full flex-col items-center justify-center gap-8 bg-white duration-500 xl:relative xl:translate-y-0 xl:flex-row xl:justify-end xl:gap-8 xl:bg-transparent"
+      class="fixed inset-0 flex h-screen min-h-screen -translate-y-full flex-col items-stretch justify-start gap-8 overflow-y-auto bg-white px-4 pb-10 duration-500 xl:relative xl:inset-auto xl:h-auto xl:min-h-0 xl:translate-y-0 xl:flex-row xl:items-center xl:justify-end xl:gap-8 xl:overflow-visible xl:bg-transparent xl:px-0 xl:pt-0 xl:pb-0"
       id="navbarContent"
     >
-      <div class="container absolute top-0 mx-auto flex items-center justify-between px-4 py-6 xl:hidden bg-white border-b border-black/5">
-        <a class="flex items-center gap-3 min-w-0 xl:hidden" href="{{ site.Home.RelPermalink }}">
+      <div class="container sticky top-0 left-0 right-0 z-10 mx-auto flex items-center justify-between px-4 py-6 xl:hidden bg-white border-b border-black/5">
+        <a class="flex items-center min-w-0 xl:hidden" href="{{ site.Home.RelPermalink }}">
           {{ with site.Params.logo }}
             {{ partial "utilities/image.html" (dict "src" . "class" "h-8 w-auto shrink-0") }}
           {{ end }}
-          <span class="text-primary text-lg font-semibold tracking-tight truncate">{{ .Site.Title }}</span>
         </a>
         <button
           class="cursor-pointer xl:hidden shrink-0"
@@ -36,7 +34,7 @@
           {{ partial "heroicons/x-mark" }}
         </button>
       </div>
-      <ul class="flex flex-col gap-6 xl:flex-row xl:items-center xl:gap-8 pt-20 xl:pt-0">
+      <ul class="flex flex-col gap-6 pt-6 xl:flex-row xl:items-center xl:gap-8 xl:pt-0">
         {{ range site.Menus.main }}
           <li class="text-center xl:text-left">
             <a class="text-[#263238] hover:text-primary text-sm font-medium" href="{{ .URL }}">{{ .Name }}</a>
@@ -44,22 +42,29 @@
         {{ end }}
       </ul>
       <div class="flex flex-col xl:flex-row items-center gap-4 xl:gap-3">
-        <div class="hidden xl:flex items-center gap-2 text-xs text-[#6a6a6a] border-l border-black/10 pl-4">
-          <span>{{ i18n "lang_label" }}</span>
-          {{ $p := . }}
-          {{ range site.Languages }}
-            {{ $lang := .Lang }}
-            {{ if eq $lang $p.Language.Lang }}
-              <span class="font-semibold text-primary">{{ .LanguageName }}</span>
-            {{ else }}
-              {{ $tr := index (where $p.Translations "Lang" $lang) 0 }}
-              {{ if $tr }}
-                <a class="hover:text-primary" href="{{ $tr.RelPermalink }}">{{ .LanguageName }}</a>
+        <div class="flex items-center gap-2 text-xs text-[#6a6a6a] xl:border-l xl:border-black/10 xl:pl-4">
+          <label class="shrink-0" for="languageSwitcher">{{ i18n "lang_label" }}</label>
+          <select
+            id="languageSwitcher"
+            class="rounded-md border border-black/10 bg-white px-2 py-1 text-xs text-[#263238] focus:border-primary focus:outline-none"
+            onchange="if (this.value) window.location.href=this.value"
+            aria-label="{{ i18n `lang_label` }}"
+          >
+            {{ $p := . }}
+            {{ range site.Languages }}
+              {{ $lang := .Lang }}
+              {{ $targetURL := printf "/%s/" $lang }}
+              {{ if eq $lang $p.Language.Lang }}
+                {{ $targetURL = $p.RelPermalink }}
               {{ else }}
-                <a class="hover:text-primary" href="/{{ $lang }}/">{{ .LanguageName }}</a>
+                {{ $tr := index (where $p.Translations "Lang" $lang) 0 }}
+                {{ if $tr }}
+                  {{ $targetURL = $tr.RelPermalink }}
+                {{ end }}
               {{ end }}
+              <option value="{{ $targetURL }}" {{ if eq $lang $p.Language.Lang }}selected{{ end }}>{{ .LanguageName }}</option>
             {{ end }}
-          {{ end }}
+          </select>
         </div>
         <a class="bg-primary hover:bg-primary/90 rounded-lg px-8 py-2 text-white text-sm font-medium duration-300" href="{{ `/contact/` | relLangURL }}">{{ i18n "nav_contact" }}</a>
       </div>
