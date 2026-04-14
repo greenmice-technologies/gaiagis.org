@@ -30,13 +30,14 @@
           {{ if .buttons }}
             <div class="flex items-center flex-col xl:flex-row gap-4 mt-4">
               {{ range $i, $e := .buttons }}
+                {{ $href := cond (hasPrefix $e.link "#") $e.link ($e.link | relLangURL) }}
                 {{ if (eq $i 0) }}
-                  {{ partial "components/button/primary" (dict "label" "Scopri di più" "href" "#features")}}
+                  {{ partial "components/button/primary" (dict "label" $e.label "href" $href) }}
                 {{ else }}
                   <a
                     class="rounded-lg border px-10 py-2 duration-300 border-[var(--gm-hero-text-strong)] text-[var(--gm-hero-text-strong)] hover:bg-white/10"
-                    href="{{ .link | relLangURL }}"
-                  >{{ .label }}</a>
+                    href="{{ $href }}"
+                  >{{ $e.label }}</a>
                 {{ end }}
               {{ end }}
             </div>

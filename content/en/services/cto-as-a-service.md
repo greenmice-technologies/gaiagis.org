@@ -1,7 +1,7 @@
 ---
 title: "CTO as a Service"
 description: "Senior technical leadership for architecture, decision-making, and delivery across complex systems."
-translationKey: capabilities-cto
+translationKey: Services-cto
 ---
 
 CTO as a Service is not generic consulting. It is a **defined engagement** with clear scope, cadence, and outcomes: you get senior leadership without hiring a full executive bench before you are ready.

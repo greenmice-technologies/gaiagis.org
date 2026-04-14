@@ -1,7 +1,7 @@
 ---
 title: "Mobile applications"
 description: "Cross-platform mobile applications integrated with enterprise systems, designed for performance and consistency."
-translationKey: capabilities-mobile
+translationKey: Services-mobile
 ---
 
 Mobile products are distributed systems with a UI: release engineering, offline behavior, telemetry, and security matter as much as screens.

@@ -1,7 +1,7 @@
 ---
 title: "System engineering"
 description: "Designing and evolving complex software systems with a focus on scalability, reliability, and long-term maintainability."
-translationKey: capabilities-system-engineering
+translationKey: Services-system-engineering
 ---
 
 We engineer platforms and services that survive organizational change: explicit contracts, strong operational signals, and migration paths that reduce risk instead of hiding it.

@@ -1,6 +1,6 @@
 enable: true
 
-title: "Capabilities"
+title: "Services"
 
 subtitle: "AI systems, system engineering, legacy modernization, mobile applications, and CTO leadership — delivered as engineering, not consultancy."
 
@@ -9,23 +9,11 @@ cta:
   link: "services/"
 
 items:
-  - title: "System engineering"
-    text: "Designing and evolving complex software systems with a focus on scalability, reliability, and long-term maintainability."
-    button:
-      label: "Explore service"
-      link: "services/system-engineering/"
-
   - title: "Mobile applications"
     text: "Cross-platform mobile applications integrated with enterprise systems, designed for performance and consistency."
     button:
       label: "Explore service"
       link: "services/mobile-applications/"
-
-  - title: "CTO as a Service"
-    text: "Senior technical leadership for architecture, decision-making, and delivery across complex systems."
-    button:
-      label: "Explore service"
-      link: "services/cto-as-a-service/"
 
   - title: "AI systems"
     text: "Designing and implementing AI-driven systems, automation workflows, and data-driven applications."

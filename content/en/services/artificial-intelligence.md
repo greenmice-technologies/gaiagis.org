@@ -1,7 +1,7 @@
 ---
 title: "AI systems"
 description: "Designing and implementing AI-driven systems, automation workflows, and data-driven applications."
-translationKey: capabilities-ai-systems
+translationKey: Services-ai-systems
 ---
 
 We build AI systems as software engineering problems: clear objectives, explicit failure modes, and governance that matches your risk profile.

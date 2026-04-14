@@ -1,30 +1,20 @@
 enable: true
 
-title: "Stories"
+title: 'Stories'
 
-subtitle: "Selected projects across AI, enterprise systems, mobile applications, and system modernization."
+subtitle: 'Selected projects across AI, enterprise systems, mobile applications, and system modernization.'
 
 cta:
-  label: "All stories"
-  link: "stories/"
+  label: 'All stories'
+  link: 'stories/'
 
 items:
-  - tag: "Luxury retail"
-    title: "AI automation for e-commerce"
-    summary: "AI-driven automation system for large-scale e-commerce content generation in the luxury sector."
-    link: "stories/ecommerce-ai-automation/"
+  - tag: 'Luxury retail'
+    title: 'AI automation for e-commerce'
+    summary: 'AI-driven automation system for large-scale e-commerce content generation in the luxury sector.'
+    link: 'stories/ecommerce-ai-automation/'
 
-  - tag: "Enterprise"
-    title: "Enterprise systems at national scale"
-    summary: "Engineering and evolution of large-scale systems supporting national-level operations and infrastructure."
-    link: "stories/enterprise-systems/"
-
-  - tag: "Mobile"
-    title: "Mobile product engineering"
-    summary: "Design and delivery of mobile applications integrated with complex backend systems."
-    link: "stories/mobile-product-engineering/"
-
-  - tag: "Modernization"
-    title: "Legacy system modernization"
-    summary: "Incremental re-engineering of legacy systems to reduce technical debt and improve scalability."
-    link: "stories/legacy-system-modernization/"
+  - tag: 'Mobile'
+    title: 'Mobile product engineering'
+    summary: 'Design and delivery of mobile applications integrated with complex backend systems.'
+    link: 'stories/mobile-product-engineering/'

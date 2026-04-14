@@ -1,5 +1,5 @@
 ---
-title: "Capabilities"
+title: "Services"
 description: "AI systems, system engineering, legacy modernization, mobile applications, and CTO leadership — delivered as engineering, not consultancy."
 translationKey: services
 menu:

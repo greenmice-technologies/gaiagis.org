@@ -1,12 +1,12 @@
 enable: true
 
-title: "Engineering complex systems.<br/>Designed with precision."
+title: "Complexity<br/>made simple."
 
 text: "AI, system engineering, and software delivery for companies operating in complex environments."
 
 buttons:
-  - label: "Services"
-    link: "services/"
+  - label: "Learn more"
+    link: "#features"
   - label: "Contact"
     link: "contact/"
 

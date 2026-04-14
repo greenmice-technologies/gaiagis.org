@@ -11,10 +11,10 @@
     </div>
     <div class="grid md:grid-cols-2 gap-8">
       {{ range .items }}
-        <a href="{{ .link | relLangURL }}" class="group block rounded-2xl border border-white/25 bg-[var(--gm-surface)] p-8 hover:border-white/50 hover:shadow-md transition-all duration-300">
-          <p class="text-xs font-semibold uppercase tracking-wider text-white/70 mb-3">{{ .tag }}</p>
-          <h3 class="text-xl font-semibold text-white group-hover:text-white/90 transition-colors mb-3">{{ .title }}</h3>
-          <p class="text-white/85 text-sm leading-relaxed">{{ .summary }}</p>
+        <a href="{{ .link | relLangURL }}" class="group block rounded-2xl border border-[var(--gm-border-soft)] bg-[var(--gm-surface)] p-8 hover:border-[var(--gm-text-soft)]/35 hover:shadow-md transition-all duration-300">
+          <p class="text-xs font-semibold uppercase tracking-wider text-[var(--gm-text-soft)] mb-3">{{ .tag }}</p>
+          <h3 class="text-xl font-semibold text-[var(--gm-text-strong)] group-hover:opacity-90 transition-opacity mb-3">{{ .title }}</h3>
+          <p class="text-[var(--gm-text)] text-sm leading-relaxed">{{ .summary }}</p>
         </a>
       {{ end }}
     </div>

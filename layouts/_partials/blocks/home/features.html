@@ -12,8 +12,10 @@
             {{ if .image }}
               {{ partial "utilities/image" (dict "src" .image "class" "aspect-square object-contain object-center w-full max-w-xl rounded-2xl bg-[var(--gm-surface)] p-8")}}
             {{ else }}
-              <div class="aspect-square w-full max-w-xl rounded-2xl border border-primary/10 overflow-hidden flex items-center justify-center bg-cover bg-center" {{ with $patternLines }}style="background-image: url('{{ .RelPermalink }}');"{{ end }}>
-                <i data-lucide="{{ .icon }}" class="js-feature-pattern-icon leading-none size-[22rem] stroke-[1.8]"></i>
+              <div class="aspect-square w-full max-w-xl rounded-2xl border border-primary/10 overflow-hidden flex items-center justify-center p-3 sm:p-4 bg-cover bg-center min-w-0 min-h-0" {{ with $patternLines }}style="background-image: url('{{ .RelPermalink }}');"{{ end }}>
+                <div class="w-full max-w-[22rem] aspect-square shrink-0">
+                  <i data-lucide="{{ .icon }}" class="js-feature-pattern-icon block size-full stroke-[1.8] leading-none"></i>
+                </div>
               </div>
             {{ end }}
           </div>
