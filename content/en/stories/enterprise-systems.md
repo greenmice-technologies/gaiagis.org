@@ -1,6 +1,6 @@
 ---
 title: "Enterprise systems at national scale"
-description: "Integration and modernization programs for large operators and institutions."
+description: "Engineering and evolution of large-scale systems supporting national-level operations and infrastructure."
 translationKey: case-enterprise
 ---
 

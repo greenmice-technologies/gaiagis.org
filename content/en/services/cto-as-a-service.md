@@ -1,6 +1,6 @@
 ---
 title: "CTO as a Service"
-description: "Senior technology leadership embedded with your team: architecture, governance, delivery, and risk—structured like a product."
+description: "Senior technical leadership for architecture, decision-making, and delivery across complex systems."
 translationKey: capabilities-cto
 ---
 

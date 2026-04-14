@@ -1,22 +1,34 @@
 enable: true
 
-title: "Featured services"
+title: "Capabilities"
 
-subtitle: "Selected engagements for leadership, architecture, and delivery."
+subtitle: "AI systems, system engineering, legacy modernization, mobile applications, and CTO leadership — delivered as engineering, not consultancy."
 
 cta:
   label: "All services"
   link: "services/"
 
 items:
-  - title: "CTO as a Service: leadership without hiring overhead"
-    text: "A structured engagement for architecture, delivery governance, vendor alignment, and technical risk management-when you need a senior technology leader embedded with your team."
+  - title: "System engineering"
+    text: "Designing and evolving complex software systems with a focus on scalability, reliability, and long-term maintainability."
     button:
-      label: "Explore the offering"
+      label: "Explore service"
+      link: "services/system-engineering/"
+
+  - title: "Mobile applications"
+    text: "Cross-platform mobile applications integrated with enterprise systems, designed for performance and consistency."
+    button:
+      label: "Explore service"
+      link: "services/mobile-applications/"
+
+  - title: "CTO as a Service"
+    text: "Senior technical leadership for architecture, decision-making, and delivery across complex systems."
+    button:
+      label: "Explore service"
       link: "services/cto-as-a-service/"
 
-  - title: "Greenmice Geosolutions"
-    text: "Our spin-off focuses on GIS engineering, spatial platforms, and aeronautical systems-with deep collaboration across infrastructure, energy, and aviation."
+  - title: "AI systems"
+    text: "Designing and implementing AI-driven systems, automation workflows, and data-driven applications."
     button:
-      label: "Visit Geosolutions"
-      link: "geosolutions/"
+      label: "Explore service"
+      link: "services/artificial-intelligence/"

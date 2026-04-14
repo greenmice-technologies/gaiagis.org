@@ -1,6 +1,6 @@
 ---
 title: "Contact"
-description: "Start a conversation about architecture, delivery, or a CTO engagement."
+description: "Start a conversation about architecture, system evolution, or CTO-level engagement."
 translationKey: contact
 menu:
   main:

@@ -1,6 +1,6 @@
 ---
 title: "Stories"
-description: "Selected engineering stories with problem framing, solution shape, architecture notes, and impact."
+description: "Selected projects across AI, enterprise systems, mobile applications, and system modernization."
 translationKey: stories
 menu:
   main:

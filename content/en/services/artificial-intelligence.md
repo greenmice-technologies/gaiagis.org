@@ -1,6 +1,6 @@
 ---
 title: "AI systems"
-description: "Agentic workflows, retrieval, evaluation, and safe integration with enterprise tools."
+description: "Designing and implementing AI-driven systems, automation workflows, and data-driven applications."
 translationKey: capabilities-ai-systems
 ---
 

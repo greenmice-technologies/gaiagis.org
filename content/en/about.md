@@ -1,6 +1,6 @@
 ---
 title: "About"
-description: "A senior engineering company built for complexity, clarity, and long-term ownership."
+description: "A senior engineering company focused on building and evolving complex systems with clarity, precision, and long-term ownership."
 translationKey: about
 menu:
   main:

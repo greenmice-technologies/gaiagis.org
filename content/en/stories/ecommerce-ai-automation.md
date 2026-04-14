@@ -1,6 +1,6 @@
 ---
 title: "AI automation for e-commerce"
-description: "Automation for luxury retail operations with strict quality and brand controls."
+description: "AI-driven automation system for large-scale e-commerce content generation in the luxury sector."
 translationKey: case-luxury-ecommerce
 ---
 

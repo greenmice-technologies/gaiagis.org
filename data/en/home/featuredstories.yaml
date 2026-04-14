@@ -1,8 +1,8 @@
 enable: true
 
-title: "Featured stories"
+title: "Stories"
 
-subtitle: "Concrete outcomes in automation, enterprise systems, and data-intensive products."
+subtitle: "Selected projects across AI, enterprise systems, mobile applications, and system modernization."
 
 cta:
   label: "All stories"
@@ -10,11 +10,21 @@ cta:
 
 items:
   - tag: "Luxury retail"
-    title: "Brioni: AI automation for e-commerce operations"
-    summary: "Automation that reduced manual workload while preserving brand-grade quality controls across catalog and fulfillment workflows."
+    title: "AI automation for e-commerce"
+    summary: "AI-driven automation system for large-scale e-commerce content generation in the luxury sector."
     link: "stories/ecommerce-ai-automation/"
 
   - tag: "Enterprise"
     title: "Enterprise systems at national scale"
-    summary: "Integration and modernization programs aligned to uptime, compliance, and long-term maintainability for large operators and institutions."
+    summary: "Engineering and evolution of large-scale systems supporting national-level operations and infrastructure."
     link: "stories/enterprise-systems/"
+
+  - tag: "Mobile"
+    title: "Mobile product engineering"
+    summary: "Design and delivery of mobile applications integrated with complex backend systems."
+    link: "stories/mobile-product-engineering/"
+
+  - tag: "Modernization"
+    title: "Legacy system modernization"
+    summary: "Incremental re-engineering of legacy systems to reduce technical debt and improve scalability."
+    link: "stories/legacy-system-modernization/"

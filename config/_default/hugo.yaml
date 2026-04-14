@@ -23,7 +23,7 @@ languages:
     weight: 1
     contentDir: content/en
     params:
-      description: "Engineering partner for complex systems, AI platforms, and legacy modernization. CTO as a Service."
+      description: "AI, system engineering, and software delivery for companies operating in complex environments."
   it:
     languageName: Italiano
     languageCode: it

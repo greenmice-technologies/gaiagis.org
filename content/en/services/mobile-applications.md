@@ -1,6 +1,6 @@
 ---
 title: "Mobile applications"
-description: "Cross-platform and native delivery with the same engineering standards as backend systems."
+description: "Cross-platform mobile applications integrated with enterprise systems, designed for performance and consistency."
 translationKey: capabilities-mobile
 ---
 
