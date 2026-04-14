@@ -1,34 +1,34 @@
 enable: true
 
-title: "Complexity<br/>made simple."
+title: 'Complexity<br/>made simple.'
 
-text: "AI, system engineering, and software delivery for companies operating in complex environments."
+text: 'AI, system engineering, and software delivery for companies operating in complex environments.'
 
 buttons:
-  - label: "Learn more"
-    link: "#features"
-  - label: "Contact"
-    link: "contact/"
+  - label: 'Learn more'
+    link: '#features'
+  - label: 'Contact'
+    link: 'contact/'
 
-image: "images/home/hero/hero.svg"
+image: 'images/home/hero/hero.svg'
 
 items:
-  - icon: "git-branch"
-    color: "#1FA463"
-    title: "System thinking"
-    text: "End-to-end design from constraints to production."
+  - icon: 'git-branch'
+    color: '#1FA463'
+    title: 'System thinking'
+    text: 'End-to-end design from constraints to production.'
 
-  - icon: "shield"
-    color: "#1FA463"
-    title: "Operational rigor"
-    text: "Security, observability, and maintainability by default."
+  - icon: 'shield'
+    color: '#1FA463'
+    title: 'Operational rigor'
+    text: 'Security, observability, and maintainability by default.'
 
-  - icon: "layers-3"
-    color: "#1FA463"
-    title: "Complexity under control"
-    text: "Clear boundaries, explicit interfaces, measurable outcomes."
+  - icon: 'layers-3'
+    color: '#1FA463'
+    title: 'Complexity under control'
+    text: 'Clear boundaries, explicit interfaces, measurable outcomes.'
 
-  - icon: "compass"
-    color: "#1FA463"
-    title: "Italian clarity"
-    text: "Precision in communication and craft—without noise."
+  - icon: 'compass'
+    color: '#1FA463'
+    title: 'Italian design'
+    text: 'Attention to detail and precision in execution, applied to complex systems.'
