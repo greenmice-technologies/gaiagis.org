@@ -1,7 +1,6 @@
 ---
-title: Di
-description: Una società di ingegneria senior creata per complessità, chiarezza e
-  proprietà a lungo termine.
+title: "About"
+description: "A senior engineering company built for complexity, clarity, and long-term ownership."
 translationKey: about
 menu:
   main:
@@ -11,16 +10,36 @@ menu:
     identifier: about
     weight: 20
 ---
-Greenmice Technologies è una società di ingegneria, non un negozio di marketing. Per circa dieci anni abbiamo aiutato le aziende e le organizzazioni di prodotto a fornire sistemi in cui l'architettura, l'affidabilità e la disciplina di consegna contano.
 
-Abbiamo sede in Italia e lavoriamo con clienti di settori regolamentati e operatori su larga scala. La nostra inclinazione è verso il **pensiero sistemico**: confini espliciti, standard di qualità misurabili e software che possono evolversi senza trasformarsi in un progetto di riscrittura.
+Greenmice Technologies is an engineering company—not a marketing shop. For roughly ten years we have helped enterprises and product organizations ship systems where architecture, reliability, and delivery discipline matter.
 
-### Per cosa ottimizziamo
+We are headquartered in Italy and work with clients across regulated industries and large-scale operators. Our bias is toward **system thinking**: explicit boundaries, measurable quality bars, and software that can evolve without turning into a rewrite project.
 
-- **Gestione della complessità**: trasformare requisiti ambigui in progetti stabili.
-- **Affidabilità**: operabilità, osservabilità e manutenibilità come risultati di prima classe.
-- **Artigianato**: la cultura del design italiano si manifesta nella precisione nella comunicazione, nelle interfacce e nei dettagli tecnici, non nella decorazione.
+### What we optimize for
 
-### Come lavoriamo
+- **Complexity management**: turning ambiguous requirements into stable designs.
+- **Reliability**: operability, observability, and maintainability as first-class outcomes.
+- **Craft**: Italian design culture shows up as precision in communication, interfaces, and engineering detail—not decoration.
 
-Piccoli team senior, accesso diretto agli ingegneri e avversione per processi non necessari. Ci integriamo con i tuoi stakeholder, allineiamo gli incentivi ai risultati e documentiamo le decisioni laddove contano.
+### How we work
+
+Small senior teams, direct access to engineers, and an aversion to unnecessary process. We integrate with your stakeholders, align incentives with outcomes, and document decisions where they matter.
+
+
+Our approach is built for environments where “move fast and break things” is not an option. We combine strong architecture with incremental delivery so teams see progress without gambling production stability.
+
+### Discovery that respects reality
+
+We start from constraints: regulation, uptime, data residency, vendor ecosystems, and team skills. The goal is a shared map of risks—not a slide deck of promises.
+
+### Architecture before churn
+
+We define integration points, contracts, and failure modes early. The output is an architecture that can be built in slices: strangler patterns, bounded contexts, and explicit interfaces.
+
+### Delivery in slices
+
+We ship vertical increments with measurable value: automation that removes toil, services that reduce coupling, and instrumentation that makes incidents diagnosable.
+
+### Handover that lasts
+
+Documentation, runbooks, and training are part of delivery—not a post-launch afterthought.

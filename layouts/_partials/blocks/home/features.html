@@ -1,9 +1,14 @@
 <section id="features" class="features relative py-12 xl:py-24 overflow-hidden">
+  {{ $patternAssets := resources.Match "blowfish/patterns/*.svg" }}
+  {{ $patterns := slice }}
+  {{ range $patternAssets }}
+    {{ $patterns = $patterns | append .RelPermalink }}
+  {{ end }}
+  {{ $patternsData := delimit $patterns "|" }}
   <div class="container mx-auto px-4 mb-12 xl:mb-16">
     <h2 class="xl:max-w-2/3 mx-auto text-center text-[#1a1a1a] font-semibold text-3xl xl:text-4xl leading-tight mb-4">{{ .title }}</h2>
     <p class="xl:max-w-2/3 mx-auto text-center text-[#5a5a5a] text-lg">{{ .text }}</p>
   </div>
-
   <div class="flex flex-col gap-16 xl:gap-24">
     {{ range $i, $e := .items }}
       <div class="container mx-auto px-4">
@@ -12,7 +17,7 @@
             {{ if .image }}
               {{ partial "utilities/image" (dict "src" .image "class" "aspect-square object-contain object-center w-full max-w-md rounded-2xl bg-[#F5F7F6] p-8")}}
             {{ else }}
-              <div class="aspect-square w-full max-w-md rounded-2xl bg-primary/5 border border-primary/10 flex items-center justify-center">
+              <div class="js-random-pattern aspect-square w-full max-w-md rounded-2xl bg-primary/5 border border-primary/10 flex items-center justify-center bg-cover bg-center" data-patterns="{{ $patternsData }}" data-brand-primary="{{ site.Params.colors.primary }}" data-brand-secondary="{{ site.Params.colors.secondary }}" data-brand-background="{{ site.Params.colors.background }}">
                 <i class="{{ .icon }} text-6xl text-primary/40"></i>
               </div>
             {{ end }}
@@ -35,3 +40,27 @@
     {{ end }}
   </div>
 </section>
+<script>
+  (() => {
+    const pickStablePattern = (patterns, key) => {
+      if (!patterns.length) return "";
+      let hash = 0;
+      for (const ch of key) hash = (hash * 31 + ch.charCodeAt(0)) >>> 0;
+      return patterns[hash % patterns.length];
+    };
+    const placeholders = document.querySelectorAll(".js-random-pattern");
+    if (!placeholders.length) return;
+    const raw = placeholders[0].dataset.patterns || "";
+    const patterns = raw.split("|").filter(Boolean);
+    placeholders.forEach((placeholder, idx) => {
+      const stablePattern = pickStablePattern(patterns, `features-${idx}`);
+      if (!stablePattern) return;
+      const primary = placeholder.dataset.brandPrimary || "#1FA463";
+      const secondary = placeholder.dataset.brandSecondary || "#263238";
+      const background = placeholder.dataset.brandBackground || "#F5F7F6";
+      placeholder.style.backgroundColor = background;
+      placeholder.style.backgroundBlendMode = "screen, multiply, normal";
+      placeholder.style.backgroundImage = `linear-gradient(145deg, ${primary}33 0%, ${secondary}26 100%), linear-gradient(0deg, ${background}D9, ${background}D9), url('${stablePattern}')`;
+    });
+  })();
+</script>

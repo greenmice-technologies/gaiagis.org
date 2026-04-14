@@ -1,10 +1,9 @@
 {{ define "main" }}
-  {{ $root := index site.Data site.Language.Lang }}
-  {{ if not $root }}{{ $root = index site.Data "en" }}{{ end }}
-  {{ $home := $root.home }}
-  {{ with $home.hero }}{{ if .enable }}{{ partial "blocks/home/hero" . }}{{ end }}{{ end }}
-  {{ with $home.features }}{{ if .enable }}{{ partial "blocks/home/features" . }}{{ end }}{{ end }}
-  {{ with $home.casepreviews }}{{ if .enable }}{{ partial "blocks/home/case-previews" . }}{{ end }}{{ end }}
-  {{ with $home.highlights }}{{ if .enable }}{{ partial "blocks/home/highlights" . }}{{ end }}{{ end }}
-  {{ with $home.clients }}{{ if .enable }}{{ partial "blocks/home/clients" . }}{{ end }}{{ end }}
+{{ $root := index site.Data site.Language.Lang }}
+{{ if not $root }}{{ $root = index site.Data "en" }}{{ end }}
+{{ $home := $root.home }}
+{{ with $home.hero }}{{ if .enable }}{{ partial "blocks/home/hero" . }}{{ end }}{{ end }}
+{{ with $home.features }}{{ if .enable }}{{ partial "blocks/home/features" . }}{{ end }}{{ end }}
+{{ with $home.casepreviews }}{{ if .enable }}{{ partial "blocks/home/case-previews" . }}{{ end }}{{ end }}
+{{ with $home.highlights }}{{ if .enable }}{{ partial "blocks/home/highlights" . }}{{ end }}{{ end }}
 {{ end }}

@@ -1,6 +1,6 @@
 ---
-title: 接触
-description: アーキテクチャ、デリバリー、または CTO との関わりについて会話を始めましょう。
+title: "Contact"
+description: "Start a conversation about architecture, delivery, or a CTO engagement."
 translationKey: contact
 menu:
   main:

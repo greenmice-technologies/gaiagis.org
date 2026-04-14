@@ -1,7 +1,6 @@
 ---
-title: Geosoluciones de ratones verdes
-description: Nuestra spin-off para ingeniería GIS, plataformas espaciales y sistemas
-  aeronáuticos.
+title: "Greenmice Geosolutions"
+description: "Our spin-off for GIS engineering, spatial platforms, and aeronautical systems."
 translationKey: geosolutions-bridge
 menu:
   main:

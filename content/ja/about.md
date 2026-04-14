@@ -1,6 +1,6 @@
 ---
-title: について
-description: 複雑さ、明確さ、長期的な所有権を目指して設立されたシニア エンジニアリング会社です。
+title: "About"
+description: "A senior engineering company built for complexity, clarity, and long-term ownership."
 translationKey: about
 menu:
   main:
@@ -10,16 +10,36 @@ menu:
     identifier: about
     weight: 20
 ---
-Greenmice Technologies はエンジニアリング会社であり、マーケティング会社ではありません。約 10 年間、私たちは企業や製品組織がアーキテクチャ、信頼性、配信規律が重要となるシステムを出荷するのを支援してきました。
 
-当社はイタリアに本社を置き、規制対象の業界や大規模事業者のクライアントと協力しています。私たちの偏見は**システム思考**、つまり明確な境界、測定可能な品質基準、書き換えプロジェクトにならずに進化できるソフトウェアです。
+Greenmice Technologies is an engineering company—not a marketing shop. For roughly ten years we have helped enterprises and product organizations ship systems where architecture, reliability, and delivery discipline matter.
 
-### 最適化の目的
+We are headquartered in Italy and work with clients across regulated industries and large-scale operators. Our bias is toward **system thinking**: explicit boundaries, measurable quality bars, and software that can evolve without turning into a rewrite project.
 
-- **複雑さの管理**: 曖昧な要件を安定した設計に変換します。
-- **信頼性**: 操作性、可観測性、保守性が第一級の成果です。
-- **クラフト**: イタリアのデザイン文化は、装飾ではなく、コミュニケーション、インターフェイス、エンジニアリングの細部の正確さとして現れます。
+### What we optimize for
 
-### 私たちの働き方
+- **Complexity management**: turning ambiguous requirements into stable designs.
+- **Reliability**: operability, observability, and maintainability as first-class outcomes.
+- **Craft**: Italian design culture shows up as precision in communication, interfaces, and engineering detail—not decoration.
 
-小規模な上級チーム、エンジニアへの直接アクセス、不必要なプロセスの嫌悪。私たちは関係者と連携し、インセンティブと成果を調整し、重要な意思決定を文書化します。
+### How we work
+
+Small senior teams, direct access to engineers, and an aversion to unnecessary process. We integrate with your stakeholders, align incentives with outcomes, and document decisions where they matter.
+
+
+Our approach is built for environments where “move fast and break things” is not an option. We combine strong architecture with incremental delivery so teams see progress without gambling production stability.
+
+### Discovery that respects reality
+
+We start from constraints: regulation, uptime, data residency, vendor ecosystems, and team skills. The goal is a shared map of risks—not a slide deck of promises.
+
+### Architecture before churn
+
+We define integration points, contracts, and failure modes early. The output is an architecture that can be built in slices: strangler patterns, bounded contexts, and explicit interfaces.
+
+### Delivery in slices
+
+We ship vertical increments with measurable value: automation that removes toil, services that reduce coupling, and instrumentation that makes incidents diagnosable.
+
+### Handover that lasts
+
+Documentation, runbooks, and training are part of delivery—not a post-launch afterthought.

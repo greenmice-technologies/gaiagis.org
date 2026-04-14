@@ -1,13 +1,26 @@
-<section id="hero" class="hero relative py-8 xl:py-20 overflow-hidden bg-[var(--brand-bg)]">
-  <div class="text-primary/30 absolute right-0 translate-x-[90%] top-1/2 -translate-y-1/2 -z-10 hidden xl:block">
-    {{ partial "utilities/svg" (dict "src" "images/hero/bg-blob-1.svg")}}
-  </div>
-  <div class="text-primary/20 absolute left-0 -translate-x-[90%] bottom-0 -z-10 hidden xl:block">
-    {{ partial "utilities/svg" (dict "src" "images/hero/bg-blob-2.svg")}}
-  </div>
-  <div class="container mx-auto px-4">
-    <div class="grid xl:grid-cols-2 gap-12 mb-16">
-      <div class="flex flex-col justify-center gap-6">
+{{ $heroAssets := resources.Match "images/blowfish/heroes/*.svg" }}
+{{ if eq (len $heroAssets) 0 }}
+  {{ $heroAssets = resources.Match "blowfish/heroes/*.svg" }}
+{{ end }}
+{{ $heroBackgrounds := slice }}
+{{ range $heroAssets }}
+  {{ $heroBackgrounds = $heroBackgrounds | append .RelPermalink }}
+{{ end }}
+{{ if and (eq (len $heroBackgrounds) 0) .image }}
+  {{ $heroBackgrounds = $heroBackgrounds | append (.image | relURL) }}
+{{ end }}
+
+<section
+  id="hero"
+  class="hero relative min-h-[70vh] overflow-hidden bg-[var(--brand-bg)] bg-cover bg-center bg-no-repeat bg-scroll py-8 md:min-h-[78vh] md:bg-fixed xl:min-h-[82vh] xl:py-20"
+  data-hero-backgrounds="{{ delimit $heroBackgrounds `|` }}"
+  {{ if gt (len $heroBackgrounds) 0 }}style="background-image: url('{{ index $heroBackgrounds 0 }}');"{{ end }}
+>
+  <div class="absolute inset-0 -z-10 bg-gradient-to-b from-white/96 via-white/90 to-[var(--brand-bg)]/96"></div>
+  <div class="absolute inset-0 -z-10 bg-gradient-to-r from-white/75 via-white/35 to-white/65"></div>
+  <div class="container mx-auto flex h-full min-h-[inherit] flex-col justify-between px-4">
+    <div class="grid gap-12 mb-16">
+      <div class="flex flex-col justify-center gap-6 rounded-2xl border border-white/60 bg-white/78 p-6 shadow-lg backdrop-blur-md xl:max-w-3xl xl:p-8">
         {{ with .title }}
           <h1 class="markdown-title text-center xl:text-start text-4xl xl:text-6xl font-semibold xl:leading-tight tracking-tight text-[#1a1a1a]">{{ . | markdownify }}</h1>
         {{ end }}
@@ -26,16 +39,11 @@
           </div>
         {{ end }}
       </div>
-      <div class="flex flex-col justify-center items-center">
-        {{ with .image }}
-          {{ partial "utilities/image" (dict "src" . "class" "object-cover object-center max-h-[420px] w-auto rounded-2xl shadow-sm")}}
-        {{ end }}
-      </div>
     </div>
     {{ if .items }}
-      <div class="grid sm:grid-cols-2 xl:grid-cols-4 gap-8 pt-8 border-t border-black/5">
+      <div class="grid box-content gap-4 pt-8 sm:grid-cols-2 xl:grid-cols-4 xl:gap-6">
         {{ range .items }}
-          <div class="flex items-start gap-4">
+          <div class="flex items-start gap-4 rounded-xl border border-white/60 bg-white/72 p-4 shadow-sm backdrop-blur-sm">
             <div class="flex items-center justify-center text-xl text-primary bg-primary/10 size-14 rounded-xl shrink-0">
               <i class="{{ .icon }}"></i>
             </div>
@@ -49,3 +57,14 @@
     {{ end }}
   </div>
 </section>
+<script>
+  (() => {
+    const hero = document.getElementById("hero");
+    if (!hero) return;
+    const raw = hero.dataset.heroBackgrounds || "";
+    const backgrounds = raw.split("|").filter(Boolean);
+    if (!backgrounds.length) return;
+    const randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+    hero.style.backgroundImage = `url('${randomBackground}')`;
+  })();
+</script>

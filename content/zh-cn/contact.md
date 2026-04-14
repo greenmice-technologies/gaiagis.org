@@ -1,6 +1,6 @@
 ---
-title: 接触
-description: 开始有关架构、交付或 CTO 参与的对话。
+title: "Contact"
+description: "Start a conversation about architecture, delivery, or a CTO engagement."
 translationKey: contact
 menu:
   main:

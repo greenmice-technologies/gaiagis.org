@@ -1,4 +1,4 @@
-<nav class="z-50 border-b border-black/5 bg-white/90 backdrop-blur-sm">
+<nav class="sticky top-0 z-50 border-b border-black/5 bg-white/90 backdrop-blur-sm">
   <div class="container mx-auto flex items-center justify-between gap-4 px-4 py-5">
     <a class="flex items-center min-w-0" href="{{ site.Home.RelPermalink }}">
       {{ with site.Params.logo }}
@@ -43,7 +43,6 @@
       </ul>
       <div class="flex flex-col xl:flex-row items-center gap-4 xl:gap-3">
         <div class="flex items-center gap-2 text-xs text-[#6a6a6a] xl:border-l xl:border-black/10 xl:pl-4">
-          <label class="shrink-0" for="languageSwitcher">{{ i18n "lang_label" }}</label>
           <select
             id="languageSwitcher"
             class="rounded-md border border-black/10 bg-white px-2 py-1 text-xs text-[#263238] focus:border-primary focus:outline-none"
@@ -66,7 +65,6 @@
             {{ end }}
           </select>
         </div>
-        <a class="bg-primary hover:bg-primary/90 rounded-lg px-8 py-2 text-white text-sm font-medium duration-300" href="{{ `/contact/` | relLangURL }}">{{ i18n "nav_contact" }}</a>
       </div>
     </div>
   </div>

@@ -1,7 +1,6 @@
 ---
-title: Greenmice Geosolutions
-description: Il nostro spin-off per l'ingegneria GIS, piattaforme spaziali e sistemi
-  aeronautici.
+title: "Greenmice Geosolutions"
+description: "Our spin-off for GIS engineering, spatial platforms, and aeronautical systems."
 translationKey: geosolutions-bridge
 menu:
   main:

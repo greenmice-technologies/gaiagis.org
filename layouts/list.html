@@ -1,7 +1,22 @@
 {{ define "main" }}
-  <section class="py-14 xl:py-20">
-    <header class="container mx-auto px-4 mb-12">
-      <div class="max-w-3xl mx-auto text-center xl:text-start">
+  {{ $heroAssets := resources.Match "images/blowfish/heroes/*.svg" }}
+  {{ if eq (len $heroAssets) 0 }}
+    {{ $heroAssets = resources.Match "blowfish/heroes/*.svg" }}
+  {{ end }}
+  {{ $heroBackgrounds := slice }}
+  {{ range $heroAssets }}
+    {{ $heroBackgrounds = $heroBackgrounds | append .RelPermalink }}
+  {{ end }}
+  <section
+    id="list-hero"
+    class="relative min-h-[30vh] max-h-[33vh] overflow-hidden bg-[var(--brand-bg)] bg-cover bg-center bg-no-repeat py-10 xl:py-14"
+    data-hero-backgrounds="{{ delimit $heroBackgrounds `|` }}"
+    {{ if gt (len $heroBackgrounds) 0 }}style="background-image: url('{{ index $heroBackgrounds 0 }}');"{{ end }}
+  >
+    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-white/95 via-white/90 to-[var(--brand-bg)]/95"></div>
+    <div class="absolute inset-0 -z-10 bg-gradient-to-r from-white/70 via-white/30 to-white/60"></div>
+    <div class="container mx-auto flex min-h-[inherit] items-center px-4">
+      <div class="w-full max-w-3xl rounded-2xl border border-white/60 bg-white/78 p-6 text-center shadow-lg backdrop-blur-md xl:p-8 xl:text-start">
         {{ with .Title }}
           <h1 class="text-4xl xl:text-5xl font-semibold tracking-tight text-[#1a1a1a] mb-4">{{ . | markdownify }}</h1>
         {{ end }}
@@ -9,7 +24,10 @@
           <p class="text-lg text-[#5a5a5a] leading-relaxed">{{ . }}</p>
         {{ end }}
       </div>
-    </header>
+    </div>
+  </section>
+
+  <section class="py-14 xl:py-20">
 
     {{ if .Content }}
       <div class="container mx-auto px-4 mb-14">
@@ -36,4 +54,15 @@
       {{ partial "pagination" . }}
     </div>
   </section>
+  <script>
+    (() => {
+      const hero = document.getElementById("list-hero");
+      if (!hero) return;
+      const raw = hero.dataset.heroBackgrounds || "";
+      const backgrounds = raw.split("|").filter(Boolean);
+      if (!backgrounds.length) return;
+      const randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
+      hero.style.backgroundImage = `url('${randomBackground}')`;
+    })();
+  </script>
 {{ end }}

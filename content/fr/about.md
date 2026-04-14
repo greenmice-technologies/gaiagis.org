@@ -1,7 +1,6 @@
 ---
-title: À propos
-description: Une société d'ingénierie de haut niveau conçue pour la complexité, la
-  clarté et la propriété à long terme.
+title: "About"
+description: "A senior engineering company built for complexity, clarity, and long-term ownership."
 translationKey: about
 menu:
   main:
@@ -11,16 +10,36 @@ menu:
     identifier: about
     weight: 20
 ---
-Greenmice Technologies est une société d'ingénierie et non une boutique de marketing. Depuis environ dix ans, nous aidons les entreprises et les organisations de produits à livrer des systèmes où l'architecture, la fiabilité et la discipline de livraison comptent.
 
-Nous avons notre siège social en Italie et travaillons avec des clients issus de secteurs réglementés et d'opérateurs à grande échelle. Notre parti pris est la **pensée systémique** : des limites explicites, des barres de qualité mesurables et des logiciels qui peuvent évoluer sans se transformer en un projet de réécriture.
+Greenmice Technologies is an engineering company—not a marketing shop. For roughly ten years we have helped enterprises and product organizations ship systems where architecture, reliability, and delivery discipline matter.
 
-### Ce pour quoi nous optimisons
+We are headquartered in Italy and work with clients across regulated industries and large-scale operators. Our bias is toward **system thinking**: explicit boundaries, measurable quality bars, and software that can evolve without turning into a rewrite project.
 
-- **Gestion de la complexité** : transformer des exigences ambiguës en conceptions stables.
-- **Fiabilité** : opérabilité, observabilité et maintenabilité comme résultats de premier ordre.
-- **Craft** : la culture du design italien se manifeste par la précision dans la communication, les interfaces et les détails techniques, et non par la décoration.
+### What we optimize for
 
-### Comment nous travaillons
+- **Complexity management**: turning ambiguous requirements into stable designs.
+- **Reliability**: operability, observability, and maintainability as first-class outcomes.
+- **Craft**: Italian design culture shows up as precision in communication, interfaces, and engineering detail—not decoration.
 
-Petites équipes de direction, accès direct aux ingénieurs et aversion pour les processus inutiles. Nous nous intégrons à vos parties prenantes, alignons les incitations sur les résultats et documentons les décisions là où elles comptent.
+### How we work
+
+Small senior teams, direct access to engineers, and an aversion to unnecessary process. We integrate with your stakeholders, align incentives with outcomes, and document decisions where they matter.
+
+
+Our approach is built for environments where “move fast and break things” is not an option. We combine strong architecture with incremental delivery so teams see progress without gambling production stability.
+
+### Discovery that respects reality
+
+We start from constraints: regulation, uptime, data residency, vendor ecosystems, and team skills. The goal is a shared map of risks—not a slide deck of promises.
+
+### Architecture before churn
+
+We define integration points, contracts, and failure modes early. The output is an architecture that can be built in slices: strangler patterns, bounded contexts, and explicit interfaces.
+
+### Delivery in slices
+
+We ship vertical increments with measurable value: automation that removes toil, services that reduce coupling, and instrumentation that makes incidents diagnosable.
+
+### Handover that lasts
+
+Documentation, runbooks, and training are part of delivery—not a post-launch afterthought.

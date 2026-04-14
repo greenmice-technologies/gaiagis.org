@@ -1,5 +1,6 @@
 @layer base {
   :root {
+    --brand-primary: {{ site.Params.colors.primary }};
     --brand-bg: {{ site.Params.colors.background }};
     --brand-ink: {{ site.Params.colors.secondary }};
   }

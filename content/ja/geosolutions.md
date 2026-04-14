@@ -1,6 +1,6 @@
 ---
-title: Greenmice ジオソリューションズ
-description: GIS エンジニアリング、空間プラットフォーム、航空システムのスピンオフです。
+title: "Greenmice Geosolutions"
+description: "Our spin-off for GIS engineering, spatial platforms, and aeronautical systems."
 translationKey: geosolutions-bridge
 menu:
   main:

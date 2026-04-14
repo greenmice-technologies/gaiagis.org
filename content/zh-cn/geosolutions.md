@@ -1,6 +1,6 @@
 ---
-title: 绿鼠地理解决方案
-description: 我们的 GIS 工程、空间平台和航空系统的衍生产品。
+title: "Greenmice Geosolutions"
+description: "Our spin-off for GIS engineering, spatial platforms, and aeronautical systems."
 translationKey: geosolutions-bridge
 menu:
   main:
