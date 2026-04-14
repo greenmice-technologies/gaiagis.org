@@ -19,7 +19,7 @@
   <div class="container mx-auto flex h-full min-h-[inherit] items-center px-4">
     <div class="grid w-full gap-8 xl:grid-cols-[minmax(0,1fr)_auto] xl:items-stretch xl:gap-12 2xl:max-w-7xl 2xl:mx-auto">
       <div>
-        <div class="flex h-full flex-col justify-center gap-6 rounded-2xl border border-[var(--gm-hero-overlay-border)] p-6 shadow-lg xl:p-8" style="background-color: var(--gm-hero-card-bg);">
+        <div class="hero-solid-card flex h-full flex-col justify-center gap-6 rounded-2xl border border-[var(--gm-hero-overlay-border)] p-6 shadow-lg xl:p-8">
           {{ with .title }}
             <h1 class="markdown-title text-center xl:text-start text-4xl xl:text-6xl font-semibold xl:leading-tight tracking-tight text-[var(--gm-hero-text-strong)]">{{ . | markdownify }}</h1>
           {{ end }}
@@ -45,11 +45,12 @@
 
       {{ if .items }}
         <div class="xl:w-[clamp(22rem,36vw,34rem)] xl:border-l xl:border-[var(--gm-hero-overlay-border)] xl:pl-10 xl:flex xl:flex-col">
-          <div class="grid box-content gap-5 sm:grid-cols-2 xl:grid-cols-2 xl:auto-rows-fr xl:h-full">
+          <div>
+            <div class="grid box-content gap-5 sm:grid-cols-2 xl:grid-cols-2 xl:grid-rows-2 xl:h-full">
             {{ range .items }}
-              <div class="flex h-full min-h-0 flex-col items-center gap-4 overflow-hidden rounded-xl border border-[var(--gm-hero-overlay-border)] p-5 xl:p-6 shadow-sm xl:aspect-square" style="background-color: var(--gm-hero-card-bg);">
+              <div class="hero-solid-card flex h-full min-h-0 flex-col items-center gap-4 overflow-hidden rounded-xl border border-[var(--gm-hero-overlay-border)] p-5 xl:p-6 shadow-sm">
                 <div class="flex items-center justify-center text-xl text-primary bg-primary/10 size-16 rounded-xl shrink-0 self-center">
-                  <i class="{{ .icon }}"></i>
+                  <i data-lucide="{{ .icon }}" class="size-8 stroke-2"></i>
                 </div>
                 <div class="inline-flex min-w-0 flex-col gap-1 text-center">
                   <h2 class="text-base font-semibold text-[var(--gm-hero-text-strong)]">{{ .title }}</h2>
@@ -57,6 +58,7 @@
                 </div>
               </div>
             {{ end }}
+            </div>
           </div>
         </div>
       {{ end }}

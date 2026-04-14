@@ -13,22 +13,22 @@ buttons:
 image: "images/home/hero/hero.svg"
 
 items:
-  - icon: "fas fa-diagram-project"
+  - icon: "git-branch"
     color: "#1FA463"
     title: "Pensiero di sistema"
     text: "Progettazione end-to-end dai vincoli alla produzione."
 
-  - icon: "fas fa-shield-halved"
+  - icon: "shield"
     color: "#1FA463"
     title: "Rigore operativo"
     text: "Sicurezza, osservabilità e manutenibilità come standard."
 
-  - icon: "fas fa-layer-group"
+  - icon: "layers-3"
     color: "#1FA463"
     title: "Complessità sotto controllo"
     text: "Confini chiari, interfacce esplicite, risultati misurabili."
 
-  - icon: "fas fa-compass-drafting"
+  - icon: "compass"
     color: "#1FA463"
     title: "Chiarezza italiana"
     text: "Precisione nella comunicazione e nel craft—senza rumore."

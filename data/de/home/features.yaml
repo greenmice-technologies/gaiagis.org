@@ -6,7 +6,7 @@ items:
 - pretitle: KI und Plattformen
   pretext: Agenten, Automatisierung, Daten
   color: '#1FA463'
-  icon: fas fa-brain
+  icon: brain
   title: Agentische KI, MCP und Unternehmensintegration
   text: 'Wir bauen KI-Systeme, die sich sicher mit Ihren Tools verbinden: Orchestrierung,
     Abruf, Auswertung und Governance – damit die Automatisierung skaliert, ohne anfällig
@@ -14,7 +14,7 @@ items:
 - pretitle: Modernisierung
   pretext: Vermächtnis ohne Lähmung
   color: '#1FA463'
-  icon: fas fa-gears
+  icon: cog
   title: Legacy-Modernisierung mit messbarer Risikominderung
   text: 'Wir entwirren Monolithen und brüchige Integrationen mit inkrementellen Migrationspfaden:
     Würgermuster, Contract-First-APIs, Testumgebungen und betriebliche Umstellungen,
@@ -22,7 +22,7 @@ items:
 - pretitle: Produktentwicklung
   pretext: Mobil und Cloud
   color: '#1FA463'
-  icon: fas fa-mobile-screen
+  icon: smartphone
   title: Mobile und Cloud-native Bereitstellung
   text: Von Ionic, React Native und Flutter bis hin zu Backend-Diensten und Analyse-Pipelines
     – wir liefern zusammenhängende Produkterlebnisse mit denselben Standards, die

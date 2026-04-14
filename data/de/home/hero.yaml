@@ -11,19 +11,19 @@ buttons:
   link: contact/
 image: images/home/hero/hero.svg
 items:
-- icon: fas fa-diagram-project
+- icon: git-branch
   color: '#1FA463'
   title: Systemdenken
   text: Durchgängiges Design von den Einschränkungen bis zur Produktion.
-- icon: fas fa-shield-halved
+- icon: shield
   color: '#1FA463'
   title: Operative Genauigkeit
   text: Sicherheit, Beobachtbarkeit und Wartbarkeit standardmäßig.
-- icon: fas fa-layer-group
+- icon: layers-3
   color: '#1FA463'
   title: Komplexität unter Kontrolle
   text: Klare Grenzen, explizite Schnittstellen, messbare Ergebnisse.
-- icon: fas fa-compass-drafting
+- icon: compass
   color: '#1FA463'
   title: Italienische Klarheit
   text: Präzision in Kommunikation und Handwerk – ohne Lärm.

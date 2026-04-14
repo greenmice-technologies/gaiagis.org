@@ -102,22 +102,7 @@
       {{ end }}
     {{ end }}
 
-    {{ with resources.Get "vendor/fontawesome-free/css/all.min.css" }}
-      {{ with . | fingerprint }}
-        <link
-          rel="stylesheet"
-          href="{{ .RelPermalink }}"
-          integrity="{{ .Data.Integrity }}"
-          crossorigin="anonymous"
-        />
-      {{ end }}
-    {{ end }}
-
-    {{ with resources.Match "vendor/fontawesome-free/webfonts/*" }}
-      {{ range . }}
-        {{ .Publish }}
-      {{ end }}
-    {{ end }}
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js" defer></script>
 
     {{- $main := resources.Get "js/main.js" -}}
     {{ with $main }}
@@ -192,9 +177,21 @@
       html[data-theme="dark"] .prose a {
         color: #7ee2b4;
       }
-      html[data-theme="light"] .js-feature-pattern-icon { color: #f5f7f6; }
-      html[data-theme="dark"] .js-feature-pattern-icon { color: #1f252b; }
+      .js-feature-pattern-icon { color: var(--gm-surface); }
+      .hero-solid-card {
+        position: relative;
+        isolation: isolate;
+        background-color: var(--gm-hero-card-bg) !important;
+        background-image: none !important;
+        backdrop-filter: none !important;
+        -webkit-backdrop-filter: none !important;
+      }
     </style>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        if (window.lucide) window.lucide.createIcons();
+      });
+    </script>
   </head>
   <body class="antialiased">
     <div class="flex min-h-screen flex-col">

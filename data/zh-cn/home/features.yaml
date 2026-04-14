@@ -5,18 +5,18 @@ items:
 - pretitle: 人工智能与平台
   pretext: 代理、自动化、数据
   color: '#1FA463'
-  icon: fas fa-brain
+  icon: brain
   title: 代理 AI、MCP 和企业集成
   text: 我们构建的人工智能系统可以安全地连接到您的工具：编排、检索、评估和治理，因此自动化可以扩展而不会变得脆弱。
 - pretitle: 现代化
   pretext: 遗产不瘫痪
   color: '#1FA463'
-  icon: fas fa-gears
+  icon: cog
   title: 遗留现代化可显着降低风险
   text: 我们通过增量迁移路径来理清单体和脆弱的集成：扼杀者模式、契约优先的 API、测试工具以及像工程项目一样规划的运营切换。
 - pretitle: 产品工程
   pretext: 移动和云
   color: '#1FA463'
-  icon: fas fa-mobile-screen
+  icon: smartphone
   title: 移动和云原生交付
   text: 从 Ionic、React Native 和 Flutter 到后端服务和分析管道，我们按照应用于核心系统的相同标准提供具有凝聚力的产品体验。

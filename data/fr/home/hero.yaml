@@ -11,19 +11,19 @@ buttons:
   link: contact/
 image: images/home/hero/hero.svg
 items:
-- icon: fas fa-diagram-project
+- icon: git-branch
   color: '#1FA463'
   title: Pensée systémique
   text: Conception de bout en bout, des contraintes à la production.
-- icon: fas fa-shield-halved
+- icon: shield
   color: '#1FA463'
   title: Rigueur opérationnelle
   text: Sécurité, observabilité et maintenabilité par défaut.
-- icon: fas fa-layer-group
+- icon: layers-3
   color: '#1FA463'
   title: Une complexité maîtrisée
   text: Des limites claires, des interfaces explicites, des résultats mesurables.
-- icon: fas fa-compass-drafting
+- icon: compass
   color: '#1FA463'
   title: Clarté italienne
   text: Précision dans la communication et l'artisanat, sans bruit.

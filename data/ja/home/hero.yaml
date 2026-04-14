@@ -9,19 +9,19 @@ buttons:
   link: contact/
 image: images/home/hero/hero.svg
 items:
-- icon: fas fa-diagram-project
+- icon: git-branch
   color: '#1FA463'
   title: システム思考
   text: 制約から本番までのエンドツーエンドの設計。
-- icon: fas fa-shield-halved
+- icon: shield
   color: '#1FA463'
   title: 運用の厳格さ
   text: デフォルトでのセキュリティ、可観測性、保守性。
-- icon: fas fa-layer-group
+- icon: layers-3
   color: '#1FA463'
   title: 複雑さを制御
   text: 明確な境界、明示的なインターフェイス、測定可能な結果。
-- icon: fas fa-compass-drafting
+- icon: compass
   color: '#1FA463'
   title: イタリアの透明感
   text: ノイズのない正確なコミュニケーションと技術。

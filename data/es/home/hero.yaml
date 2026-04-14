@@ -11,19 +11,19 @@ buttons:
   link: contact/
 image: images/home/hero/hero.svg
 items:
-- icon: fas fa-diagram-project
+- icon: git-branch
   color: '#1FA463'
   title: Pensamiento sistémico
   text: Diseño de principio a fin, desde las limitaciones hasta la producción.
-- icon: fas fa-shield-halved
+- icon: shield
   color: '#1FA463'
   title: Rigor operativo
   text: Seguridad, observabilidad y mantenibilidad por defecto.
-- icon: fas fa-layer-group
+- icon: layers-3
   color: '#1FA463'
   title: Complejidad bajo control
   text: Límites claros, interfaces explícitas, resultados mensurables.
-- icon: fas fa-compass-drafting
+- icon: compass
   color: '#1FA463'
   title: claridad italiana
   text: Precisión en comunicación y artesanía, sin ruido.

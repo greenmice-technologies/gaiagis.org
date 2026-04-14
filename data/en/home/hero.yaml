@@ -1,6 +1,6 @@
 enable: true
 
-title: "Engineering complex systems.<br/>Designed with precision."
+title: "Complexity<br/>made simple."
 
 text: "Greenmice Technologies is a senior engineering partner—not a web agency. For roughly a decade we have delivered AI systems, enterprise software, data platforms, and mobile products where reliability, architecture, and execution matter."
 
@@ -13,22 +13,22 @@ buttons:
 image: "images/home/hero/hero.svg"
 
 items:
-  - icon: "fas fa-diagram-project"
+  - icon: "git-branch"
     color: "#1FA463"
     title: "System thinking"
     text: "End-to-end design from constraints to production."
 
-  - icon: "fas fa-shield-halved"
+  - icon: "shield"
     color: "#1FA463"
     title: "Operational rigor"
     text: "Security, observability, and maintainability by default."
 
-  - icon: "fas fa-layer-group"
+  - icon: "layers-3"
     color: "#1FA463"
     title: "Complexity under control"
     text: "Clear boundaries, explicit interfaces, measurable outcomes."
 
-  - icon: "fas fa-compass-drafting"
+  - icon: "compass"
     color: "#1FA463"
     title: "Italian clarity"
     text: "Precision in communication and craft—without noise."

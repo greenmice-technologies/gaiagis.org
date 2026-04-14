@@ -7,7 +7,7 @@ items:
 - pretitle: IA et plateformes
   pretext: Agents, automatisation, données
   color: '#1FA463'
-  icon: fas fa-brain
+  icon: brain
   title: IA agentique, MCP et intégration d'entreprise
   text: 'Nous construisons des systèmes d''IA qui se connectent à vos outils en toute
     sécurité : orchestration, récupération, évaluation et gouvernance, afin que l''automatisation
@@ -15,7 +15,7 @@ items:
 - pretitle: Modernisation
   pretext: Un héritage sans paralysie
   color: '#1FA463'
-  icon: fas fa-gears
+  icon: cog
   title: Modernisation de l'héritage avec réduction des risques mesurable
   text: 'Nous démêlons les monolithes et les intégrations fragiles avec des chemins
     de migration incrémentiels : modèles d''étranglement, API axées sur le contrat,
@@ -23,7 +23,7 @@ items:
 - pretitle: Ingénierie produit
   pretext: Mobile et cloud
   color: '#1FA463'
-  icon: fas fa-mobile-screen
+  icon: smartphone
   title: Livraison mobile et cloud native
   text: De Ionic, React Native et Flutter aux services backend et pipelines d'analyse,
     nous proposons des expériences produits cohérentes avec les mêmes normes que celles
