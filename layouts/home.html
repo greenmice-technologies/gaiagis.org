@@ -2,8 +2,10 @@
 {{ $root := index site.Data site.Language.Lang }}
 {{ if not $root }}{{ $root = index site.Data "en" }}{{ end }}
 {{ $home := $root.home }}
+{{ $featuredStories := cond (isset $home "featuredstories") $home.featuredstories $home.casepreviews }}
+{{ $featuredServices := cond (isset $home "featuredservices") $home.featuredservices $home.highlights }}
 {{ with $home.hero }}{{ if .enable }}{{ partial "blocks/home/hero" . }}{{ end }}{{ end }}
 {{ with $home.features }}{{ if .enable }}{{ partial "blocks/home/features" . }}{{ end }}{{ end }}
-{{ with $home.casepreviews }}{{ if .enable }}{{ partial "blocks/home/case-previews" . }}{{ end }}{{ end }}
-{{ with $home.highlights }}{{ if .enable }}{{ partial "blocks/home/highlights" . }}{{ end }}{{ end }}
+{{ with $featuredStories }}{{ if .enable }}{{ partial "blocks/home/featured-stories" . }}{{ end }}{{ end }}
+{{ with $featuredServices }}{{ if .enable }}{{ partial "blocks/home/featured-services" . }}{{ end }}{{ end }}
 {{ end }}

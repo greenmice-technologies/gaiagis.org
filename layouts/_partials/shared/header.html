@@ -49,7 +49,21 @@
           </li>
         {{ end }}
       </ul>
-      <div class="flex flex-col xl:flex-row items-center gap-4 xl:gap-3">
+      <div class="flex flex-col xl:flex-row items-center gap-4 xl:gap-3 w-full xl:w-auto">
+        <div class="relative w-full xl:w-72">
+          <label class="sr-only" for="gmSearchInput">Search site</label>
+          <input
+            id="gmSearchInput"
+            type="search"
+            autocomplete="off"
+            class="w-full rounded-md border border-[var(--gm-border-soft)] bg-[var(--gm-surface)] px-3 py-2 text-sm text-[var(--gm-text-strong)] placeholder:text-[var(--gm-text-soft)] focus:border-primary focus:outline-none"
+            placeholder="Search..."
+          />
+          <div
+            id="gmSearchResults"
+            class="absolute left-0 right-0 top-[calc(100%+0.4rem)] z-20 hidden max-h-80 overflow-auto rounded-xl border border-[var(--gm-border-soft)] bg-[var(--gm-surface)] p-2 shadow-xl"
+          ></div>
+        </div>
         <div class="flex items-center gap-2 text-xs text-[var(--gm-text-soft)] xl:border-l xl:border-[var(--gm-border-soft)] xl:pl-4">
           <button
             type="button"
@@ -102,6 +116,163 @@
       localStorage.setItem("gm-theme", nextTheme);
       applyToggleLabel();
       window.dispatchEvent(new CustomEvent("gm:theme-change", { detail: { theme: nextTheme } }));
+    });
+  })();
+
+  (() => {
+    const input = document.getElementById("gmSearchInput");
+    const results = document.getElementById("gmSearchResults");
+    if (!input || !results) return;
+
+    const lang = document.documentElement.lang || "en";
+    const endpoint = `/${lang}/index.json`;
+    let index = [];
+    let loaded = false;
+    let activeIndex = -1;
+
+    const dictionary = {
+      en: { placeholder: "Search...", noResults: "No results", untitled: "Untitled" },
+      it: { placeholder: "Cerca...", noResults: "Nessun risultato", untitled: "Senza titolo" },
+      es: { placeholder: "Buscar...", noResults: "Sin resultados", untitled: "Sin titulo" },
+      fr: { placeholder: "Rechercher...", noResults: "Aucun resultat", untitled: "Sans titre" },
+      de: { placeholder: "Suchen...", noResults: "Keine Ergebnisse", untitled: "Ohne Titel" },
+      "zh-cn": { placeholder: "搜索...", noResults: "无结果", untitled: "无标题" },
+      ja: { placeholder: "検索...", noResults: "結果はありません", untitled: "無題" }
+    };
+    const t = dictionary[lang] || dictionary.en;
+    input.placeholder = t.placeholder;
+
+    const escapeHtml = (value) => value
+      .replaceAll("&", "&amp;")
+      .replaceAll("<", "&lt;")
+      .replaceAll(">", "&gt;")
+      .replaceAll("\"", "&quot;")
+      .replaceAll("'", "&#39;");
+
+    const normalize = (value) => value.toLowerCase().trim();
+
+    const closeResults = () => {
+      results.classList.add("hidden");
+      results.innerHTML = "";
+      activeIndex = -1;
+    };
+
+    const openResults = () => {
+      results.classList.remove("hidden");
+    };
+
+    const emphasize = (text, query) => {
+      if (!query) return escapeHtml(text);
+      const escapedQuery = query.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      const regex = new RegExp(`(${escapedQuery})`, "ig");
+      return escapeHtml(text).replace(regex, "<mark class=\"rounded bg-primary/20 px-0.5 text-[var(--gm-text-strong)]\">$1</mark>");
+    };
+
+    const scoreEntry = (entry, query) => {
+      let score = 0;
+      const title = normalize(entry.title || "");
+      const description = normalize(entry.description || "");
+      const summary = normalize(entry.summary || "");
+      const content = normalize(entry.content || "");
+
+      if (title.includes(query)) score += 100;
+      if (description.includes(query)) score += 40;
+      if (summary.includes(query)) score += 25;
+      if (content.includes(query)) score += 10;
+      return score;
+    };
+
+    const render = (query) => {
+      if (query.length < 2) {
+        closeResults();
+        return;
+      }
+
+      const scored = index
+        .map((entry) => ({ entry, score: scoreEntry(entry, query) }))
+        .filter((item) => item.score > 0)
+        .sort((a, b) => b.score - a.score)
+        .slice(0, 8);
+
+      if (!scored.length) {
+        openResults();
+        results.innerHTML = `<p class="px-3 py-2 text-sm text-[var(--gm-text-soft)]">${t.noResults}</p>`;
+        return;
+      }
+
+      results.innerHTML = scored.map(({ entry }) => {
+        const title = emphasize(entry.title || t.untitled, query);
+        const snippetBase = entry.description || entry.summary || entry.content || "";
+        const snippet = emphasize(snippetBase.slice(0, 180), query);
+        return `
+          <a href="${entry.permalink}" class="gm-search-result block rounded-lg px-3 py-2 transition hover:bg-black/5 dark:hover:bg-white/5">
+            <p class="text-sm font-semibold text-[var(--gm-text-strong)]">${title}</p>
+            <p class="mt-1 text-xs text-[var(--gm-text-soft)]">${snippet}</p>
+          </a>
+        `;
+      }).join("");
+      openResults();
+      activeIndex = -1;
+    };
+
+    const ensureIndex = async () => {
+      if (loaded) return true;
+      try {
+        const response = await fetch(endpoint, { headers: { Accept: "application/json" } });
+        if (!response.ok) return false;
+        const payload = await response.json();
+        if (!Array.isArray(payload)) return false;
+        index = payload;
+        loaded = true;
+        return true;
+      } catch {
+        return false;
+      }
+    };
+
+    input.addEventListener("input", async (event) => {
+      const query = normalize(event.target.value || "");
+      if (!query) {
+        closeResults();
+        return;
+      }
+      const ok = await ensureIndex();
+      if (!ok) return;
+      render(query);
+    });
+
+    document.addEventListener("click", (event) => {
+      if (!results.contains(event.target) && event.target !== input) closeResults();
+    });
+
+    input.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") {
+        closeResults();
+        return;
+      }
+
+      const items = Array.from(results.querySelectorAll(".gm-search-result"));
+      if (!items.length || results.classList.contains("hidden")) return;
+
+      if (event.key === "ArrowDown") {
+        event.preventDefault();
+        activeIndex = (activeIndex + 1) % items.length;
+      } else if (event.key === "ArrowUp") {
+        event.preventDefault();
+        activeIndex = activeIndex <= 0 ? items.length - 1 : activeIndex - 1;
+      } else if (event.key === "Enter" && activeIndex >= 0) {
+        event.preventDefault();
+        items[activeIndex].click();
+        return;
+      } else {
+        return;
+      }
+
+      items.forEach((item, index) => {
+        item.classList.toggle("bg-black/10", index === activeIndex);
+        item.classList.toggle("dark:bg-white/10", index === activeIndex);
+      });
+      items[activeIndex].scrollIntoView({ block: "nearest" });
     });
   })();
 </script>

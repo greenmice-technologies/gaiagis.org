@@ -186,6 +186,10 @@
         backdrop-filter: none !important;
         -webkit-backdrop-filter: none !important;
       }
+      .gm-office-map { border-color: var(--gm-border-soft) !important; }
+      html[data-theme="dark"] .gm-office-map iframe {
+        filter: grayscale(0.3) invert(0.9) hue-rotate(180deg) contrast(0.95) brightness(0.9);
+      }
     </style>
     <script>
       document.addEventListener("DOMContentLoaded", () => {

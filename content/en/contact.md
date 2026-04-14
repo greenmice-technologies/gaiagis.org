@@ -11,11 +11,16 @@ menu:
     weight: 90
 ---
 
-### Email
+### Contact details
 
-**info@greenmice.it**
+- Company: **Greenmice Technologies S.r.l.**
+- Email: [info@greenmice.it](mailto:info@greenmice.it)
+- Mobile: [+39 328 3615959](tel:+393283615959)
+- Address: Piazzale delle Provincie, 8 - 00162 - Roma
+- P. IVA: 14580451004
+- Share capital: Euro 50.000,00 fully paid
 
-Tell us what you are building, your constraints, and the timeline you are working against. We respond with a direct engineering conversation—not a generic sales sequence.
+Tell us what you are building, your constraints, and the timeline you are working against. We respond with a direct engineering conversation, not a generic sales sequence.
 
 ### What to include
 
@@ -23,6 +28,16 @@ Tell us what you are building, your constraints, and the timeline you are workin
 - Success criteria and risks you already see
 - Whether you need delivery, leadership (CTO as a Service), or both
 
-### Offices
+### Office map
 
-Italy — remote-first delivery with on-site engagements when required.
+<div class="gm-office-map" style="border:1px solid #d9e2ea;border-radius:12px;overflow:hidden;max-width:100%;">
+  <iframe
+    title="Greenmice Technologies office map"
+    src="https://maps.google.com/maps?q=Piazzale%20delle%20Provincie%208%2C%20Roma&t=&z=16&ie=UTF8&iwloc=&output=embed"
+    width="100%"
+    height="360"
+    style="border:0;"
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>

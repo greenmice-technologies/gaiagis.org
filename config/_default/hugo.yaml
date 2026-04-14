@@ -10,6 +10,12 @@ markup:
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: true
 
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
 languages:
   en:
     languageName: English

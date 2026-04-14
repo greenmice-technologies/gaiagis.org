@@ -1,0 +1,22 @@
+enable: true
+
+title: "Featured services"
+
+subtitle: "Selected engagements for leadership, architecture, and delivery."
+
+cta:
+  label: "All services"
+  link: "services/"
+
+items:
+  - title: "CTO as a Service: leadership without hiring overhead"
+    text: "A structured engagement for architecture, delivery governance, vendor alignment, and technical risk management-when you need a senior technology leader embedded with your team."
+    button:
+      label: "Explore the offering"
+      link: "services/cto-as-a-service/"
+
+  - title: "Greenmice Geosolutions"
+    text: "Our spin-off focuses on GIS engineering, spatial platforms, and aeronautical systems-with deep collaboration across infrastructure, energy, and aviation."
+    button:
+      label: "Visit Geosolutions"
+      link: "geosolutions/"

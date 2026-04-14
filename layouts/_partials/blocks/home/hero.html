@@ -6,6 +6,7 @@
 {{ range $heroAssets }}
   {{ $heroBackgrounds = $heroBackgrounds | append .RelPermalink }}
 {{ end }}
+{{ $hasItems := gt (len .items) 0 }}
 {{ if and (eq (len $heroBackgrounds) 0) .image }}
   {{ $heroBackgrounds = $heroBackgrounds | append (.image | relURL) }}
 {{ end }}
@@ -24,7 +25,7 @@
             <h1 class="markdown-title text-center xl:text-start text-4xl xl:text-6xl font-semibold xl:leading-tight tracking-tight text-[var(--gm-hero-text-strong)]">{{ . | markdownify }}</h1>
           {{ end }}
           {{ with .text }}
-          <p class="xl:leading-relaxed text-center xl:text-start text-lg text-[var(--gm-hero-text)] max-w-xl">{{ . }}</p>
+          <p class="xl:leading-relaxed text-center text-lg text-[var(--gm-hero-text)] max-w-xl mx-auto {{ if $hasItems }}xl:text-start xl:mx-0{{ end }}">{{ . }}</p>
           {{ end }}
           {{ if .buttons }}
             <div class="flex items-center flex-col xl:flex-row gap-4 mt-4">

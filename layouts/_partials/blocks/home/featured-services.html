@@ -1,0 +1,33 @@
+<section id="featured-services" class="featured-services relative py-8 xl:py-20 overflow-hidden">
+  <div class="container mx-auto px-4">
+    {{ if or .title .cta }}
+      <div class="flex flex-col xl:flex-row xl:items-end justify-between gap-6 mb-10">
+        <div>
+          {{ with .title }}<h2 class="text-3xl xl:text-4xl font-semibold text-[var(--gm-text-strong)] tracking-tight">{{ . }}</h2>{{ end }}
+          {{ with .subtitle }}<p class="mt-3 text-lg text-[var(--gm-text)] max-w-2xl">{{ . }}</p>{{ end }}
+        </div>
+        {{ with .cta }}
+          <a class="text-primary font-semibold shrink-0 hover:underline" href="{{ .link | relLangURL }}">{{ .label }} →</a>
+        {{ end }}
+      </div>
+    {{ end }}
+    <div class="grid xl:grid-cols-2 gap-8">
+    {{ range $i, $e := .items }}
+    {{ $even := (eq (mod $i 2) 0)}}
+    <div class="flex flex-col gap-6 px-8 xl:px-12 py-12 rounded-2xl {{ if $even }} bg-[var(--gm-surface-2)] {{ else }} bg-primary {{ end }}">
+        <h2 class="text-xl font-semibold leading-snug text-center {{ if $even }} text-[var(--gm-text-strong)] {{ else }} text-white {{ end }}">{{ .title }}</h2>
+        <p class="leading-relaxed text-center text-sm xl:text-base {{ if $even }} text-[var(--gm-text)] {{ else }} text-white/95 {{ end }}">{{ .text }}</p>
+        {{ with .button }}
+          <div class="flex items-center justify-center pt-2">
+            {{ if (eq (mod $i 2) 0)}}
+              {{ partial "components/button/primary" (dict "label" .label "href" (.link | relLangURL))}}
+            {{ else }}
+              <a class="rounded-lg border-2 border-white px-10 py-2 text-white hover:bg-white/10 duration-300" href="{{ .link | relLangURL }}">{{ .label }}</a>
+            {{ end }}
+          </div>
+        {{ end }}
+      </div>
+    {{ end }}
+    </div>
+  </div>
+</section>

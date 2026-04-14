@@ -1,20 +1,20 @@
 enable: true
 
-title: "Selected work"
+title: "Featured stories"
 
 subtitle: "Concrete outcomes in automation, enterprise systems, and data-intensive products."
 
 cta:
-  label: "All case studies"
-  link: "case-studies/"
+  label: "All stories"
+  link: "stories/"
 
 items:
   - tag: "Luxury retail"
     title: "Brioni: AI automation for e-commerce operations"
     summary: "Automation that reduced manual workload while preserving brand-grade quality controls across catalog and fulfillment workflows."
-    link: "case-studies/brioni-ai-automation/"
+    link: "stories/ecommerce-ai-automation/"
 
   - tag: "Enterprise"
     title: "Enterprise systems at national scale"
     summary: "Integration and modernization programs aligned to uptime, compliance, and long-term maintainability for large operators and institutions."
-    link: "case-studies/enterprise-systems/"
+    link: "stories/enterprise-systems/"
