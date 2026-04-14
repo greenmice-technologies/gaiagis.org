@@ -4,32 +4,32 @@
 
 {{ with $shared.subscribe }}{{ if .enable }}{{ partial "blocks/shared/subscribe" . }}{{ end }}{{ end }}
 
-<footer class="pt-16 pb-10 border-t border-black/5 bg-white">
+<footer class="pt-16 pb-10 border-t border-[var(--gm-border-soft)] bg-[var(--gm-surface)]">
   <div class="container mx-auto px-4 grid xl:grid-cols-12 gap-12">
     <div class="xl:col-span-4">
       <h2 class="text-primary font-bold tracking-tight mb-4 text-center xl:text-start text-lg">{{ site.Title }}</h2>
-      <p class="text-center xl:text-start text-[#5a5a5a] text-sm leading-relaxed">{{ site.Params.description }}</p>
+      <p class="text-center xl:text-start text-[var(--gm-text)] text-sm leading-relaxed">{{ site.Params.description }}</p>
     </div>
     <div class="xl:col-span-3">
-      <h2 class="font-semibold mb-4 text-center xl:text-start text-sm uppercase tracking-wider text-[#6a6a6a]">{{ i18n "footer_explore" }}</h2>
+      <h2 class="font-semibold mb-4 text-center xl:text-start text-sm uppercase tracking-wider text-[var(--gm-text-soft)]">{{ i18n "footer_explore" }}</h2>
       <ul class="space-y-2">
         {{ range site.Menus.footer }}
-          <li class="text-center xl:text-start"><a class="text-[#515151] hover:text-primary text-sm" href="{{ .URL }}">{{ .Name }}</a></li>
+          <li class="text-center xl:text-start"><a class="text-[var(--gm-text)] hover:text-primary text-sm" href="{{ .URL }}">{{ .Name }}</a></li>
         {{ end }}
       </ul>
     </div>
     <div class="xl:col-span-3">
-      <h2 class="font-semibold mb-4 text-center xl:text-start text-sm uppercase tracking-wider text-[#6a6a6a]">{{ $shared.footer.contact.title }}</h2>
+      <h2 class="font-semibold mb-4 text-center xl:text-start text-sm uppercase tracking-wider text-[var(--gm-text-soft)]">{{ $shared.footer.contact.title }}</h2>
       <ul class="space-y-2">
         {{ range $shared.footer.contact.items }}
-          <li class="text-center xl:text-start"><a class="text-[#515151] hover:text-primary text-sm" href="{{ .link }}">{{ .label }}</a></li>
+          <li class="text-center xl:text-start"><a class="text-[var(--gm-text)] hover:text-primary text-sm" href="{{ .link }}">{{ .label }}</a></li>
         {{ end }}
       </ul>
     </div>
     <div class="xl:col-span-2 flex items-center justify-center xl:justify-end">
       <div class="flex items-center gap-3">
         {{ range $shared.footer.social }}
-          <a class="flex items-center justify-center text-lg size-10 rounded-full border border-black/10 text-[#263238] hover:border-primary hover:text-primary duration-300" aria-label="{{ .title }}" href="{{ .link }}">
+          <a class="flex items-center justify-center text-lg size-10 rounded-full border border-[var(--gm-border-soft)] text-[var(--gm-text-strong)] hover:border-primary hover:text-primary duration-300" aria-label="{{ .title }}" href="{{ .link }}">
             <i class="{{ .icon }}"></i>
           </a>
         {{ end }}
@@ -37,8 +37,8 @@
     </div>
   </div>
   {{ with $shared.footer.copyright }}
-    <div class="border-t border-black/5 mt-10">
-      <div class="container mx-auto px-4 flex items-center justify-center pt-8 text-[#686868] text-xs">
+    <div class="border-t border-[var(--gm-border-soft)] mt-10">
+      <div class="container mx-auto px-4 flex items-center justify-center pt-8 text-[var(--gm-text-soft)] text-xs">
         {{ . }}
       </div>
     </div>

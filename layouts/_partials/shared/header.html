@@ -1,8 +1,13 @@
-<nav class="sticky top-0 z-50 border-b border-black/5 bg-white/90 backdrop-blur-sm">
+{{ $logoLight := site.Params.logo }}
+{{ $logoDark := site.Params.logo_dark | default (replace $logoLight "logo-brand" "logo-white") }}
+<nav class="sticky top-0 z-50 border-b border-[var(--gm-border-soft)] bg-[var(--gm-hero-overlay-bg)] backdrop-blur-sm">
   <div class="container mx-auto flex items-center justify-between gap-4 px-4 py-5">
     <a class="flex items-center min-w-0" href="{{ site.Home.RelPermalink }}">
-      {{ with site.Params.logo }}
-        {{ partial "utilities/image.html" (dict "src" . "class" "h-8 w-auto shrink-0") }}
+      {{ with $logoLight }}
+        {{ partial "utilities/image.html" (dict "src" . "class" "h-8 w-auto shrink-0 logo-light") }}
+      {{ end }}
+      {{ with $logoDark }}
+        {{ partial "utilities/image.html" (dict "src" . "class" "h-8 w-auto shrink-0 logo-dark hidden") }}
       {{ end }}
     </a>
     <button
@@ -15,13 +20,16 @@
       {{ partial "heroicons/bars-4" }}
     </button>
     <div
-      class="fixed inset-0 flex h-screen min-h-screen -translate-y-full flex-col items-stretch justify-start gap-8 overflow-y-auto bg-white px-4 pb-10 duration-500 xl:relative xl:inset-auto xl:h-auto xl:min-h-0 xl:translate-y-0 xl:flex-row xl:items-center xl:justify-end xl:gap-8 xl:overflow-visible xl:bg-transparent xl:px-0 xl:pt-0 xl:pb-0"
+      class="fixed inset-0 flex h-screen min-h-screen -translate-y-full flex-col items-stretch justify-start gap-8 overflow-y-auto bg-[var(--gm-surface)] px-4 pb-10 duration-500 xl:relative xl:inset-auto xl:h-auto xl:min-h-0 xl:translate-y-0 xl:flex-row xl:items-center xl:justify-end xl:gap-8 xl:overflow-visible xl:bg-transparent xl:px-0 xl:pt-0 xl:pb-0"
       id="navbarContent"
     >
-      <div class="container sticky top-0 left-0 right-0 z-10 mx-auto flex items-center justify-between px-4 py-6 xl:hidden bg-white border-b border-black/5">
+      <div class="container sticky top-0 left-0 right-0 z-10 mx-auto flex items-center justify-between px-4 py-6 xl:hidden bg-[var(--gm-surface)] border-b border-[var(--gm-border-soft)]">
         <a class="flex items-center min-w-0 xl:hidden" href="{{ site.Home.RelPermalink }}">
-          {{ with site.Params.logo }}
-            {{ partial "utilities/image.html" (dict "src" . "class" "h-8 w-auto shrink-0") }}
+          {{ with $logoLight }}
+            {{ partial "utilities/image.html" (dict "src" . "class" "h-8 w-auto shrink-0 logo-light") }}
+          {{ end }}
+          {{ with $logoDark }}
+            {{ partial "utilities/image.html" (dict "src" . "class" "h-8 w-auto shrink-0 logo-dark hidden") }}
           {{ end }}
         </a>
         <button
@@ -37,15 +45,21 @@
       <ul class="flex flex-col gap-6 pt-6 xl:flex-row xl:items-center xl:gap-8 xl:pt-0">
         {{ range site.Menus.main }}
           <li class="text-center xl:text-left">
-            <a class="text-[#263238] hover:text-primary text-sm font-medium" href="{{ .URL }}">{{ .Name }}</a>
+            <a class="text-[var(--gm-text-strong)] hover:text-primary text-sm font-medium" href="{{ .URL }}">{{ .Name }}</a>
           </li>
         {{ end }}
       </ul>
       <div class="flex flex-col xl:flex-row items-center gap-4 xl:gap-3">
-        <div class="flex items-center gap-2 text-xs text-[#6a6a6a] xl:border-l xl:border-black/10 xl:pl-4">
+        <div class="flex items-center gap-2 text-xs text-[var(--gm-text-soft)] xl:border-l xl:border-[var(--gm-border-soft)] xl:pl-4">
+          <button
+            type="button"
+            data-theme-toggle
+            class="rounded-md border border-[var(--gm-border-soft)] bg-[var(--gm-surface)] px-2 py-1 text-xs text-[var(--gm-text-strong)] focus:border-primary focus:outline-none"
+            aria-label="Toggle theme"
+          >🌙</button>
           <select
             id="languageSwitcher"
-            class="rounded-md border border-black/10 bg-white px-2 py-1 text-xs text-[#263238] focus:border-primary focus:outline-none"
+            class="rounded-md border border-[var(--gm-border-soft)] bg-[var(--gm-surface)] px-2 py-1 text-xs text-[var(--gm-text-strong)] focus:border-primary focus:outline-none"
             onchange="if (this.value) window.location.href=this.value"
             aria-label="{{ i18n `lang_label` }}"
           >
@@ -69,3 +83,29 @@
     </div>
   </div>
 </nav>
+<script>
+  (() => {
+    const root = document.documentElement;
+    const toggle = document.querySelector("[data-theme-toggle]");
+    if (!toggle) return;
+
+    const applyToggleLabel = () => {
+      const isDark = root.getAttribute("data-theme") === "dark";
+      toggle.textContent = isDark ? "☀️" : "🌙";
+      toggle.setAttribute("aria-label", isDark ? "Switch to light theme" : "Switch to dark theme");
+    };
+
+    applyToggleLabel();
+    toggle.addEventListener("click", () => {
+      const nextTheme = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
+      root.setAttribute("data-theme", nextTheme);
+      localStorage.setItem("gm-theme", nextTheme);
+      applyToggleLabel();
+      window.dispatchEvent(new CustomEvent("gm:theme-change", { detail: { theme: nextTheme } }));
+    });
+  })();
+</script>
+<style>
+  html[data-theme="dark"] .logo-light { display: none; }
+  html[data-theme="dark"] .logo-dark { display: block; }
+</style>

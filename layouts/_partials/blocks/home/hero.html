@@ -12,49 +12,55 @@
 
 <section
   id="hero"
-  class="hero relative min-h-[70vh] overflow-hidden bg-[var(--brand-bg)] bg-cover bg-center bg-no-repeat bg-scroll py-8 md:min-h-[78vh] md:bg-fixed xl:min-h-[82vh] xl:py-20"
+  class="hero relative min-h-[70vh] overflow-hidden bg-cover bg-center bg-no-repeat bg-scroll py-8 md:min-h-[78vh] md:bg-fixed xl:min-h-[82vh] xl:py-20"
   data-hero-backgrounds="{{ delimit $heroBackgrounds `|` }}"
-  {{ if gt (len $heroBackgrounds) 0 }}style="background-image: url('{{ index $heroBackgrounds 0 }}');"{{ end }}
+  {{ if gt (len $heroBackgrounds) 0 }}style="background-color: var(--gm-hero-bg); background-image: url('{{ index $heroBackgrounds 0 }}');"{{ else }}style="background-color: var(--gm-hero-bg);"{{ end }}
 >
-  <div class="absolute inset-0 -z-10 bg-gradient-to-b from-white/96 via-white/90 to-[var(--brand-bg)]/96"></div>
-  <div class="absolute inset-0 -z-10 bg-gradient-to-r from-white/75 via-white/35 to-white/65"></div>
-  <div class="container mx-auto flex h-full min-h-[inherit] flex-col justify-between px-4">
-    <div class="grid gap-12 mb-16">
-      <div class="flex flex-col justify-center gap-6 rounded-2xl border border-white/60 bg-white/78 p-6 shadow-lg backdrop-blur-md xl:max-w-3xl xl:p-8">
-        {{ with .title }}
-          <h1 class="markdown-title text-center xl:text-start text-4xl xl:text-6xl font-semibold xl:leading-tight tracking-tight text-[#1a1a1a]">{{ . | markdownify }}</h1>
-        {{ end }}
-        {{ with .text }}
-        <p class="xl:leading-relaxed text-center xl:text-start text-lg text-[#4a4a4a] max-w-xl">{{ . }}</p>
-        {{ end }}
-        {{ if .buttons }}
-          <div class="flex items-center flex-col xl:flex-row gap-4 mt-4">
-            {{ range $i, $e := .buttons }}
-              {{ if (eq $i 0) }}
-                {{ partial "components/button/primary" (dict "label" .label "href" (.link | relLangURL))}}
-              {{ else }}
-                {{ partial "components/button/outline" (dict "label" .label "href" (.link | relLangURL))}}
+  <div class="container mx-auto flex h-full min-h-[inherit] items-center px-4">
+    <div class="grid w-full gap-8 xl:grid-cols-[minmax(0,1fr)_auto] xl:items-stretch xl:gap-12 2xl:max-w-7xl 2xl:mx-auto">
+      <div>
+        <div class="flex h-full flex-col justify-center gap-6 rounded-2xl border border-[var(--gm-hero-overlay-border)] p-6 shadow-lg xl:p-8" style="background-color: var(--gm-hero-card-bg);">
+          {{ with .title }}
+            <h1 class="markdown-title text-center xl:text-start text-4xl xl:text-6xl font-semibold xl:leading-tight tracking-tight text-[var(--gm-hero-text-strong)]">{{ . | markdownify }}</h1>
+          {{ end }}
+          {{ with .text }}
+          <p class="xl:leading-relaxed text-center xl:text-start text-lg text-[var(--gm-hero-text)] max-w-xl">{{ . }}</p>
+          {{ end }}
+          {{ if .buttons }}
+            <div class="flex items-center flex-col xl:flex-row gap-4 mt-4">
+              {{ range $i, $e := .buttons }}
+                {{ if (eq $i 0) }}
+                  {{ partial "components/button/primary" (dict "label" "Scopri di più" "href" "#features")}}
+                {{ else }}
+                  <a
+                    class="rounded-lg border px-10 py-2 duration-300 border-[var(--gm-hero-text-strong)] text-[var(--gm-hero-text-strong)] hover:bg-white/10"
+                    href="{{ .link | relLangURL }}"
+                  >{{ .label }}</a>
+                {{ end }}
               {{ end }}
+            </div>
+          {{ end }}
+        </div>
+      </div>
+
+      {{ if .items }}
+        <div class="xl:w-[clamp(22rem,36vw,34rem)] xl:border-l xl:border-[var(--gm-hero-overlay-border)] xl:pl-10 xl:flex xl:flex-col">
+          <div class="grid box-content gap-5 sm:grid-cols-2 xl:grid-cols-2 xl:auto-rows-fr xl:h-full">
+            {{ range .items }}
+              <div class="flex h-full min-h-0 flex-col items-center gap-4 overflow-hidden rounded-xl border border-[var(--gm-hero-overlay-border)] p-5 xl:p-6 shadow-sm xl:aspect-square" style="background-color: var(--gm-hero-card-bg);">
+                <div class="flex items-center justify-center text-xl text-primary bg-primary/10 size-16 rounded-xl shrink-0 self-center">
+                  <i class="{{ .icon }}"></i>
+                </div>
+                <div class="inline-flex min-w-0 flex-col gap-1 text-center">
+                  <h2 class="text-base font-semibold text-[var(--gm-hero-text-strong)]">{{ .title }}</h2>
+                  <p class="overflow-hidden text-sm text-[var(--gm-hero-text-soft)] leading-relaxed [display:-webkit-box] [-webkit-box-orient:vertical] [-webkit-line-clamp:4]">{{ .text }}</p>
+                </div>
+              </div>
             {{ end }}
           </div>
-        {{ end }}
-      </div>
+        </div>
+      {{ end }}
     </div>
-    {{ if .items }}
-      <div class="grid box-content gap-4 pt-8 sm:grid-cols-2 xl:grid-cols-4 xl:gap-6">
-        {{ range .items }}
-          <div class="flex items-start gap-4 rounded-xl border border-white/60 bg-white/72 p-4 shadow-sm backdrop-blur-sm">
-            <div class="flex items-center justify-center text-xl text-primary bg-primary/10 size-14 rounded-xl shrink-0">
-              <i class="{{ .icon }}"></i>
-            </div>
-            <div class="inline-flex flex-col gap-1">
-              <h2 class="text-base font-semibold text-[#1a1a1a]">{{ .title }}</h2>
-              <p class="text-sm text-[#6a6a6a] leading-snug">{{ .text }}</p>
-            </div>
-          </div>
-        {{ end }}
-      </div>
-    {{ end }}
   </div>
 </section>
 <script>

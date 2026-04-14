@@ -1,6 +1,14 @@
 <!doctype html>
-<html lang="{{ site.Language.Lang }}">
+<html lang="{{ site.Language.Lang }}" data-theme="light">
   <head>
+    <script>
+      (() => {
+        const storedTheme = localStorage.getItem("gm-theme");
+        const preferredDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        const theme = storedTheme || (preferredDark ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
     {{ if .IsHome }}
       <title>{{ .Site.Title }}</title>
     {{ else if (eq .Title .Site.Title ) }}
@@ -119,6 +127,74 @@
       {{ end }}
       <script src="{{ $main.RelPermalink }}" defer></script>
     {{ end }}
+    <style>
+      html { scroll-behavior: smooth; }
+      @media (prefers-reduced-motion: reduce) {
+        html { scroll-behavior: auto; }
+      }
+      html[data-theme="light"] {
+        color-scheme: light;
+        --icon-mask-tone: #f6f8fa;
+        --gm-text-strong: #1a1a1a;
+        --gm-text: #4a4a4a;
+        --gm-text-soft: #6a6a6a;
+        --gm-surface: #f5f7f6;
+        --gm-surface-2: #eceeec;
+        --gm-border-soft: rgba(0, 0, 0, 0.08);
+        --gm-hero-bg: var(--brand-bg);
+        --gm-hero-overlay-bg: rgba(255, 255, 255, 0.78);
+        --gm-hero-overlay-border: rgba(255, 255, 255, 0.6);
+        --gm-hero-card-bg: #ffffff;
+        --gm-hero-text-strong: #1a1a1a;
+        --gm-hero-text: #3a3a3a;
+        --gm-hero-text-soft: #4a4a4a;
+      }
+      html[data-theme="dark"] {
+        color-scheme: dark;
+        --icon-mask-tone: #1f252b;
+        --gm-text-strong: #e8edf2;
+        --gm-text: #c7d2dd;
+        --gm-text-soft: #9fb0bf;
+        --gm-surface: #131b21;
+        --gm-surface-2: #1a232b;
+        --gm-border-soft: rgba(255, 255, 255, 0.14);
+        --gm-hero-bg: #0f1418;
+        --gm-hero-overlay-bg: rgba(17, 22, 27, 0.78);
+        --gm-hero-overlay-border: rgba(255, 255, 255, 0.14);
+        --gm-hero-card-bg: #11161b;
+        --gm-hero-text-strong: #e8edf2;
+        --gm-hero-text: #d8e1ea;
+        --gm-hero-text-soft: #c7d2dd;
+      }
+      html[data-theme="dark"] body { background-color: #0f1418; color: #e8edf2; }
+      html[data-theme="dark"] nav,
+      html[data-theme="dark"] #navbarContent,
+      html[data-theme="dark"] #navbarContent > div {
+        background-color: rgba(17, 22, 27, 0.92) !important;
+        border-color: rgba(255, 255, 255, 0.08) !important;
+      }
+      html[data-theme="dark"] a { color: #d9e2ea; }
+      html[data-theme="dark"] select,
+      html[data-theme="dark"] button[data-theme-toggle] {
+        background-color: #131b21;
+        border-color: rgba(255, 255, 255, 0.16);
+        color: #e8edf2;
+      }
+      html[data-theme="dark"] .prose {
+        color: #c7d2dd;
+      }
+      html[data-theme="dark"] .prose :where(h1, h2, h3, h4, h5, h6, strong) {
+        color: #e8edf2;
+      }
+      html[data-theme="dark"] .prose :where(p, li, ul, ol, blockquote) {
+        color: #c7d2dd;
+      }
+      html[data-theme="dark"] .prose a {
+        color: #7ee2b4;
+      }
+      html[data-theme="light"] .js-feature-pattern-icon { color: #f5f7f6; }
+      html[data-theme="dark"] .js-feature-pattern-icon { color: #1f252b; }
+    </style>
   </head>
   <body class="antialiased">
     <div class="flex min-h-screen flex-col">

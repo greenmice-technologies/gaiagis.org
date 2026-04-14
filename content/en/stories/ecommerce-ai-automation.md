@@ -1,12 +1,12 @@
 ---
-title: "Brioni: AI automation for e-commerce"
+title: "AI automation for e-commerce"
 description: "Automation for luxury retail operations with strict quality and brand controls."
-translationKey: case-brioni
+translationKey: case-luxury-ecommerce
 ---
 
 ## Problem
 
-Brioni’s e-commerce operations required repetitive manual work across catalog updates, merchandising checks, and fulfillment coordination. The brand needed automation that **reduced operational load** without compromising the precision expected in luxury retail.
+E-commerce operations required repetitive manual work across catalog updates, merchandising checks, and fulfillment coordination. The brand needed automation that **reduced operational load** without compromising the precision expected in luxury retail.
 
 ## Solution
 

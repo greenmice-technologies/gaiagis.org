@@ -2,9 +2,9 @@
   <div class="container mx-auto px-4 grid xl:grid-cols-2 gap-8">
     {{ range $i, $e := .items }}
     {{ $even := (eq (mod $i 2) 0)}}
-    <div class="flex flex-col gap-6 px-8 xl:px-12 py-12 rounded-2xl {{ if $even }} bg-[#eceeec] {{ else }} bg-primary {{ end }}">
-        <h2 class="text-xl font-semibold leading-snug text-center {{ if $even }} text-[#1a1a1a] {{ else }} text-white {{ end }}">{{ .title }}</h2>
-        <p class="leading-relaxed text-center text-sm xl:text-base {{ if $even }} text-[#3a3a3a] {{ else }} text-white/95 {{ end }}">{{ .text }}</p>
+    <div class="flex flex-col gap-6 px-8 xl:px-12 py-12 rounded-2xl {{ if $even }} bg-[var(--gm-surface-2)] {{ else }} bg-primary {{ end }}">
+        <h2 class="text-xl font-semibold leading-snug text-center {{ if $even }} text-[var(--gm-text-strong)] {{ else }} text-white {{ end }}">{{ .title }}</h2>
+        <p class="leading-relaxed text-center text-sm xl:text-base {{ if $even }} text-[var(--gm-text)] {{ else }} text-white/95 {{ end }}">{{ .text }}</p>
         {{ with .button }}
           <div class="flex items-center justify-center pt-2">
             {{ if (eq (mod $i 2) 0)}}

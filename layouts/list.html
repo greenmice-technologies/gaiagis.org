@@ -9,19 +9,18 @@
   {{ end }}
   <section
     id="list-hero"
-    class="relative min-h-[30vh] max-h-[33vh] overflow-hidden bg-[var(--brand-bg)] bg-cover bg-center bg-no-repeat py-10 xl:py-14"
+    class="relative min-h-[30vh] max-h-[33vh] overflow-hidden bg-cover bg-center bg-no-repeat py-10 xl:py-14"
     data-hero-backgrounds="{{ delimit $heroBackgrounds `|` }}"
-    {{ if gt (len $heroBackgrounds) 0 }}style="background-image: url('{{ index $heroBackgrounds 0 }}');"{{ end }}
+    {{ if gt (len $heroBackgrounds) 0 }}style="background-color: var(--gm-hero-bg); background-image: url('{{ index $heroBackgrounds 0 }}');"{{ else }}style="background-color: var(--gm-hero-bg);"{{ end }}
   >
-    <div class="absolute inset-0 -z-10 bg-gradient-to-b from-white/95 via-white/90 to-[var(--brand-bg)]/95"></div>
-    <div class="absolute inset-0 -z-10 bg-gradient-to-r from-white/70 via-white/30 to-white/60"></div>
+    <div class="absolute inset-0 -z-10 bg-[var(--gm-hero-overlay-bg)]"></div>
     <div class="container mx-auto flex min-h-[inherit] items-center px-4">
-      <div class="w-full max-w-3xl rounded-2xl border border-white/60 bg-white/78 p-6 text-center shadow-lg backdrop-blur-md xl:p-8 xl:text-start">
+      <div class="w-full max-w-3xl rounded-2xl border border-[var(--gm-hero-overlay-border)] bg-[var(--gm-hero-overlay-bg)] p-6 text-center shadow-lg backdrop-blur-md xl:p-8 xl:text-start">
         {{ with .Title }}
-          <h1 class="text-4xl xl:text-5xl font-semibold tracking-tight text-[#1a1a1a] mb-4">{{ . | markdownify }}</h1>
+          <h1 class="text-4xl xl:text-5xl font-semibold tracking-tight text-[var(--gm-hero-text-strong)] mb-4">{{ . | markdownify }}</h1>
         {{ end }}
         {{ with .Description }}
-          <p class="text-lg text-[#5a5a5a] leading-relaxed">{{ . }}</p>
+          <p class="text-lg text-[var(--gm-hero-text)] leading-relaxed">{{ . }}</p>
         {{ end }}
       </div>
     </div>
@@ -40,10 +39,10 @@
     <div class="container mx-auto px-4">
       <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8 max-w-6xl mx-auto">
         {{ range .RegularPages }}
-          <a href="{{ .Permalink }}" class="group block rounded-2xl border border-black/5 bg-white p-8 hover:border-primary/30 hover:shadow-md transition-all duration-300">
-            <h2 class="text-xl font-semibold text-[#1a1a1a] group-hover:text-primary transition-colors mb-3">{{ .Title }}</h2>
+          <a href="{{ .Permalink }}" class="group block rounded-2xl border border-[var(--gm-border-soft)] bg-[var(--gm-surface)] p-8 hover:border-primary/30 hover:shadow-md transition-all duration-300">
+            <h2 class="text-xl font-semibold text-[var(--gm-text-strong)] group-hover:text-primary transition-colors mb-3">{{ .Title }}</h2>
             {{ with .Description }}
-              <p class="text-sm text-[#5a5a5a] leading-relaxed">{{ . }}</p>
+              <p class="text-sm text-[var(--gm-text)] leading-relaxed">{{ . }}</p>
             {{ end }}
           </a>
         {{ end }}

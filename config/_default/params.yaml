@@ -2,6 +2,7 @@ title: "Greenmice Technologies"
 description: "Engineering partner for complex systems, AI platforms, and legacy modernization."
 
 logo: "images/brands/svg/logo-brand.svg"
+logo_dark: "images/brands/svg/logo-white.svg"
 
 colors:
   primary: "#1FA463"
