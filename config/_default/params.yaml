@@ -14,6 +14,9 @@ favicons:
   backgroundColor: "#F5F7F6"
   faviconColor: "#1FA463"
 
+images:
+  - "greenmice-technologies.png"
+
 contact:
   - "info@greenmice.it"
 
