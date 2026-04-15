@@ -1,0 +1,30 @@
+{{- $title := .Title | default site.Title -}}
+{{- if .IsHome -}}
+  {{- $title = "Home" -}}
+{{- end -}}
+{{- $description := site.Params.description -}}
+{{- if .Description -}}
+  {{- $description = .Description -}}
+{{- end -}}
+{{- $images := .Params.images | default site.Params.images -}}
+{{- $image := "" -}}
+{{- with $images -}}
+  {{- $image = index . 0 -}}
+{{- end -}}
+{{- $imageURL := "" -}}
+{{- if $image -}}
+  {{- if hasPrefix $image "http://" -}}
+    {{- $imageURL = $image -}}
+  {{- else if hasPrefix $image "https://" -}}
+    {{- $imageURL = $image -}}
+  {{- else -}}
+    {{- $imageURL = absURL $image -}}
+  {{- end -}}
+{{- end -}}
+
+<meta name="twitter:card" content="{{ if $imageURL }}summary_large_image{{ else }}summary{{ end }}">
+{{- with $imageURL }}
+<meta name="twitter:image" content="{{ . }}">
+{{- end }}
+<meta name="twitter:title" content="{{ $title }}">
+<meta name="twitter:description" content="{{ $description }}">
