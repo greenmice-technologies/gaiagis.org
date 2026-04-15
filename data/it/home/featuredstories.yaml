@@ -1,0 +1,20 @@
+enable: true
+
+title: 'Storie'
+
+subtitle: 'Progetti selezionati tra AI, sistemi enterprise, applicazioni mobile e modernizzazione.'
+
+cta:
+  label: 'Tutte le storie'
+  link: 'stories/'
+
+items:
+  - tag: 'Retail lusso'
+    title: 'Automazione AI per l''e-commerce'
+    summary: 'Automazione AI per la generazione di contenuti e-commerce su larga scala nel settore del lusso.'
+    link: 'stories/ecommerce-ai-automation/'
+
+  - tag: 'Mobile'
+    title: 'Product engineering mobile'
+    summary: 'Product engineering e delivery di applicazioni mobile integrate con backend complessi.'
+    link: 'stories/mobile-product-engineering/'

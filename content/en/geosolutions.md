@@ -1,6 +1,6 @@
 ---
-title: "Greenmice Geosolutions"
-description: "Our spin-off for GIS engineering, spatial platforms, and aeronautical systems."
+title: 'Geosolutions'
+description: 'Our spin-off for GIS engineering, spatial platforms, and aeronautical systems.'
 translationKey: geosolutions-bridge
 menu:
   main:

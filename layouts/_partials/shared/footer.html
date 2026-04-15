@@ -47,10 +47,11 @@
             {{ $line := . }}
             {{ if eq $i 0 }}
               <p class="text-[var(--gm-text-strong)] text-base font-semibold">{{ $line }}</p>
-            {{ else if strings.HasPrefix $line "Mobile:" }}
-              {{ $phoneLabel := strings.TrimSpace (replace $line "Mobile:" "") }}
+            {{ else if or (strings.HasPrefix $line "Mobile:") (strings.HasPrefix $line "Cellulare:") }}
+              {{ $phoneTitle := cond (strings.HasPrefix $line "Cellulare:") "Cellulare:" "Mobile:" }}
+              {{ $phoneLabel := strings.TrimSpace (replace $line $phoneTitle "") }}
               {{ $phoneHref := printf "tel:%s" (replaceRE "\\s+" "" $phoneLabel) }}
-              <p class="text-[var(--gm-text-soft)] text-xs"><span>Mobile:</span> <a class="hover:text-primary" href="{{ $phoneHref }}">{{ $phoneLabel }}</a></p>
+              <p class="text-[var(--gm-text-soft)] text-xs"><span>{{ $phoneTitle }}</span> <a class="hover:text-primary" href="{{ $phoneHref }}">{{ $phoneLabel }}</a></p>
             {{ else if in $line "@" }}
               <p class="text-[var(--gm-text-soft)] text-xs"><a class="hover:text-primary" href="mailto:{{ $line }}">{{ $line }}</a></p>
             {{ else }}

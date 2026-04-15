@@ -1,0 +1,22 @@
+enable: true
+
+contact:
+  title: "Contatti"
+  items:
+    - label: "info@greenmice.it"
+      link: "mailto:info@greenmice.it"
+
+address_lines:
+  - "Greenmice Technologies S.r.l."
+  - "Piazzale delle Provincie 8, 00162 Roma, Italia"
+  - "Cellulare: +39 328 3615959"
+  - "P. IVA: 14580451004"
+  - "Capitale sociale: EUR 50.000,00 interamente versato"
+
+social:
+  - title: "LinkedIn"
+    icon: "linkedin"
+    link: "https://www.linkedin.com/company/greenmice"
+    label: ""
+
+copyright: "© Greenmice Technologies S.r.l. Tutti i diritti riservati."

@@ -9,6 +9,7 @@ markup:
 
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: true
+enableRobotsTXT: true
 
 outputs:
   home:

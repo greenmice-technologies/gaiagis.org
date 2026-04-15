@@ -1,5 +1,19 @@
 {{ $logoLight := site.Params.logo }}
 {{ $logoDark := site.Params.logo_dark | default (replace $logoLight "logo-brand" "logo-white") }}
+{{ $bridgeEntry := false }}
+{{ range site.Menus.main }}
+  {{ if and .Identifier (in .Identifier "-bridge") }}
+    {{ $bridgeEntry = . }}
+  {{ end }}
+{{ end }}
+{{ $bridgeColor := "#1FA463" }}
+{{ with $bridgeEntry }}
+  {{ if and .Identifier (in .Identifier "geosolutions") }}
+    {{ $bridgeColor = "#1AA6A6" }}
+  {{ else if and .Identifier (in .Identifier "technologies") }}
+    {{ $bridgeColor = "#1FA463" }}
+  {{ end }}
+{{ end }}
 <nav class="sticky top-0 z-50 border-b border-[var(--gm-border-soft)] bg-[var(--gm-hero-overlay-bg)] backdrop-blur-sm">
   <div class="container mx-auto flex items-center justify-between gap-4 px-4 py-5">
     <a class="flex items-center min-w-0" href="{{ site.Home.RelPermalink }}">
@@ -44,9 +58,11 @@
       </div>
       <ul class="flex flex-col gap-6 pt-6 xl:flex-row xl:items-center xl:gap-8 xl:pt-0">
         {{ range site.Menus.main }}
-          <li class="text-center xl:text-left">
-            <a class="text-[var(--gm-text-strong)] hover:text-primary text-sm font-medium" href="{{ .URL }}">{{ .Name }}</a>
-          </li>
+          {{ if not (and .Identifier (in .Identifier "-bridge")) }}
+            <li class="text-center xl:text-left">
+              <a class="text-[var(--gm-text-strong)] hover:text-primary text-sm font-medium" href="{{ .URL }}">{{ .Name }}</a>
+            </li>
+          {{ end }}
         {{ end }}
       </ul>
       <div class="flex flex-col xl:flex-row items-center gap-4 xl:gap-3 w-full xl:w-auto">
@@ -110,6 +126,16 @@
             {{ end }}
           </select>
         </div>
+        {{ with $bridgeEntry }}
+          <a
+            class="inline-flex w-full sm:w-auto items-center justify-center gap-2 rounded-xl px-4 py-2.5 text-sm font-semibold text-white transition hover:opacity-90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-offset-[var(--gm-surface)]"
+            href="{{ .URL }}"
+            style="background-color: {{ $bridgeColor }};"
+          >
+            {{ partial "utilities/image.html" (dict "src" "images/brands/svg/bridge-icon.svg" "class" "h-4 w-auto shrink-0" "alt" "Bridge brand icon") }}
+            {{ .Name }}
+          </a>
+        {{ end }}
       </div>
     </div>
   </div>
