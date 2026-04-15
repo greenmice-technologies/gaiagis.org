@@ -1,4 +1,12 @@
 <section id="featured-services" class="featured-services relative py-8 xl:py-20 overflow-hidden">
+  {{ $heroAssets := resources.Match "images/blowfish/heroes/*.svg" }}
+  {{ if eq (len $heroAssets) 0 }}
+    {{ $heroAssets = resources.Match "blowfish/heroes/*.svg" }}
+  {{ end }}
+  {{ $heroBackgrounds := slice }}
+  {{ range $heroAssets }}
+    {{ $heroBackgrounds = $heroBackgrounds | append .RelPermalink }}
+  {{ end }}
   <div class="container mx-auto px-4">
     {{ if or .title .cta }}
       <div class="flex flex-col xl:flex-row xl:items-end justify-between gap-6 mb-10">
@@ -14,7 +22,16 @@
     <div class="grid xl:grid-cols-2 gap-8">
     {{ range $i, $e := .items }}
     {{ $even := (eq (mod $i 2) 0)}}
-    <div class="flex flex-col gap-6 px-8 xl:px-12 py-12 rounded-2xl {{ if $even }} bg-[var(--gm-surface-2)] {{ else }} bg-primary {{ end }}">
+    {{ $pattern := "" }}
+    {{ if gt (len $heroBackgrounds) 0 }}
+      {{ $pattern = index $heroBackgrounds (mod $i (len $heroBackgrounds)) }}
+    {{ end }}
+    <div class="group relative flex flex-col gap-6 px-8 xl:px-12 py-12 rounded-2xl overflow-hidden {{ if $even }} bg-[var(--gm-surface-2)] {{ else }} bg-primary {{ end }}">
+        {{ if $pattern }}
+          <div class="pointer-events-none absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.12] transition-transform duration-700 group-hover:scale-105" style="background-image: url('{{ $pattern }}');"></div>
+        {{ end }}
+        <div class="pointer-events-none absolute inset-0 {{ if $even }} bg-gradient-to-br from-transparent via-[var(--gm-surface-2)]/25 to-[var(--gm-surface-2)]/80 {{ else }} bg-gradient-to-br from-transparent via-primary/20 to-primary/70 {{ end }}"></div>
+        <div class="relative z-10 flex flex-col gap-6">
         <h2 class="text-xl font-semibold leading-snug text-center {{ if $even }} text-[var(--gm-text-strong)] {{ else }} text-white {{ end }}">{{ .title }}</h2>
         <p class="leading-relaxed text-center text-sm xl:text-base {{ if $even }} text-[var(--gm-text)] {{ else }} text-white/95 {{ end }}">{{ .text }}</p>
         {{ with .button }}
@@ -26,6 +43,7 @@
             {{ end }}
           </div>
         {{ end }}
+        </div>
       </div>
     {{ end }}
     </div>

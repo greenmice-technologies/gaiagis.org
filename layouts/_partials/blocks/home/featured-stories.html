@@ -1,4 +1,12 @@
 <section id="featured-stories" class="featured-stories relative py-16 xl:py-24 overflow-hidden border-y border-white/20 bg-primary">
+  {{ $heroAssets := resources.Match "images/blowfish/heroes/*.svg" }}
+  {{ if eq (len $heroAssets) 0 }}
+    {{ $heroAssets = resources.Match "blowfish/heroes/*.svg" }}
+  {{ end }}
+  {{ $heroBackgrounds := slice }}
+  {{ range $heroAssets }}
+    {{ $heroBackgrounds = $heroBackgrounds | append .RelPermalink }}
+  {{ end }}
   <div class="container mx-auto px-4">
     <div class="flex flex-col xl:flex-row xl:items-end justify-between gap-6 mb-12">
       <div>
@@ -10,11 +18,21 @@
       {{ end }}
     </div>
     <div class="grid md:grid-cols-2 gap-8">
-      {{ range .items }}
-        <a href="{{ .link | relLangURL }}" class="group block rounded-2xl border border-[var(--gm-border-soft)] bg-[var(--gm-surface)] p-8 hover:border-[var(--gm-text-soft)]/35 hover:shadow-md transition-all duration-300">
-          <p class="text-xs font-semibold uppercase tracking-wider text-[var(--gm-text-soft)] mb-3">{{ .tag }}</p>
-          <h3 class="text-xl font-semibold text-[var(--gm-text-strong)] group-hover:opacity-90 transition-opacity mb-3">{{ .title }}</h3>
-          <p class="text-[var(--gm-text)] text-sm leading-relaxed">{{ .summary }}</p>
+      {{ range $i, $item := .items }}
+        {{ $pattern := "" }}
+        {{ if gt (len $heroBackgrounds) 0 }}
+          {{ $pattern = index $heroBackgrounds (mod $i (len $heroBackgrounds)) }}
+        {{ end }}
+        <a href="{{ $item.link | relLangURL }}" class="group relative block overflow-hidden rounded-2xl border border-[var(--gm-border-soft)] bg-[var(--gm-surface)] p-8 hover:border-[var(--gm-text-soft)]/35 hover:shadow-md transition-all duration-300">
+          {{ if $pattern }}
+            <div class="pointer-events-none absolute inset-0 bg-cover bg-center bg-no-repeat opacity-[0.16] transition-transform duration-700 group-hover:scale-105" style="background-image: url('{{ $pattern }}');"></div>
+          {{ end }}
+          <div class="pointer-events-none absolute inset-0 bg-gradient-to-br from-transparent via-[var(--gm-surface)]/35 to-[var(--gm-surface)]/85"></div>
+          <div class="relative z-10">
+            <p class="text-xs font-semibold uppercase tracking-wider text-[var(--gm-text-soft)] mb-3">{{ $item.tag }}</p>
+            <h3 class="text-xl font-semibold text-[var(--gm-text-strong)] group-hover:opacity-90 transition-opacity mb-3">{{ $item.title }}</h3>
+            <p class="text-[var(--gm-text)] text-sm leading-relaxed">{{ $item.summary }}</p>
+          </div>
         </a>
       {{ end }}
     </div>

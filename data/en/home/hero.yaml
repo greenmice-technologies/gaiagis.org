@@ -2,7 +2,7 @@ enable: true
 
 title: 'Complexity<br/>made simple.'
 
-text: 'AI, system engineering, and software delivery for companies operating in complex environments.'
+text: 'AI, systems engineering, and software delivery for companies working in complex environments.'
 
 buttons:
   - label: 'Learn more'
@@ -16,7 +16,7 @@ items:
   - icon: 'git-branch'
     color: '#1FA463'
     title: 'System thinking'
-    text: 'End-to-end design from constraints to production.'
+    text: 'End-to-end design, from constraints to production.'
 
   - icon: 'shield'
     color: '#1FA463'
@@ -30,5 +30,5 @@ items:
 
   - icon: 'compass'
     color: '#1FA463'
-    title: 'Italian design'
+    title: 'Italian design discipline'
     text: 'Attention to detail and precision in execution, applied to complex systems.'

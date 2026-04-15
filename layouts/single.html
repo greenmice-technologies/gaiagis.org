@@ -1,7 +1,10 @@
 {{ define "main" }}
-  {{ $patternAssets := resources.Match "blowfish/patterns/*.svg" }}
+  {{ $heroAssets := resources.Match "images/blowfish/heroes/*.svg" }}
+  {{ if eq (len $heroAssets) 0 }}
+    {{ $heroAssets = resources.Match "blowfish/heroes/*.svg" }}
+  {{ end }}
   {{ $patterns := slice }}
-  {{ range $patternAssets }}
+  {{ range $heroAssets }}
     {{ $patterns = $patterns | append .RelPermalink }}
   {{ end }}
   <article class="pb-14 xl:pb-20">

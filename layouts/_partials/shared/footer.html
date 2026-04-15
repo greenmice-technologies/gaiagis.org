@@ -4,6 +4,7 @@
 {{ $logoLight := site.Params.logo }}
 {{ $logoDark := site.Params.logo_dark | default (replace $logoLight "logo-brand" "logo-white") }}
 {{ $contactItems := $shared.footer.contact.items }}
+{{ $addressLines := $shared.footer.address_lines | default site.Params.address_lines }}
 {{ $emailLabel := "" }}
 {{ $emailLink := "" }}
 {{ with index $contactItems 0 }}
@@ -40,7 +41,7 @@
       {{ with $emailLabel }}
         <a class="block text-center xl:text-start text-[var(--gm-text)] hover:text-primary text-sm" href="{{ $emailLink }}">{{ . }}</a>
       {{ end }}
-      {{ with site.Params.address_lines }}
+      {{ with $addressLines }}
         <div class="mt-3 text-center xl:text-start leading-relaxed space-y-1.5">
           {{ range $i, $line := . }}
             {{ $line := . }}

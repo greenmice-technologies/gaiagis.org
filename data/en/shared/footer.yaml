@@ -6,6 +6,13 @@ contact:
     - label: "info@greenmice.it"
       link: "mailto:info@greenmice.it"
 
+address_lines:
+  - "Greenmice Technologies S.r.l."
+  - "Piazzale delle Provincie 8, 00162 Rome, Italy"
+  - "Mobile: +39 328 3615959"
+  - "VAT ID: 14580451004"
+  - "Share capital: EUR 50,000.00 fully paid"
+
 social:
   - title: "LinkedIn"
     icon: "linkedin"

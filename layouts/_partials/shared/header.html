@@ -50,27 +50,44 @@
         {{ end }}
       </ul>
       <div class="flex flex-col xl:flex-row items-center gap-4 xl:gap-3 w-full xl:w-auto">
-        <div class="relative w-full xl:w-72">
+        <div class="relative w-full sm:max-w-xs xl:w-56" data-search-shell>
           <label class="sr-only" for="gmSearchInput">Search site</label>
-          <input
-            id="gmSearchInput"
-            type="search"
-            autocomplete="off"
-            class="w-full rounded-md border border-[var(--gm-border-soft)] bg-[var(--gm-surface)] px-3 py-2 text-sm text-[var(--gm-text-strong)] placeholder:text-[var(--gm-text-soft)] focus:border-primary focus:outline-none"
-            placeholder="Search..."
-          />
-          <div
-            id="gmSearchResults"
-            class="absolute left-0 right-0 top-[calc(100%+0.4rem)] z-20 hidden max-h-80 overflow-auto rounded-xl border border-[var(--gm-border-soft)] bg-[var(--gm-surface)] p-2 shadow-xl"
-          ></div>
+          <div class="relative z-10" data-search-panel>
+            <button
+              type="button"
+              data-search-close
+              class="hidden absolute -top-10 right-0 z-20 h-8 w-8 items-center justify-center rounded-md border border-[var(--gm-border-soft)] bg-[var(--gm-surface)] text-[var(--gm-text-soft)] hover:text-[var(--gm-text-strong)]"
+              aria-label="Close search"
+            >
+              <i data-lucide="x" class="size-4"></i>
+            </button>
+            <div class="relative">
+              <i data-lucide="search" class="pointer-events-none absolute left-4 top-1/2 size-4 -translate-y-1/2 text-[var(--gm-text-soft)]"></i>
+              <input
+                id="gmSearchInput"
+                type="search"
+                autocomplete="off"
+                class="w-full rounded-xl border border-[var(--gm-border-soft)] bg-[var(--gm-surface)] pl-12 pr-20 py-3 text-sm text-[var(--gm-text-strong)] placeholder:text-[var(--gm-text-soft)] focus:border-primary focus:outline-none"
+                placeholder="Search..."
+              />
+              <span data-search-shortcut class="pointer-events-none absolute right-3 top-1/2 -translate-y-1/2 rounded-md border border-[var(--gm-border-soft)] bg-[var(--gm-surface-2)] px-2 py-0.5 text-[11px] font-medium tracking-wide text-[var(--gm-text-soft)]">⌘ K</span>
+            </div>
+            <div
+              id="gmSearchResults"
+              class="absolute left-0 right-0 top-[calc(100%+0.4rem)] z-20 hidden max-h-80 overflow-auto rounded-xl border border-[var(--gm-border-soft)] bg-[var(--gm-surface)] p-2 shadow-xl"
+            ></div>
+          </div>
         </div>
         <div class="flex items-center gap-2 text-xs text-[var(--gm-text-soft)] xl:border-l xl:border-[var(--gm-border-soft)] xl:pl-4">
           <button
             type="button"
             data-theme-toggle
-            class="rounded-md border border-[var(--gm-border-soft)] bg-[var(--gm-surface)] px-2 py-1 text-xs text-[var(--gm-text-strong)] focus:border-primary focus:outline-none"
+            class="inline-flex h-8 w-8 items-center justify-center rounded-md border border-[var(--gm-border-soft)] bg-[var(--gm-surface)] text-[var(--gm-text-strong)] focus:border-primary focus:outline-none"
             aria-label="Toggle theme"
-          >🌙</button>
+          >
+            <i data-theme-icon-dark data-lucide="moon" class="size-4"></i>
+            <i data-theme-icon-light data-lucide="sun" class="hidden size-4"></i>
+          </button>
           <select
             id="languageSwitcher"
             class="rounded-md border border-[var(--gm-border-soft)] bg-[var(--gm-surface)] px-2 py-1 text-xs text-[var(--gm-text-strong)] focus:border-primary focus:outline-none"
@@ -102,10 +119,13 @@
     const root = document.documentElement;
     const toggle = document.querySelector("[data-theme-toggle]");
     if (!toggle) return;
+    const moonIcon = toggle.querySelector("[data-theme-icon-dark]");
+    const sunIcon = toggle.querySelector("[data-theme-icon-light]");
 
     const applyToggleLabel = () => {
       const isDark = root.getAttribute("data-theme") === "dark";
-      toggle.textContent = isDark ? "☀️" : "🌙";
+      moonIcon?.classList.toggle("hidden", isDark);
+      sunIcon?.classList.toggle("hidden", !isDark);
       toggle.setAttribute("aria-label", isDark ? "Switch to light theme" : "Switch to dark theme");
     };
 
@@ -122,25 +142,54 @@
   (() => {
     const input = document.getElementById("gmSearchInput");
     const results = document.getElementById("gmSearchResults");
-    if (!input || !results) return;
+    const shell = input?.closest("[data-search-shell]");
+    const panel = shell?.querySelector("[data-search-panel]");
+    const shortcut = shell?.querySelector("[data-search-shortcut]");
+    const closeButton = shell?.querySelector("[data-search-close]");
+    if (!input || !results || !shell || !panel) return;
 
-    const lang = document.documentElement.lang || "en";
-    const endpoint = `/${lang}/index.json`;
+    const endpoint = "{{ "index.json" | relLangURL }}";
     let index = [];
     let loaded = false;
+    let loading = false;
     let activeIndex = -1;
 
     const dictionary = {
-      en: { placeholder: "Search...", noResults: "No results", untitled: "Untitled" },
-      it: { placeholder: "Cerca...", noResults: "Nessun risultato", untitled: "Senza titolo" },
-      es: { placeholder: "Buscar...", noResults: "Sin resultados", untitled: "Sin titulo" },
-      fr: { placeholder: "Rechercher...", noResults: "Aucun resultat", untitled: "Sans titre" },
-      de: { placeholder: "Suchen...", noResults: "Keine Ergebnisse", untitled: "Ohne Titel" },
-      "zh-cn": { placeholder: "搜索...", noResults: "无结果", untitled: "无标题" },
-      ja: { placeholder: "検索...", noResults: "結果はありません", untitled: "無題" }
+      en: { placeholder: "Search...", loading: "Searching...", noResults: "No results", untitled: "Untitled" },
+      it: { placeholder: "Cerca...", loading: "Ricerca in corso...", noResults: "Nessun risultato", untitled: "Senza titolo" },
+      es: { placeholder: "Buscar...", loading: "Buscando...", noResults: "Sin resultados", untitled: "Sin titulo" },
+      fr: { placeholder: "Rechercher...", loading: "Recherche...", noResults: "Aucun resultat", untitled: "Sans titre" },
+      de: { placeholder: "Suchen...", loading: "Suche...", noResults: "Keine Ergebnisse", untitled: "Ohne Titel" },
+      "zh-cn": { placeholder: "搜索...", loading: "搜索中...", noResults: "无结果", untitled: "无标题" },
+      ja: { placeholder: "検索...", loading: "検索中...", noResults: "結果はありません", untitled: "無題" }
     };
+    const lang = (document.documentElement.lang || "en").toLowerCase();
     const t = dictionary[lang] || dictionary.en;
     input.placeholder = t.placeholder;
+
+    const isMac = /Mac|iPhone|iPad|iPod/i.test(window.navigator.platform || "");
+    const isTouch = window.matchMedia("(hover: none)").matches;
+    if (shortcut) {
+      shortcut.textContent = isMac ? "⌘ K" : "Ctrl K";
+      shortcut.classList.toggle("hidden", isTouch);
+    }
+
+    const shellPlaceholder = document.createElement("span");
+    shellPlaceholder.setAttribute("aria-hidden", "true");
+    shellPlaceholder.style.display = "none";
+
+    const mountShellToBody = () => {
+      if (shell.parentElement === document.body) return;
+      shell.parentElement?.insertBefore(shellPlaceholder, shell);
+      document.body.appendChild(shell);
+    };
+
+    const restoreShellMount = () => {
+      if (shell.parentElement !== document.body) return;
+      if (shellPlaceholder.parentElement) {
+        shellPlaceholder.parentElement.replaceChild(shell, shellPlaceholder);
+      }
+    };
 
     const escapeHtml = (value) => value
       .replaceAll("&", "&amp;")
@@ -149,7 +198,11 @@
       .replaceAll("\"", "&quot;")
       .replaceAll("'", "&#39;");
 
-    const normalize = (value) => value.toLowerCase().trim();
+    const normalize = (value) => value
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .trim();
 
     const closeResults = () => {
       results.classList.add("hidden");
@@ -157,8 +210,32 @@
       activeIndex = -1;
     };
 
+    const openFullscreen = () => {
+      const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;
+      mountShellToBody();
+      shell.classList.add("is-active");
+      document.body.classList.add("gm-search-open");
+      document.body.style.paddingRight = scrollbarWidth > 0 ? `${scrollbarWidth}px` : "";
+      requestAnimationFrame(() => {
+        input.focus();
+      });
+    };
+
+    const closeFullscreen = () => {
+      shell.classList.remove("is-active");
+      document.body.classList.remove("gm-search-open");
+      document.body.style.paddingRight = "";
+      restoreShellMount();
+    };
+
     const openResults = () => {
       results.classList.remove("hidden");
+    };
+
+    const setStatus = (message) => {
+      openResults();
+      results.innerHTML = `<p class="px-3 py-2 text-sm text-[var(--gm-text-soft)]">${message}</p>`;
+      activeIndex = -1;
     };
 
     const emphasize = (text, query) => {
@@ -168,28 +245,44 @@
       return escapeHtml(text).replace(regex, "<mark class=\"rounded bg-primary/20 px-0.5 text-[var(--gm-text-strong)]\">$1</mark>");
     };
 
-    const scoreEntry = (entry, query) => {
-      let score = 0;
+    const scoreEntry = (entry, terms) => {
       const title = normalize(entry.title || "");
       const description = normalize(entry.description || "");
       const summary = normalize(entry.summary || "");
       const content = normalize(entry.content || "");
+      const permalink = normalize(entry.permalink || "");
+      const combined = `${title} ${description} ${summary} ${content} ${permalink}`;
 
-      if (title.includes(query)) score += 100;
-      if (description.includes(query)) score += 40;
-      if (summary.includes(query)) score += 25;
-      if (content.includes(query)) score += 10;
+      if (!terms.every((term) => combined.includes(term))) return 0;
+
+      let score = 0;
+      for (const term of terms) {
+        if (title === term) score += 180;
+        else if (title.startsWith(term)) score += 120;
+        else if (title.includes(term)) score += 95;
+
+        if (description.includes(term)) score += 40;
+        if (summary.includes(term)) score += 30;
+        if (content.includes(term)) score += 8;
+        if (permalink.includes(term)) score += 5;
+      }
+
       return score;
     };
 
     const render = (query) => {
-      if (query.length < 2) {
+      if (!query) {
+        closeResults();
+        return;
+      }
+      const terms = query.split(/\s+/).filter(Boolean);
+      if (!terms.length) {
         closeResults();
         return;
       }
 
       const scored = index
-        .map((entry) => ({ entry, score: scoreEntry(entry, query) }))
+        .map((entry) => ({ entry, score: scoreEntry(entry, terms) }))
         .filter((item) => item.score > 0)
         .sort((a, b) => b.score - a.score)
         .slice(0, 8);
@@ -205,7 +298,7 @@
         const snippetBase = entry.description || entry.summary || entry.content || "";
         const snippet = emphasize(snippetBase.slice(0, 180), query);
         return `
-          <a href="${entry.permalink}" class="gm-search-result block rounded-lg px-3 py-2 transition hover:bg-black/5 dark:hover:bg-white/5">
+          <a href="${entry.permalink}" class="gm-search-result block rounded-lg px-3 py-2 transition hover:bg-primary/15 hover:ring-1 hover:ring-primary/35">
             <p class="text-sm font-semibold text-[var(--gm-text-strong)]">${title}</p>
             <p class="mt-1 text-xs text-[var(--gm-text-soft)]">${snippet}</p>
           </a>
@@ -217,6 +310,9 @@
 
     const ensureIndex = async () => {
       if (loaded) return true;
+      if (loading) return false;
+      loading = true;
+      setStatus(t.loading);
       try {
         const response = await fetch(endpoint, { headers: { Accept: "application/json" } });
         if (!response.ok) return false;
@@ -227,6 +323,8 @@
         return true;
       } catch {
         return false;
+      } finally {
+        loading = false;
       }
     };
 
@@ -242,12 +340,22 @@
     });
 
     document.addEventListener("click", (event) => {
-      if (!results.contains(event.target) && event.target !== input) closeResults();
+      if (!shell.contains(event.target)) {
+        closeResults();
+        closeFullscreen();
+      }
+    });
+
+    input.addEventListener("focus", () => {
+      openFullscreen();
+      if (normalize(input.value || "").length) render(normalize(input.value || ""));
     });
 
     input.addEventListener("keydown", (event) => {
       if (event.key === "Escape") {
         closeResults();
+        closeFullscreen();
+        input.blur();
         return;
       }
 
@@ -260,23 +368,94 @@
       } else if (event.key === "ArrowUp") {
         event.preventDefault();
         activeIndex = activeIndex <= 0 ? items.length - 1 : activeIndex - 1;
-      } else if (event.key === "Enter" && activeIndex >= 0) {
-        event.preventDefault();
-        items[activeIndex].click();
+      } else if (event.key === "Enter") {
+        if (activeIndex >= 0) {
+          event.preventDefault();
+          items[activeIndex].click();
+          return;
+        }
+        if (items.length === 1) {
+          event.preventDefault();
+          items[0].click();
+          return;
+        }
         return;
       } else {
         return;
       }
 
       items.forEach((item, index) => {
-        item.classList.toggle("bg-black/10", index === activeIndex);
-        item.classList.toggle("dark:bg-white/10", index === activeIndex);
+        item.classList.toggle("gm-search-result-active", index === activeIndex);
       });
       items[activeIndex].scrollIntoView({ block: "nearest" });
+    });
+
+    closeButton?.addEventListener("click", () => {
+      closeResults();
+      closeFullscreen();
+    });
+
+    window.addEventListener("resize", () => {
+      if (!shell.classList.contains("is-active")) return;
+      closeResults();
+      closeFullscreen();
+    });
+
+    document.addEventListener("keydown", (event) => {
+      const isShortcut = (isMac && event.metaKey && event.key.toLowerCase() === "k")
+        || (!isMac && event.ctrlKey && event.key.toLowerCase() === "k");
+      if (!isShortcut) return;
+      event.preventDefault();
+      openFullscreen();
+      requestAnimationFrame(() => {
+        input.select();
+      });
     });
   })();
 </script>
 <style>
   html[data-theme="dark"] .logo-light { display: none; }
   html[data-theme="dark"] .logo-dark { display: block; }
+  body.gm-search-open { overflow: hidden; }
+  [data-search-shell].is-active {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 80;
+    width: 100dvw !important;
+    height: 100dvh;
+    margin: 0 !important;
+    max-width: none !important;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: clamp(1rem, 4vw, 2rem);
+    background: color-mix(in srgb, var(--gm-surface) 88%, transparent);
+    backdrop-filter: blur(4px);
+  }
+  [data-search-shell].is-active [data-search-panel] {
+    width: min(720px, 100%);
+    margin-top: clamp(1rem, 5vh, 4rem);
+  }
+  [data-search-shell].is-active [data-search-close] {
+    display: inline-flex;
+  }
+  [data-search-shell].is-active #gmSearchInput {
+    font-size: 1rem;
+    padding: 0.85rem 5rem 0.85rem 3rem;
+    border-radius: 0.85rem;
+  }
+  [data-search-shell].is-active #gmSearchResults {
+    position: static;
+    margin-top: 0.65rem;
+    max-height: min(68vh, 40rem);
+    border-radius: 0.85rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.18);
+  }
+  .gm-search-result-active {
+    background: color-mix(in srgb, var(--brand-primary) 18%, transparent);
+    box-shadow: inset 0 0 0 1px color-mix(in srgb, var(--brand-primary) 42%, transparent);
+  }
 </style>

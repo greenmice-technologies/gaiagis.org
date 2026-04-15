@@ -37,13 +37,33 @@
     {{ end }}
 
     <div class="container mx-auto px-4">
-      <div class="grid md:grid-cols-2 xl:grid-cols-3 gap-8 max-w-6xl mx-auto">
-        {{ range .RegularPages }}
-          <a href="{{ .Permalink }}" class="group block rounded-2xl border border-[var(--gm-border-soft)] bg-[var(--gm-surface)] p-8 hover:border-primary/30 hover:shadow-md transition-all duration-300">
-            <h2 class="text-xl font-semibold text-[var(--gm-text-strong)] group-hover:text-primary transition-colors mb-3">{{ .Title }}</h2>
-            {{ with .Description }}
-              <p class="text-sm text-[var(--gm-text)] leading-relaxed">{{ . }}</p>
-            {{ end }}
+      <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
+        {{ range $i, $page := .RegularPages }}
+          {{ $featuredImage := "" }}
+          {{ with $page.Params.featured_image }}{{ $featuredImage = . }}{{ end }}
+          {{ if not $featuredImage }}{{ with $page.Params.featuredImage }}{{ $featuredImage = . }}{{ end }}{{ end }}
+          {{ if not $featuredImage }}{{ with $page.Params.image }}{{ $featuredImage = . }}{{ end }}{{ end }}
+          {{ $placeholderPattern := "" }}
+          {{ if gt (len $heroBackgrounds) 0 }}
+            {{ $placeholderPattern = index $heroBackgrounds (mod $i (len $heroBackgrounds)) }}
+          {{ end }}
+          <a href="{{ $page.Permalink }}" class="group flex items-stretch gap-5 rounded-2xl border border-[var(--gm-border-soft)] bg-[var(--gm-surface)] p-5 hover:border-primary/30 hover:shadow-md transition-all duration-300">
+            <div class="relative h-28 w-28 shrink-0 overflow-hidden rounded-xl border border-[var(--gm-border-soft)] bg-[var(--gm-surface-2)]">
+              {{ if $featuredImage }}
+                <img src="{{ $featuredImage | relURL }}" alt="{{ $page.Title }}" class="h-full w-full object-cover transition-transform duration-500 group-hover:scale-105" loading="lazy" />
+              {{ else if $placeholderPattern }}
+                <div class="h-full w-full bg-cover bg-center bg-no-repeat opacity-90 transition-transform duration-500 group-hover:scale-105" style="background-image: url('{{ $placeholderPattern }}'); background-color: var(--gm-hero-bg);"></div>
+                <div class="absolute inset-0 bg-[var(--gm-hero-overlay-bg)]/70"></div>
+              {{ else }}
+                <div class="h-full w-full bg-[var(--gm-surface-2)]"></div>
+              {{ end }}
+            </div>
+            <div class="flex min-w-0 flex-1 flex-col justify-center">
+              <h2 class="text-xl font-semibold text-[var(--gm-text-strong)] group-hover:text-primary transition-colors mb-2">{{ $page.Title }}</h2>
+              {{ with $page.Description }}
+                <p class="text-sm text-[var(--gm-text)] leading-relaxed">{{ . }}</p>
+              {{ end }}
+            </div>
           </a>
         {{ end }}
       </div>
