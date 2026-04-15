@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Greenmice Technologies</title>
+    <meta name="description" content="AI, system engineering, and software delivery for companies operating in complex environments.">
+
+    <meta property="og:url" content="https://greenmice.it/">
+    <meta property="og:site_name" content="Greenmice Technologies">
+    <meta property="og:title" content="Greenmice Technologies">
+    <meta property="og:description" content="AI, system engineering, and software delivery for companies operating in complex environments.">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://greenmice.it/greenmice-technologies-og.png">
+    <meta property="og:image:secure_url" content="https://greenmice.it/greenmice-technologies-og.png">
+    <meta property="og:image:type" content="image/png">
+    <meta property="og:image:width" content="1200">
+    <meta property="og:image:height" content="630">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Greenmice Technologies">
+    <meta name="twitter:description" content="AI, system engineering, and software delivery for companies operating in complex environments.">
+    <meta name="twitter:image" content="https://greenmice.it/greenmice-technologies-og.png">
+
+    <link rel="canonical" href="https://greenmice.it/en/">
+    <meta http-equiv="refresh" content="0; url=https://greenmice.it/en/">
+    <script>
+      (function () {
+        var supported = ["en", "it", "es", "fr", "de", "pt", "zh-cn", "ja"];
+        var prefs = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || "en"])
+          .map(function (l) { return (l || "").toLowerCase(); });
+
+        function resolveLang(input) {
+          if (!input) return "";
+          if (supported.indexOf(input) !== -1) return input;
+          var base = input.split("-")[0];
+          if (base === "zh") return "zh-cn";
+          if (supported.indexOf(base) !== -1) return base;
+          return "";
+        }
+
+        var chosen = "";
+        for (var i = 0; i < prefs.length; i++) {
+          chosen = resolveLang(prefs[i]);
+          if (chosen) break;
+        }
+        if (!chosen) chosen = "en";
+
+        var target = "https://greenmice.it/" + chosen + "/";
+        if (window.location.href !== target) window.location.replace(target);
+      })();
+    </script>
+  </head>
+  <body>
+    <p>Redirecting to your localized page...</p>
+    <noscript>
+      <p>JavaScript is disabled. Continue to <a href="https://greenmice.it/en/">English version</a>.</p>
+    </noscript>
+  </body>
+</html>

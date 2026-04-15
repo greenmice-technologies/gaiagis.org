@@ -67,3 +67,10 @@ languages:
     contentDir: content/ja
     params:
       description: "複雑なシステム、AIプラットフォーム、レガシー近代化のエンジニアリングパートナー。CTO as a Service。"
+  pt:
+    languageName: Português
+    languageCode: pt
+    weight: 8
+    contentDir: content/pt
+    params:
+      description: ""
