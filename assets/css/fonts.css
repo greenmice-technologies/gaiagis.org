@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap");
+
+@layer base {
+  html,
+  body,
+  button,
+  input,
+  select,
+  textarea {
+    font-family: "Urbanist", ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  }
+}
