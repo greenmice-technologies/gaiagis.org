@@ -9,586 +9,586 @@
     <path transform="
   translate(0, 0)
   " d="M0 0h60v60H0z" fill="
-  #1FA463"></path>
+  #BF07F0"></path>
   </svg>
   <svg>
     <path transform="
   translate(0, 60)
   " d="M0 0h60v60H0z" fill="
-  #E0F4E8"></path>
+  #ECE8FF"></path>
   </svg>
   <svg>
-    <path transform="translate(0, 120) translate(30,30) rotate(0) translate(-30,-30)" fill="#263238"
+    <path transform="translate(0, 120) translate(30,30) rotate(0) translate(-30,-30)" fill="#2c2e8f"
       d="M0 0h60v60H0z"></path>
     <circle cx="30" cy="30" r="30"
-      transform="translate(0, 120) translate(30,30) rotate(0) translate(-30,-30)" fill="#1FA463"></circle>
+      transform="translate(0, 120) translate(30,30) rotate(0) translate(-30,-30)" fill="#BF07F0"></circle>
   </svg>
   <svg>
     <circle cx="30" cy="30" r="30" transform="
   translate(0, 180)
   " fill="
-  #9BD9B6
+  #B5A8FF
   "></circle>
   </svg>
   <svg>
     <circle cx="30" cy="30" r="30" transform="
   translate(0, 240)
   " fill="
-  #C6EBD4
+  #D3CBFF
   "></circle>
   </svg>
   <svg>
     <path transform="translate(0, 300) translate(30,30) rotate(270) translate(-30,-30)"
-      fill="#62C992" d="M0 0h60v60H0z"></path>
+      fill="#7A63FC" d="M0 0h60v60H0z"></path>
     <circle cx="30" cy="30" r="30"
-      transform="translate(0, 300) translate(30,30) rotate(270) translate(-30,-30)" fill="#C6EBD4"></circle>
+      transform="translate(0, 300) translate(30,30) rotate(270) translate(-30,-30)" fill="#D3CBFF"></circle>
   </svg>
   <svg>
     <path transform="translate(0, 21600 translate(30,30) rotate(90) translate(-30,-30)"
-      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#2B6F73"></path>
+      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#4264FB"></path>
   </svg>
   <svg>
     <path transform="translate(0, 420) translate(30,30) rotate(180) translate(-30,-30)"
-      fill="#2B6F73" d="M0 0h60v60H0z"></path>
+      fill="#4264FB" d="M0 0h60v60H0z"></path>
     <circle cx="30" cy="30" r="30"
-      transform="translate(0, 420) translate(30,30) rotate(180) translate(-30,-30)" fill="#1FA463"></circle>
+      transform="translate(0, 420) translate(30,30) rotate(180) translate(-30,-30)" fill="#BF07F0"></circle>
   </svg>
   <svg>
     <path transform="translate(0, 28800 translate(30,30) rotate(180) translate(-30,-30)"
-      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#62C992"></path>
+      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#7A63FC"></path>
   </svg>
   <svg>
     <circle cx="30" cy="30" r="30" transform="
   translate(0, 540)
   " fill="
-  #33B978
+  #A23EF7
   "></circle>
   </svg>
   <svg>
-    <path transform="translate(60,0) translate(30,30) rotate(180) translate(-30,-30)" fill="#62C992"
+    <path transform="translate(60,0) translate(30,30) rotate(180) translate(-30,-30)" fill="#7A63FC"
       d="M60 0v60H0V0z"></path>
-    <path transform="translate(60,0) translate(30,30) rotate(180) translate(-30,-30)" fill="#C6EBD4"
+    <path transform="translate(60,0) translate(30,30) rotate(180) translate(-30,-30)" fill="#D3CBFF"
       d="M60 0v60H0C0 26.863 26.863 0 60 0z"></path>
   </svg>
   <svg>
     <path transform="translate(3600, 3600 translate(30,30) rotate(90) translate(-30,-30)"
-      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#9BD9B6"></path>
+      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#B5A8FF"></path>
   </svg>
   <svg>
     <path transform="translate(60,120) translate(30,30) rotate(270) translate(-30,-30)"
-      fill="#2B6F73" d="M60 0v60H0V0z"></path>
+      fill="#4264FB" d="M60 0v60H0V0z"></path>
     <path transform="translate(60,120) translate(30,30) rotate(270) translate(-30,-30)"
-      fill="#2B6F73" d="M60 0v60H0C0 26.863 26.863 0 60 0z"></path>
+      fill="#4264FB" d="M60 0v60H0C0 26.863 26.863 0 60 0z"></path>
   </svg>
   <svg>
     <path transform="
   translate(60, 180)
   " d="M0 0h60v60H0z" fill="
-  #1FA463"></path>
+  #BF07F0"></path>
   </svg>
   <svg>
     <circle cx="30" cy="30" r="30" transform="
   translate(60, 240)
   " fill="
-  #33B978
+  #A23EF7
   "></circle>
   </svg>
   <svg>
     <path transform="
   translate(60, 300)
   " d="M0 0h60v60H0z" fill="
-  #1FA463"></path>
+  #BF07F0"></path>
   </svg>
   <svg>
     <path transform="translate(3600, 21600 translate(30,30) rotate(180) translate(-30,-30)"
-      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#C6EBD4"></path>
+      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#D3CBFF"></path>
   </svg>
   <svg>
     <path transform="translate(60, 420) translate(30,30) rotate(270) translate(-30,-30)"
-      fill="#1FA463" d="M0 0h60v60H0z"></path>
+      fill="#BF07F0" d="M0 0h60v60H0z"></path>
     <circle cx="30" cy="30" r="30"
-      transform="translate(60, 420) translate(30,30) rotate(270) translate(-30,-30)" fill="#9BD9B6"></circle>
+      transform="translate(60, 420) translate(30,30) rotate(270) translate(-30,-30)" fill="#B5A8FF"></circle>
   </svg>
   <svg>
     <path transform="translate(60,480) translate(30,30) rotate(90) translate(-30,-30)"
-      fill="#1FA463" d="M60 0v60H0V0z"></path>
+      fill="#BF07F0" d="M60 0v60H0V0z"></path>
     <path transform="translate(60,480) translate(30,30) rotate(90) translate(-30,-30)"
-      fill="#263238" d="M60 0v60H0C0 26.863 26.863 0 60 0z"></path>
+      fill="#2c2e8f" d="M60 0v60H0C0 26.863 26.863 0 60 0z"></path>
   </svg>
   <svg>
     <circle cx="30" cy="30" r="30" transform="
   translate(60, 540)
   " fill="
-  #C6EBD4
+  #D3CBFF
   "></circle>
   </svg>
   <svg>
     <circle cx="30" cy="30" r="30" transform="
   translate(120, 0)
   " fill="
-  #2B6F73
+  #4264FB
   "></circle>
   </svg>
   <svg>
     <path transform="
   translate(120, 60)
   " d="M0 0h60v60H0z" fill="
-  #EEF9F2"></path>
+  #F6F3FF"></path>
   </svg>
   <svg>
     <path transform="
   translate(120, 120)
   " d="M0 0h60v60H0z" fill="
-  #C6EBD4"></path>
+  #D3CBFF"></path>
   </svg>
   <svg>
     <path transform="translate(120,180) translate(30,30) rotate(270) translate(-30,-30)"
-      fill="#9BD9B6" d="M60 0v60H0V0z"></path>
+      fill="#B5A8FF" d="M60 0v60H0V0z"></path>
     <path transform="translate(120,180) translate(30,30) rotate(270) translate(-30,-30)"
-      fill="#E0F4E8" d="M60 0v60H0C0 26.863 26.863 0 60 0z"></path>
+      fill="#ECE8FF" d="M60 0v60H0C0 26.863 26.863 0 60 0z"></path>
   </svg>
   <svg>
     <path transform="
   translate(120, 240)
   " d="M0 0h60v60H0z" fill="
-  #E0F4E8"></path>
+  #ECE8FF"></path>
   </svg>
   <svg>
     <circle cx="30" cy="30" r="30" transform="
   translate(120, 300)
   " fill="
-  #33B978
+  #A23EF7
   "></circle>
   </svg>
   <svg>
     <circle cx="30" cy="30" r="30" transform="
   translate(120, 360)
   " fill="
-  #2B6F73
+  #4264FB
   "></circle>
   </svg>
   <svg>
     <path transform="translate(7200, 25200 translate(30,30) rotate(0) translate(-30,-30)"
-      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#9BD9B6"></path>
+      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#B5A8FF"></path>
   </svg>
   <svg>
     <path transform="
   translate(120, 480)
   " d="M0 0h60v60H0z" fill="
-  #E0F4E8"></path>
+  #ECE8FF"></path>
   </svg>
   <svg>
     <path transform="translate(120,540) translate(30,30) rotate(0) translate(-30,-30)"
-      fill="#62C992" d="M60 0v60H0V0z"></path>
+      fill="#7A63FC" d="M60 0v60H0V0z"></path>
     <path transform="translate(120,540) translate(30,30) rotate(0) translate(-30,-30)"
-      fill="#2B6F73" d="M60 0v60H0C0 26.863 26.863 0 60 0z"></path>
+      fill="#4264FB" d="M60 0v60H0C0 26.863 26.863 0 60 0z"></path>
   </svg>
   <svg>
     <circle cx="30" cy="30" r="30" transform="
   translate(180, 0)
   " fill="
-  #263238
+  #2c2e8f
   "></circle>
   </svg>
   <svg>
     <path transform="
   translate(180, 60)
   " d="M0 0h60v60H0z" fill="
-  #1FA463"></path>
+  #BF07F0"></path>
   </svg>
   <svg>
     <path transform="translate(180,120) translate(30,30) rotate(90) translate(-30,-30)"
-      fill="#C6EBD4" d="M60 0v60H0V0z"></path>
+      fill="#D3CBFF" d="M60 0v60H0V0z"></path>
     <path transform="translate(180,120) translate(30,30) rotate(90) translate(-30,-30)"
-      fill="#62C992" d="M60 0v60H0C0 26.863 26.863 0 60 0z"></path>
+      fill="#7A63FC" d="M60 0v60H0C0 26.863 26.863 0 60 0z"></path>
   </svg>
   <svg>
     <circle cx="30" cy="30" r="30" transform="
   translate(180, 180)
   " fill="
-  #33B978
+  #A23EF7
   "></circle>
   </svg>
   <svg>
     <path transform="translate(180,240) translate(30,30) rotate(90) translate(-30,-30)"
-      fill="#E0F4E8" d="M60 0v60H0V0z"></path>
+      fill="#ECE8FF" d="M60 0v60H0V0z"></path>
     <path transform="translate(180,240) translate(30,30) rotate(90) translate(-30,-30)"
-      fill="#EEF9F2" d="M60 0v60H0C0 26.863 26.863 0 60 0z"></path>
+      fill="#F6F3FF" d="M60 0v60H0C0 26.863 26.863 0 60 0z"></path>
   </svg>
   <svg>
     <path transform="translate(10800, 18000 translate(30,30) rotate(270) translate(-30,-30)"
-      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#9BD9B6"></path>
+      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#B5A8FF"></path>
   </svg>
   <svg>
     <path transform="translate(180, 360) translate(30,30) rotate(180) translate(-30,-30)"
-      fill="#2B6F73" d="M0 0h60v60H0z"></path>
+      fill="#4264FB" d="M0 0h60v60H0z"></path>
     <circle cx="30" cy="30" r="30"
-      transform="translate(180, 360) translate(30,30) rotate(180) translate(-30,-30)" fill="#E0F4E8"></circle>
+      transform="translate(180, 360) translate(30,30) rotate(180) translate(-30,-30)" fill="#ECE8FF"></circle>
   </svg>
   <svg>
     <path transform="translate(10800, 25200 translate(30,30) rotate(180) translate(-30,-30)"
-      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#33B978"></path>
+      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#A23EF7"></path>
   </svg>
   <svg>
     <path transform="
   translate(180, 480)
   " d="M0 0h60v60H0z" fill="
-  #263238"></path>
+  #2c2e8f"></path>
   </svg>
   <svg>
     <circle cx="30" cy="30" r="30" transform="
   translate(180, 540)
   " fill="
-  #1FA463
+  #BF07F0
   "></circle>
   </svg>
   <svg>
     <path transform="translate(14400, 0 translate(30,30) rotate(270) translate(-30,-30)"
-      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#EEF9F2"></path>
+      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#F6F3FF"></path>
   </svg>
   <svg>
     <path transform="translate(240, 60) translate(30,30) rotate(0) translate(-30,-30)"
-      fill="#E0F4E8" d="M0 0h60v60H0z"></path>
+      fill="#ECE8FF" d="M0 0h60v60H0z"></path>
     <circle cx="30" cy="30" r="30"
-      transform="translate(240, 60) translate(30,30) rotate(0) translate(-30,-30)" fill="#EEF9F2"></circle>
+      transform="translate(240, 60) translate(30,30) rotate(0) translate(-30,-30)" fill="#F6F3FF"></circle>
   </svg>
   <svg>
     <path transform="
   translate(240, 120)
   " d="M0 0h60v60H0z" fill="
-  #9BD9B6"></path>
+  #B5A8FF"></path>
   </svg>
   <svg>
     <path transform="translate(240, 180) translate(30,30) rotate(90) translate(-30,-30)"
-      fill="#1FA463" d="M0 0h60v60H0z"></path>
+      fill="#BF07F0" d="M0 0h60v60H0z"></path>
     <circle cx="30" cy="30" r="30"
-      transform="translate(240, 180) translate(30,30) rotate(90) translate(-30,-30)" fill="#263238"></circle>
+      transform="translate(240, 180) translate(30,30) rotate(90) translate(-30,-30)" fill="#2c2e8f"></circle>
   </svg>
   <svg>
     <path transform="translate(240, 240) translate(30,30) rotate(90) translate(-30,-30)"
-      fill="#33B978" d="M0 0h60v60H0z"></path>
+      fill="#A23EF7" d="M0 0h60v60H0z"></path>
     <circle cx="30" cy="30" r="30"
-      transform="translate(240, 240) translate(30,30) rotate(90) translate(-30,-30)" fill="#2B6F73"></circle>
+      transform="translate(240, 240) translate(30,30) rotate(90) translate(-30,-30)" fill="#4264FB"></circle>
   </svg>
   <svg>
     <circle cx="30" cy="30" r="30" transform="
   translate(240, 300)
   " fill="
-  #E0F4E8
+  #ECE8FF
   "></circle>
   </svg>
   <svg>
     <path transform="translate(240,360) translate(30,30) rotate(0) translate(-30,-30)"
-      fill="#62C992" d="M60 0v60H0V0z"></path>
+      fill="#7A63FC" d="M60 0v60H0V0z"></path>
     <path transform="translate(240,360) translate(30,30) rotate(0) translate(-30,-30)"
-      fill="#33B978" d="M60 0v60H0C0 26.863 26.863 0 60 0z"></path>
+      fill="#A23EF7" d="M60 0v60H0C0 26.863 26.863 0 60 0z"></path>
   </svg>
   <svg>
     <path transform="translate(240, 420) translate(30,30) rotate(90) translate(-30,-30)"
-      fill="#C6EBD4" d="M0 0h60v60H0z"></path>
+      fill="#D3CBFF" d="M0 0h60v60H0z"></path>
     <circle cx="30" cy="30" r="30"
-      transform="translate(240, 420) translate(30,30) rotate(90) translate(-30,-30)" fill="#263238"></circle>
+      transform="translate(240, 420) translate(30,30) rotate(90) translate(-30,-30)" fill="#2c2e8f"></circle>
   </svg>
   <svg>
     <circle cx="30" cy="30" r="30" transform="
   translate(240, 480)
   " fill="
-  #E0F4E8
+  #ECE8FF
   "></circle>
   </svg>
   <svg>
     <path transform="translate(14400, 32400 translate(30,30) rotate(270) translate(-30,-30)"
-      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#2B6F73"></path>
+      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#4264FB"></path>
   </svg>
   <svg>
     <path transform="translate(18000, 0 translate(30,30) rotate(270) translate(-30,-30)"
-      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#E0F4E8"></path>
+      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#ECE8FF"></path>
   </svg>
   <svg>
     <path transform="
   translate(300, 60)
   " d="M0 0h60v60H0z" fill="
-  #1FA463"></path>
+  #BF07F0"></path>
   </svg>
   <svg>
     <circle cx="30" cy="30" r="30" transform="
   translate(300, 120)
   " fill="
-  #E0F4E8
+  #ECE8FF
   "></circle>
   </svg>
   <svg>
     <path transform="translate(300, 180) translate(30,30) rotate(0) translate(-30,-30)"
-      fill="#33B978" d="M0 0h60v60H0z"></path>
+      fill="#A23EF7" d="M0 0h60v60H0z"></path>
     <circle cx="30" cy="30" r="30"
-      transform="translate(300, 180) translate(30,30) rotate(0) translate(-30,-30)" fill="#62C992"></circle>
+      transform="translate(300, 180) translate(30,30) rotate(0) translate(-30,-30)" fill="#7A63FC"></circle>
   </svg>
   <svg>
     <circle cx="30" cy="30" r="30" transform="
   translate(300, 240)
   " fill="
-  #2B6F73
+  #4264FB
   "></circle>
   </svg>
   <svg>
     <path transform="translate(18000, 18000 translate(30,30) rotate(180) translate(-30,-30)"
-      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#62C992"></path>
+      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#7A63FC"></path>
   </svg>
   <svg>
     <path transform="translate(18000, 21600 translate(30,30) rotate(0) translate(-30,-30)"
-      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#9BD9B6"></path>
+      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#B5A8FF"></path>
   </svg>
   <svg>
     <path transform="translate(300,420) translate(30,30) rotate(270) translate(-30,-30)"
-      fill="#E0F4E8" d="M60 0v60H0V0z"></path>
+      fill="#ECE8FF" d="M60 0v60H0V0z"></path>
     <path transform="translate(300,420) translate(30,30) rotate(270) translate(-30,-30)"
-      fill="#2B6F73" d="M60 0v60H0C0 26.863 26.863 0 60 0z"></path>
+      fill="#4264FB" d="M60 0v60H0C0 26.863 26.863 0 60 0z"></path>
   </svg>
   <svg>
     <path transform="translate(300,480) translate(30,30) rotate(0) translate(-30,-30)"
-      fill="#263238" d="M60 0v60H0V0z"></path>
+      fill="#2c2e8f" d="M60 0v60H0V0z"></path>
     <path transform="translate(300,480) translate(30,30) rotate(0) translate(-30,-30)"
-      fill="#2B6F73" d="M60 0v60H0C0 26.863 26.863 0 60 0z"></path>
+      fill="#4264FB" d="M60 0v60H0C0 26.863 26.863 0 60 0z"></path>
   </svg>
   <svg>
     <path transform="translate(300, 540) translate(30,30) rotate(270) translate(-30,-30)"
-      fill="#E0F4E8" d="M0 0h60v60H0z"></path>
+      fill="#ECE8FF" d="M0 0h60v60H0z"></path>
     <circle cx="30" cy="30" r="30"
-      transform="translate(300, 540) translate(30,30) rotate(270) translate(-30,-30)" fill="#9BD9B6"></circle>
+      transform="translate(300, 540) translate(30,30) rotate(270) translate(-30,-30)" fill="#B5A8FF"></circle>
   </svg>
   <svg>
     <circle cx="30" cy="30" r="30" transform="
   translate(360, 0)
   " fill="
-  #1FA463
+  #BF07F0
   "></circle>
   </svg>
   <svg>
-    <path transform="translate(360,60) translate(30,30) rotate(0) translate(-30,-30)" fill="#1FA463"
+    <path transform="translate(360,60) translate(30,30) rotate(0) translate(-30,-30)" fill="#BF07F0"
       d="M60 0v60H0V0z"></path>
-    <path transform="translate(360,60) translate(30,30) rotate(0) translate(-30,-30)" fill="#2B6F73"
+    <path transform="translate(360,60) translate(30,30) rotate(0) translate(-30,-30)" fill="#4264FB"
       d="M60 0v60H0C0 26.863 26.863 0 60 0z"></path>
   </svg>
   <svg>
     <circle cx="30" cy="30" r="30" transform="
   translate(360, 120)
   " fill="
-  #9BD9B6
+  #B5A8FF
   "></circle>
   </svg>
   <svg>
     <path transform="translate(21600, 10800 translate(30,30) rotate(180) translate(-30,-30)"
-      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#2B6F73"></path>
+      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#4264FB"></path>
   </svg>
   <svg>
     <path transform="translate(21600, 14400 translate(30,30) rotate(90) translate(-30,-30)"
-      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#33B978"></path>
+      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#A23EF7"></path>
   </svg>
   <svg>
     <path transform="
   translate(360, 300)
   " d="M0 0h60v60H0z" fill="
-  #33B978"></path>
+  #A23EF7"></path>
   </svg>
   <svg>
     <path transform="translate(360, 360) translate(30,30) rotate(90) translate(-30,-30)"
-      fill="#2B6F73" d="M0 0h60v60H0z"></path>
+      fill="#4264FB" d="M0 0h60v60H0z"></path>
     <circle cx="30" cy="30" r="30"
-      transform="translate(360, 360) translate(30,30) rotate(90) translate(-30,-30)" fill="#263238"></circle>
+      transform="translate(360, 360) translate(30,30) rotate(90) translate(-30,-30)" fill="#2c2e8f"></circle>
   </svg>
   <svg>
     <path transform="translate(21600, 25200 translate(30,30) rotate(0) translate(-30,-30)"
-      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#62C992"></path>
+      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#7A63FC"></path>
   </svg>
   <svg>
     <path transform="translate(360, 480) translate(30,30) rotate(90) translate(-30,-30)"
-      fill="#E0F4E8" d="M0 0h60v60H0z"></path>
+      fill="#ECE8FF" d="M0 0h60v60H0z"></path>
     <circle cx="30" cy="30" r="30"
-      transform="translate(360, 480) translate(30,30) rotate(90) translate(-30,-30)" fill="#33B978"></circle>
+      transform="translate(360, 480) translate(30,30) rotate(90) translate(-30,-30)" fill="#A23EF7"></circle>
   </svg>
   <svg>
     <circle cx="30" cy="30" r="30" transform="
   translate(360, 540)
   " fill="
-  #33B978
+  #A23EF7
   "></circle>
   </svg>
   <svg>
     <path transform="translate(420, 0) translate(30,30) rotate(180) translate(-30,-30)"
-      fill="#1FA463" d="M0 0h60v60H0z"></path>
+      fill="#BF07F0" d="M0 0h60v60H0z"></path>
     <circle cx="30" cy="30" r="30"
-      transform="translate(420, 0) translate(30,30) rotate(180) translate(-30,-30)" fill="#33B978"></circle>
+      transform="translate(420, 0) translate(30,30) rotate(180) translate(-30,-30)" fill="#A23EF7"></circle>
   </svg>
   <svg>
     <path transform="
   translate(420, 60)
   " d="M0 0h60v60H0z" fill="
-  #E0F4E8"></path>
+  #ECE8FF"></path>
   </svg>
   <svg>
     <circle cx="30" cy="30" r="30" transform="
   translate(420, 120)
   " fill="
-  #62C992
+  #7A63FC
   "></circle>
   </svg>
   <svg>
     <path transform="translate(25200, 10800 translate(30,30) rotate(180) translate(-30,-30)"
-      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#E0F4E8"></path>
+      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#ECE8FF"></path>
   </svg>
   <svg>
     <circle cx="30" cy="30" r="30" transform="
   translate(420, 240)
   " fill="
-  #EEF9F2
+  #F6F3FF
   "></circle>
   </svg>
   <svg>
     <path transform="translate(420,300) translate(30,30) rotate(180) translate(-30,-30)"
-      fill="#1FA463" d="M60 0v60H0V0z"></path>
+      fill="#BF07F0" d="M60 0v60H0V0z"></path>
     <path transform="translate(420,300) translate(30,30) rotate(180) translate(-30,-30)"
-      fill="#2B6F73" d="M60 0v60H0C0 26.863 26.863 0 60 0z"></path>
+      fill="#4264FB" d="M60 0v60H0C0 26.863 26.863 0 60 0z"></path>
   </svg>
   <svg>
     <path transform="translate(420, 360) translate(30,30) rotate(180) translate(-30,-30)"
-      fill="#9BD9B6" d="M0 0h60v60H0z"></path>
+      fill="#B5A8FF" d="M0 0h60v60H0z"></path>
     <circle cx="30" cy="30" r="30"
-      transform="translate(420, 360) translate(30,30) rotate(180) translate(-30,-30)" fill="#1FA463"></circle>
+      transform="translate(420, 360) translate(30,30) rotate(180) translate(-30,-30)" fill="#BF07F0"></circle>
   </svg>
   <svg>
     <path transform="
   translate(420, 420)
   " d="M0 0h60v60H0z" fill="
-  #1FA463"></path>
+  #BF07F0"></path>
   </svg>
   <svg>
     <path transform="
   translate(420, 480)
   " d="M0 0h60v60H0z" fill="
-  #33B978"></path>
+  #A23EF7"></path>
   </svg>
   <svg>
     <circle cx="30" cy="30" r="30" transform="
   translate(420, 540)
   " fill="
-  #33B978
+  #A23EF7
   "></circle>
   </svg>
   <svg>
     <path transform="translate(480, 0) translate(30,30) rotate(180) translate(-30,-30)"
-      fill="#62C992" d="M0 0h60v60H0z"></path>
+      fill="#7A63FC" d="M0 0h60v60H0z"></path>
     <circle cx="30" cy="30" r="30"
-      transform="translate(480, 0) translate(30,30) rotate(180) translate(-30,-30)" fill="#E0F4E8"></circle>
+      transform="translate(480, 0) translate(30,30) rotate(180) translate(-30,-30)" fill="#ECE8FF"></circle>
   </svg>
   <svg>
     <path transform="translate(28800, 3600 translate(30,30) rotate(180) translate(-30,-30)"
-      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#2B6F73"></path>
+      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#4264FB"></path>
   </svg>
   <svg>
     <path transform="translate(480, 120) translate(30,30) rotate(270) translate(-30,-30)"
-      fill="#62C992" d="M0 0h60v60H0z"></path>
+      fill="#7A63FC" d="M0 0h60v60H0z"></path>
     <circle cx="30" cy="30" r="30"
-      transform="translate(480, 120) translate(30,30) rotate(270) translate(-30,-30)" fill="#2B6F73"></circle>
+      transform="translate(480, 120) translate(30,30) rotate(270) translate(-30,-30)" fill="#4264FB"></circle>
   </svg>
   <svg>
     <path transform="
   translate(480, 180)
   " d="M0 0h60v60H0z" fill="
-  #9BD9B6"></path>
+  #B5A8FF"></path>
   </svg>
   <svg>
     <circle cx="30" cy="30" r="30" transform="
   translate(480, 240)
   " fill="
-  #62C992
+  #7A63FC
   "></circle>
   </svg>
   <svg>
     <path transform="translate(480, 300) translate(30,30) rotate(90) translate(-30,-30)"
-      fill="#263238" d="M0 0h60v60H0z"></path>
+      fill="#2c2e8f" d="M0 0h60v60H0z"></path>
     <circle cx="30" cy="30" r="30"
-      transform="translate(480, 300) translate(30,30) rotate(90) translate(-30,-30)" fill="#62C992"></circle>
+      transform="translate(480, 300) translate(30,30) rotate(90) translate(-30,-30)" fill="#7A63FC"></circle>
   </svg>
   <svg>
     <path transform="translate(28800, 21600 translate(30,30) rotate(180) translate(-30,-30)"
-      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#33B978"></path>
+      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#A23EF7"></path>
   </svg>
   <svg>
     <path transform="translate(480,420) translate(30,30) rotate(270) translate(-30,-30)"
-      fill="#62C992" d="M60 0v60H0V0z"></path>
+      fill="#7A63FC" d="M60 0v60H0V0z"></path>
     <path transform="translate(480,420) translate(30,30) rotate(270) translate(-30,-30)"
-      fill="#33B978" d="M60 0v60H0C0 26.863 26.863 0 60 0z"></path>
+      fill="#A23EF7" d="M60 0v60H0C0 26.863 26.863 0 60 0z"></path>
   </svg>
   <svg>
     <path transform="translate(28800, 28800 translate(30,30) rotate(90) translate(-30,-30)"
-      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#62C992"></path>
+      d="M0 60C33.1371 60 60 33.1371 60 5.24537e-06L5.24537e-06 0L0 60Z" fill="#7A63FC"></path>
   </svg>
   <svg>
     <circle cx="30" cy="30" r="30" transform="
   translate(480, 540)
   " fill="
-  #1FA463
+  #BF07F0
   "></circle>
   </svg>
   <svg>
     <path transform="
   translate(540, 0)
   " d="M0 0h60v60H0z" fill="
-  #EEF9F2"></path>
+  #F6F3FF"></path>
   </svg>
   <svg>
     <path transform="translate(540, 60) translate(30,30) rotate(0) translate(-30,-30)"
-      fill="#C6EBD4" d="M0 0h60v60H0z"></path>
+      fill="#D3CBFF" d="M0 0h60v60H0z"></path>
     <circle cx="30" cy="30" r="30"
-      transform="translate(540, 60) translate(30,30) rotate(0) translate(-30,-30)" fill="#9BD9B6"></circle>
+      transform="translate(540, 60) translate(30,30) rotate(0) translate(-30,-30)" fill="#B5A8FF"></circle>
   </svg>
   <svg>
     <circle cx="30" cy="30" r="30" transform="
   translate(540, 120)
   " fill="
-  #1FA463
+  #BF07F0
   "></circle>
   </svg>
   <svg>
     <path transform="translate(540,180) translate(30,30) rotate(180) translate(-30,-30)"
-      fill="#62C992" d="M60 0v60H0V0z"></path>
+      fill="#7A63FC" d="M60 0v60H0V0z"></path>
     <path transform="translate(540,180) translate(30,30) rotate(180) translate(-30,-30)"
-      fill="#33B978" d="M60 0v60H0C0 26.863 26.863 0 60 0z"></path>
+      fill="#A23EF7" d="M60 0v60H0C0 26.863 26.863 0 60 0z"></path>
   </svg>
   <svg>
     <path transform="translate(540, 240) translate(30,30) rotate(0) translate(-30,-30)"
-      fill="#C6EBD4" d="M0 0h60v60H0z"></path>
+      fill="#D3CBFF" d="M0 0h60v60H0z"></path>
     <circle cx="30" cy="30" r="30"
-      transform="translate(540, 240) translate(30,30) rotate(0) translate(-30,-30)" fill="#9BD9B6"></circle>
+      transform="translate(540, 240) translate(30,30) rotate(0) translate(-30,-30)" fill="#B5A8FF"></circle>
   </svg>
   <svg>
     <path transform="translate(540, 300) translate(30,30) rotate(270) translate(-30,-30)"
-      fill="#EEF9F2" d="M0 0h60v60H0z"></path>
+      fill="#F6F3FF" d="M0 0h60v60H0z"></path>
     <circle cx="30" cy="30" r="30"
-      transform="translate(540, 300) translate(30,30) rotate(270) translate(-30,-30)" fill="#E0F4E8"></circle>
+      transform="translate(540, 300) translate(30,30) rotate(270) translate(-30,-30)" fill="#ECE8FF"></circle>
   </svg>
   <svg>
     <path transform="translate(540,360) translate(30,30) rotate(0) translate(-30,-30)"
-      fill="#62C992" d="M60 0v60H0V0z"></path>
+      fill="#7A63FC" d="M60 0v60H0V0z"></path>
     <path transform="translate(540,360) translate(30,30) rotate(0) translate(-30,-30)"
-      fill="#62C992" d="M60 0v60H0C0 26.863 26.863 0 60 0z"></path>
+      fill="#7A63FC" d="M60 0v60H0C0 26.863 26.863 0 60 0z"></path>
   </svg>
   <svg>
     <path transform="
   translate(540, 420)
   " d="M0 0h60v60H0z" fill="
-  #62C992"></path>
+  #7A63FC"></path>
   </svg>
   <svg>
     <path transform="translate(540, 480) translate(30,30) rotate(180) translate(-30,-30)"
-      fill="#62C992" d="M0 0h60v60H0z"></path>
+      fill="#7A63FC" d="M0 0h60v60H0z"></path>
     <circle cx="30" cy="30" r="30"
-      transform="translate(540, 480) translate(30,30) rotate(180) translate(-30,-30)" fill="#62C992"></circle>
+      transform="translate(540, 480) translate(30,30) rotate(180) translate(-30,-30)" fill="#7A63FC"></circle>
   </svg>
   <svg>
     <path transform="translate(540, 540) translate(30,30) rotate(90) translate(-30,-30)"
-      fill="#1FA463" d="M0 0h60v60H0z"></path>
+      fill="#BF07F0" d="M0 0h60v60H0z"></path>
     <circle cx="30" cy="30" r="30"
-      transform="translate(540, 540) translate(30,30) rotate(90) translate(-30,-30)" fill="#33B978"></circle>
+      transform="translate(540, 540) translate(30,30) rotate(90) translate(-30,-30)" fill="#A23EF7"></circle>
   </svg>
 </svg>

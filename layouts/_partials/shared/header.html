@@ -6,12 +6,12 @@
     {{ $bridgeEntry = . }}
   {{ end }}
 {{ end }}
-{{ $bridgeColor := "#1FA463" }}
+{{ $bridgeColor := "#BF07F0" }}
 {{ with $bridgeEntry }}
   {{ if and .Identifier (in .Identifier "geosolutions") }}
     {{ $bridgeColor = "#1AA6A6" }}
   {{ else if and .Identifier (in .Identifier "technologies") }}
-    {{ $bridgeColor = "#1FA463" }}
+    {{ $bridgeColor = "#BF07F0" }}
   {{ end }}
 {{ end }}
 <nav class="sticky top-0 z-50 border-b border-[var(--gm-border-soft)] bg-[var(--gm-hero-overlay-bg)] backdrop-blur-sm">

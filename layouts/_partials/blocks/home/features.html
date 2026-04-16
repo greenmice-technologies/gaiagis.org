@@ -12,7 +12,7 @@
             {{ if .image }}
               {{ partial "utilities/image" (dict "src" .image "class" "aspect-square object-contain object-center w-full max-w-xl rounded-2xl bg-[var(--gm-surface)] p-8")}}
             {{ else }}
-              <div class="aspect-square w-full max-w-xl rounded-2xl border border-primary/10 overflow-hidden flex items-center justify-center p-3 sm:p-4 bg-cover bg-center min-w-0 min-h-0" {{ with $patternLines }}style="background-image: url('{{ .RelPermalink }}');"{{ end }}>
+              <div class="aspect-square w-full max-w-xl rounded-2xl border border-primary/10 overflow-hidden flex items-center justify-center p-3 sm:p-4 bg-cover bg-center min-w-0 min-h-0" {{ with $patternLines }}style="background-color: var(--gm-hero-bg); background-blend-mode: screen, multiply, normal; background-image: linear-gradient(140deg, color-mix(in srgb, var(--brand-primary) 26%, transparent) 0%, color-mix(in srgb, var(--brand-ink) 20%, transparent) 100%), linear-gradient(0deg, color-mix(in srgb, var(--gm-hero-bg) 82%, transparent), color-mix(in srgb, var(--gm-hero-bg) 82%, transparent)), url('{{ .RelPermalink }}');"{{ end }}>
                 <div class="w-full max-w-[22rem] aspect-square shrink-0">
                   <i data-lucide="{{ .icon }}" class="js-feature-pattern-icon block size-full stroke-[1.8] leading-none"></i>
                 </div>

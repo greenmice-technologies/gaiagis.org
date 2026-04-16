@@ -5,14 +5,14 @@ logo: "images/brands/svg/logo-brand.svg"
 logo_dark: "images/brands/svg/logo-white.svg"
 
 colors:
-  primary: "#1FA463"
-  secondary: "#263238"
-  background: "#F5F7F6"
+  primary: "#BF07F0"
+  secondary: "#4264FB"
+  background: "#F5F3FF"
 
 favicons:
-  themeColor: "#F5F7F6"
-  backgroundColor: "#F5F7F6"
-  faviconColor: "#1FA463"
+  themeColor: "#F5F3FF"
+  backgroundColor: "#F5F3FF"
+  faviconColor: "#BF07F0"
 
 images:
   - "greenmice-technologies-og.png"

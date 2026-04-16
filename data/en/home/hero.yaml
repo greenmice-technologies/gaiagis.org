@@ -1,14 +1,14 @@
 enable: true
 
-title: 'Complexity<br/>made simple.'
+title: 'Gaia<br/>GIS toolkit'
 
-text: 'AI, systems engineering, and software delivery for companies working in complex environments.'
+text: 'Your swiss army knife for GIS data.'
 
 buttons:
   - label: 'Learn more'
     link: '#features'
-  - label: 'Contact'
-    link: 'contact/'
+  - label: 'Get started'
+    link: 'https://app.gaiagis.org'
 
 image: 'images/home/hero/hero.svg'
 

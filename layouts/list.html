@@ -11,6 +11,9 @@
     id="list-hero"
     class="relative min-h-[30vh] max-h-[33vh] overflow-hidden bg-cover bg-center bg-no-repeat py-10 xl:py-14"
     data-hero-backgrounds="{{ delimit $heroBackgrounds `|` }}"
+    data-brand-primary="{{ site.Params.colors.primary }}"
+    data-brand-secondary="{{ site.Params.colors.secondary }}"
+    data-brand-background="{{ site.Params.colors.background }}"
     {{ if gt (len $heroBackgrounds) 0 }}style="background-color: var(--gm-hero-bg); background-image: url('{{ index $heroBackgrounds 0 }}');"{{ else }}style="background-color: var(--gm-hero-bg);"{{ end }}
   >
     <div class="absolute inset-0 -z-10 bg-[var(--gm-hero-overlay-bg)]"></div>
@@ -81,7 +84,13 @@
       const backgrounds = raw.split("|").filter(Boolean);
       if (!backgrounds.length) return;
       const randomBackground = backgrounds[Math.floor(Math.random() * backgrounds.length)];
-      hero.style.backgroundImage = `url('${randomBackground}')`;
+      const primary = hero.dataset.brandPrimary || "#BF07F0";
+      const secondary = hero.dataset.brandSecondary || "#4264FB";
+      const heroThemeBg = getComputedStyle(document.documentElement).getPropertyValue("--gm-hero-bg").trim();
+      const background = heroThemeBg || hero.dataset.brandBackground || "#F5F3FF";
+      hero.style.backgroundColor = background;
+      hero.style.backgroundBlendMode = "screen, multiply, normal";
+      hero.style.backgroundImage = `linear-gradient(140deg, ${primary}2E 0%, ${secondary}2A 100%), linear-gradient(0deg, ${background}CC, ${background}CC), url('${randomBackground}')`;
     })();
   </script>
 {{ end }}
