@@ -1,34 +1,35 @@
+# Derived from gaia/docs/readme.md
 enable: true
 
-title: 'Gaia<br/>GIS toolkit'
+title: 'Digital cartography<br/>made easy'
 
-text: 'Your swiss army knife for GIS data.'
+text: 'An open platform for effortless map creation and sharing.'
 
 buttons:
-  - label: 'Learn more'
+  - label: 'Explore features'
     link: '#features'
-  - label: 'Get started'
-    link: 'https://app.gaiagis.org'
+  - label: 'Sign in'
+    link: 'https://app.gaiagis.org/login'
 
 image: 'images/home/hero/hero.svg'
 
 items:
-  - icon: 'git-branch'
-    color: '#1FA463'
-    title: 'System thinking'
-    text: 'End-to-end design, from constraints to production.'
+  - icon: 'database'
+    color: '#4264FB'
+    title: 'GDAL import tool'
+    text: 'Import geospatial data from 100+ formats with drag and drop.'
 
-  - icon: 'shield'
-    color: '#1FA463'
-    title: 'Operational rigor'
-    text: 'Security, observability, and maintainability by default.'
+  - icon: 'table'
+    color: '#4264FB'
+    title: 'Layer table editor'
+    text: 'Edit attributes, geometries, and symbology in real time.'
 
-  - icon: 'layers-3'
-    color: '#1FA463'
-    title: 'Complexity under control'
-    text: 'Clear boundaries, explicit interfaces, measurable outcomes.'
+  - icon: 'square-terminal'
+    color: '#4264FB'
+    title: 'SQL console'
+    text: 'Run spatial queries on PostGIS, SpatiaLite, and GeoPackage.'
 
-  - icon: 'compass'
-    color: '#1FA463'
-    title: 'Italian design discipline'
-    text: 'Attention to detail and precision in execution, applied to complex systems.'
+  - icon: 'book-open'
+    color: '#4264FB'
+    title: 'Visual notebooks'
+    text: 'Compose reproducible cartographic workflows with visual blocks.'

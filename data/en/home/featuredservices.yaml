@@ -1,22 +1,23 @@
+# Derived from gaia/docs/readme.md
 enable: true
 
-title: "Services"
+title: "Access Gaia"
 
-subtitle: "AI systems, systems engineering, legacy modernization, mobile applications, and CTO leadership - delivered as engineering, not consulting."
+subtitle: "Start using Gaia now on the official application."
 
 cta:
-  label: "All services"
-  link: "services/"
+  label: "Feature documentation"
+  link: "features/"
 
 items:
-  - title: "Mobile applications"
-    text: "Cross-platform mobile applications integrated with enterprise systems, built for performance and consistency."
+  - title: "Sign in to your workspace"
+    text: "Access your private and public projects, continue map editing, and collaborate with your team."
     button:
-      label: "Explore service"
-      link: "services/mobile-applications/"
+      label: "Sign in"
+      link: "https://app.gaiagis.org/login"
 
-  - title: "AI systems"
-    text: "AI systems, automation workflows, and data-driven applications designed and implemented for production use."
+  - title: "Create a new account"
+    text: "New to Gaia? Register to start creating maps, managing layers, and publishing projects."
     button:
-      label: "Explore service"
-      link: "services/artificial-intelligence/"
+      label: "Sign up"
+      link: "https://app.gaiagis.org/account/register"

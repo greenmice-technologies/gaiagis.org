@@ -6,6 +6,7 @@
       "body",
       "br",
       "button",
+      "code",
       "div",
       "footer",
       "h1",
@@ -49,7 +50,7 @@
       "aspect-square",
       "backdrop-blur-md",
       "backdrop-blur-sm",
-      "bg-[#1FA463]",
+      "bg-[#4264FB]",
       "bg-[var(--gm-hero-overlay-bg)]",
       "bg-[var(--gm-hero-overlay-bg)]/70",
       "bg-[var(--gm-surface)]",
@@ -349,15 +350,19 @@
       "z-50"
     ],
     "ids": [
+      "authentication",
+      "backoffice-and-content",
       "featured-services",
       "featured-stories",
       "features",
+      "geospatial-capabilities",
       "gmSearchInput",
       "gmSearchResults",
       "hero",
       "languageSwitcher",
       "list-hero",
       "navbarContent",
+      "project-editor",
       "single-hero"
     ]
   }

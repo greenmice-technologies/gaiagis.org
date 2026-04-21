@@ -1,27 +1,28 @@
+# Derived from gaia/docs/readme.md
 enable: true
 
-title: "Where we operate"
+title: "Everything you need for professional maps"
 
-text: "High-trust environments: regulated industries, large enterprises, and product teams that need engineering depth, not slide decks."
+text: "From import to export, Gaia gives you the tools to create, edit, and share modern cartography."
 
 items:
-  - pretitle: "AI & platforms"
-    pretext: "Agents, automation, data"
-    color: "#1FA463"
-    icon: "brain"
-    title: "Agentic AI, MCP, and enterprise integrations"
-    text: "We build AI systems that connect safely to your tools: orchestration, retrieval, evaluation, and governance, so automation scales without becoming brittle."
+  - pretitle: "Data foundation"
+    pretext: "Vector and raster support"
+    color: "#4264FB"
+    icon: "layers-3"
+    title: "Import and manage 100+ geospatial formats"
+    text: "Work with Shapefile, GeoJSON, GeoTIFF, KML, and many more formats with fast import and reprojection support."
 
-  - pretitle: "Modernization"
-    pretext: "Legacy without paralysis"
-    color: "#1FA463"
-    icon: "cog"
-    title: "Legacy modernization with measurable risk reduction"
-    text: "We untangle monoliths and brittle integrations through incremental migration paths: strangler patterns, contract-first APIs, test harnesses, and cutovers planned with engineering discipline."
+  - pretitle: "Editing workflow"
+    pretext: "Production-ready tools"
+    color: "#4264FB"
+    icon: "pencil"
+    title: "Edit layers, styles, and attributes in one place"
+    text: "Use the layer table editor, geometry tools, and live styling to move from raw data to publication-ready maps."
 
-  - pretitle: "Product engineering"
-    pretext: "Mobile & cloud"
-    color: "#1FA463"
-    icon: "smartphone"
-    title: "Mobile and cloud delivery"
-    text: "From Ionic, React Native, and Flutter to backend services and analytics pipelines, we ship cohesive product experiences with the same standards we apply to core systems."
+  - pretitle: "Publishing and sharing"
+    pretext: "Collaboration by default"
+    color: "#4264FB"
+    icon: "share-2"
+    title: "Publish projects and share maps easily"
+    text: "Organize private and public projects, export outputs, and share cartographic results with your team and stakeholders."

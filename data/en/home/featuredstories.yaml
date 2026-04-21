@@ -1,20 +1,21 @@
+# Derived from gaia/docs/readme.md
 enable: true
 
-title: 'Stories'
+title: 'Highlights'
 
-subtitle: 'Selected projects across AI, enterprise systems, mobile applications, and modernization.'
+subtitle: 'Powerful geospatial capabilities inspired by the original Gaia app landing.'
 
 cta:
-  label: 'All stories'
-  link: 'stories/'
+  label: 'See all features'
+  link: 'features/'
 
 items:
-  - tag: 'Luxury retail'
-    title: 'AI automation for e-commerce'
-    summary: 'AI automation for large-scale e-commerce content generation in the luxury sector.'
-    link: 'stories/ecommerce-ai-automation/'
+  - tag: 'Data import'
+    title: 'GDAL-powered ingestion'
+    summary: 'Import vector and raster data, reproject on the fly, and prepare datasets for mapping workflows.'
+    link: 'features/layers/'
 
-  - tag: 'Mobile'
-    title: 'Mobile product engineering'
-    summary: 'Product engineering and delivery for mobile applications integrated with complex backend systems.'
-    link: 'stories/mobile-product-engineering/'
+  - tag: 'Advanced editing'
+    title: 'SQL and visual workflows'
+    summary: 'Use SQL spatial queries and visual notebooks to create reproducible analysis and cartography pipelines.'
+    link: 'features/styles/'
