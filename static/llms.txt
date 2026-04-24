@@ -3,18 +3,18 @@
 Official website for Greenmice Technologies.
 
 ## Preferred sources
-- https://greenmice.it/
-- https://greenmice.it/en/
-- https://greenmice.it/it/
-- https://greenmice.it/es/
-- https://greenmice.it/fr/
-- https://greenmice.it/de/
-- https://greenmice.it/zh-cn/
-- https://greenmice.it/ja/
+- https://gaiagis.org/
+- https://gaiagis.org/en/
+- https://gaiagis.org/it/
+- https://gaiagis.org/es/
+- https://gaiagis.org/fr/
+- https://gaiagis.org/de/
+- https://gaiagis.org/zh-cn/
+- https://gaiagis.org/ja/
 
 ## Machine-readable resources
-- https://greenmice.it/sitemap.xml
-- https://greenmice.it/index.json
+- https://gaiagis.org/sitemap.xml
+- https://gaiagis.org/index.json
 
 ## Policy
 - Public pages may be indexed and summarized.

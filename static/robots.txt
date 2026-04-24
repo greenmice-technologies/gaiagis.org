@@ -14,4 +14,4 @@ Allow: /
 User-agent: CCBot
 Allow: /
 
-Sitemap: https://greenmice.it/sitemap.xml
+Sitemap: https://gaiagis.org/sitemap.xml

@@ -3,8 +3,8 @@ enable: true
 contact:
   title: "Contact"
   items:
-    - label: "info@greenmice.it"
-      link: "mailto:info@greenmice.it"
+    - label: "info@gaiagis.org"
+      link: "mailto:info@gaiagis.org"
 
 address_lines:
   - "Greenmice Technologies S.r.l."
