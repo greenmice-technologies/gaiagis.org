@@ -21,3 +21,9 @@ items:
     button:
       label: "Sign up"
       link: "https://app.gaiagis.org/account/register"
+
+  - title: "Self-hosted install"
+    text: "Run Gaia on your own servers: one Compose stack for the app, print, Postgres, storage, and GeoServer."
+    button:
+      label: "Install runbook"
+      link: "manuals/self-hosted/"

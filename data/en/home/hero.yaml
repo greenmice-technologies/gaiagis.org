@@ -10,6 +10,8 @@ buttons:
     link: '#features'
   - label: 'Sign in'
     link: 'https://app.gaiagis.org/login'
+  - label: 'Self-hosted'
+    link: 'manuals/self-hosted/'
 
 image: 'images/home/hero/hero.svg'
 

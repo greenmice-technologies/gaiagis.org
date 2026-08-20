@@ -26,8 +26,9 @@ Gaia is designed for geospatial teams that need a single workspace for data prep
 
 ## Access the application
 
-Gaia is available as SaaS and self-hosted software. Use the production application to explore the live workspace:
+Gaia is available as SaaS and self-hosted software.
 
 - [Sign in to Gaia App](https://app.gaiagis.org/login)
 - [Create an account](https://app.gaiagis.org/account/register)
+- [Self-hosted install](/en/manuals/self-hosted/)
 - [Explore all features](/features/)
