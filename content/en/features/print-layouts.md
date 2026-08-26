@@ -3,8 +3,7 @@ weight: 5
 title: 'Print Layouts'
 description: 'Design print layouts for your maps.'
 translationKey: print-layouts
-canonicalSource: 'gaia/docs/readme.md'
-contentStatus: 'derived-en'
+contentStatus: 'canonical-en'
 ---
 
 Gaia includes a print layout editor for creating and managing print layouts for your maps.

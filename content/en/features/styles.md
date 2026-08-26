@@ -3,8 +3,7 @@ weight: 4
 title: 'Managing Styles'
 description: 'Design consistent map styles for interactive and print outputs.'
 translationKey: styles
-canonicalSource: 'gaia/docs/readme.md'
-contentStatus: 'derived-en'
+contentStatus: 'canonical-en'
 ---
 
 Gaia includes a styling workflow for thematic maps, map server interoperability, and print-ready cartography.

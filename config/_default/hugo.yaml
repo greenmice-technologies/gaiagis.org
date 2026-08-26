@@ -6,6 +6,11 @@ markup:
   goldmark:
     renderer:
       unsafe: true
+    renderHooks:
+      link:
+        useEmbedded: always
+      image:
+        useEmbedded: always
 
 defaultContentLanguage: en
 defaultContentLanguageInSubdir: true

@@ -41,7 +41,7 @@
 
     <div class="container mx-auto px-4">
       <div class="grid md:grid-cols-2 gap-8 max-w-6xl mx-auto">
-        {{ range $i, $page := .RegularPages }}
+        {{ range $i, $page := .Pages }}
           {{ $featuredImage := "" }}
           {{ with $page.Params.featured_image }}{{ $featuredImage = . }}{{ end }}
           {{ if not $featuredImage }}{{ with $page.Params.featuredImage }}{{ $featuredImage = . }}{{ end }}{{ end }}

@@ -1,8 +1,7 @@
 ---
 title: "Features"
 translationKey: features
-canonicalSource: "gaia/docs/readme.md"
-contentStatus: "derived-en"
+contentStatus: "canonical-en"
 menu:
   main:
     identifier: features

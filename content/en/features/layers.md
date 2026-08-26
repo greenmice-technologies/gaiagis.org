@@ -3,8 +3,7 @@ weight: 3
 title: 'Managing Layers'
 description: 'Import, edit, and query vector and raster layers in one interface.'
 translationKey: layers
-canonicalSource: 'gaia/docs/readme.md'
-contentStatus: 'derived-en'
+contentStatus: 'canonical-en'
 ---
 
 Gaia supports vector, raster, `WMS`, and `WFS` workflows in a single editing environment.

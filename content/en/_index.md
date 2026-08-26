@@ -1,8 +1,7 @@
 ---
 title: 'Home'
 translationKey: home
-canonicalSource: 'gaia/docs/readme.md'
-contentStatus: 'derived-en'
+contentStatus: 'canonical-en'
 menu:
   main:
     identifier: home

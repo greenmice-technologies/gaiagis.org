@@ -3,8 +3,7 @@ weight: 2
 title: 'Managing Projects'
 description: 'Organize and share mapping projects across your team.'
 translationKey: projects
-canonicalSource: 'gaia/docs/readme.md'
-contentStatus: 'derived-en'
+contentStatus: 'canonical-en'
 ---
 
 Gaia projects keep layers, styles, resources, and map views organized in a single browser workspace.

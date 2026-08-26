@@ -3,8 +3,7 @@ weight: 1
 title: 'Introducing Gaia'
 description: 'Digital cartography made easy for modern geospatial teams.'
 translationKey: introduction
-canonicalSource: 'gaia/docs/readme.md'
-contentStatus: 'derived-en'
+contentStatus: 'canonical-en'
 ---
 
 Gaia is a map and charts CMS for teams that need to create, edit, organize, and publish geographic projects from the browser.
