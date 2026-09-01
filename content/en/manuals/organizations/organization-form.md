@@ -32,3 +32,13 @@ Owners cannot create a new organization from this route. Creation is an admin ac
 - [My Organizations](my-organizations.md)
 - [Organization Page](organization-detail.md)
 - [Admin Organization Form Page](../administration/application/organizations/organization-form.md)
+
+## Members Dialog
+
+The members dialog is a modal that allows the user to add and remove members from the organization.
+It is opened by clicking the "Members" button in the organization form page.
+It is also opened by clicking the "Members" button in the organization detail page.
+
+## Coming Soon
+
+- [ ] Add a new member by email with invitation.
