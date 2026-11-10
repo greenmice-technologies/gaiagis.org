@@ -3,7 +3,7 @@ title: 'Add and organize layers'
 description: 'Add a base map, an empty layer, groups, grids, and tile services, then control the order and visibility of every layer.'
 translationKey: 'tutorial-layers'
 weight: 20
-contentStatus: 'canonical-en'
+contentStatus: needs-review
 ---
 
 A workspace is a stack of layers: the layer at the top of the **Layers** panel is drawn on top of the map. This tutorial shows every way to add a layer from the **+** menu and how to arrange the stack.
@@ -126,5 +126,5 @@ Your workspace now has a base map at the bottom, your data above it, an empty la
 
 ## Related
 
-- [Workspace Editor](../manuals/workspaces/workspace-editor.md)
-- [Managing Layers](../features/layers.md)
+- [Workspace editor](../manuals/workspaces/workspace-editor.md)
+- [Layers](../manuals/workspaces/layers.md)

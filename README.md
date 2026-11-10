@@ -17,6 +17,7 @@ This repository is the only place where Gaia is described in prose: what the pro
 - `content/en/_index.md` and `data/en/home/hero.yaml` — home page
 - `content/en/product/` — Notebook, Layers, Print
 - `content/en/manuals/` — user and administration guides
+- `content/en/tutorials/` — step-by-step walkthroughs, with screenshots generated from the app
 - `content/en/install.md` — short pointer to the installer repository
 - `data/app-screens.json` — the screens of the app that the guides must cover
 
@@ -48,6 +49,16 @@ Fail on any uncovered screen or unverified page:
 ```bash
 node scripts/check-coverage.mjs --strict
 ```
+
+## Tutorial screenshots as a drift check
+
+The images of each tutorial are captured by Playwright from a running Gaia (`screenshots/`, see `screenshots/README.md`). A spec that fails means the app no longer matches that tutorial: fix the spec and the text together, then mark the tutorial `verified`.
+
+```bash
+npm run screenshots
+```
+
+Run it only against a local, throwaway Gaia: each spec creates a workspace and deletes it at the end.
 
 ## Local commands
 

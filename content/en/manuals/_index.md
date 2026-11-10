@@ -15,4 +15,4 @@ These guides follow the screens of Gaia as you see them in the browser.
 - [Channels](organizations/)
 - [Administration](administration/)
 
-To set Gaia up, see [Install Gaia](/en/install/).
+To learn by doing, follow the [tutorials](../tutorials/_index.md). To set Gaia up, see [Install Gaia](/en/install/).

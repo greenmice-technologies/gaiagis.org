@@ -3,7 +3,7 @@ title: 'Explore data with the attribute table'
 description: 'Open a layer as a table, filter and select features, edit values, and export the data.'
 translationKey: 'tutorial-attribute-table'
 weight: 30
-contentStatus: 'canonical-en'
+contentStatus: needs-review
 ---
 
 Every vector layer has an attribute table: one row per feature, one column per attribute, linked to the map. In this tutorial you open the table of the countries layer, find a country, select it on the map, and export the data.
@@ -106,5 +106,5 @@ You opened a layer as a table, narrowed it down with the filter, linked rows to 
 
 ## Related
 
-- [Managing Layers](../features/layers.md)
-- [Workspace Editor](../manuals/workspaces/workspace-editor.md)
+- [Attribute table](../manuals/workspaces/attribute-table.md)
+- [Workspace editor](../manuals/workspaces/workspace-editor.md)

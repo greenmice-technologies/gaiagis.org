@@ -65,6 +65,15 @@ for (const path of walk(manualsDir)) {
   if (meta.contentStatus !== 'verified') unverified.push(`${page} (${meta.contentStatus ?? 'no status'})`);
 }
 
+// Tutorials follow a task across several screens, so they carry a status but no appScreen.
+for (const path of walk(join(root, 'content/en/tutorials'))) {
+  if (path.endsWith('_index.md')) continue;
+  const page = relative(root, path);
+  const meta = frontMatter(path);
+  if (meta.contentStatus === 'verified' && !meta.verifiedAgainst) errors.push(`${page}: verified without verifiedAgainst`);
+  if (meta.contentStatus !== 'verified') unverified.push(`${page} (${meta.contentStatus ?? 'no status'})`);
+}
+
 const uncovered = screens.filter(s => !s.skip && !covered.has(s.id));
 
 const section = (title, items) => {
@@ -75,7 +84,7 @@ const section = (title, items) => {
 console.log(`Screens: ${screens.length} (${screens.filter(s => s.skip).length} skipped), covered: ${covered.size}`);
 section('Broken mappings', errors);
 section('Screens without a guide', uncovered.map(s => `${s.id} (${s.name})`));
-section('Guides not verified', unverified);
+section('Guides and tutorials not verified', unverified);
 
 const failed = errors.length > 0 || (strict && (uncovered.length > 0 || unverified.length > 0));
 process.exit(failed ? 1 : 0);

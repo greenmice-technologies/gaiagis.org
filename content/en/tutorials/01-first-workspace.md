@@ -3,7 +3,8 @@ title: 'Your first workspace'
 description: 'Create a workspace, set its projection, import a GeoPackage, and explore the layers on the map.'
 translationKey: 'tutorial-first-workspace'
 weight: 10
-contentStatus: 'canonical-en'
+contentStatus: verified
+verifiedAgainst: '828cf266'
 ---
 
 In this tutorial you create a workspace, set its projection to EPSG:4326, import a GeoPackage with five vector layers, and explore them on the map. The same workspace is the starting point for the following tutorials.
@@ -26,11 +27,11 @@ Gaia creates an empty workspace and opens the editor straight away.
 
 ![The empty editor](/images/tutorials/01-first-workspace/02-empty-editor.png)
 
-- **Left rail.** Five panels: **Layers**, **Notebook**, **Assets**, **Web Services**, and **Workspace**. Select a tab to open its panel; select it again to hide it.
-- **Side panel.** Shows the content of the selected tab. The three buttons at the top right (**Inspector**, **Split**, **Focus**) change how much of the window the panel takes.
+- **Left rail.** Six panels: **Layers**, **Notebook**, **Assets**, **Connections**, **History**, and **Workspace**. Select a tab to open its panel.
+- **Side panel.** Shows the content of the selected tab. Drag its edge to resize it, or use the arrow on that edge to collapse it.
 - **Map canvas.** The map takes the rest of the window, with a toolbar at the bottom to draw points, lines, polygons, circles, and rectangles, or to select an area to zoom to.
 - **Footer.** Projection selector, scale, and the coordinates under the pointer.
-- **Top bar.** The workspace name, **Output**, and **View**, which opens the workspace as a visitor would see it.
+- **Top bar.** The workspace name, **Export**, the status button (**Draft** in a new workspace), and **Preview**.
 
 ## 3. Name the workspace
 
@@ -38,7 +39,7 @@ Open the **Workspace** tab and type a new name, for example `World atlas`.
 
 ![The Workspace panel with the name field](/images/tutorials/01-first-workspace/03b-workspace-name.png)
 
-The panel also shows the visibility (**Private**), status (**Draft**), and language of the workspace, and a rich-text description. Select **Save** at the top right to store the change.
+The panel also has the slug, an excerpt, the picture, the language, and the members of the workspace.
 
 ## 4. Choose the projection
 
@@ -52,7 +53,7 @@ Pick **EPSG:4326** from the list. A preview and the projection definition appear
 
 ## 5. Import the GeoPackage
 
-Switch to the **Layers** tab and select the **+** button next to the search field. The menu has two parts: **Actions** to create or import layers, and **Base maps**.
+Switch to the **Layers** tab and select the **+** button next to the search field. The menu lists the **Actions** that create or import layers.
 
 ![The Add layer menu](/images/tutorials/01-first-workspace/04-add-layer-menu.png)
 
@@ -78,13 +79,13 @@ Select **Add to map**. When the five rows show **Added**, close the dialog.
 
 ![The five imported layers in the Layers panel](/images/tutorials/01-first-workspace/06-layers-added.png)
 
-Each row of the **Layers** panel has a visibility checkbox, an opacity value, a style button, and a menu of actions. The newest layer is listed first.
+Each row of the **Layers** panel has a visibility checkbox, an opacity value, a style button, an attribute table button, and a menu of actions. The newest layer is listed first.
 
 Open the **⋮** menu of **Natural Earth Countries**.
 
 ![The layer actions menu](/images/tutorials/01-first-workspace/07-layer-actions.png)
 
-The menu offers **Zoom to layer**, **Attribute table**, **Publish**, **Clone**, **Create Annotation Layer**, and **Delete**. Select **Zoom to layer**.
+The menu offers **Zoom to layer**, **Attribute table**, **Reproject**, **Export**, **Publish**, **Clone**, **Create Annotation Layer**, and **Delete**. Select **Zoom to layer**.
 
 The populated places are labelled, which makes the map crowded. Clear the checkbox of **Natural Earth Populated Places** to hide the layer: hiding does not remove it, and you can show it again at any time.
 
@@ -96,5 +97,6 @@ You now have a saved workspace with five vector layers in EPSG:4326. The default
 
 ## Related
 
-- [Workspace Editor](../manuals/workspaces/workspace-editor.md)
-- [My Workspaces](../manuals/workspaces/my-workspaces.md)
+- [Workspace editor](../manuals/workspaces/workspace-editor.md)
+- [Layers](../manuals/workspaces/layers.md)
+- [My workspaces](../manuals/workspaces/my-workspaces.md)
