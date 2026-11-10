@@ -1,0 +1,204 @@
+@import 'tailwindcss';
+@plugin "@tailwindcss/typography";
+
+@import './shared/_fontawesome-free.css';
+@import './shared/_pagination.css';
+@import './shared/_miscellaneous.css';
+
+/* Tokens from gaia-api: content/css/tailwind.css, global.scss, Aura primary. */
+@theme {
+  --font-sans: "Urbanist", sans-serif;
+  --color-primary: #10b981;
+  --color-foreground: #0a0a0a;
+  --color-muted: #f5f5f5;
+  --color-muted-foreground: #737373;
+  --color-border: #e5e5e5;
+  --radius-md: 6px;
+  --radius-lg: 8px;
+  --radius-xl: 12px;
+}
+
+@layer base {
+  html {
+    color-scheme: light;
+    font-size: 14px;
+    background-color: #fff;
+    color: #0a0a0a;
+    font-family: "Urbanist", sans-serif;
+  }
+
+  body {
+    background-color: #fff;
+    color: #0a0a0a;
+    font-family: "Urbanist", sans-serif;
+    font-size: 1rem;
+    line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: inherit;
+    font-weight: 600;
+    letter-spacing: -0.025em;
+    line-height: 1.25;
+    color: #0a0a0a;
+  }
+}
+
+body {
+  @apply bg-white text-[#0a0a0a] antialiased;
+}
+
+.markdown-title strong {
+  font-weight: 600;
+  color: inherit;
+}
+
+nav {
+  border-bottom: 1px solid #e5e5e5;
+  background: #fff;
+}
+
+nav span.uppercase {
+  font-weight: 300;
+  text-transform: none;
+  letter-spacing: -0.04em;
+  color: #0a0a0a;
+  font-size: 1.75rem;
+  line-height: 1;
+}
+
+nav ul a {
+  color: #0a0a0a;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+nav ul a:hover {
+  color: #171717;
+}
+
+a.bg-primary,
+a.border-primary {
+  border-radius: 6px;
+  padding: 0.5rem 0.875rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  line-height: 1.25;
+}
+
+a.bg-primary {
+  background-color: #10b981;
+}
+
+a.bg-primary:hover {
+  background-color: #059669;
+}
+
+a.border-primary {
+  border-color: #e5e5e5;
+  background: #fff;
+  color: #0a0a0a;
+}
+
+a.border-primary:hover {
+  background: #f5f5f5;
+  color: #0a0a0a;
+}
+
+#hero h1 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+#hero p,
+#features > .container > p {
+  color: #737373;
+  font-size: 0.875rem;
+  line-height: 1.5;
+}
+
+h1.text-4xl {
+  font-size: 1.5rem !important;
+  font-weight: 600 !important;
+  letter-spacing: -0.025em;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+#hero h1 {
+  font-size: 2rem !important;
+  margin-bottom: 0;
+}
+
+#features > .container > h1,
+#features h1.markdown-title {
+  font-size: 1.25rem !important;
+  margin-bottom: 0.5rem;
+}
+
+#features h2,
+#hero h2 {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+#hero .size-20,
+#features .size-14 {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 6px;
+  background: #f5f5f5 !important;
+  color: #10b981 !important;
+  font-size: 0.875rem;
+}
+
+#features .text-\[\#252525\],
+#features .text-\[\#545454\],
+#hero .text-\[\#969696\] {
+  color: #737373;
+}
+
+main h1.markdown-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  letter-spacing: -0.025em;
+  line-height: 1.25;
+  margin-bottom: 0.75rem;
+}
+
+@media (min-width: 768px) {
+  #hero h1 {
+    font-size: 2.5rem !important;
+  }
+}
+
+.prose {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  --tw-prose-body: #0a0a0a;
+  --tw-prose-headings: #0a0a0a;
+  --tw-prose-links: #059669;
+  --tw-prose-bold: #0a0a0a;
+}
+
+.prose :where(h1, h2, h3, h4) {
+  font-weight: 600;
+  letter-spacing: -0.025em;
+}
+
+footer {
+  border-top: 1px solid #e5e5e5;
+  color: #737373;
+  font-size: 0.875rem;
+}
+
+footer h1 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  letter-spacing: 0;
+  text-transform: none;
+  color: #0a0a0a;
+}

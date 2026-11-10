@@ -7,7 +7,30 @@ main:
     pageRef: /product
     weight: 20
     identifier: product
+  - name: Guides
+    pageRef: /manuals
+    weight: 30
+    identifier: manuals
   - name: Install
     pageRef: /install
-    weight: 30
+    weight: 40
     identifier: install
+
+buttons:
+  - name: Install
+    pageRef: /install
+    weight: 10
+
+footer:
+  - name: Home
+    pageRef: /
+    weight: 10
+  - name: Product
+    pageRef: /product
+    weight: 20
+  - name: Guides
+    pageRef: /manuals
+    weight: 30
+  - name: Install
+    pageRef: /install
+    weight: 40

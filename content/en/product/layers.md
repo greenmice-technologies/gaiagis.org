@@ -1,18 +1,20 @@
 ---
-weight: 2
 title: "Layers"
-description: "Import common geospatial formats, edit features, and style layers in the browser."
-translationKey: layers
+description: "Import data, edit features, and choose how your map looks."
+aliases:
+  - /en/features/layers/
+  - /en/features/styles/
 contentStatus: "canonical-en"
+weight: 2
 ---
 
-Layers are the data on the map. You import them, edit them, and style them in the workspace.
+Layers bring your geographic data onto the map. Import files such as Shapefile, GeoJSON, GeoTIFF, and KML, then work with them in your browser.
 
-You can:
+- Draw and edit points, lines, and areas
+- Update attributes in the table
+- Choose colors, symbols, and styling rules
+- Add layers from external WMS or WFS map services
 
-- Import common vector and raster formats in the browser
-- Draw and edit points, lines, and polygons, and edit attributes in the table
-- Style layers with rules and symbolizers, and see the change on the map
-- Add an external WMS or WFS service as a source
+See styling changes on the map as you work. Some styling tools are still being refined.
 
-Gaia does not publish WMS or WFS. Styling is part of the layer workflow and is still being refined.
+Gaia can read external WMS and WFS services; it does not publish those services itself.

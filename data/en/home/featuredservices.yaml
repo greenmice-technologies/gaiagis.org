@@ -1,22 +1,17 @@
 enable: true
-
-title: "Install Gaia Community"
-
-subtitle: "The base version runs on your own machines. There is no hosted service to sign in to."
-
+title: 'Get started with Gaia'
+subtitle: 'Install Gaia on your computer or your organization’s servers, then work in your browser.'
 cta:
-  label: "Install"
-  link: "install/"
-
+  label: 'Read the guides'
+  link: 'manuals/'
 items:
-  - title: "On your computer or your servers"
-    text: "One Compose file starts the app, the print service, PostgreSQL, object storage, and a local mail catcher."
+  - title: 'Install Gaia'
+    text: 'The installation guide explains what you need and how to get started.'
     button:
-      label: "How to install"
-      link: "install/"
-
-  - title: "Images from the registry"
-    text: "The installer pulls gaia-api and gaia-q. Those images are not anonymously pullable yet; the install page says what that means."
+      label: 'Installation guide'
+      link: 'install/'
+  - title: 'Find your way around'
+    text: 'Learn how to create a workspace, edit a map, and manage your account.'
     button:
-      label: "About the images"
-      link: "install/"
+      label: 'User guides'
+      link: 'manuals/'

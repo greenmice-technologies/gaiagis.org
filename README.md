@@ -11,6 +11,7 @@ The application source lives in `gaia-api` (private). Do not keep a manuals tree
 ## Content
 
 - `content/en/product/` — Notebook, Layers, Print
+- `content/en/manuals/` — user and administration guides
 - `content/en/install.md` — short pointer to the installer repository
 - `data/en/home/` — home page blocks
 

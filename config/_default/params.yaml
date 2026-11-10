@@ -1,19 +1,16 @@
 title: "Gaia"
-description: "Gaia Community is a self-hosted web GIS for data analysts. Notebooks, layers, and print layouts run on your own machines."
-
+description: "Create maps, explore data, and share your work from your browser with Gaia."
 logo: "images/brands/svg/logo-brand.svg"
 logo_dark: "images/brands/svg/logo-white.svg"
-
 colors:
-  primary: "#BF07F0"
-  secondary: "#4264FB"
-  background: "#F5F3FF"
+  primary: "#10b981"
+  secondary: "#0a0a0a"
+  background: "#FFFFFF"
 
 favicons:
-  themeColor: "#F5F3FF"
-  backgroundColor: "#F5F3FF"
-  faviconColor: "#BF07F0"
-
+  themeColor: "#FFFFFF"
+  backgroundColor: "#FFFFFF"
+  faviconColor: "#10b981"
 images:
   - "greenmice-technologies-og.png"
 
@@ -21,7 +18,6 @@ contact:
   - "info@gaiagis.org"
 
 social:
-  linkedin: "https://www.linkedin.com/company/greenmice"
   github: "https://github.com/greenmice"
 
 address_lines:

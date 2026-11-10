@@ -1,27 +1,25 @@
 enable: true
-
-title: "Notebook, layers, and print"
-
-text: "Gaia Community is the base product: a browser workspace for analysis, cartography, and a page you can publish from the same install."
-
+title: 'From the first file to the finished map'
+text: 'Work with your data, refine the details, and give others a clear view of what you have found.'
 items:
-  - pretitle: "Notebook"
-    pretext: "Document, query, publish"
-    color: "#4264FB"
-    icon: "book-open"
-    title: "Write the analysis next to the map"
-    text: "A notebook holds SQL cells that render as a table, a map, or a chart, plus layer and snapshot blocks. Publish it at a public address, or export HTML and PDF."
-
-  - pretitle: "Layers"
-    pretext: "Import, edit, style"
-    color: "#4264FB"
-    icon: "layers-3"
-    title: "Bring your data into the workspace"
-    text: "Import common vector and raster formats, draw and edit geometries and attributes, and style layers in the browser. External WMS and WFS services can be added as sources."
-
-  - pretitle: "Print"
-    pretext: "Layout and GeoPDF"
-    color: "#4264FB"
-    icon: "printer"
-    title: "Compose the sheet and export it"
-    text: "The layout editor lives in the app. GeoPDF export runs through the QGIS print service on the same stack, and that service stays off the public network."
+  - icon: 'fas fa-database'
+    color: '#10b981'
+    pretitle: 'Data'
+    pretext: 'Import and explore'
+    title: '**Bring your geographic data** together'
+    text: 'Import files such as Shapefile, GeoJSON, GeoTIFF, and KML. Explore their contents on the map and in the table, or add layers from external map services.'
+    image: 'images/gaia-gis.png'
+  - icon: 'fas fa-pen'
+    color: '#10b981'
+    pretitle: 'Editing'
+    pretext: 'Shapes, attributes, and styles'
+    title: '**Get the details** right'
+    text: 'Draw and edit features, update their attributes, and adjust the way they appear. See your changes on the map as you work.'
+    image: 'images/gaia-gis.png'
+  - icon: 'fas fa-share-nodes'
+    color: '#10b981'
+    pretitle: 'Projects'
+    pretext: 'Organize and share'
+    title: '**Keep your work** together'
+    text: 'Organize maps, layers, and supporting files in a workspace. Keep a project private or publish it for others to view.'
+    image: 'images/gaia-gis.png'

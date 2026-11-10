@@ -3,7 +3,7 @@
   "baseUrl": ".",
   "paths": {
    "*": [
-    "../../../../../../../../../var/folders/xw/1l7f7ly143db5klg72qx64kc0000gp/T/cursor-sandbox-cache/ced039f52120ed43c89ab41d6325c6ef/go-mod/github.com/writeonlycode/hugo-agency-web@v0.0.0-20250709134630-9b263db5d8f2/assets/*"
+    "../../../../../../../Library/Caches/hugo_cache/modules/filecache/modules/pkg/mod/github.com/writeonlycode/hugo-agency-web@v0.0.0-20250709134630-9b263db5d8f2/assets/*"
    ]
   }
  }

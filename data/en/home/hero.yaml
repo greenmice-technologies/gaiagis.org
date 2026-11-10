@@ -1,34 +1,26 @@
 enable: true
-
-title: 'Maps and charts<br/>on your own machines'
-
-text: 'Gaia Community is a self-hosted web GIS for data analysts. Notebooks, layers, and print layouts run where you install them.'
-
+title: 'Your data, **your maps**'
+text: 'Create maps, explore data, and share your work. Gaia brings your mapping tools together in the browser.'
 buttons:
-  - label: 'Install'
-    link: 'install/'
-  - label: 'Product'
+  - label: 'Explore Gaia'
     link: 'product/'
-
-image: 'images/home/hero/hero.svg'
-
+  - label: 'Read the guides'
+    link: 'manuals/'
+image: 'images/gaia-gis.png'
 items:
-  - icon: 'book-open'
-    color: '#4264FB'
-    title: 'Notebook'
-    text: 'SQL, map, and chart in one document. Publish a page or export HTML and PDF.'
-
-  - icon: 'layers-3'
-    color: '#4264FB'
-    title: 'Layers'
-    text: 'Import common formats, draw and edit features, and style them in the browser.'
-
-  - icon: 'printer'
-    color: '#4264FB'
-    title: 'Print'
-    text: 'Compose a layout in the app and export a GeoPDF.'
-
-  - icon: 'server'
-    color: '#4264FB'
-    title: 'One stack'
-    text: 'App, print, PostgreSQL, and storage start from a single Compose file.'
+  - icon: 'fas fa-database'
+    color: '#10b981'
+    title: 'Bring your data'
+    text: 'Import geographic files and work with maps and tables.'
+  - icon: 'fas fa-layer-group'
+    color: '#10b981'
+    title: 'Make your map'
+    text: 'Edit shapes, update attributes, and choose colors and symbols.'
+  - icon: 'fas fa-book-open'
+    color: '#10b981'
+    title: 'Explain your findings'
+    text: 'Bring maps, charts, and analysis together in a notebook.'
+  - icon: 'fas fa-print'
+    color: '#10b981'
+    title: 'Share the result'
+    text: 'Publish a page, export a document, or prepare a map for print.'

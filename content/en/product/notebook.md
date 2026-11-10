@@ -1,18 +1,12 @@
 ---
-weight: 1
 title: "Notebook"
-description: "A document of SQL, maps, and charts, with a public page and HTML or PDF export."
-translationKey: notebook
+description: "Bring your analysis, maps, and charts into one document."
 contentStatus: "canonical-en"
+weight: 1
 ---
 
-The notebook is the document of a workspace. It sits next to the map and is what you publish.
+A notebook lets you explain your work alongside the map. Combine queries, tables, maps, charts, and map snapshots in one document.
 
-A notebook can hold:
+Use SQL queries to explore your data and show the results as a table, map, or chart. Add layers and snapshots to give your readers context.
 
-- SQL cells that render as a table, a map, or a chart
-- Layer blocks and snapshot blocks
-- A public page at `/p/:slug` when you publish the workspace
-- An HTML export and a PDF export of the document
-
-The public page is served by the same install. There is no separate hosted site.
+When your work is ready, publish a public page from Gaia or export the notebook as HTML or PDF.

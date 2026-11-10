@@ -1,25 +1,19 @@
 enable: true
-
-title: 'The product'
-
-subtitle: 'Three parts of the same workspace, installed with the stack.'
-
+title: 'More than a map'
+subtitle: 'Explain your analysis, shape your maps, and prepare them for your readers.'
 cta:
-  label: 'See the product'
+  label: 'Explore the product'
   link: 'product/'
-
 items:
   - tag: 'Notebook'
-    title: 'Query, map, chart, publish'
-    summary: 'SQL cells, layer blocks, a public page, and HTML or PDF export from the same document.'
+    title: 'Show how you reached your results'
+    summary: 'Combine queries, maps, and charts in a document you can publish or export.'
     link: 'product/notebook/'
-
   - tag: 'Layers'
-    title: 'Import, edit, and style'
-    summary: 'Common geospatial formats, in-browser editing, and styles on the layers you imported.'
+    title: 'Choose what your map shows'
+    summary: 'Import data, edit features, and use colors and symbols to make the map easier to read.'
     link: 'product/layers/'
-
   - tag: 'Print'
-    title: 'Layout and GeoPDF'
-    summary: 'Design the sheet in the app. The print service on the stack renders the GeoPDF.'
+    title: 'Make a map for the page'
+    summary: 'Arrange your map in a print layout and export it as a PDF with geographic information.'
     link: 'product/print/'

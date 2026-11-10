@@ -1,28 +1,19 @@
 ---
-title: "Install"
-description: "Install Gaia Community with one Docker Compose stack on your own machines."
-translationKey: install
+title: "Install Gaia"
+description: "Set up Gaia on your computer or your organization’s servers."
 contentStatus: "canonical-en"
+aliases:
+  - /en/manuals/self-hosted/
 ---
 
-Gaia Community installs on your own computer or on your own servers. There is no hosted service to sign in to.
+You can install Gaia Community on your computer or your organization's servers, then use it through your browser.
 
-The installer is one Docker Compose file. It starts:
+The installation guide lists the requirements, configuration, and steps:
 
-- the Gaia application (API and browser UI)
-- the QGIS print service (`gaia-q`), reachable only inside the stack
-- PostgreSQL
-- RustFS, for project files and print packages
-- Mailpit, so activation and password-reset mail has a place to land
+**[Open the installation guide on GitHub](https://github.com/greenmice-technologies/gaia)**
 
-Payments are off. New accounts use the unlimited plan. After the first login, replace title, logo, color, terms, and privacy in Settings.
+**Availability:** some application packages are not yet available for public download. Check the guide for current access requirements before starting.
 
-The commands, the Compose file, and `.env.example` live in the installer repository:
+Once installed, you can change the application name, logo, and colors in Settings. The guide also covers configuration for access through your own web address.
 
-**[github.com/greenmice-technologies/gaia](https://github.com/greenmice-technologies/gaia)**
-
-The stack names the `gaia-api` and `gaia-q` images on the GitLab registry. Those images are not anonymously pullable yet. The README in that repository says what happens until they are published.
-
-For a production hostname, put a TLS proxy in front of the stack and set the public URL variables documented there.
-
-Need help with an install? [Contact Greenmice](mailto:info@gaiagis.org).
+[Contact us](mailto:info@gaiagis.org) if you need help with installation.

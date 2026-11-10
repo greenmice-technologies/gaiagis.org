@@ -1,11 +1,11 @@
 {{ define "main" }}
-{{ $root := index site.Data site.Language.Lang }}
-{{ if not $root }}{{ $root = index site.Data "en" }}{{ end }}
-{{ $home := $root.home }}
-{{ $featuredStories := cond (isset $home "featuredstories") $home.featuredstories $home.casepreviews }}
-{{ $featuredServices := cond (isset $home "featuredservices") $home.featuredservices $home.highlights }}
-{{ with $home.hero }}{{ if .enable }}{{ partial "blocks/home/hero" . }}{{ end }}{{ end }}
-{{ with $home.features }}{{ if .enable }}{{ partial "blocks/home/features" . }}{{ end }}{{ end }}
-{{ with $featuredStories }}{{ if .enable }}{{ partial "blocks/home/featured-stories" . }}{{ end }}{{ end }}
-{{ with $featuredServices }}{{ if .enable }}{{ partial "blocks/home/featured-services" . }}{{ end }}{{ end }}
+  {{ $root := index site.Data site.Language.Lang }}
+  {{ if not $root }}{{ $root = index site.Data "en" }}{{ end }}
+  {{ $home := $root.home }}
+  {{ with $home.hero }}{{ if .enable }}{{ partial "blocks/home/hero" . }}{{ end }}{{ end }}
+  {{ with $home.features }}{{ if .enable }}{{ partial "blocks/home/features" . }}{{ end }}{{ end }}
+  {{ $highlights := $home.highlights }}
+  {{ if not $highlights }}{{ $highlights = $home.featuredservices }}{{ end }}
+  {{ with $highlights }}{{ if .enable }}{{ partial "blocks/home/highlights" . }}{{ end }}{{ end }}
+  {{ with $home.clients }}{{ if .enable }}{{ partial "blocks/home/clients" . }}{{ end }}{{ end }}
 {{ end }}

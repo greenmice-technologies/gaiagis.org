@@ -1,17 +1,14 @@
 ---
-weight: 3
 title: "Print"
-description: "Compose a print layout in the app and export a GeoPDF."
-translationKey: print
+description: "Arrange your map on a page and export it for printing."
+aliases:
+  - /en/features/print-layouts/
 contentStatus: "canonical-en"
+weight: 3
 ---
 
-Print is a layout you compose in the app, then export.
+Prepare a map for a report, a presentation, or a printed sheet. Start with the default layout or arrange your own in Gaia's layout editor.
 
-The base version includes:
+Add map frames, legends, and scale bars, then export a GeoPDF: a PDF that keeps the map's geographic information.
 
-- A default layout
-- An in-app layout editor
-- GeoPDF export through the QGIS print service (`gaia-q`)
-
-That print service runs on the same Compose stack and is not exposed on a public port. The app calls it on the internal network.
+[Read the print layout guide](/en/manuals/print-layouts/).

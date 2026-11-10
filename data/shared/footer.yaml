@@ -1,0 +1,17 @@
+contact:
+  title: "Contact"
+  items:
+    - label: "info@gaiagis.org"
+      link: "mailto:info@gaiagis.org"
+
+social:
+  - title: "LinkedIn"
+    icon: "fab fa-linkedin"
+    link: "https://www.linkedin.com/company/greenmice"
+    label: ""
+  - title: "GitHub"
+    icon: "fab fa-github"
+    link: "https://github.com/greenmice"
+    label: ""
+
+copyright: "© Greenmice Technologies S.r.l. All rights reserved."

@@ -29,18 +29,18 @@ languages:
     weight: 1
     contentDir: content/en
     params:
-      description: "Gaia Community is a self-hosted web GIS for data analysts. Notebooks, layers, and print layouts run on your own machines."
+      description: "Create maps, explore data, and share your work from your browser with Gaia."
   it:
     languageName: Italiano
     languageCode: it
     weight: 2
     contentDir: content/it
     params:
-      description: "Gaia Community è un web GIS self-hosted per analisti di dati. Notebook, layer e stampe girano sui propri sistemi."
+      description: "Crea mappe, esplora i dati e condividi il tuo lavoro dal browser con Gaia."
   pt:
     languageName: Português
     languageCode: pt
     weight: 3
     contentDir: content/pt
     params:
-      description: "Gaia Community é um web GIS self-hosted para analistas de dados. Notebooks, camadas e impressão correm nos seus próprios sistemas."
+      description: "Crie mapas, explore dados e compartilhe seu trabalho pelo navegador com Gaia."
