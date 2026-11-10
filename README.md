@@ -7,6 +7,7 @@ Public website for `https://gaiagis.org/`.
 This repository is the only place where Gaia is described in prose: what the product is, what each screen does, and how to get it. The application code in `gaia-api` (private) is the truth; this site is where that truth is written down. Other repositories link here instead of keeping their own copy.
 
 - Do not keep product pages, manuals, or screen maps in `gaia-api`.
+- One exception: product direction (decisions and roadmap) stays in `gaia-api/docs/`, because this repository is public. Do not add it here.
 - Do not copy the install commands here. The installer lives in [github.com/greenmice-technologies/gaia](https://github.com/greenmice-technologies/gaia): Compose file, `.env.example`, and the install steps.
 - A change in `gaia-api` that alters a screen is finished when the matching guide page here is updated.
 - English is the maintained baseline. Publish another language only after an editorial review, and add it to `config/_default/hugo.yaml` only when its content exists.
