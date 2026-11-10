@@ -49,7 +49,7 @@ Choose the output that fits your work:
 
 ## Keep your projects organized
 
-Keep maps, layers, and supporting files together in workspaces. Keep a workspace private, share it with your organization to view or to edit, or make it public.
+Keep maps, layers, and supporting files together in workspaces. Keep a workspace private, share it with its members, or make it public.
 
 Organizations can adapt Gaia's name, logo, and colors to their own identity.
 
@@ -79,7 +79,7 @@ Yes. Gaia imports common vector and raster formats and can read layers from exte
 
 ### Can I keep a project private?
 
-Yes. A workspace is private until you share it with your organization or make it public.
+Yes. A workspace is private until you share it with its members or make it public.
 
 ### What can I export?
 

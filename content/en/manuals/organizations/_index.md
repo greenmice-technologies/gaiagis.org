@@ -1,13 +1,15 @@
 ---
-title: 'Organizations'
-description: 'Membership switcher, organization page, and owner form.'
-translationKey: 'manuals-organizations'
+title: "Channels"
+description: "The groups that own workspaces and bring members together."
+translationKey: "manuals-organizations"
 weight: 40
-contentStatus: 'canonical-en'
+contentStatus: canonical-en
 ---
 
-Pages under **Organizations** in the application shell.
+A channel owns workspaces and has members. Every account has a personal channel.
 
-- [My Organizations](my-organizations.md)
-- [Organization Page](organization-detail.md)
-- [Organization Form Page](organization-form.md)
+- [My channels](my-organizations.md)
+- [Channels catalog](channels-catalog.md)
+- [Channel page](organization-detail.md)
+- [Edit a channel](organization-form.md)
+- [Categories and tags](categories-and-tags.md)

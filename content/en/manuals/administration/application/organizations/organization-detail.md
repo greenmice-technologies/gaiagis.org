@@ -1,31 +1,11 @@
 ---
-title: 'Organization Page'
-description: 'Admin read-only detail of an organization.'
-translationKey: 'admin-organization-detail'
+title: "Channel page"
+description: "A channel as an administrator sees it."
+translationKey: "admin-organization-detail"
 weight: 10
-contentStatus: needs-review
 appScreen:
   - "/admin/organizations/:id/view"
+contentStatus: needs-review
 ---
 
-Admin read-only detail of an organization.
-
-| | |
-| --- | --- |
-| Access | Administrators (`ROLE_ADMIN`) |
-| Entry | Row action from [Organizations](_index.md) |
-
-## Features
-
-- Brand hero (logo, title, color)
-- Personal / plan badges
-- Name, slug, brand title, brand color
-- Layout override, theme, preset, and surface
-- Edit action opening the [Organization Form Page](organization-form.md)
-
-The same detail component is reused on the user-facing [Organization Page](../../../organizations/organization-detail.md) with `userFacing` data.
-
-## Related
-
-- [Organizations](_index.md)
-- [Organization Form Page](organization-form.md)
+Open a channel from the administration list. The page shows the same information as the [channel page](../../../organizations/organization-detail.md) that members see: its name, address, picture, and workspaces.

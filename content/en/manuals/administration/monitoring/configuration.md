@@ -1,30 +1,14 @@
 ---
-title: 'Configuration'
-description: 'Runtime Spring configuration: beans and property sources.'
-translationKey: 'configuration'
+title: "Configuration"
+description: "Read the configuration the application is running with."
+translationKey: "configuration"
 weight: 30
-contentStatus: needs-review
 appScreen:
   - "/admin/configuration"
+contentStatus: verified
+verifiedAgainst: "828cf266"
 ---
 
-Runtime Spring configuration: beans and property sources.
+Open **Administration**, then **Monitoring**, then **Configuration**.
 
-| | |
-| --- | --- |
-| Access | Administrators (`ROLE_ADMIN`) |
-| Entry | Sidebar **Administration → Monitoring → Configuration** |
-
-## Features
-
-- List beans with search and sort
-- Property sources and their keys
-- Empty state when nothing is loaded
-
-This page is a diagnostic view of the running JVM. Install branding and feature flags belong under [Settings](../application/settings.md).
-
-## Related
-
-- [Health](health.md)
-- [Logs](logs.md)
-- [Settings](../application/settings.md)
+The page lists the configuration of the running application, grouped by prefix, with the number of properties in each group. Select the **Prefix** header to sort. It is read-only: to change a value, change the configuration of the installation and restart.

@@ -1,32 +1,31 @@
 ---
-title: 'My Workspaces'
-description: 'Listing of workspaces the current user owns or can edit.'
-translationKey: 'my-workspaces'
+title: "My workspaces"
+description: "The list of your workspaces: create, find, and open them."
+translationKey: "my-workspaces"
 weight: 10
-contentStatus: needs-review
 appScreen:
   - "/project"
+  - "/project/new"
+contentStatus: verified
+verifiedAgainst: "828cf266"
 ---
 
-Listing of workspaces the current user owns or can edit.
+Select **My workspaces** in the sidebar.
 
-| | |
-| --- | --- |
-| Access | Signed-in users |
-| Entry | Sidebar **Workspaces → My Workspaces**, or Dashboard **View all** |
+## Create a workspace
 
-## Features
+Select **Create a new Workspace**. Gaia creates the workspace and opens it in the [editor](workspace-editor.md) with a base map already added. You name it later, in [Workspace settings](workspace-settings.md).
 
-- Create a new workspace
-- Search by name
-- Filter and sort
-- Row or grid layout
-- Open [Workspace Editor](workspace-editor.md) or [Workspace Viewer](workspace-viewer.md)
-- Empty state with create action when the list is empty
+## Find a workspace
 
-## Related
+- **Search workspaces...** filters the list by name.
+- **Sort** changes the order.
+- **List** and **Grid** switch between compact rows and cards.
 
-- [Dashboard](../account/dashboard.md)
-- [Public Workspaces](public-workspaces.md)
-- [Workspace Editor](workspace-editor.md)
-- [Workspace Viewer](workspace-viewer.md)
+Each workspace shows its status (**Draft** or **Published**), its visibility (**Private** or **Public**), and the date of the last change.
+
+## Open a workspace
+
+Select a workspace to open it in the editor. The menu at the end of each row has the other actions.
+
+At the bottom of the list you can change how many rows are shown and move between pages.

@@ -1,31 +1,31 @@
 ---
-title: 'Preferences'
-description: 'Appearance and layout controls in the header configurator.'
-translationKey: 'account-preferences'
+title: "Preferences"
+description: "Change the theme, colors, and language of Gaia from the user menu."
+translationKey: "account-preferences"
 weight: 20
-contentStatus: needs-review
 appScreen:
   - "popover:preferences"
+contentStatus: verified
+verifiedAgainst: "828cf266"
 ---
 
-Appearance and layout controls for the current user. Preferences live in the avatar configurator in the shell header, not on a dedicated route.
+Select your name at the bottom of the sidebar to open the user menu.
 
-| | |
-| --- | --- |
-| Access | Signed-in users (`ROLE_USER`) |
-| Entry | Avatar button in the application header |
+## Shortcuts
 
-## Features
+- **Settings** opens your [account settings](settings.md).
+- **Public profile** opens the page other people see.
+- **Sign out** ends your session.
 
-- Account snapshot: avatar, name, email
-- Shortcuts to [Settings](settings.md), [Security](security.md), and sign out
-- Text zoom (increase / decrease UI font size)
-- Theme (light, dark, or follow the operating system), when the layout is editable
-- Color preset and surface palette, when the layout is editable
-- Layout lock message when the organization or install defaults override branding
+## Appearance
 
-## Related
+- **Theme** switches between light and dark.
+- **Presets** changes the overall look: **Aura**, **Lara**, or **Nora**.
+- **Primary** sets the accent color.
+- **Surface** sets the tone of backgrounds and panels.
 
-- [Dashboard](dashboard.md)
-- [Settings](settings.md)
-- [Organization Form Page](../organizations/organization-form.md) (organization branding)
+An administrator can lock the appearance for the whole installation. When it is locked, these controls are not available.
+
+## Languages
+
+Select a flag to change the language of the interface.

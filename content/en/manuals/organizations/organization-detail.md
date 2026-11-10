@@ -1,30 +1,20 @@
 ---
-title: 'Organization Page'
-description: 'Read-only detail of an organization the user belongs to.'
-translationKey: 'organization-detail'
+title: "Channel page"
+description: "What a channel shows: its identity and its workspaces."
+translationKey: "organization-detail"
 weight: 20
-contentStatus: needs-review
 appScreen:
   - "/organizations/:id/view"
+contentStatus: verified
+verifiedAgainst: "828cf266"
 ---
 
-Read-only detail of an organization the user belongs to.
+Open a channel from [My channels](my-organizations.md) or from the catalog.
 
-| | |
-| --- | --- |
-| Access | Members of the organization (`ROLE_USER`) |
-| Entry | Row action from [My Organizations](my-organizations.md) |
+The page shows:
 
-## Features
+- The name of the channel, its address after the `@`, and its picture
+- A **Personal** badge, if it is a personal channel
+- **Workspaces** — the workspaces that belong to the channel, with status, visibility, and date
 
-- Brand hero (logo, title, color)
-- Personal / plan badges
-- Name, slug, brand title, brand color
-- Layout override, theme, preset, and surface
-- Edit action when the user is an organization owner, opening the [Organization Form Page](organization-form.md)
-
-## Related
-
-- [My Organizations](my-organizations.md)
-- [Organization Form Page](organization-form.md)
-- [Admin Organization Page](../administration/application/organizations/organization-detail.md)
+If you own the channel, select **Edit** to change it. See [Edit a channel](organization-form.md). **More actions** has the other commands.

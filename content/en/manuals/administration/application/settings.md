@@ -1,31 +1,41 @@
 ---
-title: 'Settings'
-description: 'Install-wide namespaced application settings.'
-translationKey: 'admin-settings'
+title: "Settings"
+description: "The name, look, sign-in options, and legal pages of your installation."
+translationKey: "admin-settings"
 weight: 10
-contentStatus: needs-review
 appScreen:
   - "/setting"
+contentStatus: verified
+verifiedAgainst: "828cf266"
 ---
 
-Install-wide application settings. Namespaced key/value configuration used by the public site, layout, and other runtime features.
+Open **Administration**, then **Application**, then **Settings**.
 
-| | |
+The page lists every setting with its type and a description. Use **Sort** to change the order.
+
+## Identity and look
+
+| Setting | What it changes |
 | --- | --- |
-| Access | Administrators (`ROLE_ADMIN`) |
-| Entry | Sidebar **Administration → Application → Settings** |
+| **Title** | The name shown in the top bar and in the browser tab |
+| **Description** | The description search engines read |
+| **Primary Color** | The main color of the interface |
+| **Theme** | Light, dark, or following the operating system |
+| **Preset** | The overall look: Aura, Lara, or Nora |
+| **Surface** | The tone of backgrounds and panels |
+| **Logo** | The logo in the top bar and on the sign-in pages |
+| **Background** | The image behind the sign-in pages |
+| **Layout Preferences** | Whether users may choose their own theme and colors |
 
-## Features
+For **Logo** and **Background**, use **Upload**, **Restore default**, or **Remove**.
 
-- List settings by namespace, name, type, and value
-- Search by namespace
-- Filter and sort
-- Open a setting to edit its value (page, not dialog)
-- Value editors by type: string, number, boolean, array, object, HTML, password, email, URL, color, image
-- Empty state when no settings match
+## Sign-in
 
-## Related
+| Setting | What it changes |
+| --- | --- |
+| **Enable Signup** | Whether people can create their own account |
+| **Enable Reset** | Whether people can ask for a password reset link |
 
-- [Organizations](organizations/_index.md)
-- [OAuth Providers](../oauth-providers.md)
-- [Preferences](../../account/preferences.md)
+## Pages
+
+**Privacy Policy**, **Terms of Service**, and **Cookies** hold the text of the pages linked from the sign-in page. **Contact**, **About**, and **FAQ** hold further texts of your installation.

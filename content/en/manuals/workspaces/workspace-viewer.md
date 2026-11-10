@@ -1,33 +1,21 @@
 ---
-title: 'Workspace Viewer'
-description: 'Read-only presentation of a workspace, including share and export.'
-translationKey: 'workspace-viewer'
+title: "Workspace viewer"
+description: "Read a workspace without changing it."
+translationKey: "workspace-viewer"
 weight: 20
-contentStatus: needs-review
 appScreen:
   - "/project/:id/view"
+contentStatus: verified
+verifiedAgainst: "828cf266"
 ---
 
-Read-only presentation of a workspace: story, map bookmarks, and share / export actions.
+The viewer shows a workspace as a reader sees it: the notebook and the map, without the editing tools.
 
-| | |
-| --- | --- |
-| Access | Owners and editors; anyone with the public slug when the workspace is public |
-| Entry | Row action from [My Workspaces](my-workspaces.md) or [Public Workspaces](public-workspaces.md) |
+At the top of the page:
 
-## Features
+- The name of the workspace, with its status and visibility
+- **Export HTML** — save the notebook as a web page
+- **Export PDF** — save the notebook as a PDF
+- **Open editor** — switch to the [editor](workspace-editor.md), if you are allowed to edit
 
-- Workspace title, status, and visibility
-- Map bookmarks / keyframes
-- Copy public share link
-- Open GeoPDF when an export exists (`/project/:id/geopdf` or `/p/:slug/geopdf`)
-- Open in GIS (WMS capabilities URL) when OGC services are available
-- Export the story as HTML
-- Open [Workspace Editor](workspace-editor.md) when the user can edit
-- Story map and notebook content for the published view
-
-## Related
-
-- [My Workspaces](my-workspaces.md)
-- [Public Workspaces](public-workspaces.md)
-- [Workspace Editor](workspace-editor.md)
+Use **+** and **–** on the map to zoom.

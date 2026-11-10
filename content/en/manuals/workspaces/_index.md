@@ -1,14 +1,28 @@
 ---
-title: 'Workspaces'
-description: 'Create, browse, view, and edit mapping workspaces.'
-translationKey: 'manuals-workspaces'
+title: "Workspaces"
+description: "Find your workspaces, open them, and build maps in the editor."
+translationKey: "manuals-workspaces"
 weight: 30
-contentStatus: 'canonical-en'
+contentStatus: canonical-en
 ---
 
-Pages under **Workspaces** in the application shell.
+A workspace holds a map, its layers, a notebook, and its files.
 
-- [My Workspaces](my-workspaces.md)
-- [Workspace Viewer](workspace-viewer.md)
-- [Workspace Editor](workspace-editor.md)
-- [Public Workspaces](public-workspaces.md)
+Find and open workspaces:
+
+- [My workspaces](my-workspaces.md)
+- [Public workspaces](public-workspaces.md)
+- [Workspace viewer](workspace-viewer.md)
+
+Work in the editor:
+
+- [Workspace editor](workspace-editor.md)
+- [Layers](layers.md)
+- [Attribute table](attribute-table.md)
+- [Styles](styles.md)
+- [Connections](connections.md)
+- [Assets](assets.md)
+- [Notebook](notebook.md)
+- [History and versions](history.md)
+- [Share, preview, and export](share-and-export.md)
+- [Workspace settings](workspace-settings.md)

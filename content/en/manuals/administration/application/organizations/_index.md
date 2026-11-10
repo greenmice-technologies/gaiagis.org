@@ -1,33 +1,16 @@
 ---
-title: 'Organizations'
-description: 'Admin listing of every organization on the install.'
-translationKey: 'manuals-admin-organizations'
+title: "Channels"
+description: "Every channel on the installation."
+translationKey: "manuals-admin-organizations"
 weight: 20
-contentStatus: needs-review
 appScreen:
   - "/admin/organizations"
+contentStatus: needs-review
 ---
 
-Admin listing of every organization on the install.
+Open **Administration**, then **Application**, then **Channels**.
 
-| | |
-| --- | --- |
-| Access | Administrators (`ROLE_ADMIN`) |
-| Entry | Sidebar **Administration → Application → Organizations** |
+The list shows every channel on the installation. From here an administrator can create a channel, open one, and edit it.
 
-## Features
-
-- Create organization
-- Search by name
-- Filter and sort
-- Open [Organization Page](organization-detail.md) or [Organization Form Page](organization-form.md)
-- Empty state with create action
-
-User-facing membership lives under [My Organizations](../../../organizations/my-organizations.md).
-
-## Related
-
-- [Organization Page](organization-detail.md)
-- [Organization Form Page](organization-form.md)
-- [Settings](../settings.md)
-- [Users](../../users.md)
+- [Channel page](organization-detail.md)
+- [Create or edit a channel](organization-form.md)

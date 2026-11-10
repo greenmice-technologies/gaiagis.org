@@ -31,7 +31,7 @@ Arrange your map on a page and export a PDF or a GeoPDF, a PDF that retains geog
 
 ## Organize your projects
 
-Keep layers, maps, and supporting files in a workspace. Keep a workspace private, share it with your organization to view or to edit, or make it public.
+Keep layers, maps, and supporting files in a workspace. Keep a workspace private, share it with its members, or make it public.
 
 [Read the workspace guides](/en/manuals/workspaces/).
 
