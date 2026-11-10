@@ -1,6 +1,7 @@
 ---
 title: "Notebook"
 description: "Bring your analysis, maps, and charts into one document."
+translationKey: notebook
 contentStatus: "canonical-en"
 weight: 1
 ---

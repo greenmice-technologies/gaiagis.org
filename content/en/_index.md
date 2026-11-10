@@ -1,6 +1,7 @@
 ---
 title: Home
 description: Create maps, explore your data, and share what you find with Gaia.
+translationKey: home
 contentStatus: canonical-en
 build:
   list: never

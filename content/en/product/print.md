@@ -3,6 +3,7 @@ title: "Print"
 description: "Arrange your map on a page and export it for printing."
 aliases:
   - /en/features/print-layouts/
+translationKey: print
 contentStatus: "canonical-en"
 weight: 3
 ---

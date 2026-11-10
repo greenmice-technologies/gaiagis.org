@@ -5,6 +5,7 @@ aliases:
   - /en/features/
   - /en/features/introduction/
   - /en/features/projects/
+translationKey: product
 contentStatus: "canonical-en"
 ---
 

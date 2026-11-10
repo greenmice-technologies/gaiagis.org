@@ -4,6 +4,7 @@ description: "Import data, edit features, and choose how your map looks."
 aliases:
   - /en/features/layers/
   - /en/features/styles/
+translationKey: layers
 contentStatus: "canonical-en"
 weight: 2
 ---

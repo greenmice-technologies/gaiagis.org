@@ -1,6 +1,7 @@
 ---
 title: "Install Gaia"
 description: "Set up Gaia on your computer or your organization’s servers."
+translationKey: install
 contentStatus: "canonical-en"
 aliases:
   - /en/manuals/self-hosted/

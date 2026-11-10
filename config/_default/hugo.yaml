@@ -30,17 +30,3 @@ languages:
     contentDir: content/en
     params:
       description: "Create maps, explore data, and share your work from your browser with Gaia."
-  it:
-    languageName: Italiano
-    languageCode: it
-    weight: 2
-    contentDir: content/it
-    params:
-      description: "Crea mappe, esplora i dati e condividi il tuo lavoro dal browser con Gaia."
-  pt:
-    languageName: Português
-    languageCode: pt
-    weight: 3
-    contentDir: content/pt
-    params:
-      description: "Crie mapas, explore dados e compartilhe seu trabalho pelo navegador com Gaia."
