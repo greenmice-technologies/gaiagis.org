@@ -7,13 +7,15 @@ aliases:
   - /en/manuals/self-hosted/
 ---
 
-You can install Gaia Community on your computer or your organization's servers, then use it through your browser.
+You can install Gaia Community on your computer or your organization's servers, then use it through your browser. There is no hosted Gaia service to sign up for: you run it yourself, and your data stays on your systems.
 
 The installation guide lists the requirements, configuration, and steps:
 
 **[Open the installation guide on GitHub](https://github.com/greenmice-technologies/gaia)**
 
 **Availability:** some application packages are not yet available for public download. Check the guide for current access requirements before starting.
+
+A new installation has payments turned off, and accounts use the unlimited plan.
 
 Once installed, you can change the application name, logo, and colors in Settings. The guide also covers configuration for access through your own web address.
 

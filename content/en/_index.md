@@ -29,7 +29,7 @@ Move between the map and its attribute table. Draw and edit points, lines, and a
 
 Use colors, symbols, and styling rules to make patterns easier to read.
 
-**Formats include Shapefile, GeoJSON, GeoTIFF, and KML.**
+**Formats include Shapefile, GeoPackage, GeoJSON, KML, GPX, and GeoTIFF, plus CSV and Excel tables with coordinates.**
 
 ## Give your analysis a place to live
 
@@ -44,17 +44,18 @@ Choose the output that fits your work:
 - Publish a public workspace page.
 - Export a notebook as HTML or PDF.
 - Arrange a print layout with maps, legends, and scale bars.
-- Export a GeoPDF that retains geographic information.
+- Export a PDF, or a GeoPDF that retains geographic information.
+- Export the map as a GeoTIFF or the data as a GeoPackage.
 
 ## Keep your projects organized
 
-Keep maps, layers, and supporting files together in workspaces. Manage who can view or edit a project, and choose what to make public.
+Keep maps, layers, and supporting files together in workspaces. Keep a workspace private, share it with your organization to view or to edit, or make it public.
 
 Organizations can adapt Gaia's name, logo, and colors to their own identity.
 
 ## Get started with Gaia {#get-started}
 
-Install Gaia on your computer or your organization's servers, then open it in your browser.
+Gaia Community runs on your own systems. Install it on your computer or your organization's servers, then open it in your browser.
 
 The installation guide covers requirements, configuration, and setup.
 
@@ -66,7 +67,11 @@ The installation guide covers requirements, configuration, and setup.
 
 ### Do I need to install anything?
 
-Gaia needs to be installed on a computer or server. Once it is running, users access it through their browser.
+Yes, once. Gaia needs to be installed on a computer or server. After that, everyone uses it through their browser.
+
+### Is there a hosted version?
+
+No. There is no Gaia service to sign up for. You run Gaia yourself, and your data stays on your systems.
 
 ### Can I use existing geographic data?
 
@@ -74,11 +79,11 @@ Yes. Gaia imports common vector and raster formats and can read layers from exte
 
 ### Can I keep a project private?
 
-Yes. You can manage access to a workspace and choose whether to publish it.
+Yes. A workspace is private until you share it with your organization or make it public.
 
 ### What can I export?
 
-Notebooks can be exported as HTML or PDF. Print layouts can be exported as GeoPDF.
+Notebooks can be exported as HTML or PDF. Print layouts can be exported as PDF or GeoPDF. The map can be exported as a GeoTIFF, and the data as a GeoPackage.
 
 ### Where can I find help?
 
