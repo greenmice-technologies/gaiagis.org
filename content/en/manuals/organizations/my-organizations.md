@@ -3,7 +3,9 @@ title: 'My Organizations'
 description: 'Organizations the current user belongs to, with an active-org switcher.'
 translationKey: 'my-organizations'
 weight: 10
-contentStatus: 'canonical-en'
+contentStatus: needs-review
+appScreen:
+  - "/organizations"
 ---
 
 Organizations the current user belongs to, with a switcher for the active organization.

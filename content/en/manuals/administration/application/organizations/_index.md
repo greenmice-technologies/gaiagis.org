@@ -3,7 +3,9 @@ title: 'Organizations'
 description: 'Admin listing of every organization on the install.'
 translationKey: 'manuals-admin-organizations'
 weight: 20
-contentStatus: 'canonical-en'
+contentStatus: needs-review
+appScreen:
+  - "/admin/organizations"
 ---
 
 Admin listing of every organization on the install.

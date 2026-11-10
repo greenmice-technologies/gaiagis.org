@@ -3,7 +3,9 @@ title: 'Settings'
 description: 'Account profile: identity, public presence, usage, and deletion.'
 translationKey: 'account-settings'
 weight: 30
-contentStatus: 'canonical-en'
+contentStatus: needs-review
+appScreen:
+  - "/account/settings"
 ---
 
 Account profile page. Identity, public presence, usage, and account deletion.

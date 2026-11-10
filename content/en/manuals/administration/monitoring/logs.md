@@ -3,7 +3,9 @@ title: 'Logs'
 description: 'Runtime logger levels for the application process.'
 translationKey: 'logs'
 weight: 40
-contentStatus: 'canonical-en'
+contentStatus: needs-review
+appScreen:
+  - "/admin/logs"
 ---
 
 Runtime logger levels for the application process.

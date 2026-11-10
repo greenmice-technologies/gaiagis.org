@@ -3,7 +3,9 @@ title: 'User tracker'
 description: 'Live list of signed-in sessions, via WebSocket.'
 translationKey: 'user-tracker'
 weight: 10
-contentStatus: 'canonical-en'
+contentStatus: needs-review
+appScreen:
+  - "/admin/tracker"
 ---
 
 Live list of signed-in sessions, via WebSocket.

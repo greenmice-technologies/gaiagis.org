@@ -3,7 +3,9 @@ title: 'Public Workspaces'
 description: 'Catalog of workspaces published for sharing.'
 translationKey: 'public-workspaces'
 weight: 40
-contentStatus: 'canonical-en'
+contentStatus: needs-review
+appScreen:
+  - "/project/public"
 ---
 
 Catalog of workspaces published for sharing. Read-only listing; create stays on [My Workspaces](my-workspaces.md).

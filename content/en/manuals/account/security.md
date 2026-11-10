@@ -3,7 +3,9 @@ title: 'Security'
 description: 'Change the password for the signed-in account.'
 translationKey: 'account-security'
 weight: 40
-contentStatus: 'canonical-en'
+contentStatus: needs-review
+appScreen:
+  - "dialog:password"
 ---
 
 Change the password for the signed-in account.

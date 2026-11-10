@@ -3,7 +3,9 @@ title: 'Workspace Editor'
 description: 'Browser map and charts editor: layers, styles, print, notebook, and data.'
 translationKey: 'workspace-editor'
 weight: 30
-contentStatus: 'canonical-en'
+contentStatus: needs-review
+appScreen:
+  - "/project/:id/editor"
 ---
 
 Edit your workspace with a map, tools on the left, and panels for data, styling, and documents.

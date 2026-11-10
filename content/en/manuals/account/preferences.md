@@ -3,7 +3,9 @@ title: 'Preferences'
 description: 'Appearance and layout controls in the header configurator.'
 translationKey: 'account-preferences'
 weight: 20
-contentStatus: 'canonical-en'
+contentStatus: needs-review
+appScreen:
+  - "popover:preferences"
 ---
 
 Appearance and layout controls for the current user. Preferences live in the avatar configurator in the shell header, not on a dedicated route.

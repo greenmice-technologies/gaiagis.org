@@ -3,7 +3,9 @@ title: 'Organization Form Page'
 description: 'Owner form for organization branding, plan, and members.'
 translationKey: 'organization-form'
 weight: 30
-contentStatus: 'canonical-en'
+contentStatus: needs-review
+appScreen:
+  - "/organizations/:id/edit"
 ---
 
 Edit form for an organization the current user owns. Same form as the admin update page, scoped to membership.

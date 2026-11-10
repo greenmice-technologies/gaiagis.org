@@ -3,7 +3,9 @@ title: 'Workspace Viewer'
 description: 'Read-only presentation of a workspace, including share and export.'
 translationKey: 'workspace-viewer'
 weight: 20
-contentStatus: 'canonical-en'
+contentStatus: needs-review
+appScreen:
+  - "/project/:id/view"
 ---
 
 Read-only presentation of a workspace: story, map bookmarks, and share / export actions.

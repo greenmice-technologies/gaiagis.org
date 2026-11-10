@@ -3,7 +3,9 @@ title: 'Dashboard'
 description: 'Home of the signed-in application: quotas, recent workspaces, and organizations.'
 translationKey: 'dashboard'
 weight: 10
-contentStatus: 'canonical-en'
+contentStatus: needs-review
+appScreen:
+  - "/"
 ---
 
 Home of the signed-in application. Greeting, usage quotas, and shortcuts into recent workspaces, public workspaces, and organizations.

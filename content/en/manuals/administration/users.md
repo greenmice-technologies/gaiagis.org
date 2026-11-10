@@ -3,7 +3,9 @@ title: 'Users'
 description: 'Admin user management: list, create, view, and edit accounts.'
 translationKey: 'users'
 weight: 20
-contentStatus: 'canonical-en'
+contentStatus: needs-review
+appScreen:
+  - "/admin/user-management"
 ---
 
 Admin user management: list, create, view, and edit accounts.

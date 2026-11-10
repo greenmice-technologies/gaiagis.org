@@ -3,7 +3,9 @@ title: 'Health'
 description: 'Spring Boot health indicators for the running process and its dependencies.'
 translationKey: 'health'
 weight: 20
-contentStatus: 'canonical-en'
+contentStatus: needs-review
+appScreen:
+  - "/admin/health"
 ---
 
 Spring Boot health indicators for the running process and its dependencies.

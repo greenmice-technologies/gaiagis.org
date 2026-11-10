@@ -3,7 +3,9 @@ title: 'Settings'
 description: 'Install-wide namespaced application settings.'
 translationKey: 'admin-settings'
 weight: 10
-contentStatus: 'canonical-en'
+contentStatus: needs-review
+appScreen:
+  - "/setting"
 ---
 
 Install-wide application settings. Namespaced key/value configuration used by the public site, layout, and other runtime features.

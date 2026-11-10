@@ -3,7 +3,9 @@ title: 'My Workspaces'
 description: 'Listing of workspaces the current user owns or can edit.'
 translationKey: 'my-workspaces'
 weight: 10
-contentStatus: 'canonical-en'
+contentStatus: needs-review
+appScreen:
+  - "/project"
 ---
 
 Listing of workspaces the current user owns or can edit.

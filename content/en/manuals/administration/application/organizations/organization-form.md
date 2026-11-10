@@ -3,7 +3,9 @@ title: 'Organization Form Page'
 description: 'Admin create and edit form for an organization, including branding and members.'
 translationKey: 'admin-organization-form'
 weight: 20
-contentStatus: 'canonical-en'
+contentStatus: needs-review
+appScreen:
+  - "/admin/organizations/:id/edit"
 ---
 
 Admin create and edit form for an organization, including branding and members.

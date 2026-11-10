@@ -3,7 +3,9 @@ title: 'Organization Page'
 description: 'Admin read-only detail of an organization.'
 translationKey: 'admin-organization-detail'
 weight: 10
-contentStatus: 'canonical-en'
+contentStatus: needs-review
+appScreen:
+  - "/admin/organizations/:id/view"
 ---
 
 Admin read-only detail of an organization.

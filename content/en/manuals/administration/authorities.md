@@ -3,7 +3,9 @@ title: 'Authorities'
 description: 'Admin CRUD for security roles assigned to users.'
 translationKey: 'authorities'
 weight: 30
-contentStatus: 'canonical-en'
+contentStatus: needs-review
+appScreen:
+  - "/authority"
 ---
 
 Admin CRUD for security roles assigned to users.

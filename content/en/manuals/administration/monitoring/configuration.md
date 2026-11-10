@@ -3,7 +3,9 @@ title: 'Configuration'
 description: 'Runtime Spring configuration: beans and property sources.'
 translationKey: 'configuration'
 weight: 30
-contentStatus: 'canonical-en'
+contentStatus: needs-review
+appScreen:
+  - "/admin/configuration"
 ---
 
 Runtime Spring configuration: beans and property sources.

@@ -3,7 +3,9 @@ title: 'OAuth Providers'
 description: 'Admin CRUD for social and enterprise login providers.'
 translationKey: 'oauth-providers'
 weight: 20
-contentStatus: 'canonical-en'
+contentStatus: needs-review
+appScreen:
+  - "/admin/oauth-providers"
 ---
 
 Admin CRUD for social and enterprise login providers used on the sign-in page.
