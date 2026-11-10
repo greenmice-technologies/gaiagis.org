@@ -1,26 +1,23 @@
 main:
-  - name: Home
-    pageRef: /
+  - name: Overview
+    url: /en/#overview
     weight: 10
-    identifier: home
-  - name: Product
-    pageRef: /product
+  - name: Tools
+    url: /en/#tools
     weight: 20
-    identifier: product
+  - name: Get started
+    url: /en/#get-started
+    weight: 30
+  - name: FAQ
+    url: /en/#faq
+    weight: 40
   - name: Guides
     pageRef: /manuals
-    weight: 30
-    identifier: manuals
-  - name: Install
-    pageRef: /install
-    weight: 40
-    identifier: install
-
+    weight: 50
 buttons:
   - name: Install
     pageRef: /install
     weight: 10
-
 footer:
   - name: Home
     pageRef: /

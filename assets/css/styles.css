@@ -18,10 +18,11 @@
   --radius-xl: 12px;
 }
 
+/* Type scale: reading size, still close to the app. */
 @layer base {
   html {
     color-scheme: light;
-    font-size: 14px;
+    font-size: 16px;
     background-color: #fff;
     color: #0a0a0a;
     font-family: "Urbanist", sans-serif;
@@ -32,7 +33,7 @@
     color: #0a0a0a;
     font-family: "Urbanist", sans-serif;
     font-size: 1rem;
-    line-height: 1.5;
+    line-height: 1.6;
     -webkit-font-smoothing: antialiased;
   }
 
@@ -62,19 +63,27 @@ nav {
   background: #fff;
 }
 
+nav a.flex img + span.uppercase {
+  margin-left: 0.5rem;
+}
+
 nav span.uppercase {
-  font-weight: 300;
-  text-transform: none;
-  letter-spacing: -0.04em;
-  color: #0a0a0a;
-  font-size: 1.75rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+  color: #677489;
+  font-size: 1.5rem;
   line-height: 1;
 }
 
 nav ul a {
   color: #0a0a0a;
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
   font-weight: 500;
+}
+
+nav ul a.bg-primary {
+  color: #fff;
 }
 
 nav ul a:hover {
@@ -84,8 +93,8 @@ nav ul a:hover {
 a.bg-primary,
 a.border-primary {
   border-radius: 6px;
-  padding: 0.5rem 0.875rem;
-  font-size: 0.875rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.9375rem;
   font-weight: 500;
   line-height: 1.25;
 }
@@ -114,14 +123,15 @@ a.border-primary:hover {
   font-weight: 600;
 }
 #hero p,
-#features > .container > p {
-  color: #737373;
-  font-size: 0.875rem;
-  line-height: 1.5;
+#features > .container > p,
+#features .text-\[\#545454\] {
+  color: #0a0a0a;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 h1.text-4xl {
-  font-size: 1.5rem !important;
+  font-size: 1.75rem !important;
   font-weight: 600 !important;
   letter-spacing: -0.025em;
   line-height: 1.25;
@@ -133,7 +143,11 @@ h1.text-4xl {
   margin-bottom: 0;
 }
 
-#features > .container > h1,
+#features > .container > h1 {
+  font-size: 1.375rem !important;
+  margin-bottom: 0.5rem;
+}
+
 #features h1.markdown-title {
   font-size: 1.25rem !important;
   margin-bottom: 0.5rem;
@@ -141,7 +155,7 @@ h1.text-4xl {
 
 #features h2,
 #hero h2 {
-  font-size: 0.875rem;
+  font-size: 1rem;
   font-weight: 600;
 }
 
@@ -155,10 +169,16 @@ h1.text-4xl {
   font-size: 0.875rem;
 }
 
-#features .text-\[\#252525\],
-#features .text-\[\#545454\],
+#features .text-\[\#868686\],
 #hero .text-\[\#969696\] {
   color: #737373;
+  font-size: 0.875rem;
+}
+
+#features > .container > p {
+  color: #0a0a0a;
+  font-size: 1rem;
+  line-height: 1.6;
 }
 
 main h1.markdown-title {
@@ -176,8 +196,8 @@ main h1.markdown-title {
 }
 
 .prose {
-  font-size: 0.875rem;
-  line-height: 1.5;
+  font-size: 1rem;
+  line-height: 1.6;
   --tw-prose-body: #0a0a0a;
   --tw-prose-headings: #0a0a0a;
   --tw-prose-links: #059669;
@@ -193,6 +213,7 @@ footer {
   border-top: 1px solid #e5e5e5;
   color: #737373;
   font-size: 0.875rem;
+  line-height: 1.5;
 }
 
 footer h1 {
@@ -202,3 +223,10 @@ footer h1 {
   text-transform: none;
   color: #0a0a0a;
 }
+
+/* Single-page product narrative. */
+.gaia-landing { max-width: 860px; padding-top: 2rem; padding-bottom: 5rem; }
+.gaia-landing h2 { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #e5e5e5; font-size: clamp(1.5rem, 3vw, 2rem); }
+.gaia-landing h3 { font-size: 1.125rem; margin-top: 1.75rem; }
+.gaia-landing h2[id] { scroll-margin-top: 7rem; }
+.gaia-landing a { text-underline-offset: 3px; }

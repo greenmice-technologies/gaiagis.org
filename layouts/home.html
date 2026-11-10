@@ -1,11 +1,8 @@
 {{ define "main" }}
   {{ $root := index site.Data site.Language.Lang }}
   {{ if not $root }}{{ $root = index site.Data "en" }}{{ end }}
-  {{ $home := $root.home }}
-  {{ with $home.hero }}{{ if .enable }}{{ partial "blocks/home/hero" . }}{{ end }}{{ end }}
-  {{ with $home.features }}{{ if .enable }}{{ partial "blocks/home/features" . }}{{ end }}{{ end }}
-  {{ $highlights := $home.highlights }}
-  {{ if not $highlights }}{{ $highlights = $home.featuredservices }}{{ end }}
-  {{ with $highlights }}{{ if .enable }}{{ partial "blocks/home/highlights" . }}{{ end }}{{ end }}
-  {{ with $home.clients }}{{ if .enable }}{{ partial "blocks/home/clients" . }}{{ end }}{{ end }}
+  {{ with $root.home.hero }}{{ if .enable }}{{ partial "blocks/home/hero" . }}{{ end }}{{ end }}
+  <main class="gaia-landing prose mx-auto px-4">
+    {{ .Content }}
+  </main>
 {{ end }}

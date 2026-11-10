@@ -1,20 +1,84 @@
 ---
-title: "Home"
-description: "Create maps, explore data, and share your work from your browser."
-contentStatus: "canonical-en"
+title: Home
+description: Create maps, explore your data, and share what you find with Gaia.
+contentStatus: canonical-en
 build:
   list: never
 ---
 
-Gaia helps you create, edit, and share maps from your browser. Bring your data together, explore it with maps and charts, and present the results in a notebook or a printed map.
+## From a file to a map you can share {#overview}
 
-## From data to a finished map
+Start with your geographic data. Check its attributes, choose what to show, and adjust colors and symbols. Explore a question, bring the results into a notebook, and share your work.
 
-- Import geographic data and edit shapes and attributes
-- Adjust colors, symbols, and labels
-- Explore data with queries, maps, and charts
-- Keep maps and supporting files together in a project
-- Share a public page or export your work as HTML or PDF
-- Design print layouts and export maps as GeoPDF
+### Bring your data
 
-[Explore Gaia](/en/product/) · [Read the guides](/en/manuals/) · [Install Gaia](/en/install/)
+Import geographic files or add layers from external map services.
+
+### Build your map
+
+Edit features and attributes, arrange layers, and choose how they appear.
+
+### Explain the results
+
+Combine queries, maps, and charts in a notebook, then publish or export it.
+
+## Work with the map and the data behind it {#tools}
+
+Move between the map and its attribute table. Draw and edit points, lines, and areas, update values, and see your changes as you work.
+
+Use colors, symbols, and styling rules to make patterns easier to read.
+
+**Formats include Shapefile, GeoJSON, GeoTIFF, and KML.**
+
+## Give your analysis a place to live
+
+Keep your analysis alongside the map. Use SQL queries to explore data and display the results as tables, maps, or charts.
+
+Bring them together in a notebook with layers and map snapshots, so readers can follow your findings.
+
+## Share a page. Prepare a document. Print a map.
+
+Choose the output that fits your work:
+
+- Publish a public workspace page.
+- Export a notebook as HTML or PDF.
+- Arrange a print layout with maps, legends, and scale bars.
+- Export a GeoPDF that retains geographic information.
+
+## Keep your projects organized
+
+Keep maps, layers, and supporting files together in workspaces. Manage who can view or edit a project, and choose what to make public.
+
+Organizations can adapt Gaia's name, logo, and colors to their own identity.
+
+## Get started with Gaia {#get-started}
+
+Install Gaia on your computer or your organization's servers, then open it in your browser.
+
+The installation guide covers requirements, configuration, and setup.
+
+**[Read the installation guide](/en/install/)** · [Browse the user guides](/en/manuals/)
+
+**Availability:** Some application packages are not yet available for public download. Check the installation guide for current access requirements.
+
+## A few practical questions {#faq}
+
+### Do I need to install anything?
+
+Gaia needs to be installed on a computer or server. Once it is running, users access it through their browser.
+
+### Can I use existing geographic data?
+
+Yes. Gaia imports common vector and raster formats and can read layers from external WMS and WFS services.
+
+### Can I keep a project private?
+
+Yes. You can manage access to a workspace and choose whether to publish it.
+
+### What can I export?
+
+Notebooks can be exported as HTML or PDF. Print layouts can be exported as GeoPDF.
+
+### Where can I find help?
+
+Start with the [user guides](/en/manuals/), or [contact us](mailto:info@gaiagis.org) for help with installation.
