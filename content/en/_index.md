@@ -1,33 +1,24 @@
 ---
 title: 'Home'
+description: 'Gaia Community is a self-hosted web GIS for data analysts. Notebooks, layers, and print layouts run on your own machines.'
 translationKey: home
 contentStatus: 'canonical-en'
-menu:
-  main:
-    identifier: home
-    weight: 10
 build:
   list: never
 ---
 
-Gaia GIS is a browser-based platform for creating, editing, and publishing geographic projects.
-It combines modern web UX, open technologies, and interoperability for teams that need production-ready cartography without desktop GIS friction.
+Gaia Community is a self-hosted web GIS for data analysts. You install it on your own machines and work in the browser: a notebook, the layers on the map, and a print layout.
 
-## Professional cartography, simplified
+## What you can do
 
-Gaia is designed for geospatial teams that need a single workspace for data preparation, map authoring, styling, and publishing:
+- Write a notebook with SQL cells that render as a table, a map, or a chart
+- Import, edit, and style layers
+- Publish a workspace page, or export HTML and PDF
+- Compose a print layout and export a GeoPDF
 
-- Import data from 100+ vector and raster formats
-- Edit layers, styles, and attributes directly in the browser
-- Query geodatabases with SQL and spatial workflows
-- Organize private and public projects for collaborative production
-- Export maps, print layouts, and GeoPDF outputs
+## Install
 
-## Access the application
+The installer is a Docker Compose stack: the app, the print service, PostgreSQL, object storage, and local mail.
 
-Gaia is available as SaaS and self-hosted software.
-
-- [Sign in to Gaia App](https://app.gaiagis.org/login)
-- [Create an account](https://app.gaiagis.org/account/register)
-- [Self-hosted install](/en/manuals/self-hosted/)
-- [Explore all features](/features/)
+- [Install Gaia Community](/en/install/)
+- [Notebook, layers, and print](/en/product/)

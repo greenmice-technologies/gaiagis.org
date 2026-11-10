@@ -1,28 +1,22 @@
 enable: true
 
-title: "Access Gaia"
+title: "Install Gaia Community"
 
-subtitle: "Start using Gaia now on the official application."
+subtitle: "The base version runs on your own machines. There is no hosted service to sign in to."
 
 cta:
-  label: "Feature documentation"
-  link: "features/"
+  label: "Install"
+  link: "install/"
 
 items:
-  - title: "Sign in to your workspace"
-    text: "Access your private and public projects, continue map editing, and collaborate with your team."
+  - title: "On your computer or your servers"
+    text: "One Compose file starts the app, the print service, PostgreSQL, object storage, and a local mail catcher."
     button:
-      label: "Sign in"
-      link: "https://app.gaiagis.org/login"
+      label: "How to install"
+      link: "install/"
 
-  - title: "Create a new account"
-    text: "New to Gaia? Register to start creating maps, managing layers, and publishing projects."
+  - title: "Images from the registry"
+    text: "The installer pulls gaia-api and gaia-q. Those images are not anonymously pullable yet; the install page says what that means."
     button:
-      label: "Sign up"
-      link: "https://app.gaiagis.org/account/register"
-
-  - title: "Self-hosted install"
-    text: "Run Gaia on your own servers: one Compose stack for the app, print, Postgres, storage, and GeoServer."
-    button:
-      label: "Install runbook"
-      link: "manuals/self-hosted/"
+      label: "About the images"
+      link: "install/"

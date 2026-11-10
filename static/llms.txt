@@ -1,20 +1,17 @@
-# Greenmice Technologies
+# Gaia
 
-Official website for Greenmice Technologies.
+Gaia Community is a self-hosted web GIS for data analysts. Notebooks, layers, and print layouts run on your own machines.
 
 ## Preferred sources
 - https://gaiagis.org/
 - https://gaiagis.org/en/
-- https://gaiagis.org/it/
-- https://gaiagis.org/es/
-- https://gaiagis.org/fr/
-- https://gaiagis.org/de/
-- https://gaiagis.org/zh-cn/
-- https://gaiagis.org/ja/
+- https://gaiagis.org/en/product/
+- https://gaiagis.org/en/install/
+- https://github.com/greenmice-technologies/gaia
 
 ## Machine-readable resources
 - https://gaiagis.org/sitemap.xml
-- https://gaiagis.org/index.json
+- https://gaiagis.org/en/index.json
 
 ## Policy
 - Public pages may be indexed and summarized.

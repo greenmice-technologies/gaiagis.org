@@ -29,18 +29,18 @@ languages:
     weight: 1
     contentDir: content/en
     params:
-      description: "AI, system engineering, and software delivery for companies operating in complex environments."
+      description: "Gaia Community is a self-hosted web GIS for data analysts. Notebooks, layers, and print layouts run on your own machines."
   it:
     languageName: Italiano
     languageCode: it
     weight: 2
     contentDir: content/it
     params:
-      description: "Partner ingegneristico per sistemi complessi, piattaforme AI e modernizzazione legacy. CTO as a Service."
+      description: "Gaia Community è un web GIS self-hosted per analisti di dati. Notebook, layer e stampe girano sui propri sistemi."
   pt:
     languageName: Português
     languageCode: pt
     weight: 3
     contentDir: content/pt
     params:
-      description: "Parceiro de engenharia para sistemas complexos, plataformas de IA e modernizacao de legados. CTO as a Service."
+      description: "Gaia Community é um web GIS self-hosted para analistas de dados. Notebooks, camadas e impressão correm nos seus próprios sistemas."

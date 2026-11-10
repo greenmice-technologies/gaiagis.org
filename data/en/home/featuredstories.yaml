@@ -1,20 +1,25 @@
 enable: true
 
-title: 'Highlights'
+title: 'The product'
 
-subtitle: 'Powerful geospatial capabilities inspired by the original Gaia app landing.'
+subtitle: 'Three parts of the same workspace, installed with the stack.'
 
 cta:
-  label: 'See all features'
-  link: 'features/'
+  label: 'See the product'
+  link: 'product/'
 
 items:
-  - tag: 'Data import'
-    title: 'GDAL-powered ingestion'
-    summary: 'Import vector and raster data, reproject on the fly, and prepare datasets for mapping workflows.'
-    link: 'features/layers/'
+  - tag: 'Notebook'
+    title: 'Query, map, chart, publish'
+    summary: 'SQL cells, layer blocks, a public page, and HTML or PDF export from the same document.'
+    link: 'product/notebook/'
 
-  - tag: 'Advanced editing'
-    title: 'SQL and visual workflows'
-    summary: 'Use SQL spatial queries and visual notebooks to create reproducible analysis and cartography pipelines.'
-    link: 'features/styles/'
+  - tag: 'Layers'
+    title: 'Import, edit, and style'
+    summary: 'Common geospatial formats, in-browser editing, and styles on the layers you imported.'
+    link: 'product/layers/'
+
+  - tag: 'Print'
+    title: 'Layout and GeoPDF'
+    summary: 'Design the sheet in the app. The print service on the stack renders the GeoPDF.'
+    link: 'product/print/'

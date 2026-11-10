@@ -1,36 +1,34 @@
 enable: true
 
-title: 'Digital cartography<br/>made easy'
+title: 'Maps and charts<br/>on your own machines'
 
-text: 'An open platform for effortless map creation and sharing.'
+text: 'Gaia Community is a self-hosted web GIS for data analysts. Notebooks, layers, and print layouts run where you install them.'
 
 buttons:
-  - label: 'Explore features'
-    link: '#features'
-  - label: 'Sign in'
-    link: 'https://app.gaiagis.org/login'
-  - label: 'Self-hosted'
-    link: 'manuals/self-hosted/'
+  - label: 'Install'
+    link: 'install/'
+  - label: 'Product'
+    link: 'product/'
 
 image: 'images/home/hero/hero.svg'
 
 items:
-  - icon: 'database'
-    color: '#4264FB'
-    title: 'GDAL import tool'
-    text: 'Import geospatial data from 100+ formats with drag and drop.'
-
-  - icon: 'table'
-    color: '#4264FB'
-    title: 'Layer table editor'
-    text: 'Edit attributes, geometries, and symbology in real time.'
-
-  - icon: 'square-terminal'
-    color: '#4264FB'
-    title: 'SQL console'
-    text: 'Run spatial queries on PostGIS, SpatiaLite, and GeoPackage.'
-
   - icon: 'book-open'
     color: '#4264FB'
-    title: 'Visual notebooks'
-    text: 'Compose reproducible cartographic workflows with visual blocks.'
+    title: 'Notebook'
+    text: 'SQL, map, and chart in one document. Publish a page or export HTML and PDF.'
+
+  - icon: 'layers-3'
+    color: '#4264FB'
+    title: 'Layers'
+    text: 'Import common formats, draw and edit features, and style them in the browser.'
+
+  - icon: 'printer'
+    color: '#4264FB'
+    title: 'Print'
+    text: 'Compose a layout in the app and export a GeoPDF.'
+
+  - icon: 'server'
+    color: '#4264FB'
+    title: 'One stack'
+    text: 'App, print, PostgreSQL, and storage start from a single Compose file.'

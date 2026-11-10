@@ -1,0 +1,13 @@
+main:
+  - name: Home
+    pageRef: /
+    weight: 10
+    identifier: home
+  - name: Product
+    pageRef: /product
+    weight: 20
+    identifier: product
+  - name: Install
+    pageRef: /install
+    weight: 30
+    identifier: install

@@ -1,27 +1,27 @@
 enable: true
 
-title: "Everything you need for professional maps"
+title: "Notebook, layers, and print"
 
-text: "From import to export, Gaia gives you the tools to create, edit, and share modern cartography."
+text: "Gaia Community is the base product: a browser workspace for analysis, cartography, and a page you can publish from the same install."
 
 items:
-  - pretitle: "Data foundation"
-    pretext: "Vector and raster support"
+  - pretitle: "Notebook"
+    pretext: "Document, query, publish"
+    color: "#4264FB"
+    icon: "book-open"
+    title: "Write the analysis next to the map"
+    text: "A notebook holds SQL cells that render as a table, a map, or a chart, plus layer and snapshot blocks. Publish it at a public address, or export HTML and PDF."
+
+  - pretitle: "Layers"
+    pretext: "Import, edit, style"
     color: "#4264FB"
     icon: "layers-3"
-    title: "Import and manage 100+ geospatial formats"
-    text: "Work with Shapefile, GeoJSON, GeoTIFF, KML, and many more formats with fast import and reprojection support."
+    title: "Bring your data into the workspace"
+    text: "Import common vector and raster formats, draw and edit geometries and attributes, and style layers in the browser. External WMS and WFS services can be added as sources."
 
-  - pretitle: "Editing workflow"
-    pretext: "Production-ready tools"
+  - pretitle: "Print"
+    pretext: "Layout and GeoPDF"
     color: "#4264FB"
-    icon: "pencil"
-    title: "Edit layers, styles, and attributes in one place"
-    text: "Use the layer table editor, geometry tools, and live styling to move from raw data to publication-ready maps."
-
-  - pretitle: "Publishing and sharing"
-    pretext: "Collaboration by default"
-    color: "#4264FB"
-    icon: "share-2"
-    title: "Publish projects and share maps easily"
-    text: "Organize private and public projects, export outputs, and share cartographic results with your team and stakeholders."
+    icon: "printer"
+    title: "Compose the sheet and export it"
+    text: "The layout editor lives in the app. GeoPDF export runs through the QGIS print service on the same stack, and that service stays off the public network."

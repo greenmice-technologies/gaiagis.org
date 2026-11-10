@@ -1,16 +1,18 @@
 # gaiagis.org
 
-Public website and **official product documentation** for `https://gaiagis.org/`.
+Public website for `https://gaiagis.org/`.
 
-This repository is the source of truth for manuals, feature pages, marketing copy, and site navigation.
+This repository is the source of truth for the product narrative and site navigation. English is the maintained editorial baseline. Other languages should be published only after explicit editorial review.
 
-The GAIA application lives in a separate repository (`gaia-api`). Install runbooks stay next to the Compose files there; the self-hosted manual on this site points at that runbook.
+The installer lives in [github.com/greenmice-technologies/gaia](https://github.com/greenmice-technologies/gaia): Compose file, `.env.example`, and the install steps. Do not copy those commands onto this site.
 
-## Content Contract
+The application source lives in `gaia-api` (private). Do not keep a manuals tree there, and do not keep a second install runbook here.
 
-- Edit official docs here, under `content/en/manuals/` and `content/en/features/`.
-- English is the maintained editorial baseline. Other languages should be published only after explicit editorial review.
-- Do not keep a parallel manuals tree in `gaia-api`.
+## Content
+
+- `content/en/product/` — Notebook, Layers, Print
+- `content/en/install.md` — short pointer to the installer repository
+- `data/en/home/` — home page blocks
 
 ## Local Commands
 
