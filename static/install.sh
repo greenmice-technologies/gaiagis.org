@@ -1,6 +1,6 @@
 #!/bin/sh
 # Public entry point: https://gaiagis.org/install.sh
-# Clones the installer when needed, then runs scripts/setup.sh on the terminal.
+# Clones the installer when needed, fills the secrets, then starts the stack.
 set -eu
 
 repo=https://github.com/greenmice-technologies/gaia.git
@@ -13,11 +13,14 @@ fi
 
 run_setup() {
   cd "$1"
-  GAIA_BOOTSTRAP=1 exec sh scripts/setup.sh </dev/tty
+  GAIA_BOOTSTRAP=1 sh scripts/setup.sh </dev/tty
+  echo "Starting the stack."
+  sh scripts/install.sh
 }
 
 if [ -f compose.yml ] && [ -f .env.example ] && [ -f scripts/setup.sh ]; then
   run_setup "$(pwd)"
+  exit
 fi
 
 if ! command -v git >/dev/null 2>&1; then

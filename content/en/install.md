@@ -15,7 +15,7 @@ In a terminal:
 curl -fsSL https://gaiagis.org/install.sh | sh
 ```
 
-The command clones the installer and asks for three secrets. Press Enter to generate each one. Then start the stack with the command it prints.
+The command clones the installer, asks for three secrets, and starts the stack. Press Enter to generate each secret.
 
 Requirements, configuration, and the later steps are in the installation guide:
 

@@ -8,7 +8,7 @@ This repository is the only place where Gaia is described in prose: what the pro
 
 - Do not keep product pages, manuals, or screen maps in `gaia-api`.
 - One exception: product direction (decisions and roadmap) stays in `gaia-api/docs/`, because this repository is public. Do not add it here.
-- `static/install.sh` is the public install command (`curl -fsSL https://gaiagis.org/install.sh | sh`). It only clones [github.com/greenmice-technologies/gaia](https://github.com/greenmice-technologies/gaia) and runs `scripts/setup.sh`. Requirements, configuration, and the remaining steps stay in that repository. Do not copy them onto this site.
+- `static/install.sh` is the public install command (`curl -fsSL https://gaiagis.org/install.sh | sh`). It clones [github.com/greenmice-technologies/gaia](https://github.com/greenmice-technologies/gaia) when needed, runs `scripts/setup.sh`, and starts the stack. Requirements and configuration stay in that repository. Do not copy them onto this site.
 - A change in `gaia-api` that alters a screen is finished when the matching guide page here is updated.
 - English is the maintained baseline. Publish another language only after an editorial review, and add it to `config/_default/hugo.yaml` only when its content exists.
 
