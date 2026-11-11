@@ -9,7 +9,15 @@ aliases:
 
 Gaia GIS is self-hosted. You install it on your computer or your organization's servers, then use it through your browser. There is no hosted version to sign up for, and your data stays on your systems.
 
-The installation guide lists the requirements, configuration, and steps:
+In a terminal:
+
+```bash
+curl -fsSL https://gaiagis.org/install.sh | sh
+```
+
+The command clones the installer and asks for three secrets. Press Enter to generate each one. Then start the stack with the command it prints.
+
+Requirements, configuration, and the later steps are in the installation guide:
 
 **[Open the installation guide on GitHub](https://github.com/greenmice-technologies/gaia)**
 
