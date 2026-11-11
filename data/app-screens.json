@@ -40,7 +40,6 @@
     { "id": "/organizations/:id/view", "name": "Channel page", "area": "organizations", "access": "user" },
     { "id": "/organizations/:id/edit", "name": "Channel form", "area": "organizations", "access": "owner" },
     { "id": "/taxonomy", "name": "Categories and tags", "area": "organizations", "access": "user" },
-    { "id": "/legal/:page", "name": "Terms, privacy and cookies pages", "area": "administration", "access": "public" },
     { "id": "/setting", "name": "Application settings", "area": "administration", "access": "admin" },
     { "id": "/admin/organizations", "name": "Channels (admin)", "area": "administration", "access": "admin" },
     { "id": "/admin/organizations/:id/view", "name": "Channel page (admin)", "area": "administration", "access": "admin" },

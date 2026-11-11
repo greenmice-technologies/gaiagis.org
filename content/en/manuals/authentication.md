@@ -13,6 +13,8 @@ contentStatus: needs-review
 
 Open Gaia in your browser. If you are not signed in, you see the **Sign in** page.
 
+The page shows your installation's logo and main color. Behind the form there is a background image: by default a pattern of thin blue lines. An administrator can replace it, see [Application settings](administration/application/settings.md).
+
 ## Sign in
 
 1. Enter your **Username or Email Address**.
@@ -33,4 +35,4 @@ An administrator can turn off sign-up and password reset. When they are off, the
 
 ## Terms and privacy
 
-The sign-in page links to the **Terms of Service**, the **Privacy Policy**, and the **Cookie Notice** of your installation.
+The sign-in page can link to the **Terms of Service**, the **Privacy Policy**, and the **Cookie Notice**. Those links appear when an administrator sets their addresses in [Application settings](administration/application/settings.md). The same list can include **About**, **Contact**, and **FAQ**. An empty address hides that link. The pages live on your public website.

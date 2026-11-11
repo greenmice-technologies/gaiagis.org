@@ -1,5 +1,5 @@
 baseURL: "https://gaiagis.org/"
-title: "Gaia"
+title: "Gaia GIS"
 summaryLength: 35
 
 markup:
@@ -29,4 +29,4 @@ languages:
     weight: 1
     contentDir: content/en
     params:
-      description: "Create maps, explore data, and share your work from your browser with Gaia."
+      description: "Create maps, explore data, and share your work from your browser with Gaia GIS."

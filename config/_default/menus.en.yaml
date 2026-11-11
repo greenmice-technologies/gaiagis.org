@@ -1,22 +1,16 @@
 main:
-  - name: Overview
-    url: /en/#overview
+  - name: Product
+    pageRef: /product
     weight: 10
-  - name: Tools
-    url: /en/#tools
-    weight: 20
-  - name: Get started
-    url: /en/#get-started
-    weight: 30
-  - name: FAQ
-    url: /en/#faq
-    weight: 40
   - name: Guides
     pageRef: /manuals
-    weight: 50
+    weight: 20
   - name: Tutorials
     pageRef: /tutorials
-    weight: 60
+    weight: 30
+  - name: Releases
+    pageRef: /releases
+    weight: 40
 buttons:
   - name: Install
     pageRef: /install
@@ -31,6 +25,9 @@ footer:
   - name: Guides
     pageRef: /manuals
     weight: 30
+  - name: Releases
+    pageRef: /releases
+    weight: 40
   - name: Install
     pageRef: /install
-    weight: 40
+    weight: 50

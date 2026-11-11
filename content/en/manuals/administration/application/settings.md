@@ -5,8 +5,7 @@ translationKey: "admin-settings"
 weight: 10
 appScreen:
   - "/setting"
-contentStatus: verified
-verifiedAgainst: "828cf266"
+contentStatus: needs-review
 ---
 
 Open **Administration**, then **Application**, then **Settings**.
@@ -24,7 +23,10 @@ The page lists every setting with its type and a description. Use **Sort** to ch
 | **Preset** | The overall look: Aura, Lara, or Nora |
 | **Surface** | The tone of backgrounds and panels |
 | **Logo** | The logo in the top bar and on the sign-in pages |
-| **Background** | The image behind the sign-in pages |
+| **Background** | The image behind the sign-in and account pages |
+| **Background Repeat** | How that image tiles: repeat, no-repeat, repeat-x, or repeat-y |
+| **Background Size** | auto, cover, or contain |
+| **Background Position** | Where the image sits, for example center |
 | **Layout Preferences** | Whether users may choose their own theme and colors |
 
 For **Logo** and **Background**, use **Upload**, **Restore default**, or **Remove**.
@@ -38,4 +40,4 @@ For **Logo** and **Background**, use **Upload**, **Restore default**, or **Remov
 
 ## Pages
 
-**Privacy Policy**, **Terms of Service**, and **Cookies** hold the text of the pages linked from the sign-in page. **Contact**, **About**, and **FAQ** hold further texts of your installation.
+**Privacy Policy**, **Terms of Service**, **Cookies**, **Contact**, **About**, and **FAQ** are web addresses on your public website. Leave an address empty to hide that link. When you set one, the sign-in page and the footer open it in a new tab. The cookie notice links only to **Cookies**.

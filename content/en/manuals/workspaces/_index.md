@@ -11,7 +11,7 @@ A workspace holds a map, its layers, a notebook, and its files.
 Find and open workspaces:
 
 - [My workspaces](my-workspaces.md)
-- [Public workspaces](public-workspaces.md)
+- [Find a workspace](public-workspaces.md)
 - [Workspace viewer](workspace-viewer.md)
 
 Work in the editor:

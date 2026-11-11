@@ -1,18 +1,18 @@
-title: "Gaia"
-description: "Create maps, explore data, and share your work from your browser with Gaia."
+title: "Gaia GIS"
+description: "Create maps, explore data, and share your work from your browser with Gaia GIS."
 logo: "images/brands/svg/logo-brand.svg"
 logo_dark: "images/brands/svg/logo-white.svg"
 colors:
-  primary: "#10b981"
+  primary: "#0B5D8E"
   secondary: "#0a0a0a"
   background: "#FFFFFF"
 
 favicons:
   themeColor: "#FFFFFF"
   backgroundColor: "#FFFFFF"
-  faviconColor: "#10b981"
+  faviconColor: "#0B5D8E"
 images:
-  - "greenmice-technologies-og.png"
+  - "gaia-gis-og.png"
 
 contact:
   - "info@gaiagis.org"

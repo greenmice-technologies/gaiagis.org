@@ -12,6 +12,16 @@ This repository is the only place where Gaia is described in prose: what the pro
 - A change in `gaia-api` that alters a screen is finished when the matching guide page here is updated.
 - English is the maintained baseline. Publish another language only after an editorial review, and add it to `config/_default/hugo.yaml` only when its content exists.
 
+## Branding
+
+One line of communication, shared with the app (`gaia-api`):
+
+- **Name**: the product is **Gaia GIS**, the only public name. Use "Gaia" alone only as a short form after the first mention on a page. Never use "Community": it suggests an open-source edition, and the source is not public. Say **self-hosted** to describe how it is distributed.
+- **Colour**: the brand primary is `#0B5D8E` (Oceanus blue), set in `config/_default/params.yaml` and `assets/css/styles.css`. The logo gradient runs from `#46A8D8` to `#0B5D8E`.
+- **Release names**: only major releases are named, after the Titans, the children of Gaia (1.0 Oceanus, 2.0 Themis, ...). Minor and patch releases stay numbered: "Gaia GIS 1.2 (Oceanus)". Each major has its own primary colour and sign-in splash screen; the full list and the reasoning are in `gaia-api` under `src/main/webapp/content/images/splash/README.md`.
+- **Brand images**: `assets/images/gaia-gis.png` (home hero) is a screenshot of the editor; retake it when the editor's look changes. `static/gaia-gis-og.png` (social preview) is composed from `logo-brand.svg`, the Oceanus splash from `gaia-api` and the Urbanist wordmark; regenerate it when the logo or the brand colour changes.
+- **Screenshots** in the tutorials come from the app. Regenerate them with `npm run screenshots` after a branding change so they show the current colours.
+
 ## Content
 
 - `content/en/_index.md` and `data/en/home/hero.yaml` — home page

@@ -7,7 +7,7 @@ aliases:
   - /en/manuals/self-hosted/
 ---
 
-You can install Gaia Community on your computer or your organization's servers, then use it through your browser. There is no hosted Gaia service to sign up for: you run it yourself, and your data stays on your systems.
+Gaia GIS is self-hosted. You install it on your computer or your organization's servers, then use it through your browser. There is no hosted version to sign up for, and your data stays on your systems.
 
 The installation guide lists the requirements, configuration, and steps:
 

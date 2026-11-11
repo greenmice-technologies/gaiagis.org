@@ -1,5 +1,5 @@
 ---
-title: "Explore Gaia"
+title: "Product"
 description: "Create, edit, organize, and share maps in your browser."
 aliases:
   - /en/features/
@@ -9,34 +9,24 @@ translationKey: product
 contentStatus: "canonical-en"
 ---
 
-Gaia brings data, maps, and documents together in a browser workspace. Use it to prepare geographic data, design a map, explore a question, and share the results.
+Gaia GIS brings data, maps, and documents together in a browser workspace. Prepare geographic data, design a map, explore a question, and share the results.
 
-## Work with your data
+## Layers
 
-Import geographic files, edit shapes and attributes, and choose how each layer appears. You can also add data from external map services.
+Import geographic files, edit shapes and attributes, and choose how each layer appears. [Learn about layers](layers/).
 
-[Learn about layers](layers/).
+## Notebook
 
-## Explore and explain
+Explore your data with queries, then bring tables, maps, and charts together in a page or document for others to read. [Learn about notebooks](notebook/).
 
-Use queries to explore your data, then bring tables, maps, and charts together in a notebook. Publish a page or export a document for others to read.
+## Print
 
-[Learn about notebooks](notebook/).
+Arrange your map on a page and export a PDF or a GeoPDF. [Learn about print layouts](print/).
 
-## Prepare maps for print
+## Workspaces and sharing
 
-Arrange your map on a page and export a PDF or a GeoPDF, a PDF that retains geographic information. You can also export the map as a GeoTIFF and the data as a GeoPackage.
+Keep layers, maps, notebooks, and files together in a workspace, and decide who can see it. [Learn about workspaces](workspaces/).
 
-[Learn about print layouts](print/).
+## Self-hosted
 
-## Organize your projects
-
-Keep layers, maps, and supporting files in a workspace. Keep a workspace private, share it with its members, or make it public.
-
-[Read the workspace guides](/en/manuals/workspaces/).
-
-## Make Gaia your own
-
-Gaia Community runs on your own systems: install it on your computer or your organization's servers. There is no hosted service to sign up for. Administrators can change the name, logo, and colors to suit their organization.
-
-[Installation guide](/en/install/) · [User and administration guides](/en/manuals/)
+Gaia GIS runs on your own computer or servers. There is no hosted service. [Install Gaia GIS](/en/install/).

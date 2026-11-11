@@ -5,8 +5,7 @@ translationKey: "dashboard"
 weight: 10
 appScreen:
   - "/"
-contentStatus: verified
-verifiedAgainst: "828cf266"
+contentStatus: needs-review
 ---
 
 The dashboard is the first page you see after signing in. To return to it, select **Dashboard** in the sidebar.
@@ -21,11 +20,11 @@ At the top of the page:
 
 ## At a glance
 
-Four tiles show the number of **Workspaces**, the **Storage** you use, and how many workspaces are **Drafts** or **Published**. The workspace tiles open the matching list.
+Four tiles show the number of **Workspaces**, the **Storage** you use, and how many workspaces are **Drafts** or **Published**. The workspace tiles open the matching list. The tiles use shades of your installation's main color, so they change when an administrator changes it. The **Drafts** tile stays neutral.
 
 ## Recent workspaces
 
-The workspaces you changed most recently, with their status, visibility, and date. Select one to open it in the editor, or **View all** to open [My workspaces](../workspaces/my-workspaces.md).
+The workspaces you changed most recently, with their status, visibility, and date. Status and visibility appear as small colored labels, for example **Published** and **Public**, in soft tones that go with the main color. Select one to open it in the editor, or **View all** to open [My workspaces](../workspaces/my-workspaces.md).
 
 ## My channels
 

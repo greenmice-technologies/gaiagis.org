@@ -1,8 +1,8 @@
-# Gaia
+# Gaia GIS
 
-Create maps, explore data, and share your work from your browser with Gaia.
+Create maps, explore data, and share your work from your browser with Gaia GIS.
 
-Gaia Community is self-hosted: you install it on your own computer or servers. There is no hosted service. Gaia reads external WMS and WFS services and does not publish them.
+Gaia GIS is self-hosted: you install it on your own computer or servers. There is no hosted service. Gaia reads external WMS and WFS services and does not publish them.
 
 ## Preferred sources
 - https://gaiagis.org/
@@ -10,6 +10,7 @@ Gaia Community is self-hosted: you install it on your own computer or servers. T
 - https://gaiagis.org/en/product/
 - https://gaiagis.org/en/manuals/
 - https://gaiagis.org/en/install/
+- https://gaiagis.org/en/releases/
 - https://github.com/greenmice-technologies/gaia
 
 ## Machine-readable resources
