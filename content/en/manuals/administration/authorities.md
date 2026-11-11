@@ -1,30 +1,19 @@
 ---
-title: 'Authorities'
-description: 'Admin CRUD for security roles assigned to users.'
-translationKey: 'authorities'
+title: "Authorities"
+description: "The profiles that decide what a user may do."
+translationKey: "authorities"
 weight: 30
-contentStatus: 'canonical-en'
+appScreen:
+  - "/authority"
+contentStatus: verified
+verifiedAgainst: "828cf266"
 ---
 
-Admin CRUD for security roles assigned to users.
+Open **Administration**, then **Authentication**, then **Authorities**.
 
-| | |
-| --- | --- |
-| Access | Administrators (`ROLE_ADMIN`) |
-| Entry | Sidebar **Administration → Authentication and Authorization → Authorities** |
+An authority is a profile you give to users. Gaia comes with two:
 
-## Features
+- `ROLE_USER` — a regular user
+- `ROLE_ADMIN` — an administrator, who also sees the **Administration** section
 
-- List authorities with search, filter, and sort
-- Create authority (name)
-- View authority detail
-- Delete authority (confirmation)
-- Empty state with create action
-
-Built-in roles include `ROLE_USER` and `ROLE_ADMIN`. Assign authorities to accounts on [Users](users.md).
-
-Listing, detail, and form are full pages (not dialogs).
-
-## Related
-
-- [Users](users.md)
+Select **Create a new Authority** to add another. Give authorities to users on the [Users](users.md) page.

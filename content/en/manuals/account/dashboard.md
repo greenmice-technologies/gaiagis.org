@@ -1,29 +1,32 @@
 ---
-title: 'Dashboard'
-description: 'Home of the signed-in application: quotas, recent workspaces, and organizations.'
-translationKey: 'dashboard'
+title: "Dashboard"
+description: "Your starting page: recent workspaces, your channels, and quick ways to continue."
+translationKey: "dashboard"
 weight: 10
-contentStatus: 'canonical-en'
+appScreen:
+  - "/"
+contentStatus: verified
+verifiedAgainst: "828cf266"
 ---
 
-Home of the signed-in application. Greeting, usage quotas, and shortcuts into recent workspaces, public workspaces, and organizations.
+The dashboard is the first page you see after signing in. To return to it, select **Dashboard** in the sidebar.
 
-| | |
-| --- | --- |
-| Access | Signed-in users (`ROLE_USER`) |
-| Entry | Sidebar **Home** |
+## Continue your work
 
-## Features
+At the top of the page:
 
-- Personalized greeting and short subtitle for the current session
-- Quota widgets for plan, workspaces, storage, and print jobs
-- Recent workspaces list, with create and “view all” into [My Workspaces](../workspaces/my-workspaces.md)
-- Public workspaces preview, with “view all” into [Public Workspaces](../workspaces/public-workspaces.md)
-- Organizations preview, with switcher and “view all” into [My Organizations](../organizations/my-organizations.md)
-- Empty states for each section when there is nothing to show
+- **Search workspaces…** finds a workspace by name.
+- **Open last workspace** returns to the workspace you edited most recently.
+- **Create a new Workspace** creates a workspace and opens it in the [editor](../workspaces/workspace-editor.md).
 
-## Related
+## At a glance
 
-- [Preferences](preferences.md)
-- [Settings](settings.md)
-- [Workspace Editor](../workspaces/workspace-editor.md)
+Four tiles show the number of **Workspaces**, the **Storage** you use, and how many workspaces are **Drafts** or **Published**. The workspace tiles open the matching list.
+
+## Recent workspaces
+
+The workspaces you changed most recently, with their status, visibility, and date. Select one to open it in the editor, or **View all** to open [My workspaces](../workspaces/my-workspaces.md).
+
+## My channels
+
+The channels you belong to, with your role in each. The channel you are working in is marked **Current**. Select **View all** to open [My channels](../organizations/my-organizations.md).

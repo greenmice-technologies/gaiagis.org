@@ -1,28 +1,16 @@
 ---
-title: 'Logs'
-description: 'Runtime logger levels for the application process.'
-translationKey: 'logs'
+title: "Logs"
+description: "Change how much detail the application writes to its logs."
+translationKey: "logs"
 weight: 40
-contentStatus: 'canonical-en'
+appScreen:
+  - "/admin/logs"
+contentStatus: verified
+verifiedAgainst: "828cf266"
 ---
 
-Runtime logger levels for the application process.
+Open **Administration**, then **Monitoring**, then **Logs**.
 
-| | |
-| --- | --- |
-| Access | Administrators (`ROLE_ADMIN`) |
-| Entry | Sidebar **Administration → Monitoring → Logs** |
+The page lists the loggers of the application. For each one, select a level: **TRACE**, **DEBUG**, **INFO**, **WARN**, **ERROR**, or **OFF**. More detailed levels help when you investigate a problem.
 
-## Features
-
-- List loggers with search and sort
-- Change level per logger
-- Empty state when no loggers match the filter
-
-Changes apply to the running process and are not persisted across restarts.
-
-## Related
-
-- [Health](health.md)
-- [Configuration](configuration.md)
-- [User tracker](user-tracker.md)
+Select the **Name** header to sort the list.

@@ -1,28 +1,16 @@
 ---
-title: 'Security'
-description: 'Change the password for the signed-in account.'
-translationKey: 'account-security'
+title: "Security"
+description: "Change the password of your account."
+translationKey: "account-security"
 weight: 40
-contentStatus: 'canonical-en'
+appScreen:
+  - "dialog:password"
+contentStatus: needs-review
 ---
 
-Change the password for the signed-in account.
+To change your password:
 
-| | |
-| --- | --- |
-| Access | Signed-in users (`ROLE_USER`) |
-| Entry | Avatar menu **Password**, or sidebar **Account → Security** |
-
-## Features
-
-- Current password
-- New password with strength indicator
-- Confirm new password
-- Show / hide each field
-- Validation for required fields, length, and mismatch
-- Save in the page header
-
-## Related
-
-- [Settings](settings.md)
-- [Preferences](preferences.md)
+1. Open the user menu at the bottom of the sidebar and select **Settings**.
+2. Open the **More actions** menu at the top right of your profile.
+3. Select **Security**.
+4. Enter your current password, then the new one, and save.

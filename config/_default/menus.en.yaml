@@ -14,6 +14,9 @@ main:
   - name: Guides
     pageRef: /manuals
     weight: 50
+  - name: Tutorials
+    pageRef: /tutorials
+    weight: 60
 buttons:
   - name: Install
     pageRef: /install

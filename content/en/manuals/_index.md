@@ -1,16 +1,18 @@
 ---
 title: "Guides"
-description: "Help with maps, projects, accounts, and administration."
-contentStatus: "canonical-en"
+description: "Help with maps, workspaces, accounts, and administration."
+translationKey: "manuals"
+weight: 30
+contentStatus: canonical-en
 ---
 
-Find your way around Gaia and learn how to manage your work.
+These guides follow the screens of Gaia as you see them in the browser.
 
-- [Workspaces](workspaces/) — create, edit, and share your projects
-- [Account](account/) — your dashboard, profile, preferences, and password
-- [Organizations](organizations/) — manage membership and organization details
-- [Administration](administration/) — manage users, settings, and monitoring
-- [Signing in](authentication/) — access your account
-- [Print layouts](print-layouts/) — prepare maps for printing
+- [Signing in](authentication.md)
+- [Workspaces](workspaces/) — the lists, the viewer, and the editor where you build a map
+- [Print layouts](print-layouts.md)
+- [Account](account/)
+- [Channels](organizations/)
+- [Administration](administration/)
 
-To set up Gaia, see [Install](/en/install/).
+To learn by doing, follow the [tutorials](../tutorials/_index.md). To set Gaia up, see [Install Gaia](/en/install/).

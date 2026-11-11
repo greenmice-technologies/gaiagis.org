@@ -1,34 +1,28 @@
 ---
-title: 'Users'
-description: 'Admin user management: list, create, view, and edit accounts.'
-translationKey: 'users'
+title: "Users"
+description: "Create accounts, and change who can sign in and what they can do."
+translationKey: "users"
 weight: 20
-contentStatus: 'canonical-en'
+appScreen:
+  - "/admin/user-management"
+contentStatus: verified
+verifiedAgainst: "828cf266"
 ---
 
-Admin user management: list, create, view, and edit accounts.
+Open **Administration**, then **Authentication**, then **Users**.
 
-| | |
-| --- | --- |
-| Access | Administrators (`ROLE_ADMIN`) |
-| Entry | Sidebar **Administration → Authentication and Authorization → Users** |
+The list shows each account with its login, whether it is **Activated**, its profiles, its channels, its language, and its email. Use **Sort** to change the order.
 
-## Features
+## Create or edit a user
 
-- List users with search by login, filter, and sort
-- Create user
-- View user detail
-- Edit login, first name, last name, email
-- Activated flag
-- Language
-- Authorities / profiles (multi-select)
-- Delete user (confirmation)
-- Empty state with create action
+Select **Create a new user**, or open a user and edit it. Fill in:
 
-Listing, detail, and form are full pages (not dialogs).
+- **Login**
+- **First name** and **Last name**
+- **Email**
+- **Activated** — an account that is not activated cannot sign in
+- **Language**
+- **Profiles** — what the user may do. See [Authorities](authorities.md).
+- **Channels** — the channels the user belongs to
 
-## Related
-
-- [Authorities](authorities.md)
-- [OAuth Providers](oauth-providers.md)
-- [Organizations](application/organizations/_index.md)
+Select **Save**.

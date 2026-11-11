@@ -1,15 +1,27 @@
 ---
-title: 'Administration'
-description: 'Install settings, users, OAuth providers, and runtime monitoring.'
-translationKey: 'manuals-administration'
+title: "Administration"
+description: "Settings, channels, users, sign-in providers, and monitoring. For administrators."
+translationKey: "manuals-administration"
 weight: 50
-contentStatus: 'canonical-en'
+contentStatus: canonical-en
 ---
 
-Pages under **Administration**. Requires `ROLE_ADMIN`.
+The **Administration** section of the sidebar is visible only to administrators. It has three groups.
 
-- [Application](application/_index.md)
+**Application**
+
+- [Settings](application/settings.md)
+- [Channels](application/organizations/)
+- [OAuth providers](oauth-providers.md)
+
+**Authentication**
+
 - [Users](users.md)
 - [Authorities](authorities.md)
-- [OAuth Providers](oauth-providers.md)
-- [Monitoring](monitoring/_index.md)
+
+**Monitoring**
+
+- [User tracker](monitoring/user-tracker.md)
+- [Health](monitoring/health.md)
+- [Configuration](monitoring/configuration.md)
+- [Logs](monitoring/logs.md)

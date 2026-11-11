@@ -1,29 +1,18 @@
 ---
-title: 'Public Workspaces'
-description: 'Catalog of workspaces published for sharing.'
-translationKey: 'public-workspaces'
+title: "Public workspaces"
+description: "Browse the workspaces that have been made public on your installation."
+translationKey: "public-workspaces"
 weight: 40
-contentStatus: 'canonical-en'
+appScreen:
+  - "/project/public"
+contentStatus: verified
+verifiedAgainst: "828cf266"
 ---
 
-Catalog of workspaces published for sharing. Read-only listing; create stays on [My Workspaces](my-workspaces.md).
+Select **Public workspaces** in the sidebar. You need to be signed in to see this list.
 
-| | |
-| --- | --- |
-| Access | Signed-in users |
-| Entry | Sidebar **Workspaces → Public Workspaces**, or Dashboard **View all** |
+The list shows every workspace that its owners have made public. Use **Sort**, and switch between **List** and **Grid**, as in [My workspaces](my-workspaces.md).
 
-## Features
+Select a workspace to open it. The menu at the end of each row has **View**, **Open editor**, and **Clone**. **Clone** makes a private copy in your workspaces and opens it in the editor.
 
-- Browse public workspaces
-- Search by name
-- Filter and sort
-- Row or grid layout
-- Open [Workspace Viewer](workspace-viewer.md)
-- Empty state when nothing is published
-
-## Related
-
-- [Dashboard](../account/dashboard.md)
-- [My Workspaces](my-workspaces.md)
-- [Workspace Viewer](workspace-viewer.md)
+People without an account can open a public workspace only from its own link. See [Share, preview, and export](share-and-export.md).

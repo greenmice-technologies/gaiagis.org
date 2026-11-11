@@ -1,30 +1,31 @@
 ---
-title: 'Settings'
-description: 'Account profile: identity, public presence, usage, and deletion.'
-translationKey: 'account-settings'
+title: "Settings"
+description: "Edit your profile: name, email, picture, bio, and visibility."
+translationKey: "account-settings"
 weight: 30
-contentStatus: 'canonical-en'
+appScreen:
+  - "/account/settings"
+contentStatus: verified
+verifiedAgainst: "828cf266"
 ---
 
-Account profile page. Identity, public presence, usage, and account deletion.
+Open the user menu at the bottom of the sidebar and select **Settings**.
 
-| | |
-| --- | --- |
-| Access | Signed-in users (`ROLE_USER`) |
-| Entry | Avatar menu **Settings**, or sidebar **Account → Settings** |
+## Your profile
 
-## Features
+The page shows your profile as others see it. Edit it in place:
 
-- Profile and cover images (upload or remove)
-- Username, email, first name, last name
-- Bio (rich text)
-- Quota summary: plan, workspaces used, storage used, print jobs used
-- Upgrade hint when payments are enabled
-- Delete account (danger zone, confirmation required)
-- Save in the page header
+- **First Name** and **Last Name**
+- **Email**
+- **Bio** — a short text about you
+- Your **profile picture** and **cover picture**
+- **Visibility** — whether your profile is public
 
-## Related
+Your username, shown after the `@`, identifies your account.
 
-- [Preferences](preferences.md)
-- [Security](security.md)
-- [Dashboard](dashboard.md)
+## More actions
+
+The **More actions** menu at the top right of the profile has two entries:
+
+- **Security** — change your password. See [Security](security.md).
+- **Delete account** — remove your account.

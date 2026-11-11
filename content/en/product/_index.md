@@ -5,6 +5,7 @@ aliases:
   - /en/features/
   - /en/features/introduction/
   - /en/features/projects/
+translationKey: product
 contentStatus: "canonical-en"
 ---
 
@@ -24,18 +25,18 @@ Use queries to explore your data, then bring tables, maps, and charts together i
 
 ## Prepare maps for print
 
-Arrange your map on a page and export a GeoPDF, a PDF that retains geographic information.
+Arrange your map on a page and export a PDF or a GeoPDF, a PDF that retains geographic information. You can also export the map as a GeoTIFF and the data as a GeoPackage.
 
 [Learn about print layouts](print/).
 
 ## Organize your projects
 
-Keep layers, maps, and supporting files in a workspace. Manage private and public projects, and control who can view or edit them.
+Keep layers, maps, and supporting files in a workspace. Keep a workspace private, share it with its members, or make it public.
 
 [Read the workspace guides](/en/manuals/workspaces/).
 
 ## Make Gaia your own
 
-Install Gaia on your computer or your organization's servers. Administrators can change the name, logo, and colors to suit their organization.
+Gaia Community runs on your own systems: install it on your computer or your organization's servers. There is no hosted service to sign up for. Administrators can change the name, logo, and colors to suit their organization.
 
 [Installation guide](/en/install/) · [User and administration guides](/en/manuals/)

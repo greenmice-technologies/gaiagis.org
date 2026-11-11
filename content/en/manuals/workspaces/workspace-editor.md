@@ -1,51 +1,67 @@
 ---
-title: 'Workspace Editor'
-description: 'Browser map and charts editor: layers, styles, print, notebook, and data.'
-translationKey: 'workspace-editor'
+title: "Workspace editor"
+description: "The screen where you build a map: panels on the left, map on the right, tools along the edges."
+translationKey: "workspace-editor"
 weight: 30
-contentStatus: 'canonical-en'
+appScreen:
+  - "/project/:id/editor"
+contentStatus: verified
+verifiedAgainst: "828cf266"
 ---
 
-Edit your workspace with a map, tools on the left, and panels for data, styling, and documents.
+The editor opens when you create a workspace or select one from a list.
 
-| | |
+## Top bar
+
+- The **back arrow** returns to your workspaces.
+- The **name of the workspace** opens [Workspace settings](workspace-settings.md).
+- **Export** saves the map or the notebook to a file.
+- The status button — **Draft** until you share — sets who can see the workspace.
+- **Preview** opens a preview of the workspace.
+
+See [Share, preview, and export](share-and-export.md).
+
+## Panels
+
+The strip on the left edge opens one panel at a time:
+
+| Panel | What it is for |
 | --- | --- |
-| Access | Owners and editors |
-| Entry | Create on [My Workspaces](my-workspaces.md) or **Open editor** from the [Workspace Viewer](workspace-viewer.md) |
+| [Layers](layers.md) | The data on the map |
+| [Notebook](notebook.md) | The document that explains your work |
+| [Assets](assets.md) | Files that belong to the workspace |
+| [Connections](connections.md) | External WMS and WFS servers |
+| [History](history.md) | Saved versions, preview link, production |
+| [Workspace](workspace-settings.md) | Name, address, cover, members, status |
 
-## Main controls
+Drag the edge of the panel to resize it. Use the small arrow on that edge to collapse it.
 
-- Back to workspaces
-- Workspace name (opens the Edit panel)
-- Unsaved badge
-- Sidebar panel width mode
-- Save
-- Export menu
-- Command palette (`⌘K`)
-- Shortcuts: Esc, `⌘\`, `⌘S`
+## Map tools
 
-## Side panels
+The toolbar at the bottom of the map edits the features of a layer:
 
-| Panel | What it covers |
+1. Select **Edit layer** and choose the layer to edit.
+2. Pick a tool: **Select features**, **Draw point**, **Draw line**, **Draw polygon**, **Draw circle**, **Draw rectangle**, **Edit vertices**, or **Move, rotate and scale**.
+3. Use **Delete selected features**, **Undo**, and **Redo** as you work.
+
+**Select to zoom** zooms to an area you draw. **Legend** shows the legend of the map.
+
+## Status bar
+
+Along the bottom edge:
+
+- The coordinate system of the map
+- The rotation of the map, with a button to reset it to north
+- The **scale**, which you can choose from a list or lock
+- The coordinates under the pointer. Select them to copy, or change the format between decimal degrees and degrees, minutes, seconds.
+
+## Command palette and shortcuts
+
+Press **⌘K** to open the command palette. From there you can go to any panel, open Print, browse files to import, save, and export.
+
+| Shortcut | Action |
 | --- | --- |
-| Layers | Vector, raster, WMS, and WFS layers; visibility, order, styling, attribute table, CQL filters, geometry edit |
-| Assets | Images and files attached to the workspace |
-| Web Services | External endpoints and OGC capabilities |
-| Print | Print layouts, pages, map frames, legends, scale bars, GeoPDF export |
-| Notebook | A document with queries, tables, charts, layers, and map snapshots |
-| Database | Datasets, schema, and feature tables |
-| Edit | Workspace metadata: name, visibility, cover, projection, and sharing |
-
-Clicking the active rail tab collapses the panel so the map fills the canvas.
-
-## Map
-
-- Map with base layers (OSM, Google variants, and others configured for the install)
-- Draw and edit points, lines, and polygons
-- Live style preview
-- Import from filesystem, layer library, or text (GeoJSON, KML, SVG, WKT, and GDAL-supported formats)
-
-## Related
-
-- [My Workspaces](my-workspaces.md)
-- [Workspace Viewer](workspace-viewer.md)
+| ⌘K | Open the command palette |
+| ⌘S | Save the workspace |
+| ⌘\ | Show or hide the panel |
+| Esc | Close the open panel |

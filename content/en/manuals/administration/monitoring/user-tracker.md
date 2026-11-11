@@ -1,26 +1,14 @@
 ---
-title: 'User tracker'
-description: 'Live list of signed-in sessions, via WebSocket.'
-translationKey: 'user-tracker'
+title: "User tracker"
+description: "See who is using Gaia right now."
+translationKey: "user-tracker"
 weight: 10
-contentStatus: 'canonical-en'
+appScreen:
+  - "/admin/tracker"
+contentStatus: verified
+verifiedAgainst: "828cf266"
 ---
 
-Live list of signed-in sessions, via WebSocket.
+Open **Administration**, then **Monitoring**, then **User tracker**.
 
-| | |
-| --- | --- |
-| Access | Administrators (`ROLE_ADMIN`) |
-| Entry | Sidebar **Administration → Monitoring → User tracker** |
-
-## Features
-
-- Session list for currently connected users
-- Login, timestamp, IP address, and current page
-- Empty state when nobody is connected
-
-## Related
-
-- [Health](health.md)
-- [Logs](logs.md)
-- [Users](../users.md)
+The page, titled **Real-time user activities**, lists the people using Gaia now. For each one it shows the user, the address they connect from, the page they are on, and the time. The list updates as people move through the application.

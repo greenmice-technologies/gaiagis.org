@@ -1,34 +1,28 @@
 ---
-title: 'OAuth Providers'
-description: 'Admin CRUD for social and enterprise login providers.'
-translationKey: 'oauth-providers'
+title: "OAuth providers"
+description: "Let people sign in with an account from another service."
+translationKey: "oauth-providers"
 weight: 20
-contentStatus: 'canonical-en'
+appScreen:
+  - "/admin/oauth-providers"
+contentStatus: verified
+verifiedAgainst: "828cf266"
 ---
 
-Admin CRUD for social and enterprise login providers used on the sign-in page.
+Open **Administration**, then **Application**, then **OAuth Providers**.
 
-| | |
-| --- | --- |
-| Access | Administrators (`ROLE_ADMIN`) |
-| Entry | Sidebar **Administration → Application → OAuth Providers** |
+A provider lets people sign in with an account they already have elsewhere. The list is empty until you add one.
 
-## Features
+## Add a provider
 
-- List providers with search, filter, and sort
-- Create, view, edit, and delete a provider
-- Code, display name, and icon
-- Client ID and client secret
-- Authorization, token, and user-info URIs
-- Scopes
-- Enabled flag
-- Email, name, and picture attribute mapping
-- Empty state with create action
+Select **Create a new OAuth Provider** and fill in the details you get from the provider:
 
-Listing, detail, and form are full pages (not dialogs).
+- **Code** and **Name** — how the provider is identified and shown
+- **Icon URL**
+- **Client ID** and **Client Secret**
+- **Authorization URI**, **Token URI**, and **User Info URI**
+- **Scopes**
+- **Email attribute**, **Name attribute**, and **Picture attribute** — where to find these values in what the provider returns
+- **Enabled** — whether the provider appears on the sign-in page
 
-## Related
-
-- [Users](users.md)
-- [Settings](application/settings.md)
-- [Security](../account/security.md)
+Select **Save**.

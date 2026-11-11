@@ -46,6 +46,9 @@ jobs:
         uses: actions/configure-pages@v5
       - name: Install Node.js dependencies
         run: "npm install"
+      # Fails when a guide page points at a screen that is not in data/app-screens.json.
+      - name: Check guide coverage
+        run: node scripts/check-coverage.mjs
       # Use the live custom domain as baseURL so CSS/JS URLs match how the site is served.
       # steps.pages.outputs.base_url often stays on *.github.io until Pages custom domain is fully applied.
       - name: Build with Hugo

@@ -1,31 +1,18 @@
 ---
-title: 'My Organizations'
-description: 'Organizations the current user belongs to, with an active-org switcher.'
-translationKey: 'my-organizations'
+title: "My channels"
+description: "The channels you belong to."
+translationKey: "my-organizations"
 weight: 10
-contentStatus: 'canonical-en'
+appScreen:
+  - "/organizations"
+contentStatus: verified
+verifiedAgainst: "828cf266"
 ---
 
-Organizations the current user belongs to, with a switcher for the active organization.
+Select **Channels** in the sidebar, or **View all** beside **My channels** on the dashboard.
 
-| | |
-| --- | --- |
-| Access | Signed-in users |
-| Entry | Sidebar **Organizations → My Organizations**, or Dashboard **View all** |
+The list shows each channel you belong to, with your role, such as **Owner**. The channel you are working in is marked **Current**.
 
-## Features
+Select a channel to open its [page](organization-detail.md).
 
-- List memberships for the signed-in user
-- Highlight the current organization
-- Switch the active organization
-- Open [Organization Page](organization-detail.md)
-- Empty state when the user has no memberships
-
-Creating and deleting organizations is an admin action. This page is the membership switcher.
-
-## Related
-
-- [Dashboard](../account/dashboard.md)
-- [Organization Page](organization-detail.md)
-- [Organization Form Page](organization-form.md)
-- [Admin Organizations](../administration/application/organizations/_index.md)
+Every account has a **Personal** channel. It cannot be deleted and cannot have other members.
