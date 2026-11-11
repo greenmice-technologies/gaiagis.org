@@ -13,6 +13,6 @@ Select **Public workspaces** in the sidebar. You need to be signed in to see thi
 
 The list shows every workspace that its owners have made public. Use **Sort**, and switch between **List** and **Grid**, as in [My workspaces](my-workspaces.md).
 
-Select a workspace to open it.
+Select a workspace to open it. The menu at the end of each row has **View**, **Open editor**, and **Clone**. **Clone** makes a private copy in your workspaces and opens it in the editor.
 
 People without an account can open a public workspace only from its own link. See [Share, preview, and export](share-and-export.md).

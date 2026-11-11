@@ -6,7 +6,7 @@ weight: 120
 appScreen:
   - "editor:share"
   - "editor:export"
-contentStatus: verified
+contentStatus: needs-review
 verifiedAgainst: "828cf266"
 ---
 
@@ -36,6 +36,7 @@ Select **Export** and choose what to save.
 
 **Workspace**
 
+- **Workspace file (.zip)** downloads a `.gaia.zip` you can import on another Gaia. See [My workspaces](my-workspaces.md).
 - **Print Layout** opens the [print layout window](../print-layouts.md).
 - **GeoTIFF** saves the map as a georeferenced image.
 - **GeoPackage** saves the data of the workspace.
