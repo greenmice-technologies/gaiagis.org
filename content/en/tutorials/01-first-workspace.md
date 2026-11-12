@@ -3,8 +3,7 @@ title: 'Your first workspace'
 description: 'Create a workspace, set its projection, import a GeoPackage, and explore the layers on the map.'
 translationKey: 'tutorial-first-workspace'
 weight: 10
-contentStatus: verified
-verifiedAgainst: '828cf266'
+contentStatus: needs-review
 ---
 
 In this tutorial you create a workspace, set its projection to EPSG:4326, import a GeoPackage with five vector layers, and explore them on the map. The same workspace is the starting point for the following tutorials.
@@ -29,7 +28,7 @@ Gaia creates an empty workspace and opens the editor straight away.
 
 - **Left rail.** Six panels: **Layers**, **Notebook**, **Assets**, **Connections**, **History**, and **Workspace**. Select a tab to open its panel.
 - **Side panel.** Shows the content of the selected tab. Drag its edge to resize it, or use the arrow on that edge to collapse it.
-- **Map canvas.** The map takes the rest of the window, with a toolbar at the bottom to draw points, lines, polygons, circles, and rectangles, or to select an area to zoom to.
+- **Map canvas.** The map takes the rest of the window, with a toolbar at the bottom to draw points, lines, polygons, circles, rectangles, text, and symbols, or to select an area to zoom to. Text and symbols are stored as polygon outlines.
 - **Footer.** Projection selector, scale, and the coordinates under the pointer.
 - **Top bar.** The workspace name, **Export**, the status button (**Draft** in a new workspace), and **Preview**.
 

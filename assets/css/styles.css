@@ -240,3 +240,11 @@ footer h1 {
 .gaia-landing h3 { font-size: 1.125rem; margin-top: 1.75rem; }
 .gaia-landing h2[id] { scroll-margin-top: 7rem; }
 .gaia-landing a { text-underline-offset: 3px; }
+
+/* Home chapters */
+.gaia-landing .chapter { margin-top: 4rem; padding-top: 2rem; border-top: 1px solid #e5e5e5; }
+.gaia-landing .chapter h2, .gaia-landing .why h2 { margin-top: .25rem; padding-top: 0; border-top: 0; }
+.gaia-landing .kicker { margin: 0; font-size: .75rem; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: #0B5D8E; }
+.gaia-landing .why { margin-top: 4rem; padding: 2rem; border-radius: 12px; background: #eef4f8; }
+.gaia-landing .why ul { list-style: none; padding: 0; margin: 1.25rem 0 0; display: grid; gap: 1rem; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+.gaia-landing .why li { margin: 0; padding: 1rem; background: #fff; border-radius: 10px; border: 1px solid #d5dde5; }

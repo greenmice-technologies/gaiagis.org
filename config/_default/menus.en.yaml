@@ -31,3 +31,21 @@ footer:
   - name: Install
     pageRef: /install
     weight: 50
+  - name: About
+    pageRef: /about
+    weight: 60
+  - name: FAQ
+    pageRef: /faq
+    weight: 70
+  - name: Contact
+    pageRef: /contact
+    weight: 80
+  - name: Privacy
+    pageRef: /privacy
+    weight: 90
+  - name: Terms
+    pageRef: /terms
+    weight: 100
+  - name: Cookies
+    pageRef: /cookies
+    weight: 110

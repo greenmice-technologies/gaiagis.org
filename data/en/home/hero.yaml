@@ -2,7 +2,7 @@ enable: true
 title: 'Create maps. Explore your data. **Share what you find.**'
 text: 'Gaia GIS brings maps, data, and analysis together in your browser. Import geographic files, build your map, and turn your findings into a document or a page others can explore.'
 buttons:
-  - label: 'Explore the product'
+  - label: 'See how it works'
     link: '#overview'
   - label: 'Get started'
     link: '#get-started'

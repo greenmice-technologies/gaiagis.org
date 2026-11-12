@@ -29,6 +29,7 @@ One line of communication, shared with the app (`gaia-api`):
 - `content/en/manuals/` — user and administration guides
 - `content/en/tutorials/` — step-by-step walkthroughs, with screenshots generated from the app
 - `content/en/install.md` — short pointer to the installer repository
+- `content/en/about.md`, `contact.md`, `faq.md`, `privacy.md`, `terms.md`, `cookies.md` — pages linked by default from an installation's Settings
 - `data/app-screens.json` — the screens of the app that the guides must cover
 
 ## Keeping the guides aligned with the app

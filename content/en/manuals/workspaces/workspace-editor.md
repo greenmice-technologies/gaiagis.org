@@ -5,8 +5,7 @@ translationKey: "workspace-editor"
 weight: 30
 appScreen:
   - "/project/:id/editor"
-contentStatus: verified
-verifiedAgainst: "828cf266"
+contentStatus: needs-review
 ---
 
 The editor opens when you create a workspace or select one from a list.
@@ -41,7 +40,7 @@ Drag the edge of the panel to resize it. Use the small arrow on that edge to col
 The toolbar at the bottom of the map edits the features of a layer:
 
 1. Select **Edit layer** and choose the layer to edit.
-2. Pick a tool: **Select features**, **Draw point**, **Draw line**, **Draw polygon**, **Draw circle**, **Draw rectangle**, **Edit vertices**, or **Move, rotate and scale**.
+2. Pick a tool: **Select features**, **Draw point**, **Draw line**, **Draw polygon**, **Draw circle**, **Draw rectangle**, **Draw text**, **Draw symbol**, **Edit vertices**, or **Move, rotate and scale**. **Draw text** and **Draw symbol** ask for the label or the SVG, then a click on the map stores the outline as a polygon on the layer.
 3. Use **Delete selected features**, **Undo**, and **Redo** as you work.
 
 **Select to zoom** zooms to an area you draw. **Legend** shows the legend of the map.

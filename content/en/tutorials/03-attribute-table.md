@@ -3,8 +3,7 @@ title: 'Explore data with the attribute table'
 description: 'Open a layer as a table, filter and select features, edit values, and export the data.'
 translationKey: 'tutorial-attribute-table'
 weight: 30
-contentStatus: verified
-verifiedAgainst: '828cf266'
+contentStatus: needs-review
 ---
 
 Every vector layer has an attribute table: one row per feature, one column per attribute, linked to the map. In this tutorial you open the table of the countries layer, find a country, select it on the map, and export the data.
@@ -69,7 +68,7 @@ Select the **…** button at the start of the row.
 | --- | --- |
 | **Focus on map** | Moves the map to the feature |
 | **Edit geometry** | Lets you change the shape on the map |
-| **Replace geometry** | Lets you give the feature a new shape |
+| **Replace geometry** | Lets you give the feature a new shape: point, line, polygon, circle, rectangle, text, or symbol. Text and symbol become polygon outlines |
 | **Geometric operations** | Opens the operations below |
 
 Select **Geometric operations**:

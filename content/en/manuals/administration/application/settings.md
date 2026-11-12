@@ -40,4 +40,15 @@ For **Logo** and **Background**, use **Upload**, **Restore default**, or **Remov
 
 ## Pages
 
-**Privacy Policy**, **Terms of Service**, **Cookies**, **Contact**, **About**, and **FAQ** are web addresses on your public website. Leave an address empty to hide that link. When you set one, the sign-in page and the footer open it in a new tab. The cookie notice links only to **Cookies**.
+**Privacy Policy**, **Terms of Service**, **Cookies**, **Contact**, **About**, and **FAQ** are web addresses. Leave an address empty to hide that link. When you set one, the sign-in page and the footer open it in a new tab. The cookie notice links only to **Cookies**.
+
+A new installation uses these addresses. **Restore default** puts an address back after you clear it.
+
+| Setting | Default |
+| --- | --- |
+| **Privacy Policy** | https://gaiagis.org/en/privacy/ |
+| **Terms of Service** | https://gaiagis.org/en/terms/ |
+| **Cookies** | https://gaiagis.org/en/cookies/ |
+| **Contact** | https://gaiagis.org/en/contact/ |
+| **About** | https://gaiagis.org/en/about/ |
+| **FAQ** | https://gaiagis.org/en/faq/ |
