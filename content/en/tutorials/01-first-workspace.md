@@ -26,11 +26,11 @@ Gaia creates an empty workspace and opens the editor straight away.
 
 ![The empty editor](/images/tutorials/01-first-workspace/02-empty-editor.png)
 
-- **Left rail.** Six panels: **Layers**, **Notebook**, **Assets**, **Connections**, **History**, and **Workspace**. Select a tab to open its panel.
+- **Left rail.** Eight panels: **Layers**, **Notebook**, **Assets**, **Connections**, **History**, **Export**, **Status**, and **Workspace**. Select a tab to open its panel.
 - **Side panel.** Shows the content of the selected tab. Drag its edge to resize it, or use the arrow on that edge to collapse it.
 - **Map canvas.** The map takes the rest of the window, with a toolbar at the bottom to draw points, lines, polygons, circles, rectangles, text, and symbols, or to select an area to zoom to. Text and symbols are stored as polygon outlines.
 - **Footer.** Projection selector, scale, and the coordinates under the pointer.
-- **Top bar.** The workspace name, **Export**, the status button (**Draft** in a new workspace), and **Preview**.
+- **Top bar.** The workspace name and **Preview**.
 
 ## 3. Name the workspace
 

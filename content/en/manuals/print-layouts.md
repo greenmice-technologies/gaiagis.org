@@ -4,37 +4,61 @@ description: "Arrange a map on a page and export it as a PDF."
 translationKey: "print-layouts"
 weight: 5
 appScreen:
+  - "/project/:id/editor?panel=layouts"
   - "/project/:id/editor?panel=print_layouts"
   - "editor:print-layout"
 contentStatus: verified
-verifiedAgainst: "828cf266"
+verifiedAgainst: "805f71df"
 ---
 
-In the [editor](workspaces/workspace-editor.md), select **Export**, then **Print Layout**. The **Layout** window opens over the editor.
+## Layouts panel
+
+In the [editor](workspaces/workspace-editor.md), the **Layouts** tab of the left rail lists the print layouts of the workspace. It is the way into the Layout Studio: select a layout to open it in the **Layout Studio** window over the editor. Select **+** to create a new layout. The first icon in the panel header switches between a list of names and thumbnails of each layout's first page.
+
+The **…** menu in the panel header holds **Import → From JSON**, which opens a layout from a JSON file in the studio.
+
+## The Layout Studio
+
+The window has a **rail** of tabs on the left, a **panel** beside it, the page in the middle, and a properties panel on the right. Drag the edge between the panel and the page to resize the panel; double-click the edge to restore its width. The icon at the bottom of the rail hides and shows the panel.
 
 ## Document settings
 
-The left side shows the name of the layout and a summary such as *A4 · Landscape · 10 mm margins · 300 DPI*. Select the summary to change:
+The first tab shows the name of the layout and its settings:
 
+- **Layout name** — type a new name to rename it
 - **Format** — the paper size
 - **Orientation**
 - **Margins**, in millimeters. **Set each side** gives each edge its own margin.
 - **Export DPI** — the resolution of the exported file
+- **Color Profile**
+- **Geospatial PDF** — keep the georeferencing in the exported PDF
+- **Attach data** — embed the GeoPackage and the workspace images in the PDF
 
-Type a new name in the box at the top to rename the layout. The bin beside it deletes the layout.
+In the panel header, **Save as JSON** (file with an arrow) saves the layout to a JSON file and the bin deletes the layout.
+
+## Styling
+
+The second tab holds the design tokens of the layout: the brand colors, the heading, body and mono fonts, and the text sizes. Four icons at the end of the panel header act on them:
+
+- **Apply to document** (check) writes the tokens onto the pages and items.
+- **Seed from brand** (sparkles) fills them from the brand of the application.
+- **Palette from image** (picture) asks for an image and fills the tokens with its dominant colors: the most prominent becomes the primary color, the next two the secondary and the accent. White, black and transparent areas are ignored.
+- **Reset** (counter-clockwise arrow) restores the defaults.
 
 ## Pages
 
-A layout has one or more pages. Select **+** beside **Pages** to add one.
+The third tab lists the pages of the layout. Select **+** to add a page, and select a page to open it. The first icon in the panel header switches between a list and thumbnails of the pages. Thumbnails are schematic: the sheet with its items drawn as boxes.
 
-Select a page to open its settings:
+Each page row has actions that appear when you point at it: **Rename page** (or double-click the name, then Enter to confirm and Esc to cancel), **Background** and **Frame** (each opens a small panel with the on/off box, the color and the brand colors), and **Delete page**. A layout always keeps at least one page.
+
+When nothing is selected, the properties panel shows the same settings of the current page:
 
 - **Page Name**
 - **Background** and **Frame** colors
 
 ## Add items to a page
 
-Open a page and select **Add item**:
+The last tab, **Layers**, lists the items of the current page. Select **+** in its header to add one:
 
 | Item | What it is |
 | --- | --- |
@@ -52,7 +76,7 @@ The bar at the bottom of the page shows or hides the guides, turns snapping to t
 
 ## Save and export
 
-- **Save** stores the layout. **Saved** appears when there is nothing left to save.
+- **Save** appears only when there are changes to store. **Saved** appears when there is nothing left to save.
 - **Print PDF** exports the layout.
 
 To export a GeoPDF, a PDF that keeps the map's geographic information, open the command palette with **⌘K** in the editor and choose **Export Geospatial PDF**.

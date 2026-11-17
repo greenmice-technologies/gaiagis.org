@@ -14,9 +14,9 @@ The editor opens when you create a workspace or select one from a list.
 
 - The **back arrow** returns to your workspaces.
 - The **name of the workspace** opens [Workspace settings](workspace-settings.md).
-- **Export** saves the map or the notebook to a file.
-- The status button — **Draft** until you share — sets who can see the workspace.
 - **Preview** opens a preview of the workspace.
+
+Export and the status of the workspace are panels on the left strip, below.
 
 See [Share, preview, and export](share-and-export.md).
 
@@ -31,9 +31,11 @@ The strip on the left edge opens one panel at a time:
 | [Assets](assets.md) | Files that belong to the workspace |
 | [Connections](connections.md) | External WMS and WFS servers |
 | [History](history.md) | Saved versions, preview link, production |
-| [Workspace](workspace-settings.md) | Name, address, cover, members, status |
+| [Export](share-and-export.md) | Save the map or the notebook to a file |
+| [Status](share-and-export.md) | Who can see the workspace, and publishing |
+| [Workspace](workspace-settings.md) | Name, address, cover, members |
 
-Drag the edge of the panel to resize it. Use the small arrow on that edge to collapse it.
+Drag the edge of the panel to resize it. Use the small arrow on that edge, or the button at the bottom of the strip, to hide or show the panel.
 
 ## Map tools
 

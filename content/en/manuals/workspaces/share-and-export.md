@@ -6,15 +6,15 @@ weight: 120
 appScreen:
   - "editor:share"
   - "editor:export"
-contentStatus: needs-review
-verifiedAgainst: "828cf266"
+contentStatus: verified
+verifiedAgainst: "b5294bf9"
 ---
 
-These three controls sit at the top right of the [editor](workspace-editor.md).
+**Status** and **Export** are two panels on the left strip of the [editor](workspace-editor.md). **Preview** is in the top bar.
 
 ## Who can see this workspace
 
-Select the status button. It reads **Draft** until you share the workspace.
+Open the **Status** panel. A workspace is a **Draft** until you share it.
 
 | Choice | Who can open it |
 | --- | --- |
@@ -22,7 +22,9 @@ Select the status button. It reads **Draft** until you share the workspace.
 | **Members** | The members of the workspace |
 | **Public** | Anyone with the link, no login needed |
 
-A public workspace has its own address, built from its **Slug**. Set the slug in [Workspace settings](workspace-settings.md).
+A public workspace has its own address, built from its **Slug**. Set the slug in [Workspace settings](workspace-settings.md). Once the workspace is public, the panel shows the **Link**, with **Copy** and a button that opens it.
+
+The panel also holds the publishing options for a public workspace: a **Revision name**, the artifacts to produce (**HTML**, **Geospatial PDF**, **GeoTIFF**), **Freeze data and layouts**, and the **Publish** button.
 
 ## Preview
 
@@ -32,7 +34,7 @@ To let someone else check a draft, create a preview link from the [History](hist
 
 ## Export
 
-Select **Export** and choose what to save.
+Open the **Export** panel and choose what to save.
 
 **Workspace**
 

@@ -7,7 +7,6 @@ appScreen:
   - "/project"
   - "/project/new"
 contentStatus: needs-review
-verifiedAgainst: "828cf266"
 ---
 
 Select **My workspaces** in the sidebar.
@@ -37,5 +36,7 @@ Each workspace shows its status (**Draft** or **Published**), its visibility (**
 Select a workspace to open it in the editor. The menu at the end of each row has **View**, **Open editor**, **Clone**, and **Delete**.
 
 **Clone** makes a private copy of the workspace — layers, files, layouts, assets, and resources — and opens that copy in the editor.
+
+Each row has a checkbox. The checkbox above the list selects every workspace on the page. **Delete** removes the checked workspaces after a confirmation. The same checkboxes appear on the cards in **Grid**.
 
 At the bottom of the list you can change how many rows are shown and move between pages.

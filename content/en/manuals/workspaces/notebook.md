@@ -40,4 +40,4 @@ Select text to make it a **Link**.
 
 ## Share the notebook
 
-Readers see the notebook in the [viewer](workspace-viewer.md) and on the public page. To save it as a file, use **Export** in the top bar. See [Share, preview, and export](share-and-export.md).
+Readers see the notebook in the [viewer](workspace-viewer.md) and on the public page. To save it as a file, use the **Export** panel on the left strip. See [Share, preview, and export](share-and-export.md).
