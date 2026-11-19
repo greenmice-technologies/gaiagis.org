@@ -1,0 +1,7 @@
+{{ define "main" }}
+  <main class="prose prose-lg mx-auto w-full px-4 py-12 sm:py-16">
+    <h1>{{ .Title }}</h1>
+    {{ with .Description }}<p class="lead">{{ . }}</p>{{ end }}
+    {{ .Content }}
+  </main>
+{{ end }}

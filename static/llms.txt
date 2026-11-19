@@ -8,6 +8,7 @@ Gaia GIS is self-hosted: you install it on your own computer or servers. There i
 - https://gaiagis.org/
 - https://gaiagis.org/en/
 - https://gaiagis.org/en/product/
+- https://gaiagis.org/en/use-cases/
 - https://gaiagis.org/en/manuals/
 - https://gaiagis.org/en/install/
 - https://gaiagis.org/en/releases/

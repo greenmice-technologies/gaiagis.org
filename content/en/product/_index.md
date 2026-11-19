@@ -5,6 +5,7 @@ aliases:
   - /en/features/
   - /en/features/introduction/
   - /en/features/projects/
+layout: overview
 translationKey: product
 contentStatus: "canonical-en"
 ---
@@ -45,4 +46,4 @@ Organize layers, notebooks, layouts, and supporting files in a workspace. Use or
 - **A map to distribute:** build a layout for a report, presentation, or printed sheet.
 - **A project to publish:** prepare a public workspace page that brings the map and notebook together.
 
-[Check installation and availability](/en/install/) or [discuss your use case](/en/contact/).
+[See completed examples](/en/use-cases/) · [Check installation and availability](/en/install/) · [Discuss your use case](/en/contact/).

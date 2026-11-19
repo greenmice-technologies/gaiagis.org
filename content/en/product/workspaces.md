@@ -32,4 +32,6 @@ For a review before publication, create a preview link. Treat that link as acces
 
 Gaia is self-hosted on your computer or servers. Administrators can set the application name, logo, and colors to suit the organization using it.
 
+See [the Natural Earth workspace](/en/use-cases/population-notebook/) for a map and an analytical notebook built around the same data.
+
 [Read the workspace guides](/en/manuals/workspaces/) · [Learn how sharing works](/en/manuals/workspaces/share-and-export/)

@@ -35,4 +35,6 @@ Save named revisions at meaningful stages and restore an earlier version when ne
 
 Publish a public workspace page for readers to explore, export the notebook as HTML, or create a PDF for a report or handover. Choose the format that fits how your audience will use the work.
 
+See the [Natural Earth notebook example](/en/use-cases/population-notebook/) for the query, map, and results from a sample dataset.
+
 [Read the notebook guide](/en/manuals/workspaces/notebook/) · [Explore sharing and export](/en/manuals/workspaces/share-and-export/)

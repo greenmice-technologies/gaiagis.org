@@ -7,109 +7,34 @@ build:
   list: never
 ---
 
+## What a finished project looks like {#examples}
+
+### From aeronautical layers to a chart sheet
+
+See how a fictional en-route map goes from separate layers for aerodromes, reporting points, routes, and airspace to a downloadable GeoPDF with labels, a map key, and a scale bar.
+
+[See the aviation chart and download the GeoPDF](/en/use-cases/aviation-chart/)
+
+<img class="screenshot" src="/images/use-cases/northhaven-chart.webp" alt="Northhaven demonstration chart with two fictional islands, airspace sectors, routes, and a map key" width="1357" height="961" loading="lazy" decoding="async">
+
+[Browse all use cases](/en/use-cases/)
+
 ## From geographic data to a result you can share {#overview}
 
-A useful map is more than a visual. It needs reliable data, an explanation of what matters, and a format your audience can use. Gaia GIS brings those steps into one browser workspace for data analysts and teams, from the first import to the published page or printed sheet.
+1. **Prepare the map.** Import files or connect external map services. Edit features and attributes, then style the layers that matter to your reader. [Explore layers](/en/product/layers/).
+2. **Explain the findings.** Use SQL to explore the data, then keep the query, map, chart, and explanation together in a notebook. [Explore notebooks](/en/product/notebook/).
+3. **Deliver the result.** Share a public workspace page, export a notebook as HTML or PDF, or create a map sheet as PDF or GeoPDF. [Explore print layouts](/en/product/print/) and [workspace sharing](/en/product/workspaces/).
 
-Prepare an analysis for colleagues, explain geographic findings to the public, or produce map sheets for a project handover. Follow the workflow below with the world data used in our tutorials.
+## Run Gaia GIS on your own infrastructure
 
-<section class="chapter">
+Set up Gaia GIS on your computer or servers and give your team access through a browser. Organization roles control who can see or edit private workspaces. Standard formats such as GeoPackage and GeoTIFF let you carry data and maps into other tools.
 
-<p class="kicker">1 · Import</p>
+## Start your first workspace {#get-started}
 
-## Start with the files you have
+Check system requirements and package availability before installing. Once Gaia GIS is running, follow the tutorial to create a workspace and import your first dataset.
 
-Drop in a GeoPackage, Shapefile, GeoJSON, KML, GPX, or GeoTIFF. A CSV or Excel table with coordinates becomes a point layer. Add reference layers from an external WMS or WFS service to put your own data in context.
+**[Check installation and availability](/en/install/)** · [Create your first workspace](/en/tutorials/01-first-workspace/)
 
-<img class="screenshot" src="/images/home/import.webp" alt="The import dialog listing the layers of a GeoPackage" width="1400" height="978" loading="lazy" decoding="async">
+## Questions about getting started? {#faq}
 
-[Learn about layers](/en/product/layers/)
-
-</section>
-
-<section class="chapter">
-
-<p class="kicker">2 · Explore</p>
-
-## Look at the data behind the map
-
-Open a layer's attribute table, filter it, select features, and fix values as you go. When a question needs more, write a SQL query and see the answer as a table, a map, or a chart. Inspect the values behind a pattern before you build a conclusion around it.
-
-<img class="screenshot" src="/images/home/explore.webp" alt="A layer attribute table below the map" width="1400" height="944" loading="lazy" decoding="async">
-
-[Follow the attribute table tutorial](/en/tutorials/03-attribute-table/)
-
-</section>
-
-<section class="chapter">
-
-<p class="kicker">3 · Style</p>
-
-## Make the pattern visible
-
-Group values into classes, choose colors, symbols, and labels, and see each change on the map right away. Make categories easy to distinguish and ranges easy to compare. Import and export styles in SLD, QGIS, and Mapbox formats.
-
-<img class="screenshot" src="/images/home/style.webp" alt="A layer styled in classes, with its legend of ranges" width="1400" height="939" loading="lazy" decoding="async">
-
-[Learn about styles](/en/manuals/workspaces/styles/)
-
-</section>
-
-<section class="chapter">
-
-<p class="kicker">4 · Explain</p>
-
-## Tell the story next to the map
-
-Bring text, queries, maps, charts, and snapshots together in a notebook. Explain the question, show the evidence, and give readers a conclusion they can follow. Save named revisions as the work develops, and share a preview link for review before publication.
-
-<img class="screenshot" src="/images/product/notebook.webp" alt="A notebook with a map and a chart" width="1380" height="930" loading="lazy" decoding="async">
-
-[Learn about notebooks](/en/product/notebook/)
-
-</section>
-
-<section class="chapter">
-
-<p class="kicker">5 · Deliver</p>
-
-## Deliver a page, a report, or a map sheet
-
-Publish a workspace page, export a notebook as HTML or PDF, or lay out a map on a sheet with legends and scale bars and export a PDF or a GeoPDF. For a set of map sheets, freeze your data and layouts and produce several prepared layouts in one run. Export GeoTIFF or GeoPackage when the next step is in another tool.
-
-[Learn about print layouts](/en/product/print/)
-
-</section>
-
-<section class="why">
-
-<p class="kicker">Why Gaia GIS</p>
-
-## Your infrastructure. A connected workflow.
-
-- **Run it on your systems.** Install Gaia on your computer or servers and give users browser access. Your organization manages the installation and its stored data.
-- **Control publication.** Organization roles govern access to private workspaces. A workspace becomes publicly available only when it is both Public and Published.
-- **Keep working across tools.** Use standard formats such as GeoPackage, GeoTIFF, HTML, and PDF to take data and deliverables into your next workflow.
-- **Make it your environment.** Administrators can set the application name, logo, and colors to match the organization using it.
-
-</section>
-
-## Bring your next geographic project into Gaia {#get-started}
-
-Start by checking installation requirements and package availability. Some application packages are not yet available for public download. Once Gaia is installed, your team can work through a browser and follow the tutorials to build a first workspace.
-
-**[Check installation and availability](/en/install/)** · [Discuss your use case](/en/contact/)
-
-## A few practical questions {#faq}
-
-### Is there a hosted version?
-
-No. Gaia is self-hosted: you or your organization run the installation on your own infrastructure.
-
-### Can I keep a project private?
-
-Yes. Private workspaces are accessible within their organization according to membership roles, with administrative access retained by instance administrators. Public access requires both Public visibility and Published status.
-
-### Where can I find help?
-
-Start with the [tutorials](/en/tutorials/) for a first workflow, browse the [full FAQ](/en/faq/), or [contact us](/en/contact/) about your project or installation.
+The [FAQ](/en/faq/) covers supported formats, hosting, sharing, and exports. [Contact us](/en/contact/) to discuss your project or ask about installation.

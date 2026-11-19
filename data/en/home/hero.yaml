@@ -2,8 +2,8 @@ enable: true
 title: 'Turn geographic data into **maps that inform.**'
 text: 'Gaia GIS is a self-hosted web GIS for data analysts and teams. Build maps, explain findings with SQL, charts, and notebooks, and deliver public pages or print-ready sheets from one browser workspace.'
 buttons:
-  - label: 'Explore the workflow'
-    link: '#overview'
+  - label: 'See an example'
+    link: '/en/use-cases/aviation-chart/'
   - label: 'Installation and availability'
     link: '/en/install/'
 image: 'images/gaia-gis.png'

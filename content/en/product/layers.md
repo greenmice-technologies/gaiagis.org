@@ -35,4 +35,6 @@ Import and export styles in SLD, QGIS, and Mapbox formats. Styling tools are sti
 
 Use your layers in a [notebook](../notebook/) to explain the findings, or in a [print layout](../print/) to prepare a sheet for distribution. Export workspace data as GeoPackage when the next step belongs in another tool.
 
+See how [the Northhaven workspace](/en/use-cases/aviation-chart/) layers routes, point symbols, and translucent airspace sectors on one map.
+
 [Follow the layers tutorial](/en/tutorials/02-layers/) · [Read the styling guide](/en/manuals/workspaces/styles/)

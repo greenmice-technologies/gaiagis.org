@@ -2,15 +2,12 @@ main:
   - name: Product
     pageRef: /product
     weight: 10
-  - name: Guides
-    pageRef: /manuals
+  - name: Use Cases
+    pageRef: /use-cases
     weight: 20
-  - name: Tutorials
-    pageRef: /tutorials
+  - name: Docs
+    pageRef: /manuals
     weight: 30
-  - name: Releases
-    pageRef: /releases
-    weight: 40
 buttons:
   - name: Install
     pageRef: /install
@@ -22,7 +19,10 @@ footer:
   - name: Product
     pageRef: /product
     weight: 20
-  - name: Guides
+  - name: Use Cases
+    pageRef: /use-cases
+    weight: 25
+  - name: Docs
     pageRef: /manuals
     weight: 30
   - name: Releases

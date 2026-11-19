@@ -29,8 +29,8 @@ The command clones the installer, asks for three secrets, and starts the stack. 
 
 A new installation has payments turned off, and accounts use the unlimited plan. These are installation defaults; they do not establish licensing or package access terms.
 
-## Make the installation your team's workspace
+## Create your first workspace
 
 Set the application name, logo, and colors in Settings, then start with a small dataset and a clear output in mind: a map, an analytical notebook, or a printed sheet.
 
-[Create your first workspace](/en/tutorials/01-first-workspace/) · [Browse the user guides](/en/manuals/) · [Ask about installation](/en/contact/)
+**[Follow the first workspace tutorial](/en/tutorials/01-first-workspace/)** · [Browse the documentation](/en/manuals/) · [Ask about installation](/en/contact/)

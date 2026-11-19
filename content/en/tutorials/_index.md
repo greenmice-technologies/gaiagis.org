@@ -1,6 +1,7 @@
 ---
 title: 'Tutorials'
 description: 'Step-by-step guides that build a complete map in Gaia, from the first import to a published workspace.'
+layout: overview
 translationKey: 'tutorials'
 weight: 25
 contentStatus: 'canonical-en'
