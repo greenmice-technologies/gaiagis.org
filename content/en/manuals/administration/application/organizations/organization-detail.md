@@ -1,6 +1,6 @@
 ---
-title: "Channel page"
-description: "A channel as an administrator sees it."
+title: "Organization page"
+description: "An organization as an administrator sees it."
 translationKey: "admin-organization-detail"
 weight: 10
 appScreen:
@@ -8,4 +8,4 @@ appScreen:
 contentStatus: needs-review
 ---
 
-Open a channel from the administration list. The page shows the same information as the [channel page](../../../organizations/organization-detail.md) that members see: its name, address, picture, and workspaces.
+Open an organization from the administration list. The page shows the same information as the [organization page](../../../organizations/organization-detail.md) that members see: its name, address, picture, and workspaces.

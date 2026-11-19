@@ -1,6 +1,6 @@
 ---
 title: "Administration"
-description: "Settings, channels, users, sign-in providers, and monitoring. For administrators."
+description: "Settings, organizations, users, sign-in providers, and monitoring. For administrators."
 translationKey: "manuals-administration"
 weight: 50
 contentStatus: canonical-en
@@ -11,7 +11,7 @@ The **Administration** section of the sidebar is visible only to administrators.
 **Application**
 
 - [Settings](application/settings.md)
-- [Channels](application/organizations/)
+- [Organizations](application/organizations/)
 - [OAuth providers](oauth-providers.md)
 
 **Authentication**

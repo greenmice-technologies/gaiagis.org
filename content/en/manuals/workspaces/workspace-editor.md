@@ -45,6 +45,8 @@ The toolbar at the bottom of the map edits the features of a layer:
 2. Pick a tool: **Select features**, **Draw point**, **Draw line**, **Draw polygon**, **Draw circle**, **Draw rectangle**, **Draw text**, **Draw symbol**, **Edit vertices**, or **Move, rotate and scale**. **Draw text** and **Draw symbol** ask for the label or the SVG, then a click on the map stores the outline as a polygon on the layer.
 3. Use **Delete selected features**, **Undo**, and **Redo** as you work.
 
+The tools are grouped as select, draw, and edit. While a tool is active, a label above the toolbar names it, for example **Mode: Draw polygon**. Select the **x** beside it, or press **Esc**, to leave the mode.
+
 **Select to zoom** zooms to an area you draw. **Legend** shows the legend of the map.
 
 ## Status bar

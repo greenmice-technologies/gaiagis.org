@@ -17,10 +17,10 @@ Open the **Status** panel. **Private** and **Public** say who can open the works
 
 | Choice | Who can open it |
 | --- | --- |
-| **Private** | People in this channel |
-| **Public** | After you publish, anyone with the link and the public catalog. Until then, only this channel |
+| **Private** | People in this organization |
+| **Public** | After you publish, anyone with the link and the public catalog. Until then, only this organization |
 
-People in the channel can open a private workspace according to their role: a viewer can read it, a member can edit it, and an admin or owner can change who can see it.
+People in the organization can open a private workspace according to their role: a viewer can read it, a member can edit it, and an admin or owner can change who can see it.
 
 A published public workspace has its own address, built from its **Slug**. Set the slug in [Workspace settings](workspace-settings.md). The panel then shows the **Link**, with **Copy** and a button that opens it. A public draft explains that the link appears after you publish.
 

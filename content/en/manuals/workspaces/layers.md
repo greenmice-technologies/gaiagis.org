@@ -6,8 +6,7 @@ weight: 50
 appScreen:
   - "/project/:id/editor?panel=layers"
   - "editor:import"
-contentStatus: verified
-verifiedAgainst: "828cf266"
+contentStatus: needs-review
 ---
 
 Open the **Layers** panel from the strip on the left of the [editor](workspace-editor.md).
@@ -32,9 +31,9 @@ Select **+** (**Add layer**) at the top of the panel:
 1. Select **+**, then **Browse**, and choose your files.
 2. The **Import data** window lists each file and the layers found in it, with the number of features and the coordinate system.
 3. Untick the layers you do not want. Change the coordinate system if Gaia did not detect the right one.
-4. Select **Add to map**.
+4. Select **Add to map**. The button shows how many layers are selected, for example **Add to map (3)**.
 
-Use **Group layers** to add the selected layers as one group, and **Browse** to add more files before you finish.
+With two or more layers selected, tick **Group layers** to add them as one group. Use **Browse** to add more files before you finish. If a layer cannot be converted, its row shows **Error**; hover over it to read the reason, and for a raster select its format to change it and retry.
 
 ## Paste data
 
@@ -56,3 +55,7 @@ Each row in the panel has:
 - **Style** — see [Styles](styles.md).
 - **Attribute table** — see [Attribute table](attribute-table.md).
 - **Layer actions**, a menu with **Zoom to layer**, **Attribute table**, **Reproject**, **Export**, **Publish**, **Clone**, **Create Annotation Layer**, and **Delete**.
+
+## The layer you are editing
+
+Drawing and editing tools write to one layer at a time. The map toolbar shows its name beside the pencil, and you choose another layer from that menu. In the Layers panel the same layer has a pencil mark and an accent along its left edge, and its attribute table shows an **Editing** label. Point at a layer name to read it in full.

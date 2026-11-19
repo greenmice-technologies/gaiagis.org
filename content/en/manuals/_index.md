@@ -17,7 +17,7 @@ contentStatus: canonical-en
 
 - [Workspaces and the editor](workspaces/). Find guides for layers, styles, the attribute table, notebooks, and sharing.
 - [Print layouts](print-layouts.md). Arrange a map sheet and export it as PDF or GeoPDF.
-- [Channels and organizations](organizations/). Find workspaces and organize your team's work.
+- [Organizations](organizations/). Find workspaces and organize your team's work.
 - [Sign-in](authentication.md) and [account settings](account/). Manage your preferences and account security.
 
 ## Administration

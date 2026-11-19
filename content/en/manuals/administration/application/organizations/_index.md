@@ -1,6 +1,6 @@
 ---
-title: "Channels"
-description: "Every channel on the installation."
+title: "Organizations"
+description: "Every organization on the installation."
 translationKey: "manuals-admin-organizations"
 weight: 20
 appScreen:
@@ -8,9 +8,9 @@ appScreen:
 contentStatus: needs-review
 ---
 
-Open **Administration**, then **Application**, then **Channels**.
+Open **Administration**, then **Application**, then **Organizations**.
 
-The list shows every channel on the installation. From here an administrator can create a channel, open one, and edit it.
+The list shows every organization on the installation. From here an administrator can create an organization, open one, and edit it.
 
-- [Channel page](organization-detail.md)
-- [Create or edit a channel](organization-form.md)
+- [Organization page](organization-detail.md)
+- [Create or edit an organization](organization-form.md)

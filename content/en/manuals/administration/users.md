@@ -11,7 +11,7 @@ verifiedAgainst: "828cf266"
 
 Open **Administration**, then **Authentication**, then **Users**.
 
-The list shows each account with its login, whether it is **Activated**, its profiles, its channels, its language, and its email. Use **Sort** to change the order.
+The list shows each account with its login, whether it is **Activated**, its profiles, its organizations, its language, and its email. Use **Sort** to change the order.
 
 ## Create or edit a user
 
@@ -23,6 +23,6 @@ Select **Create a new user**, or open a user and edit it. Fill in:
 - **Activated** — an account that is not activated cannot sign in
 - **Language**
 - **Profiles** — what the user may do. See [Authorities](authorities.md).
-- **Channels** — the channels the user belongs to
+- **Organizations** — the organizations the user belongs to
 
 Select **Save**.

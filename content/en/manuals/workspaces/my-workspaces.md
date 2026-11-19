@@ -9,13 +9,13 @@ appScreen:
 contentStatus: needs-review
 ---
 
-Select **My workspaces** in the sidebar. The list is the workspaces of the channel marked **Current**. Switch channel to see the workspaces of another organization you belong to.
+Select **My workspaces** in the sidebar. The list is the workspaces of the organization marked **Current**. Switch organization to see the workspaces of another one you belong to.
 
 ## Create a workspace
 
 Select **Create a new Workspace**. Gaia creates the workspace and opens it in the [editor](workspace-editor.md) with a base map already added. You name it later, in [Workspace settings](workspace-settings.md).
 
-Select **Import workspace** to open a workspace file (`.gaia.zip`) exported from this Gaia or another one. Gaia creates a private draft and opens it in the editor. The imported name can match the original. The address (slug) is new.
+Select **Import workspace** to open a workspace file (`.gaia.zip`) exported from this Gaia or another one. Gaia creates a private draft and opens it in the editor. If the file is not a valid workspace package, a message says so and nothing is created. If you belong to more than one organization, a dialog first names the organization where the workspace will be created. The imported name can match the original. The address (slug) is new.
 
 ## Move a workspace to another Gaia
 
@@ -33,10 +33,14 @@ Each workspace shows its status (**Draft** or **Published**), its visibility (**
 
 ## Open a workspace
 
-Select a workspace to open it in the editor. The menu at the end of each row has **View**, **Open editor**, **Clone**, and **Delete**.
+Select a workspace to open it in the editor. The menu at the end of each row has **View**, **Open editor**, **Export**, **Duplicate**, and **Delete**.
 
-**Clone** makes a private copy of the workspace — layers, files, layouts, assets, and resources — and opens that copy in the editor.
+**Duplicate** makes a private copy of the workspace — layers, files, layouts, assets, and resources — and opens that copy in the editor.
 
 Each row has a checkbox. The checkbox above the list selects every workspace on the page. **Delete** removes the checked workspaces after a confirmation. The same checkboxes appear on the cards in **Grid**.
 
 At the bottom of the list you can change how many rows are shown and move between pages.
+
+If you belong to more than one organization, creating a workspace first asks you to confirm the organization where it will be created.
+
+**Delete** asks you to confirm, naming the workspace. A deleted workspace cannot be restored.
