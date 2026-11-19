@@ -9,7 +9,7 @@ contentStatus: verified
 verifiedAgainst: "828cf266"
 ---
 
-Select your name at the bottom of the sidebar to open the user menu.
+Select your name at the bottom of the sidebar to open the user menu. Theme stays on that first page. Colors and language each open their own page in the same menu, so the panel does not scroll.
 
 ## Shortcuts
 
@@ -17,15 +17,20 @@ Select your name at the bottom of the sidebar to open the user menu.
 - **Public profile** opens the page other people see.
 - **Sign out** ends your session.
 
+## Theme
+
+**Theme** switches between light and dark.
+
 ## Appearance
 
-- **Theme** switches between light and dark.
+Select **Appearance**.
+
 - **Presets** changes the overall look: **Aura**, **Lara**, or **Nora**.
 - **Primary** sets the accent color.
 - **Surface** sets the tone of backgrounds and panels.
 
-An administrator can lock the appearance for the whole installation. When it is locked, these controls are not available.
+An administrator can lock the appearance for the whole installation. When it is locked, **Theme** and **Appearance** are not available.
 
 ## Languages
 
-Select a flag to change the language of the interface.
+Select **Languages**, then a flag, to change the language of the interface.

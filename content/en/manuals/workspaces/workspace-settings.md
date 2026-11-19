@@ -1,12 +1,11 @@
 ---
 title: "Workspace settings"
-description: "Name a workspace, set its address, cover, language, and members, or archive it."
+description: "Name a workspace, set its address, cover, and language, or archive it."
 translationKey: "editor-workspace-settings"
 weight: 130
 appScreen:
   - "/project/:id/editor?panel=update"
-contentStatus: verified
-verifiedAgainst: "828cf266"
+contentStatus: needs-review
 ---
 
 Open the **Workspace** panel from the strip on the left of the [editor](workspace-editor.md), or select the name of the workspace in the top bar.
@@ -20,7 +19,6 @@ Open the **Workspace** panel from the strip on the left of the [editor](workspac
 | **Picture** | The small image shown in lists |
 | **Color** | A color for the workspace |
 | **Language** | The language of the content |
-| **Members** | Who works on the workspace with you |
 | **Status** | **Active**, or archived |
 
 Select **Archive** to put the workspace away without deleting it. An archived workspace cannot be shared until you restore it.

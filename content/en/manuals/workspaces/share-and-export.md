@@ -6,23 +6,23 @@ weight: 120
 appScreen:
   - "editor:share"
   - "editor:export"
-contentStatus: verified
-verifiedAgainst: "b5294bf9"
+contentStatus: needs-review
 ---
 
 **Status** and **Export** are two panels on the left strip of the [editor](workspace-editor.md). **Preview** is in the top bar.
 
 ## Who can see this workspace
 
-Open the **Status** panel. A workspace is a **Draft** until you share it.
+Open the **Status** panel. **Private** and **Public** say who can open the workspace. **Draft** and **Published** say whether that choice is live.
 
 | Choice | Who can open it |
 | --- | --- |
-| **Draft** | Only you |
-| **Members** | The members of the workspace |
-| **Public** | Anyone with the link, no login needed |
+| **Private** | People in this channel |
+| **Public** | After you publish, anyone with the link and the public catalog. Until then, only this channel |
 
-A public workspace has its own address, built from its **Slug**. Set the slug in [Workspace settings](workspace-settings.md). Once the workspace is public, the panel shows the **Link**, with **Copy** and a button that opens it.
+People in the channel can open a private workspace according to their role: a viewer can read it, a member can edit it, and an admin or owner can change who can see it.
+
+A published public workspace has its own address, built from its **Slug**. Set the slug in [Workspace settings](workspace-settings.md). The panel then shows the **Link**, with **Copy** and a button that opens it. A public draft explains that the link appears after you publish.
 
 The panel also holds the publishing options for a public workspace: a **Revision name**, the artifacts to produce (**HTML**, **Geospatial PDF**, **GeoTIFF**), **Freeze data and layouts**, and the **Publish** button.
 

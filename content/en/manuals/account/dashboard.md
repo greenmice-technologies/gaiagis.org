@@ -24,7 +24,7 @@ Four tiles show the number of **Workspaces**, the **Storage** you use, and how m
 
 ## Recent workspaces
 
-The workspaces you changed most recently, with their status, visibility, and date. Status and visibility appear as small colored labels, for example **Published** and **Public**, in soft tones that go with the main color. Select one to open it in the editor, or **View all** to open [My workspaces](../workspaces/my-workspaces.md).
+The workspaces of the current channel that you changed most recently, with their status, visibility, and date. Status and visibility appear as small colored labels, for example **Published** and **Public**, in soft tones that go with the main color. Select one to open it in the editor, or **View all** to open [My workspaces](../workspaces/my-workspaces.md).
 
 ## My channels
 

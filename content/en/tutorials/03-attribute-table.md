@@ -68,6 +68,7 @@ Select the **…** button at the start of the row.
 | --- | --- |
 | **Focus on map** | Moves the map to the feature |
 | **Edit geometry** | Lets you change the shape on the map |
+| **Copy as WKT** | Copies the geometry as WKT in longitude and latitude, so you can paste it into a filter |
 | **Replace geometry** | Lets you give the feature a new shape: point, line, polygon, circle, rectangle, text, or symbol. Text and symbol become polygon outlines |
 | **Geometric operations** | Opens the operations below |
 

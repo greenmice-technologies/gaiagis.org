@@ -9,7 +9,7 @@ appScreen:
 contentStatus: needs-review
 ---
 
-Select **My workspaces** in the sidebar.
+Select **My workspaces** in the sidebar. The list is the workspaces of the channel marked **Current**. Switch channel to see the workspaces of another organization you belong to.
 
 ## Create a workspace
 
