@@ -1,6 +1,6 @@
 # Gaia GIS
 
-Create maps, explore data, and share your work from your browser with Gaia GIS.
+Turn geographic data into maps, analytical notebooks, and print-ready deliverables with Gaia GIS, the self-hosted web GIS.
 
 Gaia GIS is self-hosted: you install it on your own computer or servers. There is no hosted service. Gaia reads external WMS and WFS services and does not publish them.
 

@@ -1,6 +1,6 @@
 ---
 title: "Layers"
-description: "Import data, edit features, and choose how your map looks."
+description: "Import geographic data, edit features, and style maps that make patterns clear, all in your browser."
 aliases:
   - /en/features/layers/
   - /en/features/styles/
@@ -9,20 +9,30 @@ contentStatus: "canonical-en"
 weight: 2
 ---
 
-Layers bring your geographic data onto the map. Import your files, then work with them in your browser.
+## Turn the data you have into the map you need
 
-## Bring your data in
+Gaia GIS brings geographic files, coordinate tables, and external map services into a browser workspace. Inspect the data, correct features, and choose how each layer tells its part of the story.
 
-Gaia reads common vector and raster formats, including Shapefile, GeoPackage, GeoJSON, KML, GPX, and GeoTIFF. A CSV or Excel table with latitude and longitude columns becomes a point layer.
+## Start with your existing files
 
-You can also add layers from external WMS or WFS map services. Gaia reads those services; it does not publish them itself.
+Import common vector and raster formats, including Shapefile, GeoPackage, GeoJSON, KML, GPX, and GeoTIFF. Turn a CSV or Excel table with latitude and longitude columns into a point layer to see where your records are located.
 
-## Edit and style
+Add layers from external WMS or WFS services when you need reference data alongside your own. Gaia consumes those services; it does not publish WMS or WFS endpoints.
 
-- Draw and edit points, lines, and areas
-- Update attributes in the table
-- Choose colors, symbols, and labels, and apply styling rules
-- Group values into classes to color a layer by its data
-- Place a scanned map or image on the map by georeferencing it
+## Work on the map and the data behind it
 
-See styling changes on the map as you work. Styles can be imported from and exported to SLD, QGIS, and Mapbox formats. Some styling tools are still being refined.
+Draw and edit points, lines, and areas. Open the attribute table to filter records, select features, and update values. Moving between geometry and attributes helps you understand what each feature represents before you use it in an analysis or report.
+
+You can also georeference a scanned map or image to position it alongside other geographic layers.
+
+## Make the important differences visible
+
+Choose colors, symbols, and labels, apply styling rules, or group values into classes. Show ranges, distinguish categories, and give readers a visual key to the data. Changes appear on the map as you work.
+
+Import and export styles in SLD, QGIS, and Mapbox formats. Styling tools are still being refined, so check the appearance of imported styles against your source.
+
+## Put the map to work
+
+Use your layers in a [notebook](../notebook/) to explain the findings, or in a [print layout](../print/) to prepare a sheet for distribution. Export workspace data as GeoPackage when the next step belongs in another tool.
+
+[Follow the layers tutorial](/en/tutorials/02-layers/) · [Read the styling guide](/en/manuals/workspaces/styles/)

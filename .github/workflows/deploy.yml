@@ -1,4 +1,4 @@
-# Workflow for building and deploying the Greenmice Technologies Hugo site to GitHub Pages
+# Workflow for building and deploying the Gaia GIS Hugo site to GitHub Pages
 name: Deploy Hugo site to Pages
 
 on:
@@ -58,6 +58,7 @@ jobs:
         run: |
           hugo \
             --minify \
+            --cleanDestinationDir \
             --baseURL "https://gaiagis.org/"
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3

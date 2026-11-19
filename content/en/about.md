@@ -1,12 +1,24 @@
 ---
 title: "About"
-description: "Gaia GIS is a self-hosted web GIS published by Greenmice Technologies."
+description: "Meet Gaia GIS, the self-hosted web GIS from Greenmice Technologies for turning geographic data into maps, analysis, and published work."
 translationKey: about
 contentStatus: "canonical-en"
 ---
 
-Gaia GIS is a web map and chart workspace for data analysts. You install it on your own computer or servers and open it in a browser. There is no hosted service to sign up for, and the data you put in an installation stays on that installation.
+## Geographic work should be easier to explain and deliver
 
-Greenmice Technologies S.r.l. publishes Gaia GIS and this website. The company is in Rome, Italy.
+Gaia GIS is a self-hosted web GIS for data analysts and teams who need to turn geographic data into something others can use: a clear map, an analytical document, a public page, or a set of printed sheets.
 
-[Product](/en/product/) · [Install](/en/install/) · [Contact](/en/contact/)
+A geographic project rarely ends with a map on screen. The data needs context, the findings need an explanation, and the result needs a form that fits its audience. Gaia brings those steps together in a browser workspace, from importing and editing layers to writing a notebook and preparing layouts for export.
+
+## Your infrastructure, your working environment
+
+Install Gaia on your own computer or servers, then use it through a browser. Your organization operates the installation and manages its users, workspaces, and stored files. There is no hosted Gaia service to sign up for.
+
+Standard import and export formats help you use Gaia alongside your existing tools. Application branding can be adapted to the organization running it.
+
+## Published by Greenmice Technologies
+
+Greenmice Technologies S.r.l., based in Rome, Italy, publishes Gaia GIS and this website.
+
+[Explore the product](/en/product/) · [Check installation and availability](/en/install/) · [Tell us about your project](/en/contact/)

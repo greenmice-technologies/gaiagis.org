@@ -79,8 +79,10 @@ Run the website locally:
 hugo server
 ```
 
-Build the static site:
+Build the static site, removing stale output from earlier versions:
 
 ```bash
-hugo
+npm run build
 ```
+
+This runs `hugo --cleanDestinationDir`. Treat `public/` as disposable build output; keep source files in `content/`, `assets/`, or `static/`. GitHub Pages uses the same cleanup flag so removed pages and assets do not survive a rebuild.

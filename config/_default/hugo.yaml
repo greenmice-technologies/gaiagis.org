@@ -29,4 +29,4 @@ languages:
     weight: 1
     contentDir: content/en
     params:
-      description: "Create maps, explore data, and share your work from your browser with Gaia GIS."
+      description: "Turn geographic data into maps, analytical notebooks, and print-ready deliverables with Gaia GIS, the self-hosted web GIS."

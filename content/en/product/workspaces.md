@@ -1,26 +1,35 @@
 ---
 title: "Workspaces and sharing"
-description: "Keep a project together and choose who can see it."
+description: "Keep maps, notebooks, layouts, and files together. Manage organization access and publish or export completed work."
 translationKey: workspaces
 contentStatus: "canonical-en"
 weight: 4
 ---
 
-A workspace holds a map, its layers, a notebook, and its supporting files.
+## One home for the map and the work behind it
 
-## Who can see it
+Gaia GIS workspaces keep a project's map, layers, notebook, print layouts, and supporting files together. Return to the analysis with its context intact, and choose how to deliver the finished work.
 
-A workspace is private until you share it with its members or make it public. A public workspace has its own page that anyone with the link can open.
+## Work within your organization
 
-## What you can export
+Access follows organization membership and roles. Viewers can read, members can edit content, and admins and owners can manage visibility and membership. A private workspace is available within its organization according to those roles; private does not mean visible only to its creator. Instance administrators also retain administrative access.
 
-- A notebook, as HTML or PDF.
-- A print layout, as PDF or GeoPDF.
-- The map, as a GeoTIFF.
-- The data, as a GeoPackage.
+## Decide when the work becomes public
 
-## Make it yours
+Public visibility and publication are separate choices. A workspace must be both **Public** and **Published** to appear in the public catalog and be available on its public page. Setting it to Public while it is still a draft does not publish it.
 
-Administrators can change the application name, logo, and colors to suit their organization.
+For a review before publication, create a preview link. Treat that link as access to the draft and share it only with the people you want to review it.
 
-[Read the workspace guides](/en/manuals/workspaces/).
+## Match the handover to the audience
+
+- **Public workspace page:** share the map and notebook with readers outside your organization.
+- **Notebook as HTML or PDF:** deliver the explanation and analysis as a document.
+- **Print layout as PDF or GeoPDF:** deliver a composed map sheet.
+- **Map as GeoTIFF:** take a georeferenced map image into another workflow.
+- **Data as GeoPackage:** continue working with your geographic data in compatible tools.
+
+## Run it under your own identity
+
+Gaia is self-hosted on your computer or servers. Administrators can set the application name, logo, and colors to suit the organization using it.
+
+[Read the workspace guides](/en/manuals/workspaces/) · [Learn how sharing works](/en/manuals/workspaces/share-and-export/)

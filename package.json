@@ -10,6 +10,7 @@
   },
   "scripts": {
     "screenshots": "playwright test -c screenshots/playwright.config.ts",
-    "screenshots:install": "playwright install chromium"
+    "screenshots:install": "playwright install chromium",
+    "build": "hugo --cleanDestinationDir"
   }
 }

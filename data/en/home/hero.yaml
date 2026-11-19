@@ -1,9 +1,9 @@
 enable: true
-title: 'Create maps. Explore your data. **Share what you find.**'
-text: 'Gaia GIS brings maps, data, and analysis together in your browser. Import geographic files, build your map, and turn your findings into a document or a page others can explore.'
+title: 'Turn geographic data into **maps that inform.**'
+text: 'Gaia GIS is a self-hosted web GIS for data analysts and teams. Build maps, explain findings with SQL, charts, and notebooks, and deliver public pages or print-ready sheets from one browser workspace.'
 buttons:
-  - label: 'See how it works'
+  - label: 'Explore the workflow'
     link: '#overview'
-  - label: 'Get started'
-    link: '#get-started'
+  - label: 'Installation and availability'
+    link: '/en/install/'
 image: 'images/gaia-gis.png'
