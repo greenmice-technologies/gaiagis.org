@@ -5,11 +5,10 @@ translationKey: "users"
 weight: 20
 appScreen:
   - "/admin/user-management"
-contentStatus: verified
-verifiedAgainst: "828cf266"
+contentStatus: needs-review
 ---
 
-Open **Administration**, then **Authentication**, then **Users**.
+Open **Administration**, then **Access**, then **Users**.
 
 The list shows each account with its login, whether it is **Activated**, its profiles, its organizations, its language, and its email. Use **Sort** to change the order.
 
@@ -25,4 +24,4 @@ Select **Create a new user**, or open a user and edit it. Fill in:
 - **Profiles** — what the user may do. See [Authorities](authorities.md).
 - **Organizations** — the organizations the user belongs to
 
-Select **Save**.
+Select **Save**. If the change touches access — activating or deactivating the account, its profiles, or its organizations — a confirmation lists what changes and says it applies to this user across the whole platform. Select **Save** to confirm, or **Cancel** to leave the user as it was.

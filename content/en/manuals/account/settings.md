@@ -5,8 +5,7 @@ translationKey: "account-settings"
 weight: 30
 appScreen:
   - "/account/settings"
-contentStatus: verified
-verifiedAgainst: "828cf266"
+contentStatus: needs-review
 ---
 
 Open the user menu at the bottom of the sidebar and select **Settings**.
@@ -22,6 +21,18 @@ The page shows your profile as others see it. Edit it in place:
 - **Visibility** — whether your profile is public
 
 Your username, shown after the `@`, identifies your account.
+
+**Save** appears when you change something. If a field is not valid (a missing name, an email that is not an address), a message above the bio says which, and Save stays disabled. If the email is already used by another account, the error says so.
+
+## Language, theme and colors
+
+These are not on this page. Open the user menu at the bottom of the sidebar:
+
+- **Languages** — saved to your account when you choose one. If the save fails, a message says the language changed here but was not saved.
+- **Appearance** and the light/dark switch — saved to your account, so they follow you on other devices. They are hidden when your organization or the application manages the theme.
+- When you are not signed in, these are kept in this browser only.
+
+The state of the sidebar (collapsed or not) is remembered only in this browser.
 
 ## More actions
 

@@ -5,11 +5,10 @@ translationKey: "authorities"
 weight: 30
 appScreen:
   - "/authority"
-contentStatus: verified
-verifiedAgainst: "828cf266"
+contentStatus: needs-review
 ---
 
-Open **Administration**, then **Authentication**, then **Authorities**.
+Open **Administration**, then **Access**, then **Authorities**.
 
 An authority is a profile you give to users. Gaia comes with two:
 

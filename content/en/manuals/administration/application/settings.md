@@ -8,7 +8,7 @@ appScreen:
 contentStatus: needs-review
 ---
 
-Open **Administration**, then **Application**, then **Settings**.
+Open **Administration**, then **Settings**, then **Settings**.
 
 The page lists every setting with its type and a description. Use **Sort** to change the order.
 

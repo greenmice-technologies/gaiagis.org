@@ -5,11 +5,10 @@ translationKey: "oauth-providers"
 weight: 20
 appScreen:
   - "/admin/oauth-providers"
-contentStatus: verified
-verifiedAgainst: "828cf266"
+contentStatus: needs-review
 ---
 
-Open **Administration**, then **Application**, then **OAuth Providers**.
+Open **Administration**, then **Access**, then **OAuth Providers**.
 
 A provider lets people sign in with an account they already have elsewhere. The list is empty until you add one.
 
@@ -25,4 +24,4 @@ Select **Create a new OAuth Provider** and fill in the details you get from the 
 - **Email attribute**, **Name attribute**, and **Picture attribute** — where to find these values in what the provider returns
 - **Enabled** — whether the provider appears on the sign-in page
 
-Select **Save**.
+Select **Save**. When you save a provider that already exists, a confirmation says whether people can sign in with it afterwards, and that the change applies to every user as soon as you save.

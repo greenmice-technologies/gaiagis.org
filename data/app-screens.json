@@ -52,7 +52,7 @@
     { "id": "/admin/health", "name": "Health", "area": "administration", "access": "admin" },
     { "id": "/admin/configuration", "name": "Configuration", "area": "administration", "access": "admin" },
     { "id": "/admin/logs", "name": "Logs", "area": "administration", "access": "admin" },
-    { "id": "/admin/metrics", "name": "Metrics", "area": "administration", "access": "admin", "skip": "Route exists but is not in the menu" },
-    { "id": "/admin/docs", "name": "API docs", "area": "administration", "access": "admin", "skip": "Route exists but is not in the menu" }
+    { "id": "/admin/metrics", "name": "Metrics", "area": "administration", "access": "admin" },
+    { "id": "/admin/docs", "name": "API docs", "area": "administration", "access": "admin" }
   ]
 }

@@ -8,7 +8,7 @@ appScreen:
 contentStatus: needs-review
 ---
 
-Open **Administration**, then **Application**, then **Organizations**.
+Open **Administration**, then **Access**, then **Organizations**.
 
 The list shows every organization on the installation. From here an administrator can create an organization, open one, and edit it.
 
