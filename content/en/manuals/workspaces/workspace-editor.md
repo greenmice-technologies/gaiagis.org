@@ -15,6 +15,7 @@ The editor opens when you create a workspace or select one from a list.
 - The **back arrow** returns to your workspaces.
 - The **name of the workspace** opens [Workspace settings](workspace-settings.md).
 - **Preview** opens a preview of the workspace.
+- **Save status** next to the buttons reads *Saving…*, *Unsaved changes*, *Saved 14:32* (the time of the last save) or *Not saved* in red when the last save failed. After a failure the **Save** button stays available and a message explains what went wrong.
 
 Export and the status of the workspace are panels on the left strip, below.
 

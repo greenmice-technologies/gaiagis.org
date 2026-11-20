@@ -6,8 +6,7 @@ weight: 110
 appScreen:
   - "/project/:id/editor?panel=history"
   - "editor:production"
-contentStatus: verified
-verifiedAgainst: "828cf266"
+contentStatus: needs-review
 ---
 
 Open the **History** panel from the strip on the left of the [editor](workspace-editor.md).
@@ -16,16 +15,20 @@ Open the **History** panel from the strip on the left of the [editor](workspace-
 
 Select **Save version**. Gaia stores the workspace as it is now and adds the version to the list, with the date and the name of who saved it.
 
+A version is a snapshot kept in the list. It is separate from **Save** in the top bar, which stores your current work.
+
 ## Go back to a version
 
 Open the menu on a version:
 
-- **Restore** brings that version back into the editor. It replaces what you are editing now.
+- **Restore** brings that version back into the editor. It replaces what you are editing now. The confirmation names the version and its date, and warns that unsaved changes are lost: save a version first to keep the current state.
 - **Delete** removes the version.
 
 ## Preview link
 
-**Preview link** creates a link that shows the workspace as it is now, before you publish. Anyone with the link can open it without an account.
+**Copy preview link** creates a link to the current draft, before you publish, and copies it. Anyone with the link can open it without an account. If the browser refuses to copy, the message shows the link so you can copy it by hand.
+
+The preview link is not the published link: the published link, shown in the share panel as **Published link**, only works once the workspace is Published and Public.
 
 The workspace needs a **Slug** first. Set it in [Workspace settings](workspace-settings.md).
 
