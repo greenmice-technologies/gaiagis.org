@@ -42,15 +42,17 @@ Open the **Export** panel and choose what to save.
 
 **Workspace**
 
-- **Workspace file (.zip)** downloads a `.gaia.zip` you can import on another Gaia. See [My workspaces](my-workspaces.md).
-- **Print Layout** opens the [print layout window](../print-layouts.md).
-- **GeoTIFF** saves the map as a georeferenced image.
-- **GeoPackage** saves the data of the workspace.
+- **Workspace file (.zip)** downloads a `.gaia.zip` of the whole workspace, to back it up or import it on another Gaia. See [My workspaces](my-workspaces.md).
+- **Print Layout** opens the [print layout window](../print-layouts.md): choose a layout, preview it, then download a PDF or Geospatial PDF.
+- **GeoTIFF** saves the current map as a georeferenced image, for GIS software.
+- **GeoPackage** saves the workspace layers as a GeoPackage file, for GIS software.
 
 **Notebook**
 
-- **HTML (notebook)** saves the notebook as a web page.
-- **PDF (notebook)** saves the notebook as a PDF.
+- **HTML (notebook)** saves the notebook as a web page you can share as a file.
+- **PDF (notebook)** saves the notebook as a PDF to print or send.
+
+Each entry has a one-line description of what it produces and for whom. While a render or upload runs, the panel shows the stage and the seconds elapsed, with **Cancel**.
 
 ## Geospatial PDF viewer
 

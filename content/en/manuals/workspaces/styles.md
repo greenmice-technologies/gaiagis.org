@@ -5,11 +5,10 @@ translationKey: "editor-styles"
 weight: 70
 appScreen:
   - "editor:style"
-contentStatus: verified
-verifiedAgainst: "828cf266"
+contentStatus: needs-review
 ---
 
-In the [Layers](layers.md) panel, select the **Style** button on a layer. The panel shows the styles of that layer, and the map updates as you change them.
+In the [Layers](layers.md) panel, select the **Style** button on a layer. The top of the panel always shows which layer you are editing, as *Layer name / Styles*, and the same name stays in front when you open a rule or a symbol. The panel shows the styles of that layer, and the map updates as you change them.
 
 ## Rules
 
@@ -25,7 +24,7 @@ A style is a list of rules. Each rule draws the layer in one way: a point symbol
 Select **+** (**Add style**) at the top of the panel:
 
 - **Edit style**
-- **Classify** colors the layer by the values of an attribute.
+- **Classify** colors the layer by the values of an attribute. The window is titled with the layer name, and **Generate** replaces all the rules the style has now; a note above the button says how many.
 - **Clear all rules** starts again from nothing.
 - Under **Gaia base style**, add a rule of one type: **Mark** for points, **Line**, **Fill**, **Icon**, **Text** for labels, or **Raster**. **All** adds one of each.
 - Under **Annotation style**, add a **Symbol** or a **Label**.

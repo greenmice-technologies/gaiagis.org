@@ -5,13 +5,12 @@ translationKey: "editor-assets"
 weight: 90
 appScreen:
   - "/project/:id/editor?panel=assets"
-contentStatus: verified
-verifiedAgainst: "828cf266"
+contentStatus: needs-review
 ---
 
 Open the **Assets** panel from the strip on the left of the [editor](workspace-editor.md).
 
-Assets are the files of a workspace.
+Assets are the files attached to a workspace, such as images and documents. An asset does not appear on the map: to add map data, use [Import](layers.md) in the Layers panel, and to use an external server, use [Connections](connections.md).
 
 - Select **Upload** to add a file from your computer.
 - Paste a URL into the box at the top to add a file from the web.

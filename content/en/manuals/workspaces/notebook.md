@@ -5,8 +5,7 @@ translationKey: "editor-notebook"
 weight: 100
 appScreen:
   - "/project/:id/editor?panel=notebook"
-contentStatus: verified
-verifiedAgainst: "828cf266"
+contentStatus: needs-review
 ---
 
 Open the **Notebook** panel from the strip on the left of the [editor](workspace-editor.md). The notebook opens beside the map.
@@ -37,6 +36,10 @@ Press **Tab** on an empty line, or select **+**, to choose another kind of block
 | **Delimiter** | A break between sections |
 
 Select text to make it a **Link**.
+
+## Query results
+
+A query block shows its result as a table, a map or a chart. If the query fails, the message appears under the query box, which stays editable: change it and press **Run** (or ⌘/Ctrl + Enter) again. The table shows up to 500 rows. The notebook file keeps the first 200 rows of a result and exports include the first 50; when a result is longer than that, a notice under the table says so.
 
 ## Share the notebook
 

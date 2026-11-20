@@ -50,4 +50,9 @@ Open **Production** to prepare saved layouts, freeze a version, and produce the 
 
 1. **Choose a frozen version**.
 2. Optionally list the **Required labels**, separated by commas, and the **Maximum suppressed labels**.
-3. Select **Start production**.
+3. Check the line under the options: it names the frozen version and the number of layouts that will be produced. **Start production (N)** stays disabled until a version and at least one prepared layout are chosen.
+4. Select **Start production**.
+
+**Follow a run**
+
+Each run shows how many outputs are ready (for example *2 of 4 outputs ready*) and, when some failed, how many are *to recover*, above the status of every layout. Open **PDF** or **Quality report** on a finished layout. When a run ends with errors, **Resume unfinished outputs** produces only the missing ones. While a run is active the list refreshes by itself; once it ends it stops.
