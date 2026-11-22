@@ -24,7 +24,7 @@ The table opens below the map. Its toolbar shows the name of the layer; select *
 
 ![The attribute table of the countries layer below the map](/images/tutorials/03-attribute-table/02-table.png)
 
-- Each row is a feature. At the start of the row you find a checkbox to select it, an eye to hide it on the map, and the geometry type with a **…** menu of geometry actions.
+- Each row is a feature. At the start of the row you find a checkbox to select it, an eye to hide it on the map, and the geometry type. Hover the row for the sparkles button that opens **Feature Spotlight**, and for the **…** menu of geometry actions.
 - The columns are the attributes stored in the GeoPackage: `featurecla`, `scalerank`, `SOVEREIGNT`, `ADMIN`, `NAME`, `POP_EST`, and many more. Scroll the table sideways to see them all. Select the arrow in a header to sort.
 - The checkbox in the header selects all rows, and the eye beside it hides all rows on the map.
 - **Add row** at the bottom adds a feature. The **+** at the end of the header adds a column.
@@ -51,6 +51,8 @@ Select the checkbox of the Italy row. The feature is highlighted on the map, and
 
 ![The selected row, the matching feature on the map, and the Feature info panel](/images/tutorials/03-attribute-table/05-selection.png)
 
+Select **Feature Spotlight** (the sparkles button) on the selected feature, or the same button on the table row, to open a larger movable window. Spotlight keeps the attribute form, header included, at full height. The control in that header hides the form. The same control on the left rail brings it back. Spotlight adds a Wikipedia article across the top, a satellite view of the same place, two thirds of the row wide, with a planisphere inset that marks where that zoomed area sits on the world, and one card for the local time, including how far it is from the viewer's clock, together with the weather. A point also shows the place name. The card's background follows the conditions. The article card shows the introduction and uses the page's Open Graph title and image when the page provides them. External information can be temporarily unavailable without affecting attribute editing.
+
 When at least one row is selected, new buttons appear in the toolbar of the table:
 
 | Button | What it does |
@@ -66,6 +68,7 @@ Select the **…** button at the start of the row.
 
 | Action | What it does |
 | --- | --- |
+| **Open Feature Spotlight** | Opens the feature in the Spotlight window |
 | **Focus on map** | Moves the map to the feature |
 | **Edit geometry** | Lets you change the shape on the map |
 | **Copy as WKT** | Copies the geometry as WKT in longitude and latitude, so you can paste it into a filter |

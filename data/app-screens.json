@@ -23,6 +23,7 @@
     { "id": "editor:import", "name": "Import layers", "area": "editor", "access": "user" },
     { "id": "editor:style", "name": "Layer style", "area": "editor", "access": "user" },
     { "id": "editor:table", "name": "Attribute table", "area": "editor", "access": "user" },
+    { "id": "editor:feature-spotlight", "name": "Feature Spotlight", "area": "editor", "access": "user" },
     { "id": "editor:raster", "name": "Raster tools and georeferencing", "area": "editor", "access": "user" },
     { "id": "/project/:id/editor?panel=assets", "name": "Assets panel", "area": "editor", "access": "user" },
     { "id": "/project/:id/editor?panel=endpoints", "name": "Connections panel", "area": "editor", "access": "user" },

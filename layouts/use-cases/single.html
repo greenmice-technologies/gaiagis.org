@@ -1,0 +1,7 @@
+{{ define "main" }}
+<main class="project-story">
+<header class="story-heading"><a href="/en/use-cases/">All projects</a><p class="case-eyebrow">{{ .Params.category }} · {{ .Params.exampleType }}</p><h1>{{ .Title }}</h1><p class="story-deck">{{ .Description }}</p>{{ with .Params.download }}<a class="editorial-button" href="{{ .url }}">{{ .label }}</a>{{ end }}</header>
+{{ with .Params.cover }}<figure class="story-hero"><img src="{{ . }}" alt="{{ $.Params.coverAlt }}" width="1800" height="1108" fetchpriority="high">{{ with $.Params.coverCaption }}<figcaption>{{ . }}</figcaption>{{ end }}</figure>{{ end }}
+<article class="prose story-body">{{ .Content }}</article>
+<footer class="story-next"><p class="case-eyebrow">Keep exploring</p><h2>From a single finding to a finished deliverable.</h2><a href="/en/use-cases/">Explore all projects</a> · <a href="/en/contact/">Discuss your project</a></footer>
+</main>{{ end }}

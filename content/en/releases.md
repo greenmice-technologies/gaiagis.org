@@ -6,7 +6,7 @@ contentStatus: "canonical-en"
 weight: 40
 ---
 
-Gaia GIS uses semantic version numbers, such as `1.4.0`. Only major releases also get a name, taken from the Titans, the children of Gaia in Greek myth. A minor release is quoted with its major: "Gaia GIS 1.2 (Oceanus)".
+Gaia GIS uses semantic version numbers, such as `1.4.0`. Only major releases also get a name, taken from the Titans, the children of Gaia in Greek myth. A minor release is quoted with its major: "Gaia GIS 1.2 (Oceanus)". The sign-in, registration, activation, and password-reset cards show the version the same way, under the installation name: `1.2.0 (Oceanus)`. A local development build adds Dev.
 
 Each major has its own primary color, which is also the default color of the application for that release.
 

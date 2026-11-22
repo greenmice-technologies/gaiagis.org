@@ -1,19 +1,16 @@
 ---
-title: "Use Cases"
-description: "See how Gaia GIS turns geographic data into a finished map sheet or an analysis others can read."
-layout: overview
+title: "Maps and analysis, ready to share"
+description: "Explore finished outputs, inspect the evidence, and follow the workflow behind each Gaia GIS example."
 translationKey: use-cases
 contentStatus: canonical-en
 ---
 
-## Aeronautical cartography
+## Start with the deliverable
 
-Bring routes, reporting points, and airspace together on a single sheet. See the map in the Gaia editor and download the finished GeoPDF from this fictional en-route chart example.
+Explore a map sheet for cartographic review or a population analysis with a reproducible query. Each case explains the data, the choices behind the result, and the limits of what it shows.
 
-[See the Northhaven chart](aviation-chart/).
+These are product demonstrations, not customer success stories. Northhaven uses fictional geography; the population example uses the bundled Natural Earth dataset.
 
-## Population analysis with Natural Earth
+## Bring your own question
 
-Explore a world map and use a SQL notebook to compare population estimates by region. See the query and its results, then download the same data to try it yourself.
-
-[See the Natural Earth notebook](population-notebook/).
+Need to deliver an analytical brief, a map sheet, or a set of project maps? [Tell us about your data and intended output](/en/contact/). To reproduce an example in your own installation, [start with the workspace tutorial](/en/tutorials/01-first-workspace/).

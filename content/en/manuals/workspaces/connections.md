@@ -20,6 +20,12 @@ Adding a connection only adds a **source** to the workspace. Nothing appears on 
 
 The dialog keeps what you typed if saving fails.
 
+## Authentication
+
+A connection can sign in to the remote server. Set **Authentication** to **Basic**, **Header**, or **Query parameter** and enter the secret. Gaia stores the secret encrypted and does not show it again. Leave the secret blank when you edit the connection to keep the saved one.
+
+Layers you add after authentication is set are requested through Gaia, which attaches the secret. A layer already on the map stays as it was until you add it again. On a published page, those layers load for a signed-in member of the workspace: the secret stays on the server.
+
 ## When a connection does not load
 
 If the server cannot be read, the connection shows the reason, with **Retry** and **Edit connection**. Edit opens the same dialog with the saved name, URL and type, so you fix the address without adding the connection again. Deleting a connection does not remove layers already added to the map.

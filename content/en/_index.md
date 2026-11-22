@@ -9,15 +9,15 @@ build:
 
 ## What a finished project looks like {#examples}
 
-### From aeronautical layers to a chart sheet
+### Nine sheets. One coherent atlas.
 
-See how a fictional en-route map goes from separate layers for aerodromes, reporting points, routes, and airspace to a downloadable GeoPDF with labels, a map key, and a scale bar.
+Explore the Brazil L1–L9 production prototype: nine regional maps, shared cartographic layers, and a single GeoPDF. Follow the decisions behind the frames, symbols, and marginal information.
 
-[See the aviation chart and download the GeoPDF](/en/use-cases/aviation-chart/)
+[Explore the atlas](/en/use-cases/brazil-atlas/)
 
-<img class="screenshot" src="/images/use-cases/northhaven-chart.webp" alt="Northhaven demonstration chart with two fictional islands, airspace sectors, routes, and a map key" width="1357" height="961" loading="lazy" decoding="async">
+<img class="screenshot" src="/images/use-cases/atlas/preview-L3.png" alt="Brazil L3 atlas prototype showing routes and airspace along the northeastern coast" width="1800" height="1108" loading="lazy">
 
-[Browse all use cases](/en/use-cases/)
+[Explore all three projects](/en/use-cases/) — a multipage atlas, a synthetic chart sheet, and a reproducible population analysis.
 
 ## From geographic data to a result you can share {#overview}
 

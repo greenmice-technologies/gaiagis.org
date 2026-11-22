@@ -7,13 +7,14 @@ appScreen:
   - "/project/:id/editor?panel=layouts"
   - "/project/:id/editor?panel=print_layouts"
   - "editor:print-layout"
-contentStatus: verified
-verifiedAgainst: "805f71df"
+contentStatus: needs-review
 ---
 
 ## Layouts panel
 
 In the [editor](workspaces/workspace-editor.md), the **Layouts** tab of the left rail lists the print layouts of the workspace. It is the way into the Layout Studio: select a layout to open it in the **Layout Studio** window over the editor. Select **+** to create a new layout. The first icon in the panel header switches between a list of names and thumbnails of each layout's first page.
+
+Point at a layout and select the bin, or focus the row and press Delete or Backspace. Gaia asks for confirmation, naming the layout, before it is removed. If that layout is open in the Layout Studio, the window closes.
 
 The **…** menu in the panel header holds **Import → From JSON**, which opens a layout from a JSON file in the studio.
 
@@ -38,11 +39,12 @@ In the panel header, **Save as JSON** (file with an arrow) saves the layout to a
 
 ## Styling
 
-The second tab holds the design tokens of the layout: the brand colors, the heading, body and mono fonts, and the text sizes. Four icons at the end of the panel header act on them:
+The second tab holds the design tokens of the layout: the brand colors, the heading, body and mono fonts, and the text sizes. Five icons at the end of the panel header act on them:
 
 - **Apply to document** (check) writes the tokens onto the pages and items.
 - **Seed from brand** (sparkles) fills them from the brand of the application.
 - **Palette from image** (picture) asks for an image and fills the tokens with its dominant colors: the most prominent becomes the primary color, the next two the secondary and the accent. White, black and transparent areas are ignored.
+- **Random palette** (dice) fills the tokens with a new harmonious palette: primary, secondary and accent, plus neutrals derived from the primary.
 - **Reset** (counter-clockwise arrow) restores the defaults.
 
 ## Pages

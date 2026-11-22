@@ -20,7 +20,7 @@ Select **+** (**Add layer**) at the top of the panel:
 - **Browse** — files from your computer
 - **Empty Layer** — a new layer to draw on
 - **Layer Group** — a group to organize layers
-- **Layer from Pictures**
+- **Layer from Pictures** — one point per photo, placed from the GPS position stored in the photo. While it works, a window blocks the editor and shows how many photos are done, what is happening to the current one (reading its metadata, finding its address, uploading, saving the layer) and about how long is left. Gaia looks up one address per second, so a large set takes a few minutes; keep the tab open. **Cancel** stops it without creating the layer; photos already uploaded stay in the workspace's storage.
 - **Grid**
 - **Add XYZ** — a tiled base map from a URL
 - **Add Vector Tiles** — a vector tile source from a URL
@@ -55,6 +55,16 @@ Each row in the panel has:
 - **Style** — see [Styles](styles.md).
 - **Attribute table** — see [Attribute table](attribute-table.md).
 - **Layer actions**, a menu with **Zoom to layer**, **Attribute table**, **Reproject**, **Export**, **Publish**, **Clone**, **Create Annotation Layer**, and **Delete**.
+
+## Groups
+
+A group is a row with a folder icon; its layers are listed under it. Add one with **+**, then **Layer Group**, or move a layer into a group with **Move to group** in its actions menu.
+
+- Select the folder icon to close or open the group.
+- The checkbox of a group shows or hides every layer in it. When you turn on a layer inside a hidden group, the group turns on again and the other layers keep their state.
+- The actions menu of a group has **Clone group** and **Delete**.
+
+**Clone group** adds a new group, named like the original with `_copy`, and a copy of each layer in it. Each copy keeps the visibility and the place in the order of the layer it came from, and its name ends in `_copy` too. Vector, WFS, raster and WMS layers are copied. Other kinds of layer are left out, and the message at the end says how many. A large group can take a few seconds, because each layer is copied in turn.
 
 ## The layer you are editing
 

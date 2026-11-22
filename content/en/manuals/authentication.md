@@ -13,7 +13,7 @@ contentStatus: needs-review
 
 Open Gaia in your browser. If you are not signed in, you see the **Sign in** page.
 
-The page shows your installation's logo and main color. Behind the form there is a background image: by default a pattern of thin blue lines. An administrator can replace it, see [Application settings](administration/application/settings.md).
+The page shows your installation's logo, name, and main color. Under the name it shows this installation's version and the name of that major, such as `1.4.0 (Oceanus)`. A version before 1.0 quotes Oceanus. A local development build adds Dev, such as `0.0.1-SNAPSHOT (Oceanus) Dev`. The registration, activation, and password-reset pages show the same line. Behind the form there is a background image: by default a pattern of thin blue lines. An administrator can replace it, see [Application settings](administration/application/settings.md).
 
 ## Sign in
 

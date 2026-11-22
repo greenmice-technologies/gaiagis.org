@@ -56,7 +56,7 @@ Each entry has a one-line description of what it produces and for whom. While a 
 
 ## Geospatial PDF viewer
 
-**Open Geospatial PDF** on a workspace page shows the latest stored Geospatial PDF in the browser, with **Download PDF** and a button back to the notebook. The viewer tells apart three situations:
+**Open Geospatial PDF**, in the viewer's **Export** menu, shows the latest stored Geospatial PDF in the browser, with **Download PDF** and a button back to the notebook. The viewer tells apart three situations:
 
 - **Not exported yet**: export one from the map editor.
 - **No access**: you are not allowed to open it. A public address works only after the workspace is published as public.
