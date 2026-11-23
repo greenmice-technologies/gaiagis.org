@@ -54,7 +54,13 @@ Each row in the panel has:
 - The opacity, from 0 to 100.
 - **Style** — see [Styles](styles.md).
 - **Attribute table** — see [Attribute table](attribute-table.md).
-- **Layer actions**, a menu with **Zoom to layer**, **Attribute table**, **Reproject**, **Export**, **Publish**, **Clone**, **Create Annotation Layer**, and **Delete**.
+- **Layer actions**, a menu with **Zoom to layer**, **Attribute table**, **Reproject**, **Export**, **Publish**, **Clone**, **Copy**, **Create Annotation Layer**, and **Delete**.
+
+**Clone** freezes a WFS or WMS layer into a snapshot (a GeoJSON layer or an image). **Copy** duplicates a WFS or WMS layer as it is: the copy keeps the same type and stays connected to the OGC endpoint, so you can, for example, give it a different CQL filter. On a vector or raster layer, **Copy** makes an independent copy of the data. A copy is named like the original with `_copy`.
+
+The **Diff** window has two views, chosen with the switch at the top right: **Readable** (the default) lists only the features that differ, each with a label, a status (**Changed**, **New** or **Only here**) and a button to use the other side's version, and **Code** shows the two GeoJSON files side by side. In the readable view you can filter by status, search by name or ID, open a feature to see which fields changed, and apply all the listed changes at once. The two views edit the same result, so **Save merged copy** works from either.
+
+**Diff** on a vector layer opens a submenu. **WFS source (updated)** appears when the layer was cloned from a WFS layer: it compares the layer with the current source and lets you save a merged copy. Below it are the other layers of the workspace you can compare with: WFS layers and GeoJSON vector layers, and, when the layer comes from a WFS type, only those of the same type. When you compare with another layer, your layer is on the left and the other layer is on the right. Select the arrow (←) in the margin of a changed block on the right to copy that change into your layer, or edit the left side by hand, and select **Save merged copy** to replace the data of your layer with the result. Its style, options and WFS source are not changed, and the other layer is not touched.
 
 ## Groups
 
@@ -62,9 +68,11 @@ A group is a row with a folder icon; its layers are listed under it. Add one wit
 
 - Select the folder icon to close or open the group.
 - The checkbox of a group shows or hides every layer in it. When you turn on a layer inside a hidden group, the group turns on again and the other layers keep their state.
-- The actions menu of a group has **Clone group** and **Delete**.
+- The actions menu of a group has **Clone group**, **Copy group** and **Delete**.
 
 **Clone group** adds a new group, named like the original with `_copy`, and a copy of each layer in it. Each copy keeps the visibility and the place in the order of the layer it came from, and its name ends in `_copy` too. Vector, WFS, raster and WMS layers are copied. Other kinds of layer are left out, and the message at the end says how many. A large group can take a few seconds, because each layer is copied in turn.
+
+**Copy group** does the same, except that WFS and WMS layers are copied as they are and stay connected to their endpoint instead of becoming snapshots. Vector and raster layers are cloned as with **Clone group**.
 
 ## The layer you are editing
 
