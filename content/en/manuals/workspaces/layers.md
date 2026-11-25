@@ -23,7 +23,7 @@ Select **+** (**Add layer**) at the top of the panel:
 - **Layer from Pictures** — one point per photo, placed from the GPS position stored in the photo. While it works, a window blocks the editor and shows how many photos are done, what is happening to the current one (reading its metadata, finding its address, uploading, saving the layer) and about how long is left. Gaia looks up one address per second, so a large set takes a few minutes; keep the tab open. **Cancel** stops it without creating the layer; photos already uploaded stay in the workspace's storage.
 - **Grid**
 - **Add XYZ** — a tiled base map from a URL
-- **Add Vector Tiles** — a vector tile source from a URL
+- **Add Vector Tiles** — a vector tile source from a URL (a MapTiler map link, with or without `style.json`, works). The print preview needs a raster URL; if it shows "Invalid key", enter a raster tiles URL in the dialog.
 - **Query layer** — a layer from a query on your data
 
 ## Import files
@@ -57,6 +57,12 @@ Each row in the panel has:
 - **Layer actions**, a menu with **Zoom to layer**, **Attribute table**, **Reproject**, **Export**, **Publish**, **Clone**, **Copy**, **Create Annotation Layer**, and **Delete**.
 
 **Clone** freezes a WFS or WMS layer into a snapshot (a GeoJSON layer or an image). **Copy** duplicates a WFS or WMS layer as it is: the copy keeps the same type and stays connected to the OGC endpoint, so you can, for example, give it a different CQL filter. On a vector or raster layer, **Copy** makes an independent copy of the data. A copy is named like the original with `_copy`.
+
+On a tile layer, **Edit tile source…** reopens the source dialog to change its name, URL, raster URL and attributions, and **Clone** adds a hidden copy named "(copy)".
+
+## Atlas from pictures
+
+On a **Layer from Pictures**, **Crea atlante** / create atlas opens a wizard. Its optional **Add context text** switch (off by default) sends each photo's coordinates and shooting time through the Gaia server to Open-Meteo and Wikipedia, and drafts a text per page from templates: when the photo was taken and the light of the day, the weather then (Open-Meteo reanalysis, indicative at about 25 km), and the Wikipedia lead when an article matches the place name. Each page ends with a **Sources** line. A photo that already has a description keeps it; all texts stay editable in the print layout afterwards.
 
 The **Diff** window has two views, chosen with the switch at the top right: **Readable** (the default) lists only the features that differ, each with a label, a status (**Changed**, **New** or **Only here**) and a button to use the other side's version, and **Code** shows the two GeoJSON files side by side. In the readable view you can filter by status, search by name or ID, open a feature to see which fields changed, and apply all the listed changes at once. The two views edit the same result, so **Save merged copy** works from either.
 

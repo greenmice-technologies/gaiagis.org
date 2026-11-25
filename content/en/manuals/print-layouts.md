@@ -74,7 +74,9 @@ The last tab, **Layers**, lists the items of the current page. Select **+** in i
 
 ## View
 
-The bar at the bottom of the page shows or hides the guides, turns snapping to the grid on or off, and zooms the view.
+The bar at the bottom of the page shows or hides the guides, turns snapping to the grid on or off, switches the facing-pages view (book icon), and zooms the view.
+
+In the facing-pages view the pages are shown side by side like an open book: the first page stands alone on the right, then pages two and three, four and five, and so on. Items can run across the two pages of a spread, for example a map. The view is saved with the layout; it changes only how pages are arranged on screen, not the page order or the exported PDF. An atlas created from photos with the **Illustrated guide** template opens in this view.
 
 ## Save and export
 
