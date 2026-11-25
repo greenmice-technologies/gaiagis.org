@@ -12,11 +12,21 @@ contentStatus: needs-review
 
 ## Layouts panel
 
-In the [editor](workspaces/workspace-editor.md), the **Layouts** tab of the left rail lists the print layouts of the workspace. It is the way into the Layout Studio: select a layout to open it in the **Layout Studio** window over the editor. Select **+** to create a new layout. The first icon in the panel header switches between a list of names and thumbnails of each layout's first page.
+In the [editor](workspaces/workspace-editor.md), the **Layouts** tab of the left rail lists the print layouts of the workspace. It is the way into the Layout Studio: select a layout to open it in the **Layout Studio** window over the editor. Select **+** for a menu: **New** creates an empty layout, and **New atlas from a layer…** opens the atlas wizard (see below). The first icon in the panel header switches between a list of names and thumbnails of each layout's first page.
 
 Point at a layout and select the bin, or focus the row and press Delete or Backspace. Gaia asks for confirmation, naming the layout, before it is removed. If that layout is open in the Layout Studio, the window closes.
 
 The **…** menu in the panel header holds **Import → From JSON**, which opens a layout from a JSON file in the studio.
+
+## Atlas from a layer
+
+**New atlas from a layer…** opens a four-step wizard: **Layer**, **Template**, **Properties** and **Review**. The first step lists every vector layer of the map, not only layers made from pictures; each shows how many features it has once they are loaded. Each feature of the chosen layer becomes a page. A layer with no features cannot be chosen, and the step says so.
+
+On a layer made from pictures a page carries the photograph. On any other vector layer a page is titled from the feature's `name`, `title` or `label` attribute (or its number), and its text is the `description` or `notes` attribute, or else the first attributes as `name: value` lines; the photograph areas of the template stay empty. The **Add context text** switch appears only for layers made from pictures.
+
+The **Properties** step has an **Include overview map** switch, on by default. It adds a full-bleed map after the cover, framed on all located features, with a numbered pin for each; the numbers are those of the entries in the contents list. The map takes one page, or two facing pages in the **Illustrated guide** template, where each page shows its half. It is left out when no feature has a position or when **Show location maps** is off.
+
+The layer's own menu offers **Crea atlante** on layers made from pictures; it opens the same wizard on the **Template** step.
 
 ## The Layout Studio
 
