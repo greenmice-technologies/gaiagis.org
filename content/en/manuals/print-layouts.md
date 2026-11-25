@@ -28,6 +28,12 @@ The **Properties** step has an **Include overview map** switch, on by default. I
 
 The layer's own menu offers **Crea atlante** on layers made from pictures; it opens the same wizard on the **Template** step.
 
+### Pages tied to a feature
+
+Every page an atlas makes for a feature (including the continuation pages of a long text) is tied to that feature. In the **Pages** list the pages of one feature sit under a caption with the feature's name. The tie changes nothing about editing: each page stays a normal page you can move, rewrite or delete.
+
+In a text item, `[% @name %]` prints the value of the attribute `name` of the feature of the page; `[% name %]` does the same when no built-in token has that name. Attribute names are not case sensitive. An attribute the feature does not have prints nothing. On a page that is not tied to a feature these tokens stay as written. `[% group %]`, `[% groupno %]` and `[% groups %]` print the feature's name, its number among the features and their total. Values are copied into the pages when the atlas is created, so later edits to the layer do not change existing pages.
+
 ## The Layout Studio
 
 The window has a **rail** of tabs on the left, a **panel** beside it, the page in the middle, and a properties panel on the right. Drag the edge between the panel and the page to resize the panel; double-click the edge to restore its width. The icon at the bottom of the rail hides and shows the panel.
