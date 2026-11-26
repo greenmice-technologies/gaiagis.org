@@ -41,21 +41,34 @@ On a vector layer, a **Print differs from the map** box appears at the top of th
 
 The box does not cover every small difference: text, for example, can look slightly different on paper.
 
+## Panel buttons
+
+The buttons at the top of the panel act on the whole style:
+
+- **Edit style** opens the text style editor.
+- **Classify** styles the layer by the values of an attribute, varying colour, mark size or line width. The window is titled with the layer name, and **Generate** replaces all the rules the style has now; a note above the button says how many.
+- **Save to organization** saves the style so that you can use it again. It takes the name of the layer. The button appears when the style has at least one rule, and the workspace must belong to an organization.
+- **Clear all rules** starts again from nothing.
+- **+** (**Add style**) adds ready-made or saved rules.
+
 ## Add a style
 
-Select **+** (**Add style**) at the top of the panel:
+Select **+** (**Add style**). The list shows only the rules that fit the layer's geometry, and you can search it by style or rule name. Select a rule to add it to the layer, or **All** next to a style name to add its listed rules.
 
-- **Edit style**
-- **Classify** colors the layer by the values of an attribute. The window is titled with the layer name, and **Generate** replaces all the rules the style has now; a note above the button says how many.
-- **Clear all rules** starts again from nothing.
-- Under **Gaia base style**, add a rule of one type: **Mark** for points, **Line**, **Fill**, **Icon**, **Text** for labels, or **Raster**. **All** adds one of each.
+- Under **Gaia base style**, add a rule of one type: **Mark** for points, **Line**, **Fill**, **Icon**, **Text** for labels, or **Raster**.
 - Under **Annotation style**, add a **Symbol** or a **Label**.
-- Under **Gaia curated styles**, add a ready-made **Point**, **Line**, **Dots** (symbols along a line), **Polygon**, **Hatch** (printable pattern fill), **Label** or **Raster** rule that matches the layer. Only rules that fit the layer's geometry are listed.
+- Under **Gaia curated styles**, add a ready-made **Point**, **Line**, **Dots** (symbols along a line), **Polygon**, **Hatch** (printable pattern fill), **Label** or **Raster** rule.
+- Your saved styles follow these three.
 
-The catalog no longer offers the old public seed styles in this menu; those remain available to administrators through the API until organisation styles land.
+Adding a saved style copies its rules into the layer.
+
+## Rename or delete a saved style
+
+Saved styles are managed in the same **Add style** list, with the buttons next to each name. The three built-in styles do not have them.
+
+- **Rename** asks for the new name.
+- **Delete** asks you to confirm. Layers that already use the style do not change.
+
+If you do not have permission to change a style, Gaia shows an error. Because the list shows only rules that fit the layer, open it from a layer with a matching geometry to find a saved style.
 
 Some styling tools are still being refined.
-
-You can save the layer style to the organization catalogue (bookmark in the style panel). Applying a saved style copies the rules into the layer.
-
-Classification can vary mark size or line width as well as colour.
