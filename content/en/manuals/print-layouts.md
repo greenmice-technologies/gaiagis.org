@@ -8,6 +8,7 @@ appScreen:
   - "/project/:id/editor?panel=print_layouts"
   - "editor:print-layout"
 contentStatus: needs-review
+verifiedAgainst: "0d477bd0"
 ---
 
 ## Layouts panel
@@ -63,8 +64,10 @@ The second tab holds the design tokens of the layout: the brand colors, the head
 
 Two icons at the end of the panel header act on the tokens:
 
-- **Apply to document** (check) writes the tokens onto the pages and items.
-- **Reset** (counter-clockwise arrow) restores the defaults.
+- **Apply to document** (check) updates only colours, fonts and sizes that follow a role (or that still match the application default). Values you set by hand stay as they are. Apply does not turn page backgrounds or frames on.
+- **Reset** (counter-clockwise arrow) restores the kit defaults.
+
+Token changes, including Apply, take part in Undo and Redo.
 
 ## Pages
 
@@ -90,6 +93,28 @@ The last tab, **Layers**, lists the items of the current page. Select **+** in i
 | **Chart** | A chart of your data |
 | **Table**, **Attribute table** | A table you type, or the attributes of a layer |
 | **Marker**, **Polygon**, **Polyline**, **Rectangle**, **Ellipse**, **Triangle** | Shapes drawn on the page |
+
+## Legend
+
+A legend lists the vector layers that its linked map shows. Select it to set it up in the properties panel:
+
+- **Legend**: **Linked map**, **Title**, **Columns**, and three switches:
+  - **Show groups** lists the layers under their layer groups. A group with no listed layer does not appear.
+  - **Count printed features** adds the number of features next to each layer and rule. It counts the features loaded for the export, those inside the area covered by the layout's maps, not the whole layer. Colors computed from the data get no count of their own.
+  - **Only what the map shows** leaves out the layers and rules with nothing to show inside the linked map. The preview works from the unrotated map frame, so on a rotated map check the PDF.
+- **Legend layers**: switch a layer off, type another label, or move it up or down. With groups shown, a layer moves among the items of its group.
+- **Legend style**: the font, the text sizes of the title, groups, layer titles and items, and the width and height of the symbols. Fields you leave alone keep the defaults (16, 14, 12 and 12 pt, symbols 7 × 4 mm).
+
+## Attribute table
+
+An **Attribute table** lists the features of one layer inside the area your maps print. Select it to choose:
+
+- **Layer**, **Fields** (names separated by commas; empty means all), **Max rows** and **Visible only** (only what the table's map shows).
+- **Sort by**: one field, with **Descending** to reverse it. Without it, rows keep the layer's order. The field does not have to be one of the columns.
+- **Unique rows**: rows with the same cells are listed once.
+- **Filter on**: a field, then a **Condition** and a **Value**. Numbers compare as numbers; text compares letter by letter and **contains** ignores upper and lower case. A feature without a value matches only **is empty**.
+
+The filter is applied first, then the order, then unique rows, and the row limit last. So sorting by population, descending, with 10 rows gives the ten largest.
 
 ## View
 

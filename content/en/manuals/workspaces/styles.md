@@ -6,9 +6,12 @@ weight: 70
 appScreen:
   - "editor:style"
 contentStatus: needs-review
+verifiedAgainst: "0d477bd0"
 ---
 
-In the [Layers](layers.md) panel, select the **Style** button on a layer. The top of the panel always shows which layer you are editing, as *Layer name / Styles*, and the same name stays in front when you open a rule or a symbol. The panel shows the styles of that layer, and the map updates as you change them.
+In the [Layers](layers.md) panel, select the **Style** button on a layer. The top of the panel always shows which layer you are editing, as *Layer name / Styles*, and the same name stays in front when you open a rule or a symbol. The panel shows the styles of that layer.
+
+Changes appear on the map as soon as you make them and are saved automatically. A short status line under the title says whether saving is in progress, done, or failed (with a retry). The text style editor is a draft until you save it; **Classify** replaces the rules only when you select **Generate**.
 
 ## Rules
 
@@ -18,6 +21,10 @@ A style is a list of rules. Each rule draws the layer in one way: a point symbol
 - Drag a rule to change the drawing order.
 - The bin on a rule deletes it. The bin at the top deletes all rules.
 - The eye at the top hides the layer while you work.
+
+## Fixed value or expression
+
+Next to a property control, a two-state button switches between a fixed value and an expression (or a GeoStyler function). Switching back restores the value or expression you had before, for as long as the panel stays open. Vector tile layers use MapLibre expressions; other layers use GeoStyler functions — the button is the same; the expression language is not.
 
 ## Add a style
 
