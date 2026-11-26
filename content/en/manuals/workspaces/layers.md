@@ -60,6 +60,10 @@ Each row in the panel has:
 
 On a tile layer, **Edit tile source…** reopens the source dialog to change its name, URL, raster URL and attributions, and **Clone** adds a hidden copy named "(copy)".
 
+On a vector tile layer, **Edit style…** opens the layer's **Style** panel. The list shows a **Map style** row, like a rule; select it to open **Map style**, a table with one row per style layer, grouped by source layer (water, roads, places…). Each row has a visibility checkbox and cells for color, outline or halo color, line width / radius / text size, opacity and the min and max zoom where it shows. A cell the provider drives with an expression shows **ƒ**, and one it leaves unset shows **–**; click it, or the layer name, to open that layer with the same label and control rows as the symbolizer editors, where the expression is edited as JSON or replaced with **Fixed value**. Changed cells are highlighted. Changes show on the map as you make them and are saved automatically. The provider's style is never modified: **↺** in a layer, or **Reset all**, goes back to it.
+
+The print preview and PDF export still use the provider's own raster tiles, so they do not show these style changes.
+
 ## Atlas from pictures
 
 On a **Layer from Pictures**, **Crea atlante** / create atlas opens a wizard. Its optional **Add context text** switch (off by default) sends each photo's coordinates and shooting time through the Gaia server to Open-Meteo and Wikipedia, and drafts a text per page from templates: when the photo was taken and the light of the day, the weather then (Open-Meteo reanalysis, indicative at about 25 km), and the Wikipedia lead when an article matches the place name. Each page ends with a **Sources** line. A photo that already has a description keeps it; all texts stay editable in the print layout afterwards.

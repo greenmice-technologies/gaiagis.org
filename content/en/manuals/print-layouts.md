@@ -55,12 +55,15 @@ In the panel header, **Save as JSON** (file with an arrow) saves the layout to a
 
 ## Styling
 
-The second tab holds the design tokens of the layout: the brand colors, the heading, body and mono fonts, and the text sizes. Five icons at the end of the panel header act on them:
+The second tab holds the design tokens of the layout: the brand colors, the heading, body and mono fonts, and the text sizes. At the top, a palette generator fills the colors from one base color:
+
+- Choose the **Base colour** and a **Harmony** (analogous, monochrome, complementary, split-complementary or triadic), then **Generate palette**: the base color becomes the primary, secondary and accent follow the harmony, and the neutrals derive from the primary.
+- **Brand** fills the colors from the brand of the application.
+- **From image** asks for an image and fills the colors with its dominant colors: the most prominent becomes the primary color, the next two the secondary and the accent. White, black and transparent areas are ignored.
+
+Two icons at the end of the panel header act on the tokens:
 
 - **Apply to document** (check) writes the tokens onto the pages and items.
-- **Seed from brand** (sparkles) fills them from the brand of the application.
-- **Palette from image** (picture) asks for an image and fills the tokens with its dominant colors: the most prominent becomes the primary color, the next two the secondary and the accent. White, black and transparent areas are ignored.
-- **Random palette** (dice) fills the tokens with a new harmonious palette: primary, secondary and accent, plus neutrals derived from the primary.
 - **Reset** (counter-clockwise arrow) restores the defaults.
 
 ## Pages
