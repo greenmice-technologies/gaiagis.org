@@ -6,7 +6,7 @@ weight: 70
 appScreen:
   - "editor:style"
 contentStatus: needs-review
-verifiedAgainst: "0d477bd0"
+verifiedAgainst: "pending"
 ---
 
 In the [Layers](layers.md) panel, select the **Style** button on a layer. The top of the panel always shows which layer you are editing, as *Layer name / Styles*, and the same name stays in front when you open a rule or a symbol. The panel shows the styles of that layer.
@@ -35,6 +35,8 @@ Select **+** (**Add style**) at the top of the panel:
 - **Clear all rules** starts again from nothing.
 - Under **Gaia base style**, add a rule of one type: **Mark** for points, **Line**, **Fill**, **Icon**, **Text** for labels, or **Raster**. **All** adds one of each.
 - Under **Annotation style**, add a **Symbol** or a **Label**.
-- Under **Gaia style library**, pick a ready-made style and adjust it.
+- Under **Gaia curated styles**, add a ready-made **Point**, **Line**, **Polygon**, **Label** or **Raster** rule that matches the layer. Only rules that fit the layer's geometry are listed.
+
+The catalog no longer offers the old public seed styles in this menu; those remain available to administrators through the API until organisation styles land.
 
 Some styling tools are still being refined.

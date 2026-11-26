@@ -56,7 +56,7 @@ In the panel header, **Save as JSON** (file with an arrow) saves the layout to a
 
 ## Styling
 
-The second tab holds the design tokens of the layout: the brand colors, the heading, body and mono fonts, and the text sizes. At the top, a palette generator fills the colors from one base color:
+A new empty layout starts from the workspace appearance colours and fonts when those are set. The second tab holds the design tokens of the layout: the brand colors, the heading, body and mono fonts, and the text sizes. At the top, a palette generator fills the colors from one base color:
 
 - Choose the **Base colour** and a **Harmony** (analogous, monochrome, complementary, split-complementary or triadic), then **Generate palette**: the base color becomes the primary, secondary and accent follow the harmony, and the neutrals derive from the primary.
 - **Brand** fills the colors from the brand of the application.
