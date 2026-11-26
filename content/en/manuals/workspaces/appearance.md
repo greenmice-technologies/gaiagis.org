@@ -13,3 +13,5 @@ Open **Appearance** from the workspace editor to set the design tokens of the wo
 Changes are a draft until you select the check in the panel header. Charts can preview the draft; new layers keep the last saved kit until you save. Only workspace admins and owners can save; other members see the panel read-only.
 
 A new print layout starts from these colours and fonts when they are set. Layout Studio has its own **Styling** tab to adjust the kit of that layout.
+
+If you change Appearance after creating a layout that used it, Layout Studio can offer to update that layout's kit; the pages change only when you Apply.
