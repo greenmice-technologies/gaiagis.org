@@ -94,6 +94,21 @@ The last tab, **Layers**, lists the items of the current page. Select **+** in i
 | **Table**, **Attribute table** | A table you type, or the attributes of a layer |
 | **Marker**, **Polygon**, **Polyline**, **Rectangle**, **Ellipse**, **Triangle** | Shapes drawn on the page |
 
+## Map grid
+
+Select a map and open **Grid**, then turn on **Show grid**. For each grid you choose:
+
+- **Style**: lines, crosses, or frame only.
+- **Grid in**: degrees, or the units of the map (usually metres), and the **Interval**. Leave the interval empty for a round value that fits the map.
+- **Offset X** and **Offset Y**: move the lines away from the round values.
+- **Coordinates**, and under **Coordinate sides** the sides of the map where they are written. For a grid in degrees, **Format** chooses decimal degrees or degrees, minutes, seconds.
+- **Frame**: none, zebra, ticks, or line. With a frame, you can set its **Frame Width**.
+- **Line color** and **Line width**.
+
+**Add grid** draws a further grid on the same map, for example metres over degrees. It starts as crosses without coordinates. If you turn coordinates on for two grids, give them different sides so the numbers do not overlap.
+
+The PDF is the reference: the editor preview does not draw grid frames, and writes each coordinate on one side only.
+
 ## Legend
 
 A legend lists the vector layers that its linked map shows. Select it to set it up in the properties panel:

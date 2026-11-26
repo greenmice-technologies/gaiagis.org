@@ -11,6 +11,8 @@ verifiedAgainst: "pending"
 
 In the [Layers](layers.md) panel, select the **Style** button on a layer. The top of the panel always shows which layer you are editing, as *Layer name / Styles*, and the same name stays in front when you open a rule or a symbol. The panel shows the styles of that layer.
 
+For a **vector tile** layer the same Style panel lists the provider's style layers (grouped by source layer) instead of GeoStyler rules. Select a row to edit colours, sizes, opacity and zoom; **Reset all** at the top of the panel restores the provider. Overrides show on the map only — print still uses the provider's raster tiles. Details: [Layers](layers.md).
+
 Changes appear on the map as soon as you make them and are saved automatically. A short status line under the title says whether saving is in progress, done, or failed (with a retry). The text style editor is a draft until you save it; **Classify** replaces the rules only when you select **Generate**.
 
 ## Rules
@@ -25,6 +27,19 @@ A style is a list of rules. Each rule draws the layer in one way: a point symbol
 ## Fixed value or expression
 
 Next to a property control, a two-state button switches between a fixed value and an expression (or a GeoStyler function). Switching back restores the value or expression you had before, for as long as the panel stays open. Vector tile layers use MapLibre expressions; other layers use GeoStyler functions — the button is the same; the expression language is not.
+
+## When print differs from the map
+
+On a vector layer, a **Print differs from the map** box appears at the top of the **Style** panel when something in the style will not print as it is drawn. Each line starts with the name of the rule:
+
+- a function (expression) that is not translated for print, or that is set on a property print cannot drive from the data;
+- symbols repeated along a polygon outline, which are not drawn;
+- a perpendicular line offset, which applies in print but not on the map;
+- an upper or lower case transformation of label text, which is not applied;
+- icon opacity in a rule that combines the icon with other symbols or opacities, which print ignores;
+- a dashed polygon outline, which prints with different dash lengths.
+
+The box does not cover every small difference: text, for example, can look slightly different on paper.
 
 ## Add a style
 
