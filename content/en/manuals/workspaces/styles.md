@@ -35,7 +35,7 @@ Select **+** (**Add style**) at the top of the panel:
 - **Clear all rules** starts again from nothing.
 - Under **Gaia base style**, add a rule of one type: **Mark** for points, **Line**, **Fill**, **Icon**, **Text** for labels, or **Raster**. **All** adds one of each.
 - Under **Annotation style**, add a **Symbol** or a **Label**.
-- Under **Gaia curated styles**, add a ready-made **Point**, **Line**, **Polygon**, **Label** or **Raster** rule that matches the layer. Only rules that fit the layer's geometry are listed.
+- Under **Gaia curated styles**, add a ready-made **Point**, **Line**, **Dots** (symbols along a line), **Polygon**, **Hatch** (printable pattern fill), **Label** or **Raster** rule that matches the layer. Only rules that fit the layer's geometry are listed.
 
 The catalog no longer offers the old public seed styles in this menu; those remain available to administrators through the API until organisation styles land.
 
