@@ -1,40 +1,68 @@
 ---
 title: Home
-description: Turn geographic data into clear maps, analytical notebooks, and print-ready deliverables with Gaia GIS, the self-hosted web GIS.
+description: Analyse geographic data with SQL, design the map, and publish or print the result from one workspace with Gaia GIS, the self-hosted web GIS.
 translationKey: home
 contentStatus: canonical-en
 build:
   list: never
 ---
 
-## What a finished project looks like {#examples}
+<section class="chapter">
 
-### Nine sheets. One coherent atlas.
+<p class="kicker">Map</p>
 
-Explore the Brazil L1–L9 production prototype: nine regional maps, shared cartographic layers, and a single GeoPDF. Follow the decisions behind the frames, symbols, and marginal information.
+## Make the pattern visible
 
-[Explore the atlas](/en/use-cases/brazil-atlas/)
+Import your files, edit features and attributes, then group values into classes and choose colors, symbols, and labels.
 
-<img class="screenshot" src="/images/use-cases/atlas/preview-L3.png" alt="Brazil L3 atlas prototype showing routes and airspace along the northeastern coast" width="1800" height="1108" loading="lazy">
+<img class="screenshot" src="/images/home/style.webp" alt="A Gaia GIS map of Europe styled in classes, with the list of value ranges beside it" width="1400" height="939" loading="lazy" decoding="async">
 
-[Explore all three projects](/en/use-cases/) — a multipage atlas, a synthetic chart sheet, and a reproducible population analysis.
+[Explore layers and styling](/en/product/layers/)
 
-## From geographic data to a result you can share {#overview}
+</section>
 
-1. **Prepare the map.** Import files or connect external map services. Edit features and attributes, then style the layers that matter to your reader. [Explore layers](/en/product/layers/).
-2. **Explain the findings.** Use SQL to explore the data, then keep the query, map, chart, and explanation together in a notebook. [Explore notebooks](/en/product/notebook/).
-3. **Deliver the result.** Share a public workspace page, export a notebook as HTML or PDF, or create a map sheet as PDF or GeoPDF. [Explore print layouts](/en/product/print/) and [workspace sharing](/en/product/workspaces/).
+<section class="chapter">
 
-## Run Gaia GIS on your own infrastructure
+<p class="kicker">Analysis</p>
 
-Set up Gaia GIS on your computer or servers and give your team access through a browser. Organization roles control who can see or edit private workspaces. Standard formats such as GeoPackage and GeoTIFF let you carry data and maps into other tools.
+## Keep the query next to the answer
 
-## Start your first workspace {#get-started}
+Query your layers with SQL and place the results, as tables, maps, or charts, in a notebook that explains them. Publish it as a page, or export it as HTML or PDF.
 
-Check system requirements and package availability before installing. Once Gaia GIS is running, follow the tutorial to create a workspace and import your first dataset.
+<img class="screenshot" src="/images/use-cases/natural-earth-query.webp" alt="A Gaia GIS notebook with a population query and its result table beside a world map" width="1440" height="900" loading="lazy" decoding="async">
 
-**[Check installation and availability](/en/install/)** · [Create your first workspace](/en/tutorials/01-first-workspace/)
+[Explore notebooks](/en/product/notebook/)
 
-## Questions about getting started? {#faq}
+</section>
 
-The [FAQ](/en/faq/) covers supported formats, hosting, sharing, and exports. [Contact us](/en/contact/) to discuss your project or ask about installation.
+<section class="chapter">
+
+<p class="kicker">Print</p>
+
+## Deliver a sheet, not a screenshot
+
+Lay out the map with legends and scale bars, then export a PDF or a GeoPDF.
+
+<img class="screenshot" src="/images/use-cases/northhaven-chart.webp" alt="A map sheet exported from Gaia GIS, with a map frame, scale bar, and symbols on fictional geography" width="1357" height="961" loading="lazy" decoding="async">
+
+[Explore print layouts](/en/product/print/)
+
+</section>
+
+<section class="why">
+
+## Why Gaia GIS
+
+<ul>
+<li><strong>One project, in one place.</strong> Layers, queries, notebooks, and print layouts stay together in a workspace.</li>
+<li><strong>On your infrastructure.</strong> You run the installation and manage its users and stored data.</li>
+<li><strong>Standard formats.</strong> Import GeoPackage, Shapefile, GeoJSON, or GeoTIFF, and take your data out as GeoPackage.</li>
+</ul>
+
+</section>
+
+## Run it for your team {#get-started}
+
+Some application packages are not yet available for public download, so check requirements and access before you install.
+
+**[Install Gaia GIS](/en/install/)** · [Contact us](/en/contact/)

@@ -1,9 +1,7 @@
 enable: true
-title: 'Turn geographic data into **maps that inform.**'
-text: 'Gaia GIS is a self-hosted web GIS for data analysts and teams. Build maps, explain findings with SQL, charts, and notebooks, and deliver public pages or print-ready sheets from one browser workspace.'
+title: 'One workspace from raw data to a **finished map.**'
+text: 'Analyse with SQL, design the map, publish the page or print the sheet. Gaia GIS is a self-hosted web GIS for data analysts and teams, used from your browser.'
 buttons:
-  - label: 'Explore the atlas'
-    link: '/en/use-cases/brazil-atlas/'
-  - label: 'Installation and availability'
-    link: '/en/install/'
+  - label: 'See an example'
+    link: '/en/use-cases/population-notebook/'
 image: 'images/gaia-gis.png'
