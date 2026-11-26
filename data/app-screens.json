@@ -324,7 +324,7 @@
     },
     {
       "id": "editor:design-tokens",
-      "name": "Workspace appearance",
+      "name": "Workspace theme",
       "area": "editor",
       "access": "user"
     }

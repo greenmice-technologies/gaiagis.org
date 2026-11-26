@@ -1,5 +1,5 @@
 ---
-title: "Appearance"
+title: "Theme"
 description: "Workspace colours, fonts and chart palette used by public pages, charts and new layers."
 translationKey: "editor-appearance"
 weight: 75
@@ -8,7 +8,7 @@ appScreen:
 contentStatus: needs-review
 ---
 
-Open **Appearance** from the workspace editor to set the design tokens of the workspace: brand colours, fonts, corner radius, chart colours and the default colours of new map layers.
+Open **Theme** from the workspace editor to set the theme of the workspace: brand colours, fonts, corner radius, chart colours and the default colours of new map layers.
 
 Changes are a draft until you select the check in the panel header. Charts can preview the draft; new layers keep the last saved kit until you save. Only workspace admins and owners can save; other members see the panel read-only.
 
