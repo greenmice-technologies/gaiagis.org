@@ -40,3 +40,7 @@ Select **+** (**Add style**) at the top of the panel:
 The catalog no longer offers the old public seed styles in this menu; those remain available to administrators through the API until organisation styles land.
 
 Some styling tools are still being refined.
+
+You can save the layer style to the organization catalogue (bookmark in the style panel). Applying a saved style copies the rules into the layer.
+
+Classification can vary mark size or line width as well as colour.
