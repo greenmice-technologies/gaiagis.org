@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Settings"
 description: "The name, look, sign-in options, and legal pages of your installation."
 translationKey: "admin-settings"

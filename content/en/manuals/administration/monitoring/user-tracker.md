@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "User tracker"
 description: "See who is using Gaia right now."
 translationKey: "user-tracker"

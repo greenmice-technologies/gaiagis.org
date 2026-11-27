@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Configuration"
 description: "Read the configuration the application is running with."
 translationKey: "configuration"

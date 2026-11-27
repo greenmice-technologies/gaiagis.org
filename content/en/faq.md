@@ -1,6 +1,6 @@
 ---
 title: "FAQ"
-description: "Answers about Gaia GIS: self-hosting, supported data, SQL notebooks, workspace privacy, sharing, exports, and installation availability."
+description: "Answers about Gaia GIS: self-hosting, supported data, SQL notebooks, workspace privacy, sharing, exports, and how to request access."
 translationKey: faq
 contentStatus: "canonical-en"
 ---
@@ -11,7 +11,7 @@ Use Gaia GIS to prepare geographic data, build and style maps, explain findings 
 
 ### Do I need to install software on every user's computer?
 
-Gaia is installed on a computer or server; users then access that installation through a browser. Check requirements and package availability on the [installation page](/en/install/) before starting.
+Gaia is installed on a computer or server; users then access that installation through a browser. The application packages are given [on request](/en/install/).
 
 ### Is there a hosted version?
 
@@ -43,7 +43,7 @@ The person or organization operating it manages its accounts, workspaces, and st
 
 ### Is self-hosted the same as open source?
 
-No. Gaia GIS is distributed for self-hosted installation; the application source code is not public. Check the installation guide for current package access requirements.
+No. Gaia GIS is distributed for self-hosted installation; the application source code is not public. Access to the application packages is given [on request](/en/install/).
 
 ### Where can I find help?
 

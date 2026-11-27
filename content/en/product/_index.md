@@ -46,4 +46,4 @@ Organize layers, notebooks, layouts, and supporting files in a workspace. Use or
 - **A map to distribute:** build a layout for a report, presentation, or printed sheet.
 - **A project to publish:** prepare a public workspace page that brings the map and notebook together.
 
-[See completed examples](/en/use-cases/) · [Check installation and availability](/en/install/) · [Discuss your use case](/en/contact/).
+[See completed examples](/en/use-cases/) · [Request access](/en/install/) · [Discuss your use case](/en/contact/).

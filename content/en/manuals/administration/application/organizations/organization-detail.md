@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Organization page"
 description: "An organization as an administrator sees it."
 translationKey: "admin-organization-detail"

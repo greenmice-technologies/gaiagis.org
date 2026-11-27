@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Monitoring"
 description: "How the application is running, who is signed in, and how to call it."
 translationKey: "manuals-admin-monitoring"

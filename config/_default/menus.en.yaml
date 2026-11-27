@@ -9,7 +9,7 @@ main:
     pageRef: /manuals
     weight: 30
 buttons:
-  - name: Install
+  - name: Request access
     pageRef: /install
     weight: 10
 footer:
@@ -28,7 +28,7 @@ footer:
   - name: Releases
     pageRef: /releases
     weight: 40
-  - name: Install
+  - name: Request access
     pageRef: /install
     weight: 50
   - name: About

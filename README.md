@@ -8,7 +8,7 @@ This repository is the only place where Gaia is described in prose: what the pro
 
 - Do not keep product pages, manuals, or screen maps in `gaia-api`.
 - One exception: product direction (decisions and roadmap) stays in `gaia-api/docs/`, because this repository is public. Do not add it here.
-- `static/install.sh` is the public install command (`curl -fsSL https://gaiagis.org/install.sh | sh`). It clones [github.com/greenmice-technologies/gaia](https://github.com/greenmice-technologies/gaia) when needed, runs `scripts/setup.sh`, and starts the stack. Requirements and configuration stay in that repository. Do not copy them onto this site.
+- Access to Gaia GIS is on request: public pages point to `/en/install/` and give no install command. `static/install.sh` stays published for people who have access; it clones the private installer repository [github.com/greenmice-technologies/gaia](https://github.com/greenmice-technologies/gaia), where requirements and configuration stay. Do not copy them onto this site.
 - A change in `gaia-api` that alters a screen is finished when the matching guide page here is updated.
 - English is the maintained baseline. Publish another language only after an editorial review, and add it to `config/_default/hugo.yaml` only when its content exists.
 
@@ -28,7 +28,7 @@ One line of communication, shared with the app (`gaia-api`):
 - `content/en/product/` — Notebook, Layers, Print
 - `content/en/manuals/` — user and administration guides
 - `content/en/tutorials/` — step-by-step walkthroughs, with screenshots generated from the app
-- `content/en/install.md` — short pointer to the installer repository
+- `content/en/install.md` — how to request access, and network requirements
 - `content/en/about.md`, `contact.md`, `faq.md`, `privacy.md`, `terms.md`, `cookies.md` — pages linked by default from an installation's Settings
 - `data/app-screens.json` — the screens of the app that the guides must cover
 

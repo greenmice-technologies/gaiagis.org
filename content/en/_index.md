@@ -63,6 +63,6 @@ Lay out the map with legends and scale bars, then export a PDF or a GeoPDF.
 
 ## Run it for your team {#get-started}
 
-Some application packages are not yet available for public download, so check requirements and access before you install.
+Gaia GIS runs on your infrastructure. Access to the application packages is given on request.
 
-**[Install Gaia GIS](/en/install/)** · [Contact us](/en/contact/)
+**[Request access](/en/install/)** · [Contact us](/en/contact/)

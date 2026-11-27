@@ -319,3 +319,5 @@ footer h1 {
 .story-next a { color: #0b5d8e; text-decoration: underline; }
 @media (max-width: 800px) { .featured-case { grid-template-columns: 1fr; } .atlas-sheets { grid-template-columns: repeat(2,minmax(0,1fr)); } .gallery-closing { padding: 1.5rem; } .story-heading { padding-top: 2rem; } }
 @media (prefers-reduced-motion: no-preference) { .case-cover img { transition: transform .2s; } .case-cover:hover img { transform: scale(1.02); } }
+/* Long identifiers in running text must wrap on narrow screens. */
+:not(pre) > code { overflow-wrap: anywhere; }

@@ -22,7 +22,7 @@ contentStatus: canonical-en
 
 ## Administration
 
-- [Install Gaia GIS](/en/install/). Check system requirements and package availability.
-- [Administration guides](administration/). Manage users, organizations, settings, sign-in providers, and monitoring.
+- [Request access to Gaia GIS](/en/install/). See network requirements for an installation.
+- [Administration guides](administration/). Manage users, authorities, and sign-in providers.
 
 [See what changed in recent releases](/en/releases/).

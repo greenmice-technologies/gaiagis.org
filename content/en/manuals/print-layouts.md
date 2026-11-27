@@ -13,11 +13,24 @@ verifiedAgainst: "0d477bd0"
 
 ## Layouts panel
 
-In the [editor](workspaces/workspace-editor.md), the **Layouts** tab of the left rail lists the print layouts of the workspace. It is the way into the Layout Studio: select a layout to open it in the **Layout Studio** window over the editor. Select **+** for a menu: **New** creates an empty layout, and **New atlas from a layer…** opens the atlas wizard (see below). The first icon in the panel header switches between a list of names and thumbnails of each layout's first page.
+In the [editor](workspaces/workspace-editor.md), the **Layouts** tab of the left rail lists the print layouts of the workspace. It is the way into the Layout Studio: select a layout to open it in the **Layout Studio** window over the editor. Select **+** for a menu: **New** creates an empty layout, **New atlas from a layer…** opens the atlas wizard (see below), and, in a workspace that belongs to an organization, **New from template…** starts from a saved template (see below). The first icon in the panel header switches between a list of names and thumbnails of each layout's first page.
 
 Point at a layout and select the bin, or focus the row and press Delete or Backspace. Gaia asks for confirmation, naming the layout, before it is removed. If that layout is open in the Layout Studio, the window closes.
 
 The **…** menu in the panel header holds **Import → From JSON**, which opens a layout from a JSON file in the studio.
+
+## Layout templates
+
+A template is a copy of a layout kept by the organization, to start new layouts from. In the Layout Studio, open the **Document settings** tab, select **Save as template** (the bookmark icon in the panel header) and give it a name. Everyone in the organization can use it, with all the content of its pages. Saving needs a role that can edit in the organization. Later changes to the layout do not change the template.
+
+**New from template…** shows the templates of the organization with a picture of their first page. Select one to create a layout with the name of the template and open it. The layout is a copy of its own:
+
+- Maps show the current view of the editor map.
+- A layer the template refers to (in a map, a legend, a table or a chart) is taken from the layer of this map with the same name. If there is none, the reference is left out. If several layers share the name, the first one is used.
+- Map themes followed by a map are not carried over.
+- Pages are not tied to a feature, even if the saved layout was an atlas.
+
+To remove a template, point at it in the same window and select the bin. Layouts already made from it stay. A template cannot be edited: delete it and save it again. The people who can delete it are those with a role that can edit in the organization, and whoever saved it.
 
 ## Atlas from a layer
 
@@ -27,13 +40,21 @@ On a layer made from pictures a page carries the photograph. On any other vector
 
 The **Properties** step has an **Include overview map** switch, on by default. It adds a full-bleed map after the cover, framed on all located features, with a numbered pin for each; the numbers are those of the entries in the contents list. The map takes one page, or two facing pages in the **Illustrated guide** template, where each page shows its half. It is left out when no feature has a position or when **Show location maps** is off.
 
-The layer's own menu offers **Crea atlante** on layers made from pictures; it opens the same wizard on the **Template** step.
+The layer's own menu offers **Create Atlas** on layers made from pictures; it opens the same wizard on the **Template** step.
 
 ### Pages tied to a feature
 
 Every page an atlas makes for a feature (including the continuation pages of a long text) is tied to that feature. In the **Pages** list the pages of one feature sit under a caption with the feature's name. The tie changes nothing about editing: each page stays a normal page you can move, rewrite or delete.
 
-In a text item, `[% @name %]` prints the value of the attribute `name` of the feature of the page; `[% name %]` does the same when no built-in token has that name. Attribute names are not case sensitive. An attribute the feature does not have prints nothing. On a page that is not tied to a feature these tokens stay as written. `[% group %]`, `[% groupno %]` and `[% groups %]` print the feature's name, its number among the features and their total. Values are copied into the pages when the atlas is created, so later edits to the layer do not change existing pages.
+In a text or HTML item, `[% @name %]` prints the value of the attribute `name` of the feature of the page; `[% name %]` does the same when no built-in token has that name. Attribute names are not case sensitive. An attribute the feature does not have prints nothing. On a page that is not tied to a feature these tokens stay as written. `[% group %]`, `[% groupno %]` and `[% groups %]` print the feature's name, its number among the features and their total. Values are copied into the pages when the atlas is created, so later edits to the layer do not change existing pages.
+
+An HTML item shows the token while you edit it and the value otherwise. A value is always printed as text. Keep a token within one paragraph or table cell.
+
+On a page tied to a feature, every item has a **Visibility** section. Under **Show when** choose an attribute, a condition and a value, as for the attribute table filter. An item that does not meet the condition stays faded on the canvas and is left out of exports. On other pages the condition is ignored.
+
+On the page of a feature that has a geometry, a map also offers **Frame the feature**: it moves the map onto the feature of the page, with a margin. A point is centred without changing the scale. The extent stays as you leave it; it does not follow later changes of the feature. The command needs the layer of the feature on the map.
+
+Gaia finds the feature by its identifier or, when it has none, by the bounding box of its geometry. Without an identifier, the command reports that the feature cannot be found if its geometry or the map projection has changed since the atlas was created. In an atlas created with an earlier version, pages of features without an identifier do not offer the command: create the atlas again.
 
 ## The Layout Studio
 
@@ -50,13 +71,15 @@ The first tab shows the name of the layout and its settings:
 - **Export DPI** — the resolution of the exported file
 - **Color Profile**
 - **Geospatial PDF** — keep the georeferencing in the exported PDF
+- **PDF rendering** — **Vector** draws everything as vectors; **Keep effects** turns into an image only what vectors cannot show, such as blend modes; **As image** prints every page as one image, and the Geospatial PDF then keeps its georeferencing but not the features, and its layers cannot be turned off one by one
+- **World file** — exported PNG and JPG pages that have a map come with a world file and its reference system, all together in a ZIP
 - **Attach data** — embed the GeoPackage and the workspace images in the PDF
 
-In the panel header, **Save as JSON** (file with an arrow) saves the layout to a JSON file and the bin deletes the layout.
+In the panel header, **Save as JSON** (file with an arrow) downloads the layout as a JSON file named after it, **Save as template** (bookmark) keeps it as a [template](#layout-templates), and the bin deletes the layout. The file holds the pages and the document settings, and **Import → From JSON** in the Layouts panel opens it as a new layout. References to map layers are kept as they are, so they may not match in another workspace; to reuse a layout across workspaces, save it as a [template](#layout-templates).
 
 ## Styling
 
-A new empty layout starts from the workspace appearance colours and fonts when those are set. If the workspace appearance changes later, Layout Studio can signal it; update the kit and Apply to restyle. In the atlas wizard you can choose to use the workspace colours and fonts on top of the preset. The second tab holds the design tokens of the layout: the brand colors, the heading, body and mono fonts, and the text sizes. At the top, a palette generator fills the colors from one base color:
+A new empty layout starts from the workspace appearance colours and fonts when those are set. If the workspace appearance changes later, Layout Studio can signal it; update the kit and Apply to restyle. In the atlas wizard you can choose to use the workspace colours and fonts on top of the preset. The second tab, **Theme**, holds the design tokens of the layout: the brand colors, the heading, body and mono fonts, and the text sizes. At the top, a palette generator fills the colors from one base color:
 
 - Choose the **Base colour** and a **Harmony** (analogous, monochrome, complementary, split-complementary or triadic), then **Generate palette**: the base color becomes the primary, secondary and accent follow the harmony, and the neutrals derive from the primary.
 - **Brand** fills the colors from the brand of the application.
@@ -69,6 +92,10 @@ Two icons at the end of the panel header act on the tokens:
 
 Token changes, including Apply, take part in Undo and Redo.
 
+## History
+
+The **History** tab lists the changes made to the layout since it was opened, newest first, ending at **Starting point**. It keeps the last 50 changes. Each entry says what changed, for example an item that was added, moved or edited. Select an entry to go back to the layout as it was after that change; the entries above it turn grey and stay available until you make a new change. The two arrows in the panel header undo and redo one step. The list is not saved with the layout.
+
 ## Pages
 
 The third tab lists the pages of the layout. Select **+** to add a page, and select a page to open it. The first icon in the panel header switches between a list and thumbnails of the pages. Thumbnails are schematic: the sheet with its items drawn as boxes.
@@ -78,17 +105,20 @@ Each page row has actions that appear when you point at it: **Rename page** (or 
 When nothing is selected, the properties panel shows the same settings of the current page:
 
 - **Page Name**
+- **Page size** in millimeters, with **Fit to content**: the page becomes as large as its items plus the margins, in a custom format, and items and guides move with it
+- **Exclude Export** leaves the page out of every export; it stays in the editor, and page numbers in texts still count it
 - **Background** and **Frame** colors
 
 ## Add items to a page
 
-The last tab, **Layers**, lists the items of the current page. Select **+** in its header to add one:
+The fourth tab, **Layers**, lists the items of the current page. Select **+** in its header to add one, or to take content from the notebook:
 
 | Item | What it is |
 | --- | --- |
+| **From notebook…** | Notebook blocks copied as separate print items; they do not stay linked to the notebook. On a page that already has items, they go on new pages |
 | **Map** | A frame showing the map |
 | **Legend**, **Scale bar**, **North arrow** | Elements that follow a map frame |
-| **Rich Text** | Formatted text |
+| **Text**, **Rich Text** | Plain or formatted text |
 | **Image** | A picture |
 | **Chart** | A chart of your data |
 | **Table**, **Attribute table** | A table you type, or the attributes of a layer |
@@ -139,8 +169,9 @@ In the facing-pages view the pages are shown side by side like an open book: the
 
 ## Save and export
 
-- **Save** appears only when there are changes to store. **Saved** appears when there is nothing left to save.
-- **Print PDF** exports the layout.
+- The top bar shows the state of the layout, for example **Saved**, **Saving…** or **Unsaved changes**. **Save** appears when there is something to save.
+- **Print PDF** produces the PDF and shows it in a preview window, where you can move between pages and zoom. Select **Download PDF** to save it.
+- **Export images** saves each page as **PNG**, **JPG** or **SVG**, at the resolution set in **Export DPI**. A single page is saved under the name of the layout; with several pages, each file name ends with the page number in the layout.
 
 To export a GeoPDF, a PDF that keeps the map's geographic information, open the command palette with **⌘K** in the editor and choose **Export Geospatial PDF**.
 

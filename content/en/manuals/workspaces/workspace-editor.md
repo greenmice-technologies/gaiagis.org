@@ -12,8 +12,8 @@ The editor opens when you create a workspace or select one from a list.
 
 ## Top bar
 
-- The **name of the workspace** opens [Workspace settings](workspace-settings.md).
-- **Preview** opens a preview of the workspace.
+- The **name of the workspace** opens the **Workspace** panel, with the [workspace settings](workspace-settings.md).
+- **Preview** shows the workspace as a page, with the map beside the notebook. **Open editor** brings you back.
 - **Close** returns to your workspaces.
 - **Save status** next to the buttons reads *Saving…*, *Unsaved changes*, *Saved 14:32* (the time of the last save) or *Not saved* in red when the last save failed. After a failure the **Save** button stays available and a message explains what went wrong.
 
@@ -29,11 +29,13 @@ The strip on the left edge opens one panel at a time:
 | --- | --- |
 | [Layers](layers.md) | The data on the map |
 | [Notebook](notebook.md) | The document that explains your work |
+| [Layouts](../print-layouts.md) | Print layouts and atlases |
 | [Assets](assets.md) | Files that belong to the workspace |
 | [Connections](connections.md) | External WMS and WFS servers |
 | [History](history.md) | Saved versions, preview link, production |
 | [Export](share-and-export.md) | Save the map or the notebook to a file |
 | [Status](share-and-export.md) | Who can see the workspace, and publishing |
+| [Design](appearance.md) | Colours and fonts of the workspace |
 | [Workspace](workspace-settings.md) | Name, address, cover, members |
 
 Drag the edge of the panel to resize it. Use the small arrow on that edge, or the button at the bottom of the strip, to hide or show the panel.
@@ -43,6 +45,8 @@ Drag the edge of the panel to resize it. Use the small arrow on that edge, or th
 The toolbar at the bottom of the map edits the features of a layer:
 
 1. Select the pencil (**Edit layer**) and choose the layer to edit. The toolbar then shows that layer's name beside the pencil; point at the name to read it in full. On a narrower map the name shortens, and the words **Edit layer** are left off until there is room.
+
+   If you pick a drawing tool without choosing a layer, Gaia adds a new layer for what you draw. Leaving the tool without drawing removes it.
 2. Pick a tool: **Select features**, **Draw point**, **Draw line**, **Draw polygon**, **Draw circle**, **Draw rectangle**, **Draw text**, **Draw symbol**, **Edit vertices**, or **Move, rotate and scale**. **Draw text** and **Draw symbol** ask for the label or the SVG, then a click on the map stores the outline as a polygon on the layer.
 3. Use **Delete selected**, **Undo**, and **Redo** as you work. **Delete selected** turns red once a feature is selected.
 

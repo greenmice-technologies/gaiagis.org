@@ -21,4 +21,4 @@ Standard import and export formats help you use Gaia alongside your existing too
 
 Greenmice Technologies S.r.l., based in Rome, Italy, publishes Gaia GIS and this website.
 
-[Explore the product](/en/product/) · [Check installation and availability](/en/install/) · [Tell us about your project](/en/contact/)
+[Explore the product](/en/product/) · [Request access](/en/install/) · [Tell us about your project](/en/contact/)

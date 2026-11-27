@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Logs"
 description: "Change how much detail the application writes to its logs."
 translationKey: "logs"

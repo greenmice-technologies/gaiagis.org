@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Health"
 description: "Check that the application and the services it depends on are running."
 translationKey: "health"

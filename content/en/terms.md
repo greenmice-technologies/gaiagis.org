@@ -9,7 +9,7 @@ These terms cover gaiagis.org and the Gaia GIS software published from it. Green
 
 ## The website
 
-You may read these pages and follow the installation instructions. The pages describe the product as it is. Availability of downloadable packages is stated on the [installation page](/en/install/).
+You may read these pages. They describe the product as it is. The application packages are not available for public download; see [how to request access](/en/install/).
 
 ## The software
 

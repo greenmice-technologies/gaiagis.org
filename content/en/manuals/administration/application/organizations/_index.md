@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Organizations"
 description: "Every organization on the installation."
 translationKey: "manuals-admin-organizations"

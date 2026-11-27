@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Application"
 description: "Settings and organizations for the whole installation."
 translationKey: "manuals-admin-application"

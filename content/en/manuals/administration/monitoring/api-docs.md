@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "API docs"
 description: "Browse the application's API definitions."
 translationKey: "api-docs"

@@ -32,4 +32,4 @@ Use this workflow for a set of project maps, location sheets, or other deliverab
 
 See the [Northhaven en-route chart](/en/use-cases/aviation-chart/) for a finished example and download the GeoPDF.
 
-[Read the print layout guide](/en/manuals/print-layouts/) · [Check installation and availability](/en/install/)
+[Read the print layout guide](/en/manuals/print-layouts/) · [Request access](/en/install/)

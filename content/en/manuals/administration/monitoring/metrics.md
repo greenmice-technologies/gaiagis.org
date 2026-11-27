@@ -1,4 +1,5 @@
 ---
+draft: true
 title: "Metrics"
 description: "See how the application uses memory, threads and the processor, and how its requests perform."
 translationKey: "metrics"

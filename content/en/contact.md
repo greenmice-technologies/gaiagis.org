@@ -1,13 +1,13 @@
 ---
 title: "Contact"
-description: "Discuss your Gaia GIS use case, ask about installation and package availability, or get in touch with Greenmice Technologies."
+description: "Discuss your Gaia GIS use case, request access, ask about installation, or get in touch with Greenmice Technologies."
 translationKey: contact
 contentStatus: "canonical-en"
 ---
 
 ## Tell us what you want to do with your data
 
-Evaluating Gaia GIS for a project or preparing an installation? Write to [info@gaiagis.org](mailto:info@gaiagis.org) with your question. You can also contact us about package availability, product capabilities, or anything unclear in the guides.
+Evaluating Gaia GIS for a project or preparing an installation? Write to [info@gaiagis.org](mailto:info@gaiagis.org) with your question. Write to us as well to request access, to ask what the product can do, or to report anything unclear in the guides.
 
 To help us understand your needs, include the kind of data you work with, the result you want to produce, and where you plan to run Gaia. For an installation question, mention the step you reached and any error message, with passwords and other secrets removed.
 
