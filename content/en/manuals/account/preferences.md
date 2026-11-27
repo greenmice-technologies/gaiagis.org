@@ -11,6 +11,8 @@ verifiedAgainst: "828cf266"
 
 Select your name at the bottom of the sidebar to open the user menu. Theme stays on that first page. Colors and language each open their own page in the same menu, so the panel does not scroll.
 
+On a narrow screen, such as a phone, select your picture at the bottom of the sidebar. The menu opens as a panel at the bottom of the screen.
+
 ## Shortcuts
 
 - **Settings** opens your [account settings](settings.md).
